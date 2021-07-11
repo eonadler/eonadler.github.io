@@ -36,7 +36,7 @@ plugins:
 #  - jekyll-include-cache
 
 accent_image: /custom/img/sidebar-bg2.jpg
-accent_color: rgb(79,177,186)
+accent_color: rgb(0,0,0)
 
 # Exclude from processing.
 # The following items will not be processed, by default.
