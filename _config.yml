@@ -24,8 +24,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   dark matter, computational astrophysics, near-field cosmology
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+# twitter_username: jekyllrb
 github_username:  eonadler
+
+author:
+  social:
+    GoogleScholar:  https://scholar.google.com/citations?user=ulupgjUAAAAJ
+    github:  eonadler
+    email:  mailto:enadler@carnegiescience.edu
+    
 
 # Build settings
 #theme: jekyll-theme-cayman
@@ -37,6 +44,18 @@ plugins:
 
 accent_image: /custom/img/sidebar-bg2.jpg
 accent_color: rgb(0,0,0)
+
+menu:
+  - title: Research
+    url:   /research/
+  - title: Publications
+    url:   /publications/
+  - title: Mentoring & Outreach
+    url:   /mentoring/
+  - title: Media
+    url:   /media/
+  - title: Personal
+    url:   /personal/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

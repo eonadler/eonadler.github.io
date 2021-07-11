@@ -5,5 +5,3 @@
 layout: default
 cover:  true
 ---
-
-I am a postdoctoral research fellow at [Carnegie Observatories](https://obs.carnegiescience.edu/) and [USC](https://dornsife.usc.edu/physics/).
