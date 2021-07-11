@@ -42,7 +42,6 @@ plugins:
   - jekyll-feed
 #  - jekyll-include-cache
 
-accent_image: /custom/img/sidebar-bg2.jpg
 accent_color: rgb(0,0,0)
 
 menu:
