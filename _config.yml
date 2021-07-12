@@ -29,7 +29,7 @@ github_username:  eonadler
 
 author:
   social:
-    GoogleScholar:  https://scholar.google.com/citations?user=ulupgjUAAAAJ
+    googlescholar:  ulupgjUAAAAJ
     github:  eonadler
     email:  mailto:enadler@carnegiescience.edu
     
@@ -49,8 +49,8 @@ menu:
     url:   /research/
   - title: Publications
     url:   /publications/
-  - title: Mentoring & Outreach
-    url:   /mentoring/
+  - title: Mentorship & Service
+    url:   /mentorship/
   - title: Media
     url:   /media/
   - title: Personal

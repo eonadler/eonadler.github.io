@@ -10,11 +10,11 @@ I am a postdoctoral research fellow at [Carnegie Observatories](https://obs.carn
 
 My [research](./research.markdown) aims to reveal the nature of the dark matter particle by combining cosmological simulations, theory, and observations of the smallest cosmic structures including ultra-faint dwarf galaxies.
 
-Building an inclusive scientific community through mentorship, outreach, and teaching is important to me; these experiences are described [here](./mentoring.markdown).
+Building an inclusive scientific community through mentorship and community service is important to me; these experiences are described [here](./mentoring.markdown).
 
 I am an active member of the [Dark Energy Survey](https://www.darkenergysurvey.org/), [Dark Energy Science Collaboration](https://lsstdesc.org/), and [Satellites Around Galactic Analogs Survey](https://sagasurvey.org/).
 
-Please see my CV and [publications](./publications.markdown) for more information!
+Please see my [CV](./CV.pdf) and [publications](./publications.markdown) for more information!
 
 ## About Me
 
