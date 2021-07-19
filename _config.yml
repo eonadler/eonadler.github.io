@@ -47,6 +47,8 @@ accent_color: rgb(0,0,0)
 menu:
   - title: Research
     url:   /research/
+  - title: CV
+    url:   ./CV.pdf
   - title: Publications
     url:   /publications/
   - title: Mentorship & Service
