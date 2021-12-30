@@ -46,19 +46,19 @@ accent_color: rgb(0,0,0)
 
 menu:
   - title: Research
-    url:   /research/
+    url:   /research.html
   - title: CV
     url:   ./CV.pdf
   - title: Publications
-    url:   /publications/
+    url:   /publications.html
   - title: Mentorship & Teaching
-    url:   /mentorship/
+    url:   /mentorship.html
   - title: Outreach
-    url:   /outreach/
+    url:   /outreach.html
   - title: Media
-    url:   /media/
+    url:   /media.html
   - title: Personal
-    url:   /personal/
+    url:   /personal.html
 
 # Exclude from processing.
 # The following items will not be processed, by default.
