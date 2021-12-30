@@ -6,13 +6,13 @@ layout: default
 cover:  true
 ---
 
-I am a postdoctoral research fellow at [Carnegie Observatories](https://obs.carnegiescience.edu/) and the [University of Southern California](https://dornsife.usc.edu/physics/). 
+I am a postdoctoral research fellow at [Carnegie Observatories](https://ctac.carnegiescience.edu/) and the [University of Southern California](hhttps://cosmolab.usc.edu/). 
 
-My [research](./research.markdown) aims to reveal the nature of the dark matter particle by combining cosmological simulations, theory, and observations of the smallest cosmic structures including ultra-faint dwarf galaxies.
+My [research](./research.markdown) aims to reveal the microphysical nature of dark matter by combining cosmological simulations, particle theory, and observations of the smallest cosmic structures including ultra-faint dwarf galaxies.
 
-Building an inclusive scientific community through mentorship and community service is important to me; these experiences are described [here](./mentoring.markdown).
+Building an inclusive scientific community through [mentorship](./mentorship.markdown), [teaching](./mentorship/#teaching.markdown), and [outreach](./outreach.markdown) is important to me; my efforts in these contexts are described on the corresponding pages.
 
-I am an active member of the [Dark Energy Survey](https://www.darkenergysurvey.org/), [Dark Energy Science Collaboration](https://lsstdesc.org/), and [Satellites Around Galactic Analogs Survey](https://sagasurvey.org/).
+I am an active member of the [Dark Energy Survey](https://www.darkenergysurvey.org/), [Dark Energy Science Collaboration](https://lsstdesc.org/), and the [Satellites Around Galactic Analogs Survey](https://sagasurvey.org/).
 
 Please see my [CV](./CV.pdf) and [publications](./publications.markdown) for more information!
 

@@ -51,8 +51,10 @@ menu:
     url:   ./CV.pdf
   - title: Publications
     url:   /publications/
-  - title: Mentorship & Service
+  - title: Mentorship & Teaching
     url:   /mentorship/
+  - title: Outreach
+    url:   /outreach/
   - title: Media
     url:   /media/
   - title: Personal

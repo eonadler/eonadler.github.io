@@ -4,9 +4,4 @@
 
 layout: default
 cover:  true
-title: Mentorship & Teaching
 ---
-
-## Mentorship
-
-## Teaching
