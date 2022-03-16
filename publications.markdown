@@ -11,6 +11,10 @@ title:  Publications
 Refereed journal publications are listed by year below. For a list including papers in review, white papers, and interdisciplinary publications, please see my <a href="./CV.pdf">CV</a>. All articles below are available on the <a href="https://arxiv.org/">arXiv</a>.
 </p>
 
+## 2022
+
+(22) J. F. Wu, J. E. G. Peek, E. J. Tollerud, Y.-Y. Mao, **E. O. Nadler**, M. Geha, R. H. Wechsler, N. Kallivayalil, and B. J. Weiner. *Extending the SAGA Survey (xSAGA). I. Satellite Radial Profiles as a Function of Host-galaxy Properties*. 2022, [ApJ, 927, 121](https://iopscience.iop.org/article/10.3847/1538-4357/ac4eea).
+
 ## 2021
 
 (21) D. Nguyen, D. Sarnaaik, K. K. Boddy, **E. O. Nadler**, and V. Gluscevic. *Observational constraints on dark matter scattering with electrons*. [PRD 104, 103521](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.103521).
@@ -31,7 +35,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (13) K. Maamari, V. Gluscevic, K. K. Boddy, **E. O. Nadler**, and R. H. Wechsler. *Bounds on velocity-dependent dark matter–proton scattering from Milky Way satellite abundance*. 2021, [ApJL 907, L46](https://iopscience.iop.org/article/10.3847/2041-8213/abd807).
 
-(12) Y.-Y. Mao, M. Geha, R. H. Wechsler, B. Weiner, E. J. Tollerud, **E. O. Nadler**, and N. Kallivayalil. *The Saga Survey. II. Building a Statistical Sample of Satellite Systems around Milky Way-like Galaxies*. 2021, [ApJ, 907, 85](https://iopscience.iop.org/article/10.3847/1538-4357/abce58).
+(12) Y.-Y. Mao, M. Geha, R. H. Wechsler, B. J. Weiner, E. J. Tollerud, **E. O. Nadler**, and N. Kallivayalil. *The Saga Survey. II. Building a Statistical Sample of Satellite Systems around Milky Way-like Galaxies*. 2021, [ApJ, 907, 85](https://iopscience.iop.org/article/10.3847/1538-4357/abce58).
 
 <p style="margin-bottom: -24px">
 </p>
