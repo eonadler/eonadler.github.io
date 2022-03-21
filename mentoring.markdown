@@ -33,7 +33,7 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 <p style="margin-bottom: -38px">
 </p>
 
-### Undergraduate students
+### Undergraduate & Post-baccalaureate students
 
 * [Deveshi Buch](https://profiles.stanford.edu/deveshi-buch), Stanford: Constrained cosmological simulation suite of Milky Way analogs (D. Buch, E. O. Nadler *et al.* in prep.);
 
@@ -58,9 +58,8 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 ## Teaching
 
+<p style="margin-bottom: -38px">
 I have assisted with several undergraduate and graduate physics courses, including as a guest lecturer and author of course materials. Highlights include:
-
-<p style="margin-bottom: -32px">
 </p>
 
 ### University of California, Davis
@@ -83,4 +82,4 @@ I have assisted with several undergraduate and graduate physics courses, includi
 ### University of California, Santa Barbara
 
 * *[Relativistic Quantum Mechanics](https://ccs.ucsb.edu/sites/default/files/2017-08/2015-2016-courses-all.pdf#page=112)* (teaching assistant, authored solution manual);
-* *Linear Algebra with Applications* (held bi-weekly tutorials, authored [supplementary lecture notes](./Math_4A.pdf)).
+* *[Linear Algebra with Applications](https://www.math.ucsb.edu/sites/default/files/sitefiles/undergraduate/Outlines/MATH%204A%20Outline.pdf)* (held bi-weekly tutorials, authored [supplementary lecture notes](./Math_4A.pdf)).

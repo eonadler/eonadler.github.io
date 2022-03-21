@@ -15,6 +15,9 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (22) J. F. Wu, J. E. G. Peek, E. J. Tollerud, Y.-Y. Mao, **E. O. Nadler**, M. Geha, R. H. Wechsler, N. Kallivayalil, and B. J. Weiner. *Extending the SAGA Survey (xSAGA). I. Satellite Radial Profiles as a Function of Host-galaxy Properties*. 2022, [ApJ, 927, 121](https://iopscience.iop.org/article/10.3847/1538-4357/ac4eea).
 
+<p style="margin-bottom: -24px">
+</p>
+
 ## 2021
 
 (21) D. Nguyen, D. Sarnaaik, K. K. Boddy, **E. O. Nadler**, and V. Gluscevic. *Observational constraints on dark matter scattering with electrons*. [PRD 104, 103521](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.103521).

@@ -27,7 +27,7 @@ I am involved in several outreach activies to help foster a diverse, equitable, 
 
 I give back to the scientific community through service including public lectures, workshops, and peer review:
 
-* I have given several **public lectures**, including for the [Pasadena Senior Center](https://www.pasadenajournal.com/theme-of-january-26-cosmic-cocktail-hour.html), the [San Mateo Astronomical Society](http://nebula.wsimg.com/f29ef262928d3dba118025d689e51d82?AccessKeyId=DEEA8EDAD4DCF5083531&disposition=0&alloworigin=1), [Astronomy on Tap](https://app.discotech.me/events/36762040-astronomy-on-tap-at-dna-lounge), and undergraduate programs including the 2021 UCSB Physics REU cohort.
+* I have given several **public lectures**, including for the [Pasadena Senior Center](https://www.pasadenajournal.com/theme-of-january-26-cosmic-cocktail-hour.html), the [San Mateo Astronomical Society](http://nebula.wsimg.com/f29ef262928d3dba118025d689e51d82?AccessKeyId=DEEA8EDAD4DCF5083531&disposition=0&alloworigin=1) ([recording](https://youtu.be/v06iLuedjYQ?t=0)), [Astronomy on Tap](https://app.discotech.me/events/36762040-astronomy-on-tap-at-dna-lounge), and undergraduate programs including the UCSB Physics REU.
 
 * I have led **data visualization workshops** at [KIPAC](https://kipac.github.io/BootCamp/) and the Santa Fe Institute [Complex Systems Summer School](https://wiki.santafe.edu/index.php/Complex_Systems_Summer_School_2019_(CSSS)). 
 
