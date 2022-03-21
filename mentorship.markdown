@@ -4,19 +4,14 @@
 
 layout: default
 cover:  true
-title: Mentoring & Teaching
+title: Mentorship
 ---
 
-<p style="margin-bottom: -12px">
-</p>
-
-## Mentoring
-
-<p style="margin-bottom: -32px">
+<p style="margin-bottom: -24px">
 Mentoring a diverse group of students on research in astrophysics and cosmology is an important part of my scientific practice. My recent graduate and undergraduate mentorship experiences are listed below:
 </p>
 
-### Graduate students
+## Graduate students
 
 * [Wendy Crumrine](https://www.linkedin.com/in/wendy-crumrine-343228162/), USC: Likelihood analyses of dark matter--baryon and dark matter--radiation interactions using Milky Way satellite galaxies;
 
@@ -30,10 +25,10 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 * [Elise Darragh-Ford](https://kipac.stanford.edu/people/elise-darragh-ford): Searching for phase-space overdensities in *Gaia* data ([E. Darragh-Ford, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac0053/meta)); modeling dynamical substructure in the Milky Way.
 
-<p style="margin-bottom: -30px">
+<p style="margin-bottom: -24px">
 </p>
 
-### Undergraduate students
+## Undergraduate students
 
 * [Deveshi Buch](https://profiles.stanford.edu/deveshi-buch), Stanford: Constrained cosmological simulation suite of Milky Way analogs (D. Buch, E. O. Nadler *et al.* in prep.);
 
@@ -52,8 +47,3 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 * [Nicel Mohamed-Hinds](https://phys.washington.edu/people/nicel-mohamed-hinds), Stanford &rarr; University of Washington: Modeling subhalo disruption in hydrodynamic cosmological simulations.
 
 * [Abigail Lee](https://abiglee7.github.io//), University of Pennsylvania &rarr; University of Chicago: Universality of subhalo disruption from Milky Way to galaxy cluster scales.
-
-<p style="margin-bottom: -24px">
-</p>
-
-## Teaching
