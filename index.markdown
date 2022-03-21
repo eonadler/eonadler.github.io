@@ -10,7 +10,7 @@ I am a postdoctoral research fellow at [Carnegie Observatories](https://ctac.car
 
 My [research](./research.markdown) aims to reveal the microphysical nature of dark matter and the mechanisms that seed primordial cosmic structure. This is achieved by combining cosmological simulations, particle theory, and observations of the smallest known structures in the universe including ultra-faint dwarf galaxies.
 
-Building an inclusive scientific community through [mentoring](./mentoring.markdown), [outreach](./outreach.markdown), [community service](./outreach/#service.markdown), and [teaching](./mentoring/#teaching.markdown) is important to me; my efforts in these contexts are described on the corresponding pages.
+Building an inclusive scientific community through [mentoring](./mentoring.markdown), [outreach](./outreach.markdown), [community service](./outreach.html#service), and [teaching](./mentoring.html#teaching) is important to me; my efforts in these contexts are described on the corresponding pages.
 
 I am an active member of the [Dark Energy Survey](https://www.darkenergysurvey.org/), [Dark Energy Science Collaboration](https://lsstdesc.org/), and [Satellites Around Galactic Analogs Survey](https://sagasurvey.org/).
 
