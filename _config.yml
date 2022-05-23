@@ -42,7 +42,7 @@ plugins:
   - jekyll-feed
 #  - jekyll-include-cache
 
-accent_color: rgb(0,0,0)
+accent_color: rgb(0,0,0) 
 
 menu:
   - title: Research
