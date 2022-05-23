@@ -22,7 +22,7 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 * [George (Trey) Driskell](https://www.linkedin.com/in/george-driskell/), USC: Efficiently generating constrained dark matter merger trees;
 
-* [Noah Glennon](https://kipac.stanford.edu/people/noah-glennon-0), University of New Hampshire: Soliton orbital evolution in self-interacting ultra-light dark matter (N. Glennon, E. O. Nadler *et al.* in prep.);
+* [Noah Glennon](https://kipac.stanford.edu/people/noah-glennon-0), University of New Hampshire: Soliton orbital evolution in self-interacting ultra-light dark matter ([N. Glennon, E. O. Nadler *et al.* 2022](https://arxiv.org/abs/2205.10336));
 
 * [Sidney Mau](https://sidneymau.com/): Constraining the dark matter particle lifetime using ultra-faint dwarf galaxies ([S. Mau, E. O. Nadler *et al.* 2022](https://arxiv.org/abs/2201.11740));
 
