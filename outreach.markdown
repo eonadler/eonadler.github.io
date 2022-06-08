@@ -14,7 +14,7 @@ title:  Outreach & Service
 
 I am involved in several outreach activies to help foster a diverse, equitable, and inclusive physics culture:
 
-* I was awarded an inaugural **[Carnegie DEI Grant](https://carnegiescience.edu/news/inaugural-carnegie-dei-mini-grants-awarded)** to teach *Dark Matter & Data Visualization* in partnership with [Create Now](https://createnow.org/whatwedo/ourmission/), an arts education organization that empowers underserved youth throughout Los Angeles. The 2022 installation of this course is in progress at [USC Hybrid High](https://www.ednovate.org/hybrid); all course materials will be available online.
+* I was awarded an inaugural **[Carnegie DEI Grant](https://carnegiescience.edu/news/inaugural-carnegie-dei-mini-grants-awarded)** to teach *Dark Matter & Data Visualization* in partnership with [Create Now](https://createnow.org/whatwedo/ourmission/), an arts education organization that empowers underserved youth throughout Los Angeles. The first installation of this course was held at [USC Hybrid High](https://www.ednovate.org/hybrid) in Spring 2022; all course materials are [available online](https://docs.google.com/document/d/1f9bxYBslAa2ewfoNRDVXP7rPLzTOJFpWmnJYcIwo1MU/edit?usp=sharing).
 
 * I am the postdoc and staff representative on the **[USC Physics & Astronomy Climate Committee](https://docs.google.com/document/d/1bk8EV-XkrqwboUlVhjYrmi--NbCFyo3s86ffWheQjbo/edit)**. In the 2021--2022 academic year, I helped develop and analyze results from the department's first climate survey.
 
