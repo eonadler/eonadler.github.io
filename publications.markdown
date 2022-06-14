@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2022
 
+(23) S. Bhattacharyya, S. Adhikari, A. Banerjee, S. More, A. Kumar, **E. O. Nadler**, and S. Chatterjee. *The Signatures of Self-interacting Dark Matter and Subhalo Disruption on Cluster Substructure*. 2022, [ApJ, 932, 30](https://iopscience.iop.org/article/10.3847/1538-4357/ac68e9).
+
 (22) J. F. Wu, J. E. G. Peek, E. J. Tollerud, Y.-Y. Mao, **E. O. Nadler**, M. Geha, R. H. Wechsler, N. Kallivayalil, and B. J. Weiner. *Extending the SAGA Survey (xSAGA). I. Satellite Radial Profiles as a Function of Host-galaxy Properties*. 2022, [ApJ, 927, 121](https://iopscience.iop.org/article/10.3847/1538-4357/ac4eea).
 
 <p style="margin-bottom: -24px">
