@@ -14,7 +14,7 @@ title:  Interdisciplinary
 
 I collaborate on and lead interdisciplinary research at the intersection of cognition, linguistics, machine learning, data science, psychology, and philosophy. Recent publications and conference proceedings are listed below:
 
-* M. Chu, B. S. Desikan, **E. O. Nadler**, R. L. Sardo, E. Darragh-Ford, and D. Guilbeault. *Signal in Noise: Exploring Meaning Encoded in Random Character Sequences with Character-Aware Language Models*. 2022, [2203.07911](https://arxiv.org/abs/2203.07911) ([Association for Computational Linguistics](https://www.2022.aclweb.org/) accepted).
+* M. Chu, B. S. Desikan, **E. O. Nadler**, R. L. Sardo, E. Darragh-Ford, and D. Guilbeault. *Signal in Noise: Exploring Meaning Encoded in Random Character Sequences with Character-Aware Language Models*. 2022, [Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics, 7120](https://aclanthology.org/2022.acl-long.492/).
 
 * B. S. Desikan, T. Hull, **E. O. Nadler**, D. Guilbeault, A. A. Kar, M. Chu, R. L. Sardo *comp-syn: Perceptually Grounded Word Embeddings with Color*. 2020, [Proceedings of the 28th International Conference on Computational Linguistics, 1744](https://aclanthology.org/2020.coling-main.154/).
 
