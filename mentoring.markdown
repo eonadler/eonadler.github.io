@@ -7,37 +7,41 @@ cover:  true
 title: Mentoring & Teaching
 ---
 
-<p style="margin-bottom: -24px">
+<p style="margin-bottom: -14px">
 </p>
 
 ## Mentoring
 
 <p style="margin-bottom: -38px">
-Mentoring a diverse group of students on research in astrophysics and cosmology is an important part of my scientific practice. My recent graduate and undergraduate mentorship experiences are listed below:
+Mentoring a diverse group of students on research in astrophysics and cosmology is an important part of my scientific practice. My graduate and undergraduate mentorship experiences are listed below:
 </p>
 
 ### Graduate students
 
-* [Wendy Crumrine](https://www.linkedin.com/in/wendy-crumrine-343228162/), USC: Likelihood analyses of dark matter--baryon and dark matter--radiation interactions using Milky Way satellite galaxies;
+* [Wendy Crumrine](https://www.linkedin.com/in/wendy-crumrine-343228162/), USC: Likelihood analyses of dark matter--radiation interactions using Milky Way satellites;
 
-* [George (Trey) Driskell](https://www.linkedin.com/in/george-driskell/), USC: Efficiently generating constrained dark matter merger trees;
+* [Karime Maamari](https://karimemaamari.com/), USC: Cosmological + hydrodynamic simulations of galaxy formation featuring dark matter--baryon scattering;
 
-* [Noah Glennon](https://kipac.stanford.edu/people/noah-glennon-0), University of New Hampshire: Soliton orbital evolution in self-interacting ultra-light dark matter ([N. Glennon, E. O. Nadler *et al.* 2022](https://arxiv.org/abs/2205.10336));
+* [Trey Driskell](https://www.linkedin.com/in/george-driskell/), USC: Semi-analytic methods for high-redshift structure formation with new dark matter physics ([T. Driskell, E. O. Nadler *et al.* 2022](https://arxiv.org/abs/2209.04499));
 
-* [Sidney Mau](https://sidneymau.com/), Stanford: Constraining the dark matter particle lifetime using ultra-faint dwarf galaxies ([S. Mau, E. O. Nadler *et al.* 2022](https://arxiv.org/abs/2201.11740));
+* [Noah Glennon](https://kipac.stanford.edu/people/noah-glennon-0), University of New Hampshire: Soliton orbital evolution in self-interacting ultra-light dark matter ([N. Glennon, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540));
 
-* [Yunchong (Richie) Wang](https://profiles.stanford.edu/richie-wang), Stanford: Empirically modeling star formation in dwarf galaxies ([Y. Wang, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac024a)); cosmological simulations including self-consistently grown galactic disks;
+* [Sidney Mau](https://sidneymau.com/), Stanford: Constraining the dark matter particle lifetime using ultra-faint dwarf galaxies ([S. Mau, E. O. Nadler *et al.* 2022](https://iopscience.iop.org/article/10.3847/1538-4357/ac6e65));
 
-* [Elise Darragh-Ford](https://kipac.stanford.edu/people/elise-darragh-ford), Stanford: Searching for phase-space overdensities in *Gaia* data ([E. Darragh-Ford, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac0053/meta)); modeling dynamical substructure in the Milky Way.
+* [Yunchong (Richie) Wang](https://profiles.stanford.edu/richie-wang), Stanford: Empirically modeling dwarf galaxy star formation histories ([Y. Wang, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac024a)).
+
+* [Elise Darragh-Ford](https://kipac.stanford.edu/people/elise-darragh-ford), Stanford: Dwarf galaxy searches using *Gaia* ([E. Darragh-Ford, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac0053/meta)).
 
 <p style="margin-bottom: -38px">
 </p>
 
-### Undergraduate & Post-baccalaureate students
+### Undergraduate, Post-baccalaureate, & High School students
 
 * [Deveshi Buch](https://profiles.stanford.edu/deveshi-buch), Stanford: Constrained cosmological simulation suite of Milky Way analogs (D. Buch, E. O. Nadler *et al.* in prep.);
 
 * [Resherle Verna](https://www.linkedin.com/in/resherle-verna-m-s-96945898/), USC &rarr; UT Austin: Evolution of the subhalo and splashback mass function in hydrodynamic simulations of self-interacting dark matter;
+
+* [Derek Rodriguez](https://www.ednovate.org/hybrid), USC Hybrid High School: Subhalo evolution and dark matter host halo structure in the [Symphony](https://arxiv.org/abs/2209.02675) simulations;
 
 * [Ellen Min](https://www.linkedin.com/in/mintyellen/), Caltech: Code development and Python implementation for [Galacticus](https://github.com/galacticusorg/galacticus);
 
