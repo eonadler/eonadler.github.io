@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2022
 
+(26) T. Driskell, **E. O. Nadler**, J. Mirocha, A. Benson, K. K. Boddy, T. D. Morton, J. Lashner, R. An, and V. Gluscevic. *Structure formation and the global 21-cm signal in the presence of Coulomb-like dark matter-baryon interactions*. 2022, [PRD, 106, 103525](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.103525).
+
 (25) N. Glennon, **E. O. Nadler**, N. Musoke, A. Banerjee, C. Prescod-Weinstein, and R. H. Wechsler. *Tidal disruption of solitons in self-interacting ultralight axion dark matter*. 2022, [PRD, 105, 123540](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540).
 
 (24) S. Mau & **E. O. Nadler** et al. (DES Collaboration). *Milky Way Satellite Census. IV. Constraints on Decaying Dark Matter from Observations of Milky Way Satellite Galaxies*. 2022, [ApJ, 932, 128](https://iopscience.iop.org/article/10.3847/1538-4357/ac6e65).
