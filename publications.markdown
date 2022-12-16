@@ -17,7 +17,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (25) N. Glennon, **E. O. Nadler**, N. Musoke, A. Banerjee, C. Prescod-Weinstein, and R. H. Wechsler. *Tidal disruption of solitons in self-interacting ultralight axion dark matter*. 2022, [PRD, 105, 123540](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540).
 
-(24) S. Mau & **E. O. Nadler** et al. (DES Collaboration). *Milky Way Satellite Census. IV. Constraints on Decaying Dark Matter from Observations of Milky Way Satellite Galaxies*. 2022, [ApJ, 932, 128](https://iopscience.iop.org/article/10.3847/1538-4357/ac6e65).
+(24) S. Mau, **E. O. Nadler** et al. (DES Collaboration). *Milky Way Satellite Census. IV. Constraints on Decaying Dark Matter from Observations of Milky Way Satellite Galaxies*. 2022, [ApJ, 932, 128](https://iopscience.iop.org/article/10.3847/1538-4357/ac6e65).
 
 (23) S. Bhattacharyya, S. Adhikari, A. Banerjee, S. More, A. Kumar, **E. O. Nadler**, and S. Chatterjee. *The Signatures of Self-interacting Dark Matter and Subhalo Disruption on Cluster Substructure*. 2022, [ApJ, 932, 30](https://iopscience.iop.org/article/10.3847/1538-4357/ac68e9).
 
@@ -40,7 +40,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (16) E. Darragh-Ford, **E. O. Nadler**, S. McLaughlin, and R. H. Wechsler. *Searching for Dwarfs in Gaia DR2 Phase-space Data using Wavelet Transforms*. 2021, [ApJ, 915, 48](https://iopscience.iop.org/article/10.3847/1538-4357/ac0053/meta).
 
-(15) **E. O. Nadler** & A. Drlica-Wagner et al. (DES Collaboration). *Constraints on Dark Matter Properties from Observations of Milky Way Satellite Galaxies*. 2021, [PRL, 126, 091101](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.091101).
+(15) **E. O. Nadler**, A. Drlica-Wagner et al. (DES Collaboration). *Constraints on Dark Matter Properties from Observations of Milky Way Satellite Galaxies*. 2021, [PRL, 126, 091101](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.091101).
 
 (14) S. Das & **E. O. Nadler**. *Constraints on the epoch of dark matter formation from Milky Way satellites*. 2021, [PRD, 103, 043517](https://arxiv.org/abs/2010.01137).
 
@@ -55,11 +55,11 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (11) **E. O. Nadler**, A. Banerjee, S. Adhikari, Y.-Y. Mao, and R. H. Wechsler. *Signatures of Velocity-dependent Dark Matter Self-interactions in Milky Way-mass Halos*. 2020, [ApJ, 896, 112](https://iopscience.iop.org/article/10.3847/1538-4357/ab94b0).
 
-(10) **E. O. Nadler** & R. H. Wechsler et al. (DES Collaboration). *Milky Way Satellite Census. II. Galaxy-Halo Connection Constraints Including the Impact of the Large Magellanic Cloud*. 2020, [ApJ, 893, 48](https://iopscience.iop.org/article/10.3847/1538-4357/ab846a).
+(10) **E. O. Nadler**, R. H. Wechsler et al. (DES Collaboration). *Milky Way Satellite Census. II. Galaxy-Halo Connection Constraints Including the Impact of the Large Magellanic Cloud*. 2020, [ApJ, 893, 48](https://iopscience.iop.org/article/10.3847/1538-4357/ab846a).
 
 (9) A. Drlica-Wagner, K. Bechtol, S. Mau, M. McNanna, **E. O. Nadler** et al. (DES Collaboration). *Milky Way Satellite Census. I. The Observational Selection Function for Milky Way Satellites in DES Y3 and PanSTARRS DR1*. 2020, [ApJ, 893, 47](https://iopscience.iop.org/article/10.3847/1538-4357/ab7eb9).
 
-(8) S. Mau & W. Cerny et al. (DELVE Collaboration, incl. **E. O. Nadler**). *Two Ultra-Faint Milky Way Stellar Systems Discovered in Early Data from the DECam Local Volume Exploration Survey*. 2020, [ApJ, 890, 136](https://iopscience.iop.org/article/10.3847/1538-4357/ab6c67).
+(8) S. Mau, W. Cerny et al. (DELVE Collaboration, incl. **E. O. Nadler**). *Two Ultra-Faint Milky Way Stellar Systems Discovered in Early Data from the DECam Local Volume Exploration Survey*. 2020, [ApJ, 890, 136](https://iopscience.iop.org/article/10.3847/1538-4357/ab6c67).
 
 <p style="margin-bottom: -24px">
 </p>
