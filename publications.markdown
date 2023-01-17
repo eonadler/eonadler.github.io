@@ -11,7 +11,7 @@ title:  Publications
 Refereed journal publications are listed by year below. For a list including papers in review, white papers, and interdisciplinary publications, please see my <a href="./CV.pdf">CV</a>. All articles below are available on the <a href="https://arxiv.org/">arXiv</a>.
 </p>
 
-## 2022
+## 2023
 
 (27) S. Wagner-Carena, J. Aalbers, S. Birrer, **E. O. Nadler**, E. Darragh-Ford, P. J. Marshall, and R. H. Wechsler *From Images to Dark Matter: End-to-end Inference of Substructure from Hundreds of Strong Gravitational Lenses*. 2023, [ApJ, 942, 75](https://iopscience.iop.org/article/10.3847/1538-4357/aca525).
 
