@@ -13,6 +13,13 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2022
 
+(27) S. Wagner-Carena, J. Aalbers, S. Birrer, **E. O. Nadler**, E. Darragh-Ford, P. J. Marshall, and R. H. Wechsler *From Images to Dark Matter: End-to-end Inference of Substructure from Hundreds of Strong Gravitational Lenses*. 2023, [ApJ, 942, 75](https://iopscience.iop.org/article/10.3847/1538-4357/aca525).
+
+<p style="margin-bottom: -24px">
+</p>
+
+## 2022
+
 (26) T. Driskell, **E. O. Nadler**, J. Mirocha, A. Benson, K. K. Boddy, T. D. Morton, J. Lashner, R. An, and V. Gluscevic. *Structure formation and the global 21-cm signal in the presence of Coulomb-like dark matter-baryon interactions*. 2022, [PRD, 106, 103525](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.103525).
 
 (25) N. Glennon, **E. O. Nadler**, N. Musoke, A. Banerjee, C. Prescod-Weinstein, and R. H. Wechsler. *Tidal disruption of solitons in self-interacting ultralight axion dark matter*. 2022, [PRD, 105, 123540](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540).
