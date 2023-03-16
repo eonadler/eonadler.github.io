@@ -13,7 +13,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2023
 
-(28) **E. O. Nadler**, P. Mansfield, Y. Wang, X. Du et al. *Symphony: Cosmological Zoom-in Simulation Suites over Four Decades of Host Halo Mass*. 2023 [ApJ, 945, 159](https://iopscience.iop.org/article/10.3847/1538-4357/acb68c).
+(28) **E. O. Nadler**, P. Mansfield, Y. Wang, X. Du et al. *Symphony: Cosmological Zoom-in Simulation Suites over Four Decades of Host Halo Mass*. 2023, [ApJ, 945, 159](https://iopscience.iop.org/article/10.3847/1538-4357/acb68c).
 
 (27) S. Wagner-Carena, J. Aalbers, S. Birrer, **E. O. Nadler**, E. Darragh-Ford, P. J. Marshall, and R. H. Wechsler *From Images to Dark Matter: End-to-end Inference of Substructure from Hundreds of Strong Gravitational Lenses*. 2023, [ApJ, 942, 75](https://iopscience.iop.org/article/10.3847/1538-4357/aca525).
 
