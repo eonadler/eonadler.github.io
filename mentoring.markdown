@@ -18,8 +18,6 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 ### Graduate students
 
-* [Wendy Crumrine](https://www.linkedin.com/in/wendy-crumrine-343228162/), USC: Likelihood analyses of dark matter--radiation interactions using Milky Way satellites;
-
 * [Karime Maamari](https://karimemaamari.com/), USC: Cosmological + hydrodynamic simulations of galaxy formation featuring dark matter--baryon scattering;
 
 * [Trey Driskell](https://www.linkedin.com/in/george-driskell/), USC: Semi-analytic methods for high-redshift structure formation with new dark matter physics ([T. Driskell, E. O. Nadler *et al.* 2022](https://arxiv.org/abs/2209.04499));
