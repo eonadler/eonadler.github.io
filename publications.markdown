@@ -13,9 +13,11 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2023
 
-(29) **E. O. Nadler**, A. Benson, T. Driskell, V. Gluscevic, and X. Du. *Growing the First Galaxies' Merger Trees*. 2023, [MNRAS, 521, 3201](https://academic.oup.com/mnras/article-abstract/521/3/3201/7068109).
+(30) S. Yang, X. Du, Z. C. Zeng, A. Benson, F. Jiang, **E. O. Nadler** et al. *Gravothermal Solutions of SIDM Halos: Mapping from Constant to Velocity-dependent Cross Section*. 2023, [ApJ, 946, 47](https://iopscience.iop.org/article/10.3847/1538-4357/acbd49/meta).
 
-(28) **E. O. Nadler**, P. Mansfield, Y. Wang, X. Du et al. *Symphony: Cosmological Zoom-in Simulation Suites over Four Decades of Host Halo Mass*. 2023, [ApJ, 945, 159](https://iopscience.iop.org/article/10.3847/1538-4357/acb68c).
+(29) **E. O. Nadler**, P. Mansfield, Y. Wang, X. Du et al. *Symphony: Cosmological Zoom-in Simulation Suites over Four Decades of Host Halo Mass*. 2023, [ApJ, 945, 159](https://iopscience.iop.org/article/10.3847/1538-4357/acb68c).
+
+(28) **E. O. Nadler**, A. Benson, T. Driskell, V. Gluscevic, and X. Du. *Growing the First Galaxies' Merger Trees*. 2023, [MNRAS, 521, 3201](https://academic.oup.com/mnras/article-abstract/521/3/3201/7068109).
 
 (27) S. Wagner-Carena, J. Aalbers, S. Birrer, **E. O. Nadler**, E. Darragh-Ford, P. J. Marshall, and R. H. Wechsler *From Images to Dark Matter: End-to-end Inference of Substructure from Hundreds of Strong Gravitational Lenses*. 2023, [ApJ, 942, 75](https://iopscience.iop.org/article/10.3847/1538-4357/aca525).
 
