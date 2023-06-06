@@ -13,7 +13,9 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2023
 
-(30) S. Yang, X. Du, Z. C. Zeng, A. Benson, F. Jiang, **E. O. Nadler**, and A. Peter. *Gravothermal Solutions of SIDM Halos: Mapping from Constant to Velocity-dependent Cross Section*. 2023, [ApJ, 946, 47](https://iopscience.iop.org/article/10.3847/1538-4357/acbd49/meta).
+(31) D. Yang, **E. O. Nadler**, and H.-B. Yu. *Strong Dark Matter Self-interactions Diversify Halo Populations within and surrounding the Milky Way*. 2023, [ApJ, 949, 67](https://iopscience.iop.org/article/10.3847/1538-4357/acc73e).
+
+(30) S. Yang, X. Du, Z. C. Zeng, A. Benson, F. Jiang, **E. O. Nadler**, and A. Peter. *Gravothermal Solutions of SIDM Halos: Mapping from Constant to Velocity-dependent Cross Section*. 2023, [ApJ, 946, 47](https://iopscience.iop.org/article/10.3847/1538-4357/acbd49).
 
 (29) **E. O. Nadler**, P. Mansfield, Y. Wang, X. Du et al. *Symphony: Cosmological Zoom-in Simulation Suites over Four Decades of Host Halo Mass*. 2023, [ApJ, 945, 159](https://iopscience.iop.org/article/10.3847/1538-4357/acb68c).
 
