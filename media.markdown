@@ -33,6 +33,8 @@ My work has been highlighted in a number of press releases and research highligh
  
 I have given over thirty contributed and invited talks, listed on my [CV](./CV.pdf), several of which are highlighted below:
 
+* **[Carnegie Observatories Lectures at the Huntington](https://livestream.com/carnegiescience/darkmatterphysics/videos/236313712)**: *Dark Matter Physics in the Sky* (5/22/2023).
+
 * **[CosmoPalooza: CMB-S4, DES, DESC, DESI](https://supernova.lbl.gov/~evlinder/cosmopalooza.html)**: *Dark Matter Physics + Rubin LSST* (1/12/2022).
 
 * **[Fermilab Cosmic Physics Center Seminar](https://astro.fnal.gov/events/event/cpc-seminar-4/)**: *Towards Precision Near-Field Cosmology* (11/22/2021).
