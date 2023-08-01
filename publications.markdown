@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2023
 
+(32) W. Cerny et al. (DELVE Collaboration, incl. **E. O. Nadler**). *Six More Ultra-faint Milky Way Companions Discovered in the DECam Local Volume Exploration Survey*. 2023, [ApJ, 953, 1](https://iopscience.iop.org/article/10.3847/1538-4357/acdd78/meta).
+
 (31) D. Yang, **E. O. Nadler**, and H.-B. Yu. *Strong Dark Matter Self-interactions Diversify Halo Populations within and surrounding the Milky Way*. 2023, [ApJ, 949, 67](https://iopscience.iop.org/article/10.3847/1538-4357/acc73e).
 
 (30) S. Yang, X. Du, Z. C. Zeng, A. Benson, F. Jiang, **E. O. Nadler**, and A. Peter. *Gravothermal Solutions of SIDM Halos: Mapping from Constant to Velocity-dependent Cross Section*. 2023, [ApJ, 946, 47](https://iopscience.iop.org/article/10.3847/1538-4357/acbd49).
