@@ -23,7 +23,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (28) **E. O. Nadler**, A. Benson, T. Driskell, V. Gluscevic, and X. Du. *Growing the First Galaxies' Merger Trees*. 2023, [MNRAS, 521, 3201](https://academic.oup.com/mnras/article-abstract/521/3/3201/7068109).
 
-(27) S. Wagner-Carena, J. Aalbers, S. Birrer, **E. O. Nadler**, E. Darragh-Ford, P. J. Marshall, and R. H. Wechsler *From Images to Dark Matter: End-to-end Inference of Substructure from Hundreds of Strong Gravitational Lenses*. 2023, [ApJ, 942, 75](https://iopscience.iop.org/article/10.3847/1538-4357/aca525).
+(27) S. Wagner-Carena, J. Aalbers, S. Birrer, **E. O. Nadler**, E. Darragh-Ford, P. J. Marshall, and R. H. Wechsler. *From Images to Dark Matter: End-to-end Inference of Substructure from Hundreds of Strong Gravitational Lenses*. 2023, [ApJ, 942, 75](https://iopscience.iop.org/article/10.3847/1538-4357/aca525).
 
 <p style="margin-bottom: -24px">
 </p>
