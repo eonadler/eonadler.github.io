@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2023
 
+(34) E. Darragh-Ford et al. (DESI Collaboration, incl. **E. O. Nadler**). *Target Selection and Sample Characterization for the DESI LOW-Z Secondary Target Program*. 2023, [ApJ, 954, 149](https://iopscience.iop.org/article/10.3847/1538-4357/ace902/meta).
+
 (33) A. Banerjee, S. Das, A. Maharana, **E. O. Nadler**, and R. K. Sharma. *Nonthermal warm dark matter limits from small-scale structure*. 2023, [PRD, 108, 043518](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.043518).
 
 (32) W. Cerny et al. (DELVE Collaboration, incl. **E. O. Nadler**). *Six More Ultra-faint Milky Way Companions Discovered in the DECam Local Volume Exploration Survey*. 2023, [ApJ, 953, 1](https://iopscience.iop.org/article/10.3847/1538-4357/acdd78/meta).
@@ -51,7 +53,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (20) **E. O. Nadler**, A. Banerjee, S. Adhikari, Y.-Y. Mao, and R. H. Wechsler. *The Effects of Dark Matter and Baryonic Physics on the Milky Way Subhalo Population in the Presence of the Large Magellanic Cloud*. 2021, [ApJL, 920, L11](https://iopscience.iop.org/article/10.3847/2041-8213/ac29c1).
 
-(19) A. Drlica-Wagner, J. Carlin, D. L. Nidever et al. (DELVE Collaboration, incl. **E. O. Nadler**). *The DECam Local Volume Exploration Survey: Overview and First Data Release*. 2021, [ApJS, 256, 2](https://iopscience.iop.org/article/10.3847/1538-4365/ac079d).
+(19) A. Drlica-Wagner et al. (DELVE Collaboration, incl. **E. O. Nadler**). *The DECam Local Volume Exploration Survey: Overview and First Data Release*. 2021, [ApJS, 256, 2](https://iopscience.iop.org/article/10.3847/1538-4365/ac079d).
 
 (18) **E. O. Nadler**, S. Birrer, D. Gilman, R. H. Wechsler, X. Du, A. Benson, A. Nierenberg, and T. Treu. *Dark Matter Constraints from a Unified Analysis of Strong Gravitational Lenses and Milky Way Satellite Galaxies*. 2021, [ApJ, 917, 7](https://iopscience.iop.org/article/10.3847/1538-4357/abf9a3).
 
@@ -78,7 +80,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (9) A. Drlica-Wagner, K. Bechtol, S. Mau, M. McNanna, **E. O. Nadler** et al. (DES Collaboration). *Milky Way Satellite Census. I. The Observational Selection Function for Milky Way Satellites in DES Y3 and PanSTARRS DR1*. 2020, [ApJ, 893, 47](https://iopscience.iop.org/article/10.3847/1538-4357/ab7eb9).
 
-(8) S. Mau, W. Cerny et al. (DELVE Collaboration, incl. **E. O. Nadler**). *Two Ultra-Faint Milky Way Stellar Systems Discovered in Early Data from the DECam Local Volume Exploration Survey*. 2020, [ApJ, 890, 136](https://iopscience.iop.org/article/10.3847/1538-4357/ab6c67).
+(8) S. Mau et al. (DELVE Collaboration, incl. **E. O. Nadler**). *Two Ultra-Faint Milky Way Stellar Systems Discovered in Early Data from the DECam Local Volume Exploration Survey*. 2020, [ApJ, 890, 136](https://iopscience.iop.org/article/10.3847/1538-4357/ab6c67).
 
 <p style="margin-bottom: -24px">
 </p>
