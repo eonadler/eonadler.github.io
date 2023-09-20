@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2023
 
+(36) P. Hopkins, **E. O. Nadler**, M. Grudić, X. Shen, I. Sands, and F. Jiang. *Novel conservative methods for adaptive force softening in collisionless and multispecies N-body simulations*. 2023, [MNRAS, 525, 5951].
+
 (35) E. Darragh-Ford et al. (DESI Collaboration, incl. **E. O. Nadler**). *Target Selection and Sample Characterization for the DESI LOW-Z Secondary Target Program*. 2023, [ApJ, 954, 149](https://iopscience.iop.org/article/10.3847/1538-4357/ace902).
 
 (34) R. An, V. Gluscevic, **E. O. Nadler**, and Y. Zhang. *Can Neutrino Self-interactions Save Sterile Neutrino Dark Matter?* 2023, [ApJL, 954, L18](https://iopscience.iop.org/article/10.3847/2041-8213/acf049).
