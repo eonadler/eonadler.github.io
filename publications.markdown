@@ -13,7 +13,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2023
 
-(36) P. Hopkins, **E. O. Nadler**, M. Grudić, X. Shen, I. Sands, and F. Jiang. *Novel conservative methods for adaptive force softening in collisionless and multispecies N-body simulations*. 2023, [MNRAS, 525, 5951].
+(36) P. Hopkins, **E. O. Nadler**, M. Grudić, X. Shen, I. Sands, and F. Jiang. *Novel conservative methods for adaptive force softening in collisionless and multispecies N-body simulations*. 2023, [MNRAS, 525, 5951](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stad2548/7251507).
 
 (35) E. Darragh-Ford et al. (DESI Collaboration, incl. **E. O. Nadler**). *Target Selection and Sample Characterization for the DESI LOW-Z Secondary Target Program*. 2023, [ApJ, 954, 149](https://iopscience.iop.org/article/10.3847/1538-4357/ace902).
 
