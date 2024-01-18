@@ -11,6 +11,10 @@ title:  Publications
 Refereed journal publications are listed by year below. For a list including papers in review, white papers, and interdisciplinary publications, please see my <a href="./CV.pdf">CV</a>. All articles below are available on the <a href="https://arxiv.org/">arXiv</a>.
 </p>
 
+## 2024
+
+(38) M. McNanna, K. Bechtol, S. Mau, **E. O. Nadler** et al. (DES Collaboration). *A Search for Faint Resolved Galaxies Beyond the Milky Way in DES Year 6: A New Faint, Diffuse Dwarf Satellite of NGC 55*. 2024, [ApJ, 961, 126](https://iopscience.iop.org/article/10.3847/1538-4357/ad07d0).
+
 ## 2023
 
 (37) **E. O. Nadler**, D. Yang, and H.-B. Yu. *A Self-interacting Dark Matter Solution to the Extreme Diversity of Low-mass Halo Properties*. 2023, [ApJL, 958, L39](https://iopscience.iop.org/article/10.3847/2041-8213/ad0e09).
