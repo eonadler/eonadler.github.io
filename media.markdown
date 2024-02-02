@@ -14,6 +14,10 @@ title:  Media
 
 My work has been highlighted in a number of press releases and research highlights, including:
 
+* **[UC Riverside News](https://news.ucr.edu/articles/2023/12/06/new-dark-matter-theory-explains-two-puzzles-astrophysics)**: *New dark matter theory explains two puzzles in astrophysics* (12/6/2023).
+
+<!--* **[Quanta Magazine](https://www.quantamagazine.org/in-a-monster-stars-light-a-hint-of-darkness-20230829/)**: *In a Monster Star’s Light, a Hint of Darkness* (8/29/2023).-->
+
 * **[KIPAC Research Highlight](https://kipac.stanford.edu/highlights/between-worlds-visible-and-invisible-lies-dark-matter)**: *Between the worlds of the visible and invisible lies: Dark Matter* (9/26/2021).
 
 * **[Fermilab Press Release](https://news.fnal.gov/2020/08/dark-energy-survey-census-of-the-smallest-galaxies-hones-the-search-for-dark-matter/)**: *Dark Energy Survey census of the smallest galaxies hones the search for dark matter* (8/4/2020).
@@ -31,9 +35,13 @@ My work has been highlighted in a number of press releases and research highligh
 
 ## Talks
  
-I have given over thirty contributed and invited talks, listed on my [CV](./CV.pdf), several of which are highlighted below:
+I have given over fifty contributed and invited talks, listed on my [CV](./CV.pdf), several of which are highlighted below:
+
+* **[Pollica Physics Centre: Self-Interacting Dark Matter Models, Simulations and Signals](https://agenda.infn.it/event/33897/contributions/203866/attachments/107688/152087/Pollica%202023.pdf)**: *SIDM (Sub)halos in Milky Way and Strong Lens Analogs* (6/27/2023).
 
 * **[Carnegie Observatories Lectures at the Huntington](https://livestream.com/carnegiescience/darkmatterphysics/videos/236313712)**: *Dark Matter Physics in the Sky* (5/22/2023).
+
+* **[CERN: New Physics from Galaxy Clustering](https://video-player-sec.web.cern.ch/?mode=contribution&year=2022&id=1192722c13&origin=ceph)**: *Dark Matter Constraints from Small-scale Structure* (11/25/2022).
 
 * **[CosmoPalooza: CMB-S4, DES, DESC, DESI](https://supernova.lbl.gov/~evlinder/cosmopalooza.html)**: *Dark Matter Physics + Rubin LSST* (1/12/2022).
 
