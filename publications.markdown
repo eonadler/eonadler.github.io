@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2024
 
+(39) D. Yang, **E. O. Nadler**, H.-B. Yu, and Y.-M. Zhong. *A parametric model for self-interacting dark matter halos*. 2024, [JCAP, 2, 032](https://iopscience.iop.org/article/10.1088/1475-7516/2024/02/032/pdf).
+
 (38) M. McNanna, K. Bechtol, S. Mau, **E. O. Nadler** et al. (DES Collaboration). *A Search for Faint Resolved Galaxies Beyond the Milky Way in DES Year 6: A New Faint, Diffuse Dwarf Satellite of NGC 55*. 2024, [ApJ, 961, 126](https://iopscience.iop.org/article/10.3847/1538-4357/ad07d0).
 
 ## 2023
