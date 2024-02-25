@@ -18,9 +18,13 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 ### Graduate students
 
-* [Karime Maamari](https://karimemaamari.com/), USC: Cosmological + hydrodynamic simulations of galaxy formation featuring dark matter--baryon scattering;
+* [Trey Driskell](https://www.linkedin.com/in/george-driskell/), USC: Semi-analytic modeling of structure and galaxy formation ([T. Driskell, E. O. Nadler *et al.* 2022](https://arxiv.org/abs/2209.04499));
 
-* [Trey Driskell](https://www.linkedin.com/in/george-driskell/), USC: Semi-analytic methods for high-redshift structure formation with new dark matter physics ([T. Driskell, E. O. Nadler *et al.* 2022](https://arxiv.org/abs/2209.04499));
+* [Wendy Crumrine](https://wcrumrine.github.io/), USC: Constraining dark matter--radiation interactions with small-scale structure;
+
+* [Niusha Ahvazi](https://ctac.carnegiescience.edu/niusha-ahvazi), UCR/Carnegie: Semi-analytic modeling of dwarf galaxy formation and evolution ([N. Ahvazi, A. Benson, L. Sales, E. O. Nadler *et al.* 2024)](https://arxiv.org/abs/2308.13599);
+
+* [Karime Maamari](https://karimemaamari.com/), USC: Cosmological + hydrodynamic simulations of galaxy formation featuring dark matter--baryon scattering;
 
 * [Noah Glennon](https://kipac.stanford.edu/people/noah-glennon-0), University of New Hampshire: Soliton orbital evolution in self-interacting ultra-light dark matter ([N. Glennon, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540));
 
