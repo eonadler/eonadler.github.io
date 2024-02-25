@@ -70,6 +70,10 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 I have assisted with several undergraduate and graduate physics courses, including as a guest lecturer and author of course materials. Highlights include:
 </p>
 
+### University of Southern California
+
+* *[Advanced Cosmology](https://catalogue.usc.edu/preview_course_nopop.php?catoid=8&coid=114328)* (lecturer for *Structure Formation & Galaxies*)
+
 ### University of California, Davis
 
 * *[A Cosmology Workbook](https://phys.libretexts.org/Courses/University_of_California_Davis/UCD%3A_Physics_156_-_A_Cosmology_Workbook/Workbook)* (authored [Structure Formation](https://phys.libretexts.org/Courses/University_of_California_Davis/UCD%3A_Physics_156_-_A_Cosmology_Workbook/Workbook/31%3A_Structure_Formation), [Galaxy Formation](https://phys.libretexts.org/Courses/University_of_California_Davis/UCD%3A_Physics_156_-_A_Cosmology_Workbook/Workbook/32%3A_Galaxy_Formation)).
@@ -79,9 +83,9 @@ I have assisted with several undergraduate and graduate physics courses, includi
 
 ### Stanford University
 
-* *[Structure and Galaxy Formation](https://github.com/KIPAC/Physics-367)* (teaching assistant, lecturer for Halo Substructure, authored notebooks on [Spherical Collapse](https://github.com/KIPAC/Physics-367/blob/main/Weekly_Notebooks/Phys367-week3.ipynb), [Halo Profiles](https://github.com/KIPAC/Physics-367/blob/main/Weekly_Notebooks/Phys367-week4.ipynb), [Self-interacting Dark Matter](https://github.com/KIPAC/Physics-367/blob/main/Final_Projects/Phys367-P04-SIDM.ipynb), and the [Milky Way Halo](https://github.com/KIPAC/Physics-367/blob/main/Final_Projects/Phys367-P05-MW-Halo.ipynb));
+* *[Structure and Galaxy Formation](https://github.com/KIPAC/Physics-367)* (teaching assistant, lecturer for *Halo Substructure*, authored notebooks on [Spherical Collapse](https://github.com/KIPAC/Physics-367/blob/main/Weekly_Notebooks/Phys367-week3.ipynb), [Halo Profiles](https://github.com/KIPAC/Physics-367/blob/main/Weekly_Notebooks/Phys367-week4.ipynb), [Self-interacting Dark Matter](https://github.com/KIPAC/Physics-367/blob/main/Final_Projects/Phys367-P04-SIDM.ipynb), and the [Milky Way Halo](https://github.com/KIPAC/Physics-367/blob/main/Final_Projects/Phys367-P05-MW-Halo.ipynb));
 * *[Modern Astrophysics](https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=PHYSICS%20360:%20Modern%20Astrophysics&academicYear=20192020)* (teaching assistant, authored solution manual);
-* *[Cosmology & Extragalactic Astrophysics](https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=PHYSICS%20361:%20Cosmology%20and%20Extragalactic%20Astrophysics&academicYear=20192020)* (teaching assistant, lecturer for Galaxy Formation & Evolution);
+* *[Cosmology & Extragalactic Astrophysics](https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=PHYSICS%20361:%20Cosmology%20and%20Extragalactic%20Astrophysics&academicYear=20192020)* (teaching assistant, lecturer for *Galaxy Formation & Evolution*);
 * *[Origin & Development of the Cosmos](https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=PHYSICS%2016:%20The%20Origin%20and%20Development%20of%20the%20Cosmos&academicYear=20182019)* (teaching assistant, authored homework and exam problems).
 
 <p style="margin-bottom: -32px">
