@@ -22,11 +22,11 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 * [Wendy Crumrine](https://wcrumrine.github.io/), USC: Constraining dark matter--radiation interactions with small-scale structure;
 
-* [Niusha Ahvazi](https://ctac.carnegiescience.edu/niusha-ahvazi), UCR/Carnegie: Semi-analytic modeling of dwarf galaxy formation and evolution ([N. Ahvazi, A. Benson, L. Sales, E. O. Nadler *et al.* 2024)](https://arxiv.org/abs/2308.13599);
+* [Niusha Ahvazi](https://ctac.carnegiescience.edu/niusha-ahvazi), UCR/Carnegie: Semi-analytic modeling of dwarf galaxy formation and evolution ([N. Ahvazi, A. Benson, L. Sales, E. O. Nadler *et al.* 2024)](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stae761/7631365);
 
 * [Karime Maamari](https://karimemaamari.com/), USC: Cosmological + hydrodynamic simulations of galaxy formation featuring dark matter--baryon scattering;
 
-* [Noah Glennon](https://kipac.stanford.edu/people/noah-glennon-0), University of New Hampshire: Soliton orbital evolution in self-interacting ultra-light dark matter ([N. Glennon, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540));
+* [Noah Glennon](https://kipac.stanford.edu/people/noah-glennon-0), University of New Hampshire: Soliton orbital evolution in self-interacting ultra-light dark matter ([N. Glennon, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540), [N. Glennon, N. Musoke, E. O. Nadler *et al.* 2024](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.063501));
 
 * [Sidney Mau](https://sidneymau.com/), Stanford: Constraining the dark matter particle lifetime using ultra-faint dwarf galaxies ([S. Mau, E. O. Nadler *et al.* 2022](https://iopscience.iop.org/article/10.3847/1538-4357/ac6e65));
 

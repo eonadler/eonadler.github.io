@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2024
 
+(41) N. Ahvazi, A. Benson, L. V. Sales, **E. O. Nadler**, S. Weerasooriya, X. Du, and M. S. Bovill. *A comprehensive model for the formation and evolution of the faintest Milky Way dwarf satellites*. 2024, [MNRAS, 529, 3387](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stae761/7631365).
+
 (40) N. Glennon, N. Musoke, **E. O. Nadler**, C. Prescod-Weinstein, and R. H. Wechsler. *Dynamical friction in self-interacting ultralight dark matter*. 2024, [PRD, 109, 063501](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.063501).
 
 (39) D. Yang, **E. O. Nadler**, H.-B. Yu, and Y.-M. Zhong. *A parametric model for self-interacting dark matter halos*. 2024, [JCAP, 2, 032](https://iopscience.iop.org/article/10.1088/1475-7516/2024/02/032/pdf).
