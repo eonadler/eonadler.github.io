@@ -39,11 +39,9 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 ### Undergraduate, Post-baccalaureate, & High School students
 
-* [Deveshi Buch](https://profiles.stanford.edu/deveshi-buch), Stanford: Constrained cosmological simulation suite of Milky Way analogs (D. Buch, E. O. Nadler *et al.* in prep.);
-
 * [Logan White](https://www.linkedin.com/in/logalexw/), NCSU (Simons-NSBP Scholar): Growth of structure in warm, interacting, and fuzzy dark matter;
 
-* [Resherle Verna](https://www.linkedin.com/in/resherle-verna-m-s-96945898/), USC &rarr; UT Austin: Evolution of the subhalo and splashback mass function in hydrodynamic simulations of self-interacting dark matter;
+* [Deveshi Buch](https://profiles.stanford.edu/deveshi-buch), Stanford: Constrained cosmological simulation suite of Milky Way analogs ([D. Buch, E. O. Nadler *et al.* 2024](https://arxiv.org/abs/2404.08043));
 
 * [Juan Quiroz](https://www.linkedin.com/in/juan-quiroz-jaraba-71a666111/), Caltech: Semi-analytically modeling subhalo evolution in decaying dark matter cosmologies;
 
@@ -54,6 +52,8 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 * [Shuxing Fang](https://www.linkedin.com/in/shuxing-fang-aa7747113/), USC: Large Magellanic Cloud infall in self-interacting dark matter cosmologies;
 
 * [Nyal McCrea](https://www.simonsfoundation.org/people/nyal-mccrea/), Central Washington Unversity (Simons-NSBP Scholar): Visualizing subhalo evolution in cosmological hydrodynamic simulations;
+
+* [Resherle Verna](https://www.linkedin.com/in/resherle-verna-m-s-96945898/), USC &rarr; UT Austin: Evolution of the subhalo and splashback mass function in hydrodynamic simulations of self-interacting dark matter;
 
 * [Veronica Pratt](https://profiles.stanford.edu/veronica-pratt?tab=bio), Stanford &rarr; Tufts: Large Magellanic Cloud analogs in the Satellites Around Galactic Analogs Survey.
 
