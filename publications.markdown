@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2024
 
+(43) **E. O. Nadler**, V. Gluscevic, T. Driskell, R. H. Wechsler, L. A. Moustakas, A. Benson, and Y.-Y. Mao. *Forecasts for Galaxy Formation and Dark Matter Constraints from Dwarf Galaxy Surveys*. 2024, [ApJ, 967, 61](https://iopscience.iop.org/article/10.3847/1538-4357/ad3bb1).
+
 (42) E. Kado-Fong et al. (SAGA Collaboration, incl. **E. O. Nadler**). *SAGAbg. I. A Near-unity Mass-loading Factor in Low-mass Galaxies via Their Low-redshift Evolution in Stellar Mass, Oxygen Abundance, and Star Formation Rate*. 2024, [ApJ, 966, 129](https://iopscience.iop.org/article/10.3847/1538-4357/ad3042).
 
 (41) N. Ahvazi, A. Benson, L. V. Sales, **E. O. Nadler**, S. Weerasooriya, X. Du, and M. S. Bovill. *A comprehensive model for the formation and evolution of the faintest Milky Way dwarf satellites*. 2024, [MNRAS, 529, 3387](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stae761/7631365).
