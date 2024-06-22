@@ -12,21 +12,21 @@ title:  Media
 
 ## News
 
-My work has been highlighted in a number of press releases and research highlights, including:
+My work has been highlighted in a number of press releases, including:
 
 * **[UC Riverside News](https://news.ucr.edu/articles/2023/12/06/new-dark-matter-theory-explains-two-puzzles-astrophysics)**: *New dark matter theory explains two puzzles in astrophysics* (12/6/2023).
 
-<!--* **[Quanta Magazine](https://www.quantamagazine.org/in-a-monster-stars-light-a-hint-of-darkness-20230829/)**: *In a Monster Star’s Light, a Hint of Darkness* (8/29/2023).-->
+* **[Quanta Magazine](https://www.quantamagazine.org/in-a-monster-stars-light-a-hint-of-darkness-20230829/)**: *In a Monster Star’s Light, a Hint of Darkness* (8/29/2023).
 
 * **[KIPAC Research Highlight](https://kipac.stanford.edu/highlights/between-worlds-visible-and-invisible-lies-dark-matter)**: *Between the worlds of the visible and invisible lies: Dark Matter* (9/26/2021).
 
 * **[Fermilab Press Release](https://news.fnal.gov/2020/08/dark-energy-survey-census-of-the-smallest-galaxies-hones-the-search-for-dark-matter/)**: *Dark Energy Survey census of the smallest galaxies hones the search for dark matter* (8/4/2020).
 
-<!--* **[SLAC Press Release](https://www6.slac.stanford.edu/news/2020-03-31-milky-way%E2%80%99s-satellites-help-reveal-link-between-dark-matter-halos-and-galaxy)**: *The Milky Way’s satellites help reveal link between dark matter halos and galaxy formation* (3/31/2020); -->
+* **[SLAC Press Release](https://www6.slac.stanford.edu/news/2020-03-31-milky-way%E2%80%99s-satellites-help-reveal-link-between-dark-matter-halos-and-galaxy)**: *The Milky Way’s satellites help reveal link between dark matter halos and galaxy formation* (3/31/2020).
 
 * **[AAS Nova Research Highlight](https://aasnova.org/2019/09/11/constraining-collisions-of-dark-matter/)**: *Constraining Collisions of Dark Matter* (9/11/2019).
 
-<!--* **[SLAC Press Release](https://www6.slac.stanford.edu/news/2019-07-11-light-dark-matter-thousand-times-less-likely-bump-regular-matter-previous?fbclid=IwAR3-ldGGuDqSKFVYPUVjQ1N5eNU5tfBwigxziswSNDsuIc9ujKV9FXZHn1A)**: *Light dark matter is a thousand times less likely to bump into regular matter than previous astrophysical analyses allowed* (7/11/2019);-->
+* **[SLAC Press Release](https://www6.slac.stanford.edu/news/2019-07-11-light-dark-matter-thousand-times-less-likely-bump-regular-matter-previous?fbclid=IwAR3-ldGGuDqSKFVYPUVjQ1N5eNU5tfBwigxziswSNDsuIc9ujKV9FXZHn1A)**: *Light dark matter is a thousand times less likely to bump into regular matter than previous astrophysical analyses allowed* (7/11/2019).
 
 * **[KIPAC Research Highlight](https://kipac.stanford.edu/highlights/dark-matter-subhalo-disruption-insights-simulations-and-machine-learning)**: *Dark matter subhalo disruption: Insights from simulations and machine learning* (4/19/2018).
 
@@ -36,6 +36,8 @@ My work has been highlighted in a number of press releases and research highligh
 ## Talks
  
 I have given over fifty contributed and invited talks, listed on my [CV](./CV.pdf), several of which are highlighted below:
+
+* **[Kavli Institue for Theoretical Physics Blackboard Talk](https://online.kitp.ucsb.edu/online/bblunch/nadler/)**: *Dark Matter Physics in the Sky* (6/17/2024).
 
 * **[Pollica Physics Centre: Self-Interacting Dark Matter Models, Simulations and Signals](https://agenda.infn.it/event/33897/contributions/203866/attachments/107688/152087/Pollica%202023.pdf)**: *SIDM (Sub)halos in Milky Way and Strong Lens Analogs* (6/27/2023).
 
