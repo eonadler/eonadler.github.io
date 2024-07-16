@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2024
 
+(44) X. Du et al. (incl. **E. O. Nadler**). *Tidal evolution of cored and cuspy dark matter halos*. 2024, [PRD, 110, 023019](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.023019).
+
 (43) **E. O. Nadler**, V. Gluscevic, T. Driskell, R. H. Wechsler, L. A. Moustakas, A. Benson, and Y.-Y. Mao. *Forecasts for Galaxy Formation and Dark Matter Constraints from Dwarf Galaxy Surveys*. 2024, [ApJ, 967, 61](https://iopscience.iop.org/article/10.3847/1538-4357/ad3bb1).
 
 (42) E. Kado-Fong et al. (SAGA Collaboration, incl. **E. O. Nadler**). *SAGAbg. I. A Near-unity Mass-loading Factor in Low-mass Galaxies via Their Low-redshift Evolution in Stellar Mass, Oxygen Abundance, and Star Formation Rate*. 2024, [ApJ, 966, 129](https://iopscience.iop.org/article/10.3847/1538-4357/ad3042).
