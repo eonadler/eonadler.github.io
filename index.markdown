@@ -14,7 +14,7 @@ My [research](./research.markdown) focuses on galaxy formation, dark matter phys
 
 Building an inclusive scientific community through [mentoring](./mentoring.markdown), [outreach](./outreach.markdown), [community service](./outreach.html#service), and [teaching](./mentoring.html#teaching) is important to me; my efforts in these contexts are described on the corresponding pages.
 
-I am a member of the [Dark Energy Survey (DES)](https://www.darkenergysurvey.org/) Milky Way working group, [Dark Energy Science Collaboration (DESC)](https://lsstdesc.org/) Dark Matter Working Group, and the [Satellites Around Galactic Analogs Survey (SAGA)](https://sagasurvey.org/) and [DECam Local Volume Exploration Survey (DELVE)](https://delve-survey.github.io/).
+I am a member of the [Dark Energy Survey (DES)](https://www.darkenergysurvey.org/) Milky Way working group, [Dark Energy Science Collaboration (DESC)](https://lsstdesc.org/) Dark Matter Working Group, [Satellites Around Galactic Analogs Survey (SAGA)](https://sagasurvey.org/), and [DECam Local Volume Exploration Survey (DELVE)](https://delve-survey.github.io/).
 
 Please see my [CV](./CV.pdf), [publications](./publications.markdown), and [media](./media.markdown) for more information!
 
