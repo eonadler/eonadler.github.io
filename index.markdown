@@ -12,7 +12,7 @@ In January 2025, I will begin as an assistant professor at the [University of Ca
 
 My [research](./research.markdown) focuses on galaxy formation, dark matter physics, and near-field cosmology. I am interested the formation and evolution of the faintest galaxies, the microphysical nature of dark matter, and the growth of nonlinear cosmic structure. I tackle these problems by combining semi-analytic models of the galaxy--halo connection, cosmological simulations, dark matter theory, and observations of small-scale structure including dwarf galaxies and strong gravitational lenses.
 
-Building an inclusive scientific community through [mentoring](./mentoring.markdown), [outreach](./outreach.markdown), [community service](./outreach.html#service), and [teaching](./mentoring.html#teaching) is important to me; my efforts in these contexts are described on the corresponding pages.
+Building an inclusive scientific community through [mentoring](./mentoring.markdown), [outreach and community service](./outreach.markdown), and [teaching](./mentoring.html#teaching) is important to me; my efforts in these contexts are described on the corresponding pages.
 
 I am a member of the [Dark Energy Survey (DES)](https://www.darkenergysurvey.org/) Milky Way working group, [Dark Energy Science Collaboration (DESC)](https://lsstdesc.org/) Dark Matter Working Group, [Satellites Around Galactic Analogs Survey (SAGA)](https://sagasurvey.org/), and [DECam Local Volume Exploration Survey (DELVE)](https://delve-survey.github.io/).
 
