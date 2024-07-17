@@ -6,17 +6,19 @@ layout: default
 cover:  true
 ---
 
-Welcome! I am a joint postdoctoral research fellow at [Carnegie Observatories](https://carnegiescience.edu/obs) in the [Carnegie Theoretical Astrophysics Center](https://ctac.carnegiescience.edu/) and the [University of Southern California Department of Physics and Astronomy](https://dornsife.usc.edu/physics/) in the [Cosmolab group](https://cosmolab.usc.edu/). In January 2025, I will begin as an assistant professor at the [University of California, San Diego Department of Astronomy & Astrophysics](https://astro.ucsd.edu/).
+Welcome! I am a joint postdoctoral research fellow at [Carnegie Observatories](https://carnegiescience.edu/obs) in the [Carnegie Theoretical Astrophysics Center](https://ctac.carnegiescience.edu/) and the [University of Southern California Department of Physics and Astronomy](https://dornsife.usc.edu/physics/) in the [Cosmolab group](https://cosmolab.usc.edu/).
+
+In January 2025, I will begin as an assistant professor at the [University of California, San Diego Department of Astronomy & Astrophysics](https://astro.ucsd.edu/).
 
 My [research](./research.markdown) focuses on galaxy formation, dark matter physics, and near-field cosmology. I am interested the formation and evolution of the faintest galaxies, the microphysical nature of dark matter, and the growth of nonlinear cosmic structure. I tackle these problems by combining semi-analytic models of the galaxy--halo connection, cosmological simulations, dark matter theory, and observations of small-scale structure including dwarf galaxies and strong gravitational lenses.
 
 Building an inclusive scientific community through [mentoring](./mentoring.markdown), [outreach](./outreach.markdown), [community service](./outreach.html#service), and [teaching](./mentoring.html#teaching) is important to me; my efforts in these contexts are described on the corresponding pages.
 
-I am a member of the [Dark Energy Survey](https://www.darkenergysurvey.org/) Milky Way working group, [Dark Energy Science Collaboration](https://lsstdesc.org/) Dark Matter Working Group, and the [Satellites Around Galactic Analogs Survey](https://sagasurvey.org/) and [DECam Local Volume Exploration Survey](https://delve-survey.github.io/).
+I am a member of the [Dark Energy Survey (DES)](https://www.darkenergysurvey.org/) Milky Way working group, [Dark Energy Science Collaboration (DESC)](https://lsstdesc.org/) Dark Matter Working Group, and the [Satellites Around Galactic Analogs Survey (SAGA)](https://sagasurvey.org/) and [DECam Local Volume Exploration Survey (DELVE)](https://delve-survey.github.io/).
 
 Please see my [CV](./CV.pdf), [publications](./publications.markdown), and [media](./media.markdown) for more information!
 
-## Opportunities
+## Research Opportunities
 
 I am actively seeking undergraduate, graduate, and postdoctoral researchers to join my group at UC San Diego. If you're interested, please email me at [enadler@carnegiescience.edu](mailto:enadler@carnegiescience.edu). A postdoctoral scholar job ad will be posted soon; check here for updates. 
 
