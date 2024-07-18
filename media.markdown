@@ -49,7 +49,7 @@ I have given over fifty contributed and invited talks, listed on my [CV](./CV.pd
 
 * **[CosmoPalooza: CMB-S4, DES, DESC, DESI](https://supernova.lbl.gov/~evlinder/cosmopalooza.html)**: *Dark Matter Physics + Rubin LSST* (1/12/2022);
 
-* **[Fermilab Cosmic Physics Center Seminar](https://astro.fnal.gov/events/event/cpc-seminar-4/)**: *Towards Precision Near-Field Cosmology* (11/22/2021) ([video](https://indico.fnal.gov/event/51395/attachments/149672/192758/video1553752966.mp4));
+* **[Fermilab: Cosmic Physics Center Seminar](https://astro.fnal.gov/events/event/cpc-seminar-4/)**: *Towards Precision Near-Field Cosmology* (11/22/2021) ([video](https://indico.fnal.gov/event/51395/attachments/149672/192758/video1553752966.mp4));
 
 * **[International Centre for Theoretical Sciences: Less Travelled Path of Dark Matter](https://www.icts.res.in/program/LTPDM2020)**: *Constraints on (Fuzzy) Dark Matter Microphysics from Dwarf Galaxies* (11/12/2020) ([video](https://www.youtube.com/watch?v=AxfI1MRQbuQ), [slides](https://www.icts.res.in/sites/default/files/seminar%20doc%20files/Nadler_ICTS_2020.pdf));
 
