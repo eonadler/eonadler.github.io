@@ -37,7 +37,7 @@ My work has been highlighted in a number of press releases, including:
  
 I have given over fifty contributed and invited talks, listed on my [CV](./CV.pdf), several of which are highlighted below:
 
-* **[Kavli Institue for Theoretical Physics Blackboard Talk](https://online.kitp.ucsb.edu/online/bblunch/)**: *Dark Matter Physics in the Sky* (6/17/2024) ([video](https://online.kitp.ucsb.edu/online/bblunch/nadler/));
+* **[KITP: Blackboard Talk](https://online.kitp.ucsb.edu/online/bblunch/)**: *Dark Matter Physics in the Sky* (6/17/2024) ([video](https://online.kitp.ucsb.edu/online/bblunch/nadler/));
 
 * **[LBNL: Fundamental Physics from Future Spectroscopic Surveys](https://indico.physics.lbl.gov/event/2769/)**: *Forecasts for Galaxy Formation and Dark Matter Constraints from Dwarf Galaxy Surveys* (5/8/2024) ([slides](https://indico.physics.lbl.gov/event/2769/contributions/8889/attachments/4449/6004/Nadler%20LBNL%202024.pdf));
 
@@ -53,10 +53,5 @@ I have given over fifty contributed and invited talks, listed on my [CV](./CV.pd
 
 * **[International Centre for Theoretical Sciences: Less Travelled Path of Dark Matter](https://www.icts.res.in/program/LTPDM2020)**: *Constraints on (Fuzzy) Dark Matter Microphysics from Dwarf Galaxies* (11/12/2020) ([video](https://www.youtube.com/watch?v=AxfI1MRQbuQ), [slides](https://www.icts.res.in/sites/default/files/seminar%20doc%20files/Nadler_ICTS_2020.pdf));
 
-* **[Kavli Institute for Cosmological Physics: Cosmic Controversies](https://voices.uchicago.edu/cosmiccontroversies/)**: *Milky Way Satellites:
+* **[KICP: Cosmic Controversies](https://voices.uchicago.edu/cosmiccontroversies/)**: *Milky Way Satellites:
 Probes of Dark Matter Microphysics* (10/7/2019) ([slides](https://kicp-workshops.uchicago.edu/2019-COSMIC/depot/nadler-ethan.pdf));
-
-* **[UC Berkeley Center for Cosmological Physics: Cosmology Seminar](https://cosmology.lbl.gov/talks/Nadler_18.pdf)**: *Modeling Subhalos and Satellites
-in Milky Way-like Systems* (4/24/2018) ([slides](https://cosmology.lbl.gov/talks/Nadler_18.pdf));
-
-* **[KITP: The Galaxy--Halo Connection Across Cosmic Time](https://www.kitp.ucsb.edu/activities/galhalo17)**: *Predicting Realistic Subhalo Populations* (7/5/2017).

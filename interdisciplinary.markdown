@@ -31,7 +31,7 @@ I collaborate on and lead interdisciplinary research at the intersection of cogn
 
 I am involved in several artistic pursuits related to my research. Examples include:
 
-* **[iSCC Color Impact 2023: Color and Human Experience](https://iscc.org/CI23-art-exhibit/)**: *[144 Red Words](https://drive.google.com/file/d/1c8hJhjVgDO-iKjykKesnd00C7UfwXvoz/view?usp=sharing)* (Professional - Honorable Mention; proceeds donated to [Create Now](https://createnow.org/)).
+* **[iSCC Color Impact 2023: Color and Human Experience](https://iscc.org/CI2023)**: *[144 Red Words](https://drive.google.com/file/d/1c8hJhjVgDO-iKjykKesnd00C7UfwXvoz/view?usp=sharing)* (Professional - Honorable Mention; proceeds donated to [Create Now](https://createnow.org/)).
 
 * **[CharityBuzz](https://www.charitybuzz.com/catalog_items/auction-144-poems-by-emily-dickinson-144-poems-by-2068100)**: *[144 Poems by Emily Dickinson and 144 Poems by Shakespeare](https://comp-syn.com/#/gallery/dickinsonthenshakespeare)* (proceeds donated to [Black Artists + Designers Guild](https://www.badguild.info/)).
 
