@@ -37,7 +37,7 @@ My work has been highlighted in a number of press releases, including:
  
 I have given over fifty contributed and invited talks, listed on my [CV](./CV.pdf), several of which are highlighted below:
 
-* **[Kavli Institue for Theoretical Physics Blackboard Talk](https://online.kitp.ucsb.edu/online/bblunch/nadler/)**: *Dark Matter Physics in the Sky* (6/17/2024);
+* **[Kavli Institue for Theoretical Physics Blackboard Talk](https://online.kitp.ucsb.edu/online/bblunch/)**: *Dark Matter Physics in the Sky* (6/17/2024) ([video](https://online.kitp.ucsb.edu/online/bblunch/nadler/));
 
 * **[LBNL: Fundamental Physics from Future Spectroscopic Surveys](https://indico.physics.lbl.gov/event/2769/)**: *Forecasts for Galaxy Formation and Dark Matter Constraints from Dwarf Galaxy Surveys* (5/8/2024) ([slides](https://indico.physics.lbl.gov/event/2769/contributions/8889/attachments/4449/6004/Nadler%20LBNL%202024.pdf));
 
