@@ -6,7 +6,7 @@ layout: default
 cover:  true
 ---
 
-Welcome! I am a joint postdoctoral research fellow at [Carnegie Observatories](https://carnegiescience.edu/obs) in the [Carnegie Theoretical Astrophysics Center](https://ctac.carnegiescience.edu/) and the [University of Southern California Department of Physics and Astronomy](https://dornsife.usc.edu/physics/) in the [Cosmolab group](https://cosmolab.usc.edu/).
+Welcome! I am a joint postdoctoral research fellow at [Carnegie Observatories](https://carnegiescience.edu/obs) in the [Theoretical Astrophysics Center](https://ctac.carnegiescience.edu/) and the [University of Southern California Department of Physics & Astronomy](https://dornsife.usc.edu/physics/) in [Cosmolab](https://cosmolab.usc.edu/).
 
 In January 2025, I will begin as an assistant professor at the [University of California, San Diego Department of Astronomy & Astrophysics](https://astro.ucsd.edu/).
 
