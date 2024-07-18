@@ -10,7 +10,7 @@ Welcome! I am a joint postdoctoral research fellow at [Carnegie Observatories](h
 
 In January 2025, I will begin as an assistant professor at the [University of California, San Diego Department of Astronomy & Astrophysics](https://astro.ucsd.edu/).
 
-My [research](./research.markdown) focuses on galaxy formation, dark matter, and near-field cosmology. I study the formation and evolution of the faintest galaxies, the microphysical nature of dark matter, and small-scale cosmic structure. I tackle these problems using cosmological simulations, semi-analytic models of the galaxy--halo connection, and observations of dwarf galaxies and strong gravitational lenses.
+My [research](./research.markdown) focuses on galaxy formation, dark matter, and near-field cosmology. I study the formation and evolution of the faintest galaxies, the microphysical nature of dark matter, and the growth of nonlinear cosmic structure. I tackle these problems using cosmological simulations, semi-analytic models of the galaxy--halo connection, dark matter theory, and observations of dwarf galaxies and strong gravitational lenses.
 
 Building an inclusive scientific community through [mentoring](./mentoring.markdown), [outreach and community service](./outreach.markdown), and [teaching](./mentoring.html#teaching) is important to me; my efforts in these contexts are described on the corresponding pages.
 
