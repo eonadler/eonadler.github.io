@@ -53,8 +53,9 @@ My work in this area addresses the following key questions:
 I am leading COZMIC: COsmological ZooM-in simulations with Initial Conditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter; many of these simulations include dark matter self-interactions. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and accurately captures the impact of dark matter physics on small-scale structure.
 </p>
 
-
+<p align="center">
 ![cozmic]({{eonadler.github.io}}/assets/img/cozmic_viz.jpeg){:width="75%" :align="center"}
+</p>
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
 COZMIC simulations with initial conditions for warm dark matter (first row), ultra-light "fuzzy" dark matter (second row), and dark matter--proton scattering models (bottom rows). Adapted from E. O. Nadler et al., in preparation.
 </sub></p>
