@@ -9,7 +9,7 @@ title: Research
 
 ## Galaxy Formation
 
-How did the smallest galaxies form and evolve? Recent surveys have revealed a large population of nearby dwarf galaxies, the faintest of which only have hundreds of stars; upcoming facilities including the <a href="https://www.lsst.org/">Vera C. Rubin Observatory</a> will discover thousands of these ultra-faint systems. In parallel, the ancestors of bright dwarf galaxies are being detected at high redshifts by <a href="https://webb.nasa.gov/">JWST</a>, providing a link between nearby and early galaxy populations.
+How did the smallest galaxies form and evolve? Recent surveys have revealed a large population of nearby dwarf galaxies, the faintest of which only have hundreds of stars; facilities including the <a href="https://www.lsst.org/">Vera C. Rubin Observatory</a> will discover thousands of these ultra-faint galaxies. In parallel, the ancestors of bright dwarf galaxies are being detected at high redshifts by <a href="https://webb.nasa.gov/">JWST</a>, providing a link between nearby and early galaxy populations.
 
 My work in this area addresses the following key questions:
 
@@ -33,7 +33,7 @@ My work in this area addresses the following key questions:
 
 ## Near-field Cosmology
 
-How can observations of the local universe inform cosmology? Our galaxy and its surroundings grew out of primordial density fluctuations that probe early-universe dynamics and inflation. Reconstructing these *linear* initial conditions is challenging because they are processed by *nonlinear* structure formation. For the first time, it is becoming possible to address this bottleneck using empirical, semi-analytic, and simulation-based models.
+How can observations of the local universe inform cosmology? Our galaxy and its surroundings grew out of primordial density fluctuations set by early-universe dynamics and inflation. Reconstructing these *linear* initial conditions is challenging because they are processed by *nonlinear* structure formation. For the first time, it is becoming possible to address this bottleneck using empirical, semi-analytic, and simulation-based models.
 
 My work in this area addresses the following key questions:
 
