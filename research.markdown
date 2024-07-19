@@ -9,7 +9,7 @@ title: Research
 
 ## Galaxy Formation
 
-How did the faintest galaxies form and evolve? Recent surveys have revealed a large population of local ultra-faint dwarf galaxies, the faintest of which have only hundreds of stars, and upcoming facilities including the <a href="https://www.lsst.org/">Vera C. Rubin Observatory</a> will discover thousands more. In parallel, the ancestors of bright dwarf galaxies are being detected at high redshifts by <a href="https://webb.nasa.gov/">JWST</a>, thereby connecting nearby and early galaxy populations.
+How did the smallest galaxies form and evolve? Recent surveys have revealed a large population of local ultra-faint dwarf galaxies, the faintest of which have only hundreds of stars, and upcoming facilities including the <a href="https://www.lsst.org/">Vera C. Rubin Observatory</a> will discover thousands more. In parallel, the ancestors of bright dwarf galaxies are being detected at high redshifts by <a href="https://webb.nasa.gov/">JWST</a>, thereby connecting nearby and early galaxy populations.
 
 My work in this area addresses the following key questions:
 
@@ -33,7 +33,7 @@ My work in this area addresses the following key questions:
 
 ## Near-field Cosmology
 
-How can observations of the local universe inform cosmology? Our galaxy and its surroundings grew out of primordial density fluctuations that probe early-universe dynamics and inflation. Reconstructing the properties of these *linear* initial conditions is extremely challenging because they are highly processed by *nonlinear* structure formation. For the first time, it is becoming possible to address this bottleneck by combining empirical, semi-analytic, and simulation-based models.
+How can observations of the local universe inform cosmology? Our galaxy and its surroundings grew out of primordial density fluctuations that probe early-universe dynamics and inflation. Reconstructing these *linear* initial conditions is challenging because they are processed by *nonlinear* structure formation. For the first time, it is becoming possible to address this bottleneck using empirical, semi-analytic, and simulation-based models.
 
 My work in this area addresses the following key questions:
 
@@ -50,11 +50,11 @@ My work in this area addresses the following key questions:
 #### COZMIC
 
 <p style="margin-bottom: 35px">
-I am leading COZMIC: COsmological ZooM-in simulations with Initial Conditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter; many of these simulations include dark matter self-interactions. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and provides accurate predictions for the impact of dark matter physics on small-scale structure.
+I am leading COZMIC: COsmological ZooM-in simulations with Initial Conditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter; many of these simulations include dark matter self-interactions. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and accurately captures the impact of dark matter physics on small-scale structure.
 </p>
 
 
-![cozmic]({{eonadler.github.io}}/assets/img/cozmic_viz.jpeg){:width="75%" align="center"}
+![cozmic]({{eonadler.github.io}}/assets/img/cozmic_viz.jpeg){:width="75%" :align="center"}
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
 COZMIC simulations with initial conditions for warm dark matter (first row), ultra-light "fuzzy" dark matter (second row), and dark matter--proton scattering models (bottom rows). Adapted from E. O. Nadler et al., in preparation.
 </sub></p>
@@ -62,7 +62,7 @@ COZMIC simulations with initial conditions for warm dark matter (first row), ult
 #### Milky Way-est
 
 <p style="margin-bottom: 35px">
-I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>, the first cosmological dark matter-only zoom-in simulation suite of 20 systems that specifically resemble the <a href="https://en.wikipedia.org/wiki/Milky_Way">Milky Way</a>. Milky Way-est provides a realistic template for modeling our galaxy's dark matter structure and substructure in CDM, including its satellite galaxy and stellar stream population. See <a href="https://web.stanford.edu/group/gfc/gfcsims/build/html/mwest_overview.html">here</a> for details and data access.
+I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>: a cosmological dark matter-only zoom-in simulation suite of 20 systems that specifically resemble the Milky Way. Milky Way-est provides a realistic template for our galaxy's structure and substructure in CDM, including its satellite galaxy and stellar stream population. See <a href="https://web.stanford.edu/group/gfc/gfcsims/build/html/mwest_overview.html">here</a> for details and data access.
 </p>
 
 ![Halo004]({{eonadler.github.io}}/assets/img/frame__halo_004_mwest_00000.png){:width="19.5%"}
@@ -71,7 +71,7 @@ I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>, the
 ![Halo659]({{eonadler.github.io}}/assets/img/frame__halo_659_mwest_00000.png){:width="19.5%"}
 ![Halo756]({{eonadler.github.io}}/assets/img/frame__halo_756_mwest_00000.png){:width="19.5%"}
 <p style="line-height: 1.0; margin-top: -10px; margin-bottom: -10px"><sub> 
-Dark matter distributions in five Milky Way-est simulations in a standard CDM cosmology. Each image is centered on the dark matter halo that hosts the Milky Way, and analogs of the Milky Way's largest satellite galaxy, the <a href="https://en.wikipedia.org/wiki/Large_Magellanic_Cloud">LMC</a>, are visible near the center of each system. Adapted from <a href="https://arxiv.org/abs/2404.08043">Buch & Nadler et al. 2024</a>.
+Dark matter distributions in five Milky Way-est simulations in a standard CDM cosmology. Each image is centered on the dark matter halo that hosts the Milky Way, and analogs of the Milky Way's largest satellite galaxy, the LMC, are visible near the center of each system. Adapted from <a href="https://arxiv.org/abs/2404.08043">Buch & Nadler et al. 2024</a>.
 </sub></p>
 
 #### Symphony
