@@ -9,7 +9,7 @@ title: Research
 
 ## Galaxy Formation
 
-How did the smallest galaxies form and evolve? Recent surveys have revealed a large population of local ultra-faint dwarf galaxies, the faintest of which have only hundreds of stars, and upcoming facilities including the <a href="https://www.lsst.org/">Vera C. Rubin Observatory</a> will discover thousands more. In parallel, the ancestors of bright dwarf galaxies are being detected at high redshifts by <a href="https://webb.nasa.gov/">JWST</a>, thereby connecting nearby and early galaxy populations.
+How did the smallest galaxies form and evolve? Recent surveys have revealed a large population of local ultra-faint dwarf galaxies, the faintest of which only have hundreds of stars; upcoming facilities including the <a href="https://www.lsst.org/">Vera C. Rubin Observatory</a> will discover thousands of these systems. In parallel, the ancestors of bright dwarf galaxies are being detected at high redshifts by <a href="https://webb.nasa.gov/">JWST</a>, providing a link between nearby and early galaxy populations.
 
 My work in this area addresses the following key questions:
 
@@ -54,7 +54,7 @@ I am leading COZMIC: COsmological ZooM-in simulations with Initial Conditions be
 </p>
 
 <p align="center">
-![cozmic]({{eonadler.github.io}}/assets/img/cozmic_viz.jpeg){:width="75%" :align="center"}
+<img src="https://eonadler.github.io/assets/img/cozmic_viz.jpeg" alt="cozmic" width="75%">
 </p>
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
 COZMIC simulations with initial conditions for warm dark matter (first row), ultra-light "fuzzy" dark matter (second row), and dark matter--proton scattering models (bottom rows). Adapted from E. O. Nadler et al., in preparation.
@@ -120,10 +120,10 @@ Constraints on sterile neutrino warm dark matter (left panel) and dark matter--S
 
 ## Miscellaneous
 
+I have led the following ; please see [mentoring](./mentorship.markdown) for information about student projects.
+
 In addition to cosmological simulations and semi-analytic modeling, I have studied dark matter in the context of the [effective field theory of large-scale structure](https://arxiv.org/abs/1710.10308) and [idealized hydrodynamic simulations of halo formation](https://arxiv.org/abs/1701.01449).
 
 I have applied machine learning techniques to the dark matter problem to efficiently model [hydrodynamic simulations](https://arxiv.org/abs/1712.04467) and the [galaxy--halo connection](https://cs230.stanford.edu/projects_fall_2018/posters/12264334.pdf), and to [generate realizations of dark matter substructure](http://cs229.stanford.edu/proj2017/final-reports/5210762.pdf).
 
 I have also collaborated on projects including [dwarf galaxy detection using astrometric data](https://arxiv.org/abs/2012.00099), [modeling star formation in dwarf galaxies](https://arxiv.org/abs/2102.11876), and structure formation limits on [dark matter--proton](https://arxiv.org/abs/2010.02936) and [electron](https://arxiv.org/abs/2107.12380) scattering.
-
-Please see [Mentorship & Teaching](./mentorship.markdown) for information about student projects.
