@@ -57,7 +57,7 @@ I am leading COZMIC: <b>CO</b>smological <b>Z</b>oo<b>M</b>-in simulations with 
 <img src="https://eonadler.github.io/assets/img/cozmic_viz.jpeg" alt="cozmic" width="75%">
 </p>
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
-COZMIC simulations with initial conditions for warm dark matter (first row), ultra-light "fuzzy" dark matter (second row), and dark matter--proton scattering models (bottom rows). Adapted from E. O. Nadler et al., in preparation.
+COZMIC simulations with initial conditions for warm dark matter (first row), ultra-light "fuzzy" dark matter (second row), and dark matter--proton scattering models (bottom rows). Adapted from Nadler et al., in preparation.
 </sub></p>
 
 #### [Milky Way-est](https://web.stanford.edu/group/gfc/gfcsims/build/html/mwest_overview.html)
@@ -78,7 +78,7 @@ Dark matter distributions in five Milky Way-est simulations. Each image is cente
 #### [Symphony](https://web.stanford.edu/group/gfc/gfcsims/build/html/symphony_overview.html)
 
 <p style="margin-bottom: 35px">
-I led <a href="https://iopscience.iop.org/article/10.3847/1538-4357/acb68c">Symphony</a>, a compilation of 262 cosmological dark matter-only zoom-in simulations spanning four decades of host halo mass. Symphony includes host halos with masses similar to the LMC, Milky Way, galaxy group systems (e.g., strong gravitational lenses), low-mass galaxy clusters, and massive galaxy clusters.
+I led <a href="https://iopscience.iop.org/article/10.3847/1538-4357/acb68c">Symphony</a>, a compilation of 262 cosmological dark matter-only zoom-in simulations spanning four decades of host halo mass. Symphony includes host halos with masses similar to the LMC, Milky Way, group-mass systems (e.g., strong gravitational lenses), low-mass galaxy clusters, and massive galaxy clusters.
 </p>
 
 ### Empirical and Semi-analytic Models
@@ -97,7 +97,7 @@ Example of a Milky Way system's merger tree (left panel) and dark matter substru
 #### Faint-end Galaxy--Halo Connection
 
 <p style="margin-bottom: 32px">
-I have developed an empirical model and inference framework for the galaxy--halo connection that extends to the faintest dwarf galaxies. This framework includes a <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aac266">machine-learning model for satellite disruption due to central galaxies</a> and an <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab040e">empirical model for the subhalo--satellite galaxy connection</a>.
+I have developed an empirical model and inference framework for the galaxy--halo connection that extends to the faintest dwarf galaxies. This framework includes a <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aac266">machine-learning model for satellite disruption due to central galaxies</a>, an <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab040e">empirical model for the subhalo--satellite galaxy connection</a>, and <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad3bb1">forecaststing tools for future surveys</a>.
 </p>
 
 <p style="margin-bottom: 30px">
@@ -114,15 +114,17 @@ The fraction of low-mass halos that host galaxies (left panel) and the correspon
 #### Small-scale Structure Limits
 
 <p style="margin-bottom: 32px">
-In <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.091101">Nadler et al. (2020)</a>, I used the Milky Way satellite framework described above to constrain dark matter's production mechanism, particle mass, and Standard Model interactions. In <a href="https://iopscience.iop.org/article/10.3847/1538-4357/abf9a3">Nadler et al. (2021)</a>, I combined these constraints with strong gravitational lensing flux ratio statistics to set the most stringent warm dark matter limit to date.
+In <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.091101">Nadler et al. (2021a)</a>, I used the Milky Way satellite framework described above to constrain dark matter's production mechanism, particle mass, and Standard Model interactions. In <a href="https://iopscience.iop.org/article/10.3847/1538-4357/abf9a3">Nadler et al. (2021b)</a>, I combined these constraints with strong lensing flux ratio statistics to set the most stringent warm dark matter limit to date.
 </p>
 
 ![dm]({{eonadler.github.io}}/assets/img/dm_constraints.png){:width="100%"}
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -15px"><sub> 
-Constraints on sterile neutrino warm dark matter (left panel) and dark matter--Standard Model interactions (right panel) derived using the population of ultra-faint dwarf galaxies near the Milky Way. Red and blue regions are excluded by our analysis, which improves upon other astrophysical limits and complements direct detection experiments. Adapted from <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.091101">Nadler et al. (2021)</a>.
+Constraints on sterile neutrino warm dark matter (left panel) and dark matter--Standard Model interactions (right panel) derived using the population of ultra-faint dwarf galaxies near the Milky Way. Red and blue regions are excluded by our analysis, which improves upon other astrophysical limits and complements direct detection experiments. Adapted from <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.091101">Nadler et al. (2021a)</a>.
 </sub></p>
 
 #### Self-interacting Dark Matter Predictions
+
+In <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad0e09">Nadler, Yang, & Yu (2023)</a>, I ran the first cosmological simulation with strong, velocity-dependent dark matter self-interactions in a strong lens analog. The predicted halo and subhalo populations explain both an extremely dense substructure perturbing the strong lens galaxy SDSSJ0946+1006 and the rotation curves of isolated, gas-rich ultradiffuse galaxies.
 
 ## Miscellaneous
 
@@ -130,8 +132,14 @@ I have led and advised projects in the following areas (see [mentoring](./mentor
 
 * Dwarf galaxy star formation history modeling ([Wang & Nadler et al. 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac024a), [2024](https://arxiv.org/abs/2404.14500));
 
-* Dwarf galaxy detection using GAIA data ([Darragh-Ford & Nadler et al. 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac0053));
+* Milky Way satellite constraints on dark matter's formation epoch ([Das & Nadler 2021](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.103.043517)), particle lifetime ([Mau & Nadler et al. 2022](https://iopscience.iop.org/article/10.3847/1538-4357/ac6e65)), and interactions with radiation ([Crumrine & Nadler et al. 2024](https://arxiv.org/abs/2406.19458);
 
-* Halo clustering predictions in the effective field theory of large-scale structure ([Nadler et al. 2018](https://iopscience.iop.org/article/10.1088/1475-7516/2018/02/058));
+* Tidal disruption and dynamical friction modeling in self-interacting ultra-light dark matter ([Glennon & Nadler et al. 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540); [Glennon, Musoke, Nadler et al. 2024](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.063501));
+
+* Effects of dark matter--baryon interactions on 21-cm cosmology ([Driskell & Nadler et al. 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.103525));
+
+* Dwarf galaxy detection using GAIA ([Darragh-Ford & Nadler et al. 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac0053));
+
+* Halo clustering in the effective field theory of large-scale structure ([Nadler et al. 2018](https://iopscience.iop.org/article/10.1088/1475-7516/2018/02/058));
 
 * Hydrodynamic simulations of halo formation ([Nadler et al. 2017](https://academic.oup.com/mnras/article/470/1/500/3837819?login=false)).
