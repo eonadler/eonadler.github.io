@@ -72,7 +72,7 @@ I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>: a c
 ![Halo659]({{eonadler.github.io}}/assets/img/frame__halo_659_mwest_00000.png){:width="19.5%"}
 ![Halo756]({{eonadler.github.io}}/assets/img/frame__halo_756_mwest_00000.png){:width="19.5%"}
 <p style="line-height: 1.0; margin-top: -10px; margin-bottom: -10px"><sub> 
-Dark matter distributions in five Milky Way-est CDM simulations. Each image is centered on the dark matter halo that hosts the Milky Way; analogs of the Milky Way's largest satellite, the LMC, are visible near the center of each system. Adapted from <a href="https://arxiv.org/abs/2404.08043">Buch & Nadler et al. 2024</a>.
+Dark matter distributions in five Milky Way-est simulations. Each image is centered on a Milky Way-mass host halo; analogs of the Milky Way's largest satellite, the LMC, are visible near the center of each system. Adapted from <a href="https://arxiv.org/abs/2404.08043">Buch & Nadler et al. 2024</a>.
 </sub></p>
 
 #### [Symphony](https://web.stanford.edu/group/gfc/gfcsims/build/html/symphony_overview.html)
@@ -81,9 +81,9 @@ Dark matter distributions in five Milky Way-est CDM simulations. Each image is c
 I led <a href="https://arxiv.org/abs/2209.02675">Symphony</a>, a compilation of 262 cosmological dark matter-only zoom-in simulations spanning four decades of host halo mass. Symphony includes host halos with masses similar to the LMC, Milky Way, galaxy group systems (e.g., strong gravitational lenses), low-mass galaxy clusters, and massive galaxy clusters.
 </p>
 
-### Galaxy--Halo Connection Models
+### Empirical and Semi-analytic Models
 
-#### Semi-analytic
+#### Constrained Merger Trees
 
 <p style="margin-bottom: 32px">
 I am expanding the open-source structure and galaxy formation model <a href="https://github.com/galacticusorg/galacticus/wiki">GALACTICUS</a> to efficiently and accurately generate constrained realizations of the Milky Way's subhalo and satellite galaxy population. This tool will be thousands of times faster than existing methods and calibrated on COZMIC simulations. In <a href="https://academic.oup.com/mnras/article/521/3/3201/7068109?login=false">Nadler et al. 2022</a>, I introduced the constrained merger tree technique to model high-redshift JWST galaxies.
@@ -94,7 +94,7 @@ I am expanding the open-source structure and galaxy formation model <a href="htt
 Example of an assembly history for a Milky Way-mass system (left panel) and its dark matter substructure (right panel) generated using GALACTICUS. Our approach guarantees that key observational constraints on the Milky Way's evolution, including the recent infall of the Large Magellanic Cloud (red circle), are satisfied.
 </sub></p>
 
-#### Empirical
+#### Galaxy--Halo Connection Model
 
 <p style="margin-bottom: 32px">
 I have developed an empirical model and inference framework for the galaxy--halo connection that extends to the faintest dwarf galaxies. This framework includes a <a href="https://arxiv.org/abs/1712.04467">machine-learning model for satellite disruption due to central galaxies</a> and an <a href="https://arxiv.org/abs/1809.055427">empirical model for the subhalo--satellite galaxy connection</a>.
@@ -108,6 +108,8 @@ In <a href="https://arxiv.org/abs/1912.03303">Nadler et al. 2020</a>, I applied 
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -15px"><sub>
 The fraction of low-mass halos that host galaxies (left panel) and the corresponding stellar mass--halo mass relation (right panel), derived by combining a galaxy--halo connection model with observations of the Milky Way dwarf satellite galaxy population. Blue regions are allowed by the data. The smallest halos consistent with hosting ultra-faint dwarf galaxies weigh ~100 million solar masses, and may have formed stars through molecular hydrogen cooling. Adapted from <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab846a">Nadler et al. (2020)</a>.
 </sub></p>
+
+### Dark Matter Constraints
 
 <p style="margin-bottom: 32px">
 In <a href="https://arxiv.org/abs/2008.00022">Nadler et al. (2020)</a>, I used this framework to constrain dark matter's production mechanism, particle mass, and Standard Model. In <a href="https://arxiv.org/abs/2101.07810">Nadler et al. (2021)</a>, I combined these Milky Way satellite constraints with strong gravitational lensing flux ratio statistics to set the most stringent warm dark matter limit to date.
