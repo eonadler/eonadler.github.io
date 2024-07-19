@@ -114,7 +114,7 @@ The fraction of low-mass halos that host galaxies (left panel) and the correspon
 #### Small-scale Structure Limits
 
 <p style="margin-bottom: 32px">
-In <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.091101">Nadler et al. (2020)</a>, I used the galaxy--halo connection framework described above to constrain dark matter's production mechanism, particle mass, and Standard Model interactions. In <a href="https://iopscience.iop.org/article/10.3847/1538-4357/abf9a3">Nadler et al. (2021)</a>, I combined these Milky Way satellite constraints with strong gravitational lensing flux ratio statistics to set the most stringent warm dark matter limit to date.
+In <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.091101">Nadler et al. (2020)</a>, I used the Milky Way satellite framework described above to constrain dark matter's production mechanism, particle mass, and Standard Model interactions. In <a href="https://iopscience.iop.org/article/10.3847/1538-4357/abf9a3">Nadler et al. (2021)</a>, I combined these constraints with strong gravitational lensing flux ratio statistics to set the most stringent warm dark matter limit to date.
 </p>
 
 ![dm]({{eonadler.github.io}}/assets/img/dm_constraints.png){:width="100%"}
@@ -126,7 +126,7 @@ Constraints on sterile neutrino warm dark matter (left panel) and dark matter--S
 
 ## Miscellaneous
 
-I have led and advised the projects in the following areas (see [mentoring](./mentorship.markdown) for more information about student projects):
+I have led and advised projects in the following areas (see [mentoring](./mentorship.markdown) for more information about student projects):
 
 * Dwarf galaxy star formation history modeling ([Wang & Nadler et al. 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac024a), [2024](https://arxiv.org/abs/2404.14500));
 
