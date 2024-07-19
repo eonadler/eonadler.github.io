@@ -9,7 +9,7 @@ title: Research
 
 ## Galaxy Formation
 
-How did the smallest galaxies form and evolve? Recent surveys have revealed a large population of local ultra-faint dwarf galaxies, the faintest of which only have hundreds of stars; upcoming facilities including the <a href="https://www.lsst.org/">Vera C. Rubin Observatory</a> will discover thousands of these systems. In parallel, the ancestors of bright dwarf galaxies are being detected at high redshifts by <a href="https://webb.nasa.gov/">JWST</a>, providing a link between nearby and early galaxy populations.
+How did the smallest galaxies form and evolve? Recent surveys have revealed a large population of nearby dwarf galaxies, the faintest of which only have hundreds of stars; upcoming facilities including the <a href="https://www.lsst.org/">Vera C. Rubin Observatory</a> will discover thousands of these ultra-faint systems. In parallel, the ancestors of bright dwarf galaxies are being detected at high redshifts by <a href="https://webb.nasa.gov/">JWST</a>, providing a link between nearby and early galaxy populations.
 
 My work in this area addresses the following key questions:
 
@@ -60,10 +60,10 @@ I am leading COZMIC: COsmological ZooM-in simulations with Initial Conditions be
 COZMIC simulations with initial conditions for warm dark matter (first row), ultra-light "fuzzy" dark matter (second row), and dark matter--proton scattering models (bottom rows). Adapted from E. O. Nadler et al., in preparation.
 </sub></p>
 
-#### Milky Way-est
+#### [Milky Way-est](https://web.stanford.edu/group/gfc/gfcsims/build/html/mwest_overview.html)
 
 <p style="margin-bottom: 35px">
-I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>: a cosmological dark matter-only zoom-in simulation suite of 20 systems that specifically resemble the Milky Way. Milky Way-est provides a realistic template for our galaxy's structure and substructure in CDM, including its satellite galaxy and stellar stream population. See <a href="https://web.stanford.edu/group/gfc/gfcsims/build/html/mwest_overview.html">here</a> for details and data access.
+I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>: a cosmological dark matter-only zoom-in simulation suite of 20 systems that specifically resemble the Milky Way. Milky Way-est provides a realistic template for modeling our galaxy's substructure, including its satellite galaxy and stellar stream population.
 </p>
 
 ![Halo004]({{eonadler.github.io}}/assets/img/frame__halo_004_mwest_00000.png){:width="19.5%"}
@@ -75,10 +75,10 @@ I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>: a c
 Dark matter distributions in five Milky Way-est simulations in a standard CDM cosmology. Each image is centered on the dark matter halo that hosts the Milky Way, and analogs of the Milky Way's largest satellite galaxy, the LMC, are visible near the center of each system. Adapted from <a href="https://arxiv.org/abs/2404.08043">Buch & Nadler et al. 2024</a>.
 </sub></p>
 
-#### Symphony
+#### [Symphony](https://web.stanford.edu/group/gfc/gfcsims/build/html/symphony_overview.html)
 
 <p style="margin-bottom: 35px">
-I led <a href="https://arxiv.org/abs/2209.02675">Symphony</a>, a compilation of 262 cosmological dark matter-only zoom-in simulations spanning four decades of host halo mass. Symphony includes host halos with masses similar to the LMC, Milky Way, galaxy group systems (e.g., strong gravitational lenses), low-mass galaxy clusters, and massive galaxy clusters. See <a href="https://web.stanford.edu/group/gfc/gfcsims/build/html/symphony_overview.html">here</a> for details and data access.
+I led <a href="https://arxiv.org/abs/2209.02675">Symphony</a>, a compilation of 262 cosmological dark matter-only zoom-in simulations spanning four decades of host halo mass. Symphony includes host halos with masses similar to the LMC, Milky Way, galaxy group systems (e.g., strong gravitational lenses), low-mass galaxy clusters, and massive galaxy clusters.
 </sub></p>
 
 ### Galaxy--Halo Connection Modeling
