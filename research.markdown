@@ -50,7 +50,7 @@ My work in this area addresses the following key questions:
 #### COZMIC
 
 <p style="margin-bottom: 35px">
-I am leading COZMIC: **CO**smological **Z**oo**M**-in simulations with **I**nitial **C**onditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter; many of these simulations include dark matter self-interactions. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and accurately captures the impact of dark matter physics on small-scale structure.
+I am leading COZMIC: <b>CO</b>smological <b>Z</b>oo<b>M</b>-in simulations with <b>I</b>nitial <b>C</b>onditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter; many of these simulations include dark matter self-interactions. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and accurately captures the impact of dark matter physics on small-scale structure.
 </p>
 
 <p align="center">
@@ -63,7 +63,7 @@ COZMIC simulations with initial conditions for warm dark matter (first row), ult
 #### [Milky Way-est](https://web.stanford.edu/group/gfc/gfcsims/build/html/mwest_overview.html)
 
 <p style="margin-bottom: 35px">
-I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>: a cosmological dark matter-only zoom-in simulation suite of 20 systems that specifically resemble the Milky Way. Milky Way-est provides a realistic template for modeling our galaxy's substructure, including its satellite galaxy and stellar stream population.
+I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>: a cosmological dark matter-only zoom-in simulation suite of 20 systems that specifically resemble the Milky Way. Milky Way-est provides a realistic template for modeling our galaxy's substructure in CDM, including its satellite galaxy and stellar stream population.
 </p>
 
 ![Halo004]({{eonadler.github.io}}/assets/img/frame__halo_004_mwest_00000.png){:width="19.5%"}
@@ -72,7 +72,7 @@ I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>: a c
 ![Halo659]({{eonadler.github.io}}/assets/img/frame__halo_659_mwest_00000.png){:width="19.5%"}
 ![Halo756]({{eonadler.github.io}}/assets/img/frame__halo_756_mwest_00000.png){:width="19.5%"}
 <p style="line-height: 1.0; margin-top: -10px; margin-bottom: -10px"><sub> 
-Dark matter distributions in five Milky Way-est simulations in a standard CDM cosmology. Each image is centered on the dark matter halo that hosts the Milky Way, and analogs of the Milky Way's largest satellite galaxy, the LMC, are visible near the center of each system. Adapted from <a href="https://arxiv.org/abs/2404.08043">Buch & Nadler et al. 2024</a>.
+Dark matter distributions in five Milky Way-est CDM simulations. Each image is centered on the dark matter halo that hosts the Milky Way; analogs of the Milky Way's largest satellite, the LMC, are visible near the center of each system. Adapted from <a href="https://arxiv.org/abs/2404.08043">Buch & Nadler et al. 2024</a>.
 </sub></p>
 
 #### [Symphony](https://web.stanford.edu/group/gfc/gfcsims/build/html/symphony_overview.html)
