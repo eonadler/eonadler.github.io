@@ -15,9 +15,9 @@ My work in this area addresses the following key questions:
 
 * What is the halo mass threshold for galaxy formation?
 
-* When and how did gas cool to form stars in ultra-faint dwarf galaxies?
+* When and how does gas cool to form stars in ultra-faint dwarf galaxies?
 
-* How did our local reionization history impact dwarf galaxy evolution?
+* How does our local reionization history impact dwarf galaxy evolution?
 
 ## Dark Matter
 
@@ -29,7 +29,7 @@ My work in this area addresses the following key questions:
 
 * What are the unique astrophysical signatures of dark matter microphysics?
 
-* Can we combine small-scale observables to detect a deviation from CDM?
+* Can we combine small-scale structure observables to detect a deviation from CDM?
 
 ## Near-field Cosmology
 
@@ -39,9 +39,9 @@ My work in this area addresses the following key questions:
 
 * Are there features in the small-scale linear power spectrum?
 
-* How can we efficiently and accurately model local structure?
+* How can we efficiently and accurately model structure in the local universe?
 
-* What can near-field cosmology reveal about the early universe?
+* What can near-field cosmology reveal about early universe dynamics and inflation?
 
 ## Techniques
 
