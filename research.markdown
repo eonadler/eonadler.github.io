@@ -91,17 +91,17 @@ I am expanding the open-source structure and galaxy formation model <a href="htt
 
 ![galacticus]({{eonadler.github.io}}/assets/img/galacticus.png){:width="100%"}
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
-Example of an assembly history for a Milky Way-mass system (left panel) and its dark matter substructure (right panel) generated using GALACTICUS. Our approach guarantees that key observational constraints on the Milky Way's evolution, including the recent infall of the Large Magellanic Cloud (red circle), are satisfied.
+Example of a Milky Way system's merger tree (left panel) and dark matter substructure (right panel) generated using GALACTICUS. The constrained merger tree technique guarantees that the Milky Way host (black) accretes an LMC analog (red).
 </sub></p>
 
-#### Galaxy--Halo Connection Model
+#### Faint-end Galaxy--Halo Connection
 
 <p style="margin-bottom: 32px">
 I have developed an empirical model and inference framework for the galaxy--halo connection that extends to the faintest dwarf galaxies. This framework includes a <a href="https://arxiv.org/abs/1712.04467">machine-learning model for satellite disruption due to central galaxies</a> and an <a href="https://arxiv.org/abs/1809.055427">empirical model for the subhalo--satellite galaxy connection</a>.
 </p>
 
 <p style="margin-bottom: 30px">
-In <a href="https://arxiv.org/abs/1912.03303">Nadler et al. 2020</a>, I applied this framework to <a href="https://www.darkenergysurvey.org/">Dark Energy Survey</a> and <a href="https://www2.ifa.hawaii.edu/research/Pan-STARRS.shtml">Pan-STARRS1</a> [Pan-STARRS1](https://www.ifa.hawaii.edu/research/Pan-STARRS.shtml) data to reveal the impact of the Large Magellanic Cloud on the Milky Way satellite population and constrain the faint-end galaxy--halo connection.
+In <a href="https://arxiv.org/abs/1912.03303">Nadler et al. 2020</a>, I applied this framework to Milky Way satellites observed by the <a href="https://www.darkenergysurvey.org/">Dark Energy Survey</a> and <a href="https://www2.ifa.hawaii.edu/research/Pan-STARRS.shtml">Pan-STARRS1</a> to reveal the impact of LMC-associated satellites and constrain the faint-end galaxy--halo connection.
 </p>
 
 ![galhalo]({{eonadler.github.io}}/assets/img/galhalo.png){:width="100%"}
@@ -109,23 +109,29 @@ In <a href="https://arxiv.org/abs/1912.03303">Nadler et al. 2020</a>, I applied 
 The fraction of low-mass halos that host galaxies (left panel) and the corresponding stellar mass--halo mass relation (right panel), derived by combining a galaxy--halo connection model with observations of the Milky Way dwarf satellite galaxy population. Blue regions are allowed by the data. The smallest halos consistent with hosting ultra-faint dwarf galaxies weigh ~100 million solar masses, and may have formed stars through molecular hydrogen cooling. Adapted from <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab846a">Nadler et al. (2020)</a>.
 </sub></p>
 
-### Dark Matter Constraints
+### Dark Matter Constraints and Predictions
+
+#### Small-scale Structure Limits
 
 <p style="margin-bottom: 32px">
-In <a href="https://arxiv.org/abs/2008.00022">Nadler et al. (2020)</a>, I used this framework to constrain dark matter's production mechanism, particle mass, and Standard Model. In <a href="https://arxiv.org/abs/2101.07810">Nadler et al. (2021)</a>, I combined these Milky Way satellite constraints with strong gravitational lensing flux ratio statistics to set the most stringent warm dark matter limit to date.
-</sub></p>
+In <a href="https://arxiv.org/abs/2008.00022">Nadler et al. (2020)</a>, I used the galaxy--halo connection framework described above to constrain dark matter's production mechanism, particle mass, and Standard Model interactions. In <a href="https://arxiv.org/abs/2101.07810">Nadler et al. (2021)</a>, I combined these Milky Way satellite constraints with strong gravitational lensing flux ratio statistics to set the most stringent warm dark matter limit to date.
+</p>
 
 ![dm]({{eonadler.github.io}}/assets/img/dm_constraints.png){:width="100%"}
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -15px"><sub> 
-Constraints on sterile neutrino warm dark matter (left panel) and dark matter--Standard Model interactions (right panel) derived using the population of ultra-faint dwarf galaxies near the Milky Way. Red and blue regions are excluded by our analysis, which improves upon other astrophysical limits and complements direct detection experiments. Adapted from <a href="https://arxiv.org/abs/2008.00022">Nadler & Drlica-Wagner et al. (2021)</a>.
+Constraints on sterile neutrino warm dark matter (left panel) and dark matter--Standard Model interactions (right panel) derived using the population of ultra-faint dwarf galaxies near the Milky Way. Red and blue regions are excluded by our analysis, which improves upon other astrophysical limits and complements direct detection experiments. Adapted from <a href="https://arxiv.org/abs/2008.00022">Nadler et al. (2021)</a>.
 </sub></p>
+
+#### Self-interacting Dark Matter Predictions
 
 ## Miscellaneous
 
-I have led the following ; please see [mentoring](./mentorship.markdown) for information about student projects.
+I have led and advised the projects in the following areas (see [mentoring](./mentorship.markdown) for more information about student projects):
 
-In addition to cosmological simulations and semi-analytic modeling, I have studied dark matter in the context of the [effective field theory of large-scale structure](https://arxiv.org/abs/1710.10308) and [idealized hydrodynamic simulations of halo formation](https://arxiv.org/abs/1701.01449).
+* Dwarf galaxy star formation history modeling ([Wang & Nadler et al. 2021](https://arxiv.org/abs/2102.11876), [2024](https://arxiv.org/abs/2404.14500));
 
-I have applied machine learning techniques to the dark matter problem to efficiently model [hydrodynamic simulations](https://arxiv.org/abs/1712.04467) and the [galaxy--halo connection](https://cs230.stanford.edu/projects_fall_2018/posters/12264334.pdf), and to [generate realizations of dark matter substructure](http://cs229.stanford.edu/proj2017/final-reports/5210762.pdf).
+* Dwarf galaxy detection using GAIA data ([Darragh-Ford & Nadler et al. 2021](https://arxiv.org/abs/2012.00099));
 
-I have also collaborated on projects including [dwarf galaxy detection using astrometric data](https://arxiv.org/abs/2012.00099), [modeling star formation in dwarf galaxies](https://arxiv.org/abs/2102.11876), and structure formation limits on [dark matter--proton](https://arxiv.org/abs/2010.02936) and [electron](https://arxiv.org/abs/2107.12380) scattering.
+* Halo clustering predictions in the effective field theory of large-scale structure ([Nadler et al. 2018](https://arxiv.org/abs/1710.10308));
+
+* Hydrodynamic simulations of halo formation ([Nadler et al. 2017](https://arxiv.org/abs/1701.01449)).
