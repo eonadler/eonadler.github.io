@@ -95,7 +95,9 @@ Example of an assembly history for a Milky Way-mass system (left panel) and its 
 
 #### Empirical Techniques
 
+<p style="margin-bottom: 32px">
 The connection between dwarf galaxies and dark matter halos critically informs galaxy formation and dark matter science. I have developed a flexible empirical model of the galaxy--halo connection, which extends to the faintest known systems. This model and inference framework includes a [machine-learning model for satellite disruption due to central galaxies](https://arxiv.org/abs/1712.04467) and parameterizes the [subhalo--satellite galaxy connection](https://arxiv.org/abs/1809.05542).
+</sub></p>
 
 <p style="margin-bottom: 30px">
 Applying this framework to [Dark Energy Survey](https://www.darkenergysurvey.org/) and [Pan-STARRS1](https://www.ifa.hawaii.edu/research/Pan-STARRS.shtml) data revealed the <a href="https://arxiv.org/abs/1912.03303">impact of the Large Magellanic Cloud on the Milky Way satellite population</a> and the efficiency of galaxy formation in low-mass halos. The model's predictions are also <a href="https://arxiv.org/abs/2008.12783">consistent with observations of Milky Way analogs</a> from the <a href="https://sagasurvey.org/">SAGA Survey</a>.
@@ -106,7 +108,9 @@ Applying this framework to [Dark Energy Survey](https://www.darkenergysurvey.org
 The fraction of low-mass halos that host galaxies (left panel) and the corresponding stellar mass--halo mass relation (right panel), derived by combining a galaxy--halo connection model with observations of the Milky Way dwarf satellite galaxy population. Blue regions are allowed by the data. The smallest halos consistent with hosting ultra-faint dwarf galaxies weigh ~100 million solar masses, and may have formed stars through molecular hydrogen cooling. Adapted from <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab846a">Nadler et al. (2020)</a>.
 </sub></p>
 
+<p style="margin-bottom: 32px">
 By combining this inference framework with dark matter theory, my work has placed stringent limits on dark matter's [production mechanism and particle mass](https://arxiv.org/abs/2008.00022), [interactions with the Standard Model](https://arxiv.org/abs/1904.10000), and [formation epoch](https://arxiv.org/abs/2010.01137). I have combined these constraints with strong gravitational lensing data to set the [most stringent warm dark matter limit to date](https://arxiv.org/abs/2101.07810).
+</sub></p>
 
 ![dm]({{eonadler.github.io}}/assets/img/dm_constraints.png){:width="100%"}
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -15px"><sub> 
