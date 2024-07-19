@@ -9,7 +9,7 @@ title: Research
 
 ## Galaxy Formation
 
-How did the faintest galaxies form and evolve? Recent surveys have revealed a large population of dwarf galaxes in the local universe, including ultra-faint systems with only hundreds of stars. Upcoming facilities including the <a href="https://www.lsst.org/">Vera C. Rubin Observatory</a> will transform this space; in parallel, the ancestors of bright dwarf galaxies are being observed at high redshifts by <a href="https://webb.nasa.gov/">JWST</a>, connecting near and far-field galaxy populations.
+How did the faintest galaxies form and evolve? Recent surveys have revealed a large population of local ultra-faint dwarf galaxies, the faintest of which have only hundreds of stars, and upcoming facilities including the <a href="https://www.lsst.org/">Vera C. Rubin Observatory</a> will discover thousands more. In parallel, the ancestors of bright dwarf galaxies are being detected at high redshifts by <a href="https://webb.nasa.gov/">JWST</a>, thereby connecting nearby and early galaxy populations.
 
 My work in this area addresses the following key questions:
 
@@ -21,7 +21,7 @@ My work in this area addresses the following key questions:
 
 ## Dark Matter
 
-What is the fundamental nature of dark matter? Ultra-faint dwarf galaxies inhabit the smallest dark matter halos that form stars, and are therefore extremely sensitive to dark matter properties. Meanwhile, observations of strong gravitational lenses and stellar streams are becoming sensitive to halos below the galaxy formation threshold, opening a new avenue for tests of dark matter.
+What is the fundamental nature of dark matter? Ultra-faint dwarf galaxies inhabit the smallest dark matter halos that form stars, and are therefore extremely sensitive to dark matter's fundamental properties. Meanwhile, observations of strong gravitational lenses and stellar streams are beginning to probe halos below the galaxy formation threshold, opening a new avenue for tests of dark matter.
 
 My work in this area addresses the following key questions:
 
@@ -29,19 +29,19 @@ My work in this area addresses the following key questions:
 
 * What are the unique astrophysical signatures of dark matter microphysics?
 
-* How can we combine small-scale probes to detect a deviation from CDM?
+* Can we combine small-scale observables to detect a deviation from CDM?
 
 ## Near-field Cosmology
 
-How can observations of the local universe inform cosmology? Our galaxy and its surroundings grew out of primordial density fluctuations, which probe early-universe physics including inflation. Reconstructing the properties of these linear initial conditions is extremely challenging because they are highly processed by nonlinear structure formation. For the first time, it is becoming possible to address this bottleneck by combining empirical, semi-analytic, and simulation-based models.
+How can observations of the local universe inform cosmology? Our galaxy and its surroundings grew out of primordial density fluctuations that probe early-universe dynamics and inflation. Reconstructing the properties of these *linear* initial conditions is extremely challenging because they are highly processed by *nonlinear* structure formation. For the first time, it is becoming possible to address this bottleneck by combining empirical, semi-analytic, and simulation-based models.
 
 My work in this area addresses the following key questions:
 
 * Are there features in the small-scale linear power spectrum?
 
-* How can we efficiently model structure in the local universe? 
+* How can we efficiently and accurately model local structure?
 
-* What early-universe dynamics can near-field cosmology test?
+* What can near-field cosmology reveal about the early universe?
 
 ## Techniques
 
@@ -53,8 +53,9 @@ My work in this area addresses the following key questions:
 I am leading COZMIC: COsmological ZooM-in simulations with Initial Conditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter; many of these simulations include dark matter self-interactions. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and provides accurate predictions for the impact of dark matter physics on small-scale structure.
 </p>
 
-![cozmic]({{eonadler.github.io}}/assets/img/cozmic_viz.jpeg){:width="75%"}
-<p align="center" style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
+
+![cozmic]({{eonadler.github.io}}/assets/img/cozmic_viz.jpeg){:width="75%" align="center"}
+<p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
 COZMIC simulations with initial conditions for warm dark matter (first row), ultra-light "fuzzy" dark matter (second row), and dark matter--proton scattering models (bottom rows). Adapted from E. O. Nadler et al., in preparation.
 </sub></p>
 
