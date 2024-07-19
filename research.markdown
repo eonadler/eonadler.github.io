@@ -7,11 +7,9 @@ cover:  true
 title: Research
 ---
 
-# Areas
-
 ## Galaxy Formation
 
-How did the faintest galaxies form and evolve? Recent surveys have revealed a large population of dwarf galaxes in the local universe, including ultra-faint systems with only hundreds of stars, and upcoming facilities including the <a href="https://www.lsst.org/">Vera C. Rubin Observatory</a> will transform this space. In parallel, the ancestors of bright dwarf galaxies are being observed at high redshifts by <a href="https://webb.nasa.gov/">JWST</a>, connecting near and far-field galaxy populations.
+How did the faintest galaxies form and evolve? Recent surveys have revealed a large population of dwarf galaxes in the local universe, including ultra-faint systems with only hundreds of stars. Upcoming facilities including the <a href="https://www.lsst.org/">Vera C. Rubin Observatory</a> will transform this space; in parallel, the ancestors of bright dwarf galaxies are being observed at high redshifts by <a href="https://webb.nasa.gov/">JWST</a>, connecting near and far-field galaxy populations.
 
 My work in this area addresses the following key questions:
 
@@ -29,28 +27,38 @@ My work in this area addresses the following key questions:
 
 * Do completely dark (galaxy-free) halos exist?
 
-* What are the unique astrophysical signatures of dark matter physics?
+* What are the unique astrophysical signatures of dark matter microphysics?
 
-* Can we combine small-scale structure probes to detect physics beyond CDM?
+* How can we combine small-scale probes to detect a deviation from CDM?
 
 ## Near-field Cosmology
 
-# Techniques
+How can observations of the local universe inform cosmology? Our galaxy and its surroundings grew out of primordial density fluctuations, which probe early-universe physics including inflation. Reconstructing the properties of these linear initial conditions is extremely challenging because they are highly processed by nonlinear structure formation. For the first time, it is becoming possible to address this bottleneck by combining empirical, semi-analytic, and simulation-based models.
 
-## Cosmological Simulations of Small-scale Structure
+My work in this area addresses the following key questions:
 
-### COZMIC
+* Are there features in the small-scale linear power spectrum?
+
+* How can we efficiently model structure in the local universe? 
+
+* What early-universe dynamics can near-field cosmology test?
+
+## Techniques
+
+### Cosmological Simulations of Small-scale Structure
+
+#### COZMIC
 
 <p style="margin-bottom: 35px">
-I am leading COZMIC: COsmological ZooM-in simulations with Initial Conditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter; many of these simulations include late-time dark matter self-interactions. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and provides accurate predictions for the impact of dark matter physics on small-scale structure.
+I am leading COZMIC: COsmological ZooM-in simulations with Initial Conditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter; many of these simulations include dark matter self-interactions. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and provides accurate predictions for the impact of dark matter physics on small-scale structure.
 </p>
 
 ![cozmic]({{eonadler.github.io}}/assets/img/cozmic_viz.jpeg){:width="75%"}
-<p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
+<p align="center" style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
 COZMIC simulations with initial conditions for warm dark matter (first row), ultra-light "fuzzy" dark matter (second row), and dark matter--proton scattering models (bottom rows). Adapted from E. O. Nadler et al., in preparation.
 </sub></p>
 
-### Milky Way-est
+#### Milky Way-est
 
 <p style="margin-bottom: 35px">
 I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>, the first cosmological dark matter-only zoom-in simulation suite of 20 systems that specifically resemble the <a href="https://en.wikipedia.org/wiki/Milky_Way">Milky Way</a>. Milky Way-est provides a realistic template for modeling our galaxy's dark matter structure and substructure in CDM, including its satellite galaxy and stellar stream population. See <a href="https://web.stanford.edu/group/gfc/gfcsims/build/html/mwest_overview.html">here</a> for details and data access.
@@ -65,31 +73,31 @@ I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>, the
 Dark matter distributions in five Milky Way-est simulations in a standard CDM cosmology. Each image is centered on the dark matter halo that hosts the Milky Way, and analogs of the Milky Way's largest satellite galaxy, the <a href="https://en.wikipedia.org/wiki/Large_Magellanic_Cloud">LMC</a>, are visible near the center of each system. Adapted from <a href="https://arxiv.org/abs/2404.08043">Buch & Nadler et al. 2024</a>.
 </sub></p>
 
-### Symphony
+#### Symphony
 
 <p style="margin-bottom: 35px">
 I led <a href="https://arxiv.org/abs/2209.02675">Symphony</a>, a compilation of 262 cosmological dark matter-only zoom-in simulations spanning four decades of host halo mass. Symphony includes host halos with masses similar to the LMC, Milky Way, galaxy group systems (e.g., strong gravitational lenses), low-mass galaxy clusters, and massive galaxy clusters. See <a href="https://web.stanford.edu/group/gfc/gfcsims/build/html/symphony_overview.html">here</a> for details and data access.
 </sub></p>
 
-## Galaxy--Halo Connection Modeling
+### Galaxy--Halo Connection Modeling
 
-### Semi-analytic Techniques
+#### Semi-analytic Techniques
 
 <p style="margin-bottom: 32px">
-Extracting cosmological information from observations of the local universe requires theoretical predictions for dark matter structure that are both accurate and efficient. I am expanding the open-source structure formation model <a href="https://github.com/galacticusorg/galacticus/wiki">GALACTICUS</a> to generate constrained realizations of the Milky Way. These predictions will be thousands of times less expensive than existing methods and calibrated to match the results of cosmological simulations.
+Extracting cosmological information from observations of the local universe requires accurate and efficient theoretical predictions for dark matter structure and the galaxy--halo connection. I am expanding the open-source structure and galaxy formation model <a href="https://github.com/galacticusorg/galacticus/wiki">GALACTICUS</a> to generate constrained realizations of the Milky Way subhalo and satellite galaxy population. These predictions will be thousands of times less expensive than existing methods and calibrated to match the results of cosmological simulations. In <a href="https://academic.oup.com/mnras/article/521/3/3201/7068109?login=false">Nadler et al. 2022</a>, I demonstrated that similar techniques are useful for modeling high-redshift galaxies observed by JWST.
 </p>
 
 ![galacticus]({{eonadler.github.io}}/assets/img/galacticus.png){:width="100%"}
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
-Example of an assembly history for a Milky Way-mass system (left panel) and its dark matter substructure (right panel) generated using GALACTICUS. Our approach guarantees that key observational constraints on the Milky Way's evolution, including the recent infall of the Large Magellanic Cloud (red circle), are satisfied. Adapted from Nadler et al. (in prep).
+Example of an assembly history for a Milky Way-mass system (left panel) and its dark matter substructure (right panel) generated using GALACTICUS. Our approach guarantees that key observational constraints on the Milky Way's evolution, including the recent infall of the Large Magellanic Cloud (red circle), are satisfied.
 </sub></p>
 
-### Empirical Techniques
+#### Empirical Techniques
 
-Understanding the connection between the faintest galaxies and the dark matter halos they form and reside in is a crucial component of galaxy formation and cosmological theory. I have helped extend empirical models of the galaxy--halo connection into the regime of ultra-faint dwarf galaxies. The resulting framework flexibly models [satellite disruption due to central galaxies](https://arxiv.org/abs/1712.04467) and the [detailed relationship between halo and galaxy properties](https://arxiv.org/abs/1809.05542).  
+The connection between dwarf galaxies and dark matter halos critically informs galaxy formation and dark matter science. I have developed a flexible empirical model of the galaxy--halo connection, which extends to the faintest known systems. This model and inference framework includes a [machine-learning model for satellite disruption due to central galaxies](https://arxiv.org/abs/1712.04467) and parameterizes the [subhalo--satellite galaxy connection](https://arxiv.org/abs/1809.05542).
 
 <p style="margin-bottom: 30px">
-Applying this framework to Dark Energy Survey and Pan-STARRS1 data revealed the <a href="https://arxiv.org/abs/1912.03303">impact of the Large Magellanic Cloud on the Milky Way satellite population</a> and the efficiency of galaxy formation in low-mass halos. The model's predictions are also <a href="https://arxiv.org/abs/2008.12783">consistent with observations of Milky Way analogs</a> from the <a href="https://sagasurvey.org/">SAGA Survey</a>.
+Applying this framework to [Dark Energy Survey](https://www.darkenergysurvey.org/) and [Pan-STARRS1](https://www.ifa.hawaii.edu/research/Pan-STARRS.shtml) data revealed the <a href="https://arxiv.org/abs/1912.03303">impact of the Large Magellanic Cloud on the Milky Way satellite population</a> and the efficiency of galaxy formation in low-mass halos. The model's predictions are also <a href="https://arxiv.org/abs/2008.12783">consistent with observations of Milky Way analogs</a> from the <a href="https://sagasurvey.org/">SAGA Survey</a>.
 </p>
 
 ![galhalo]({{eonadler.github.io}}/assets/img/galhalo.png){:width="100%"}
@@ -97,14 +105,14 @@ Applying this framework to Dark Energy Survey and Pan-STARRS1 data revealed the 
 The fraction of low-mass halos that host galaxies (left panel) and the corresponding stellar mass--halo mass relation (right panel), derived by combining a galaxy--halo connection model with observations of the Milky Way dwarf satellite galaxy population. Blue regions are allowed by the data. The smallest halos consistent with hosting ultra-faint dwarf galaxies weigh ~100 million solar masses, and may have formed stars through molecular hydrogen cooling. Adapted from <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab846a">Nadler et al. (2020)</a>.
 </sub></p>
 
-By combining dwarf galaxy observations from the [Dark Energy Survey](https://www.darkenergysurvey.org/) and [Pan-STARRS1](https://www.ifa.hawaii.edu/research/Pan-STARRS.shtml) with cosmological simulations, galaxy formation models, and dark matter theory, my work has placed stringent limits on dark matter's [production mechanism and particle mass](https://arxiv.org/abs/2008.00022), [interactions with the Standard Model](https://arxiv.org/abs/1904.10000), and [formation epoch](https://arxiv.org/abs/2010.01137). I have combined these constraints with strong gravitational lensing data to set the [most stringent warm dark matter limit to date](https://arxiv.org/abs/2101.07810).
+By combining this inference framework with dark matter theory, my work has placed stringent limits on dark matter's [production mechanism and particle mass](https://arxiv.org/abs/2008.00022), [interactions with the Standard Model](https://arxiv.org/abs/1904.10000), and [formation epoch](https://arxiv.org/abs/2010.01137). I have combined these constraints with strong gravitational lensing data to set the [most stringent warm dark matter limit to date](https://arxiv.org/abs/2101.07810).
 
 ![dm]({{eonadler.github.io}}/assets/img/dm_constraints.png){:width="100%"}
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -15px"><sub> 
 Constraints on sterile neutrino warm dark matter (left panel) and dark matter--Standard Model interactions (right panel) derived using the population of ultra-faint dwarf galaxies near the Milky Way. Red and blue regions are excluded by our analysis, which improves upon other astrophysical limits and complements direct detection experiments. Adapted from <a href="https://arxiv.org/abs/2008.00022">Nadler & Drlica-Wagner et al. (2021)</a>.
 </sub></p>
 
-# Miscellaneous
+## Miscellaneous
 
 In addition to cosmological simulations and semi-analytic modeling, I have studied dark matter in the context of the [effective field theory of large-scale structure](https://arxiv.org/abs/1710.10308) and [idealized hydrodynamic simulations of halo formation](https://arxiv.org/abs/1701.01449).
 
