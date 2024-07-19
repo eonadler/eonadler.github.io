@@ -50,7 +50,7 @@ My work in this area addresses the following key questions:
 #### COZMIC
 
 <p style="margin-bottom: 35px">
-I am leading COZMIC: COsmological ZooM-in simulations with Initial Conditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter; many of these simulations include dark matter self-interactions. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and accurately captures the impact of dark matter physics on small-scale structure.
+I am leading COZMIC: **CO**smological **Z**oo**M**-in simulations with **I**nitial **C**onditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter; many of these simulations include dark matter self-interactions. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and accurately captures the impact of dark matter physics on small-scale structure.
 </p>
 
 <p align="center">
@@ -79,14 +79,14 @@ Dark matter distributions in five Milky Way-est simulations in a standard CDM co
 
 <p style="margin-bottom: 35px">
 I led <a href="https://arxiv.org/abs/2209.02675">Symphony</a>, a compilation of 262 cosmological dark matter-only zoom-in simulations spanning four decades of host halo mass. Symphony includes host halos with masses similar to the LMC, Milky Way, galaxy group systems (e.g., strong gravitational lenses), low-mass galaxy clusters, and massive galaxy clusters.
-</sub></p>
+</p>
 
 ### Galaxy--Halo Connection Modeling
 
 #### Semi-analytic Techniques
 
 <p style="margin-bottom: 32px">
-Extracting cosmological information from observations of the local universe requires accurate and efficient theoretical predictions for dark matter structure and the galaxy--halo connection. I am expanding the open-source structure and galaxy formation model <a href="https://github.com/galacticusorg/galacticus/wiki">GALACTICUS</a> to generate constrained realizations of the Milky Way subhalo and satellite galaxy population. These predictions will be thousands of times less expensive than existing methods and calibrated to match the results of cosmological simulations. In <a href="https://academic.oup.com/mnras/article/521/3/3201/7068109?login=false">Nadler et al. 2022</a>, I demonstrated that similar techniques are useful for modeling high-redshift galaxies observed by JWST.
+Extracting cosmological information from observations of the local universe requires accurate and efficient theoretical predictions for dark matter structure and the galaxy--halo connection. I am expanding the open-source structure and galaxy formation model <a href="https://github.com/galacticusorg/galacticus/wiki">GALACTICUS</a> to generate constrained realizations of the Milky Way subhalo and satellite galaxy population. These predictions will be thousands of times more efficient than existing methods and calibrated to match the results of cosmological simulations. In <a href="https://academic.oup.com/mnras/article/521/3/3201/7068109?login=false">Nadler et al. 2022</a>, I demonstrated that similar techniques are useful for modeling high-redshift galaxies observed by JWST.
 </p>
 
 ![galacticus]({{eonadler.github.io}}/assets/img/galacticus.png){:width="100%"}
@@ -97,8 +97,8 @@ Example of an assembly history for a Milky Way-mass system (left panel) and its 
 #### Empirical Techniques
 
 <p style="margin-bottom: 32px">
-The connection between dwarf galaxies and dark matter halos critically informs galaxy formation and dark matter science. I have developed a flexible empirical model of the galaxy--halo connection, which extends to the faintest known systems. This model and inference framework includes a [machine-learning model for satellite disruption due to central galaxies](https://arxiv.org/abs/1712.04467) and parameterizes the [subhalo--satellite galaxy connection](https://arxiv.org/abs/1809.05542).
-</sub></p>
+The connection between dwarf galaxies and dark matter halos critically informs galaxy formation and dark matter science. I have developed an empirical model and inference framework for the galaxy--halo connection that extends to the faintest known systems. This framework includes a <a href="https://arxiv.org/abs/1712.04467">machine-learning model for satellite disruption due to central galaxies</a> and an <a href="https://arxiv.org/abs/1809.055427">empirical model for the subhalo--satellite galaxy connection</a>.
+</p>
 
 <p style="margin-bottom: 30px">
 Applying this framework to [Dark Energy Survey](https://www.darkenergysurvey.org/) and [Pan-STARRS1](https://www.ifa.hawaii.edu/research/Pan-STARRS.shtml) data revealed the <a href="https://arxiv.org/abs/1912.03303">impact of the Large Magellanic Cloud on the Milky Way satellite population</a> and the efficiency of galaxy formation in low-mass halos. The model's predictions are also <a href="https://arxiv.org/abs/2008.12783">consistent with observations of Milky Way analogs</a> from the <a href="https://sagasurvey.org/">SAGA Survey</a>.
