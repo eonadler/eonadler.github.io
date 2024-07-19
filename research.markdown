@@ -43,7 +43,7 @@ My work in this area addresses the following key questions:
 
 * What can near-field cosmology reveal about early universe dynamics and inflation?
 
-## Techniques
+## Products
 
 ### Cosmological Simulations of Small-scale Structure
 
@@ -81,12 +81,12 @@ Dark matter distributions in five Milky Way-est CDM simulations. Each image is c
 I led <a href="https://arxiv.org/abs/2209.02675">Symphony</a>, a compilation of 262 cosmological dark matter-only zoom-in simulations spanning four decades of host halo mass. Symphony includes host halos with masses similar to the LMC, Milky Way, galaxy group systems (e.g., strong gravitational lenses), low-mass galaxy clusters, and massive galaxy clusters.
 </p>
 
-### Galaxy--Halo Connection Modeling
+### Galaxy--Halo Connection Models
 
-#### Semi-analytic Techniques
+#### Semi-analytic
 
 <p style="margin-bottom: 32px">
-Extracting cosmological information from observations of the local universe requires accurate and efficient theoretical predictions for dark matter structure and the galaxy--halo connection. I am expanding the open-source structure and galaxy formation model <a href="https://github.com/galacticusorg/galacticus/wiki">GALACTICUS</a> to generate constrained realizations of the Milky Way subhalo and satellite galaxy population. These predictions will be thousands of times more efficient than existing methods and calibrated to match the results of cosmological simulations. In <a href="https://academic.oup.com/mnras/article/521/3/3201/7068109?login=false">Nadler et al. 2022</a>, I demonstrated that similar techniques are useful for modeling high-redshift galaxies observed by JWST.
+I am expanding the open-source structure and galaxy formation model <a href="https://github.com/galacticusorg/galacticus/wiki">GALACTICUS</a> to efficiently and accurately generate constrained realizations of the Milky Way's subhalo and satellite galaxy population. This tool will be thousands of times faster than existing methods and calibrated on COZMIC simulations. In <a href="https://academic.oup.com/mnras/article/521/3/3201/7068109?login=false">Nadler et al. 2022</a>, I introduced the constrained merger tree technique to model high-redshift JWST galaxies.
 </p>
 
 ![galacticus]({{eonadler.github.io}}/assets/img/galacticus.png){:width="100%"}
@@ -94,14 +94,14 @@ Extracting cosmological information from observations of the local universe requ
 Example of an assembly history for a Milky Way-mass system (left panel) and its dark matter substructure (right panel) generated using GALACTICUS. Our approach guarantees that key observational constraints on the Milky Way's evolution, including the recent infall of the Large Magellanic Cloud (red circle), are satisfied.
 </sub></p>
 
-#### Empirical Techniques
+#### Empirical
 
 <p style="margin-bottom: 32px">
-The connection between dwarf galaxies and dark matter halos critically informs galaxy formation and dark matter science. I have developed an empirical model and inference framework for the galaxy--halo connection that extends to the faintest known systems. This framework includes a <a href="https://arxiv.org/abs/1712.04467">machine-learning model for satellite disruption due to central galaxies</a> and an <a href="https://arxiv.org/abs/1809.055427">empirical model for the subhalo--satellite galaxy connection</a>.
+I have developed an empirical model and inference framework for the galaxy--halo connection that extends to the faintest dwarf galaxies. This framework includes a <a href="https://arxiv.org/abs/1712.04467">machine-learning model for satellite disruption due to central galaxies</a> and an <a href="https://arxiv.org/abs/1809.055427">empirical model for the subhalo--satellite galaxy connection</a>.
 </p>
 
 <p style="margin-bottom: 30px">
-Applying this framework to [Dark Energy Survey](https://www.darkenergysurvey.org/) and [Pan-STARRS1](https://www.ifa.hawaii.edu/research/Pan-STARRS.shtml) data revealed the <a href="https://arxiv.org/abs/1912.03303">impact of the Large Magellanic Cloud on the Milky Way satellite population</a> and the efficiency of galaxy formation in low-mass halos. The model's predictions are also <a href="https://arxiv.org/abs/2008.12783">consistent with observations of Milky Way analogs</a> from the <a href="https://sagasurvey.org/">SAGA Survey</a>.
+In <a href="https://arxiv.org/abs/1912.03303">Nadler et al. 2020</a>, I applied this framework to <a href="https://www.darkenergysurvey.org/">Dark Energy Survey</a> and <a href="https://www2.ifa.hawaii.edu/research/Pan-STARRS.shtml">Pan-STARRS1</a> [Pan-STARRS1](https://www.ifa.hawaii.edu/research/Pan-STARRS.shtml) data to reveal the impact of the Large Magellanic Cloud on the Milky Way satellite population and constrain the faint-end galaxy--halo connection.
 </p>
 
 ![galhalo]({{eonadler.github.io}}/assets/img/galhalo.png){:width="100%"}
@@ -110,7 +110,7 @@ The fraction of low-mass halos that host galaxies (left panel) and the correspon
 </sub></p>
 
 <p style="margin-bottom: 32px">
-By combining this inference framework with dark matter theory, my work has placed stringent limits on dark matter's [production mechanism and particle mass](https://arxiv.org/abs/2008.00022), [interactions with the Standard Model](https://arxiv.org/abs/1904.10000), and [formation epoch](https://arxiv.org/abs/2010.01137). I have combined these constraints with strong gravitational lensing data to set the [most stringent warm dark matter limit to date](https://arxiv.org/abs/2101.07810).
+In <a href="https://arxiv.org/abs/2008.00022">Nadler et al. (2020)</a>, I used this framework to constrain dark matter's production mechanism, particle mass, and Standard Model. In <a href="https://arxiv.org/abs/2101.07810">Nadler et al. (2021)</a>, I combined these Milky Way satellite constraints with strong gravitational lensing flux ratio statistics to set the most stringent warm dark matter limit to date.
 </sub></p>
 
 ![dm]({{eonadler.github.io}}/assets/img/dm_constraints.png){:width="100%"}
