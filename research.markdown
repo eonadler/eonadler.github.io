@@ -12,13 +12,13 @@ title: Research
 ### COZMIC
 
 <p style="margin-bottom: 35px">
-I am leading the COZMIC suite: COsmological ZooM-in simulations with Initial Conditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter models; a subset of these simulations include late-time dark matter self-interactions. These simulations provide accurate predictions for the impact of dark matter physics on small-scale structure.
+I am leading COZMIC: COsmological ZooM-in simulations with Initial Conditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter; many of these simulations include late-time dark matter self-interactions. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and provides accurate predictions for the impact of dark matter physics on small-scale structure.
 </p>
 
-![cozmic]({{eonadler.github.io}}/assets/img/cozmic_viz.jpeg){:width="100%"}
+![cozmic]({{eonadler.github.io}}/assets/img/cozmic_viz.jpeg){:width="50%"}
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
 COZMIC simulations with initial conditions for warm dark matter (first row), ultra-light "fuzzy" dark matter (second row), and dark matter--proton scattering models (bottom rows). Adapted from E. O. Nadler et al., in preparation.
-</sub></p>
+</p>
 
 ### Milky Way-est
 
@@ -33,12 +33,12 @@ I co-developed <a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a>, the
 ![Halo756]({{eonadler.github.io}}/assets/img/frame__halo_756_mwest_00000.png){:width="19.5%"}
 <p style="line-height: 1.0; margin-top: -10px; margin-bottom: -10px"><sub> 
 Dark matter distributions in five Milky Way-est simulations in a standard CDM cosmology. Each image is centered on the dark matter halo that hosts the Milky Way, and analogs of the Milky Way's largest satellite galaxy, the <a href="https://en.wikipedia.org/wiki/Large_Magellanic_Cloud">LMC</a>, are visible near the center of each system. Adapted from <a href="https://arxiv.org/abs/2404.08043">Buch & Nadler et al. 2024</a>.
-</sub></p>
+</p>
 
 ### Symphony
 
 <p style="margin-bottom: 35px">
-I led the <a href="https://arxiv.org/abs/2209.02675">Symphony</a> compilation, a suite of 262 cosmological dark matter-only zoom-in simulations spanning four decades of host halo mass. Symphony includes hosts with masses similar to the LMC ($10^{11}\ M_{\mathrm{\odot}}$), Milky Way ($10^{12}\ M_{\mathrm{\odot}}$), group systems (e.g., strong gravitational lenses; ($10^{13}\ M_{\mathrm{\odot}}$)), low-mass galaxy clusters ($10^{14}\ M_{\mathrm{\odot}}$), and massive galaxy clusters ($10^{15}\ M_{\mathrm{\odot}}$). See <a href="https://web.stanford.edu/group/gfc/gfcsims/build/html/symphony_overview.html">here</a> for details and data access.
+I led <a href="https://arxiv.org/abs/2209.02675">Symphony</a>, a compilation of 262 cosmological dark matter-only zoom-in simulations spanning four decades of host halo mass. Symphony includes host halos with masses similar to the LMC (10^11^ M_☉_), Milky Way ($10^{12}\ M_{\mathrm{\odot}}$), group systems (e.g., strong gravitational lenses; ($10^{13}\ M_{\mathrm{\odot}}$)), low-mass galaxy clusters ($10^{14}\ M_{\mathrm{\odot}}$), and massive galaxy clusters ($10^{15}\ M_{\mathrm{\odot}}$). See <a href="https://web.stanford.edu/group/gfc/gfcsims/build/html/symphony_overview.html">here</a> for details and data access.
 </sub></p>
 
 ## Semi-analytic Predictions for Near-field Cosmology
