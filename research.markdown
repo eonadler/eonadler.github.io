@@ -97,7 +97,7 @@ Example of a Milky Way system's merger tree (left panel) and dark matter substru
 #### Faint-end Galaxy--Halo Connection
 
 <p style="margin-bottom: 32px">
-I have developed an empirical model and inference framework for the galaxy--halo connection that extends to the faintest dwarf galaxies. This framework includes a <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aac266">machine-learning model for satellite disruption due to central galaxies</a>, an <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab040e">empirical model for the subhalo--satellite galaxy connection</a>, and <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad3bb1">forecaststing tools for future surveys</a>.
+I have developed an empirical model and inference framework for the galaxy--halo connection that extends to the faintest dwarf galaxies. This framework includes a <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aac266">machine-learning model for satellite disruption due to central galaxies</a>, an <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab040e">empirical model for the subhalo--satellite galaxy connection</a>, and <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad3bb1">forecasts for future surveys</a>.
 </p>
 
 <p style="margin-bottom: 30px">
@@ -124,7 +124,7 @@ Constraints on sterile neutrino warm dark matter (left panel) and dark matter--S
 
 #### Self-interacting Dark Matter Predictions
 
-In <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad0e09">Nadler, Yang, & Yu (2023)</a>, I ran the first cosmological simulation with strong, velocity-dependent dark matter self-interactions in a strong lens analog. The predicted halo and subhalo populations explain both an extremely dense substructure perturbing the strong lens galaxy SDSSJ0946+1006 and the rotation curves of isolated, gas-rich ultradiffuse galaxies.
+In <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad0e09">Nadler, Yang, & Yu (2023)</a>, I ran the first cosmological simulation with strong, velocity-dependent dark matter self-interactions in a strong lens analog. The predicted halo and subhalo populations explain the extremely dense substructure in the strong lens SDSSJ0946+1006 and the rotation curves of isolated, gas-rich ultradiffuse galaxies.
 
 ## Miscellaneous
 
