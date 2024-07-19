@@ -124,7 +124,7 @@ Constraints on sterile neutrino warm dark matter (left panel) and dark matter--S
 
 #### Self-interacting Dark Matter Predictions
 
-In <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad0e09">Nadler, Yang, & Yu (2023)</a>, I ran the first cosmological simulation with strong, velocity-dependent dark matter self-interactions in a strong lens analog. The predicted halo and subhalo populations explain the extremely dense substructure in the strong lens SDSSJ0946+1006 and the rotation curves of isolated, gas-rich ultradiffuse galaxies.
+In <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad0e09">Nadler, Yang, & Yu (2023)</a>, I ran the first cosmological simulation with strong, velocity-dependent dark matter self-interactions in a strong lens analog. The predicted halo and subhalo populations explain the extremely dense substructure in the strong lens SDSSJ0946+1006 and the rotation curves of isolated ultra-diffuse galaxies.
 
 ## Miscellaneous
 
