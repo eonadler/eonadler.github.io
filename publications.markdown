@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2024
 
+(45) P. Mansfield, E. Darragh-Ford, Y. Wang, **E. O. Nadler**, B. Diemer, and R. H. Wechsler. *symfind: Addressing the Fragility of Subhalo Finders and Revealing the Durability of Subhalos*. 2024, [ApJ, 970, 178](https://iopscience.iop.org/article/10.3847/1538-4357/ad4e33).
+
 (44) X. Du et al. (incl. **E. O. Nadler**). *Tidal evolution of cored and cuspy dark matter halos*. 2024, [PRD, 110, 023019](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.023019).
 
 (43) **E. O. Nadler**, V. Gluscevic, T. Driskell, R. H. Wechsler, L. A. Moustakas, A. Benson, and Y.-Y. Mao. *Forecasts for Galaxy Formation and Dark Matter Constraints from Dwarf Galaxy Surveys*. 2024, [ApJ, 967, 61](https://iopscience.iop.org/article/10.3847/1538-4357/ad3bb1).
