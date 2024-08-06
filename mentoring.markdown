@@ -32,7 +32,7 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 * [Siddhesh Raut](https://www.linkedin.com/in/siddheshraut), USC/Carnegie: Self-interacting dark matter halo gravothermal evolution modeling;
 
-* [Yunchong (Richie) Wang](https://profiles.stanford.edu/richie-wang), Stanford: Empirically modeling dwarf galaxy star formation histories ([Y. Wang, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac024a), [2024](https://arxiv.org/abs/2404.14500)).
+* [Yunchong (Richie) Wang](https://profiles.stanford.edu/richie-wang), Stanford: Empirically modeling dwarf galaxy star formation histories ([Y. Wang, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac024a), [2024a](https://arxiv.org/abs/2404.14500); [Y. Wang, P. Mansfield, E. O. Nadler *et al.* 2024b](https://arxiv.org/abs/2408.01487)).
 
 <p style="margin-bottom: -38px">
 </p>
