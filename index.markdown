@@ -20,7 +20,7 @@ Please see my [CV](./CV.pdf), [publications](./publications.markdown), and [medi
 
 ## Research Opportunities
 
-I am actively seeking undergraduate, graduate, and postdoctoral researchers to join my group at UC San Diego. If you're interested, please email me at [enadler@carnegiescience.edu](mailto:enadler@carnegiescience.edu). A postdoctoral scholar job ad is posted on the [AAS job register](https://aas.org/jobregister/ad/99c4e272). 
+I am actively seeking undergraduate, graduate, and postdoctoral researchers to join my group at UC San Diego. If you're interested, please email me at [enadler@ucsd.edu](mailto:enadler@ucsd.edu). A postdoctoral scholar job ad is posted on the [AAS job register](https://aas.org/jobregister/ad/99c4e272). 
 
 ## About Me
 
