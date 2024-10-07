@@ -57,7 +57,7 @@ I am leading COZMIC: <b>CO</b>smological <b>Z</b>oo<b>M</b>-in simulations with 
 <img src="https://eonadler.github.io/assets/img/cozmic_viz.jpeg" alt="cozmic" width="75%">
 </p>
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
-COZMIC simulations with initial conditions for warm dark matter (first row), ultra-light "fuzzy" dark matter (second row), and dark matter--proton scattering models (bottom rows). Adapted from Nadler et al., in preparation.
+COZMIC simulations with initial conditions for warm dark matter (first row), ultra-light "fuzzy" dark matter (second row), and dark matter--proton scattering models (bottom rows). Adapted from <a href="https://arxiv.org/abs/2410.03635">Nadler et al. 2024</a>.
 </sub></p>
 
 #### [Milky Way-est](https://web.stanford.edu/group/gfc/gfcsims/build/html/mwest_overview.html)
