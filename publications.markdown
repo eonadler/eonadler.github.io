@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2024
 
+(47) E. Kado-Fong et al. (SAGA Collaboration, incl. **E. O. Nadler**). *SAGAbg. II. The Low-mass Star-forming Sequence Evolves Significantly between 0.05 < z < 0.21*. 2024, [ApJ, 976, 83](https://iopscience.iop.org/article/10.3847/1538-4357/ad8137).
+
 (46) D. Buch, **E. O. Nadler**, R. H. Wechsler, and Y.-Y. Mao. *Milky Way-est: Cosmological Zoom-in Simulations with Large Magellanic Cloud and Gaia–Sausage–Enceladus Analogs*. 2024, [ApJ, 971, 179](https://iopscience.iop.org/article/10.3847/1538-4357/ad554c).
 
 (45) P. Mansfield, E. Darragh-Ford, Y. Wang, **E. O. Nadler**, B. Diemer, and R. H. Wechsler. *<tt>SYMFIND</tt>: Addressing the Fragility of Subhalo Finders and Revealing the Durability of Subhalos*. 2024, [ApJ, 970, 178](https://iopscience.iop.org/article/10.3847/1538-4357/ad4e33).
