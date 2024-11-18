@@ -13,6 +13,12 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2024
 
+(50) Y. Wang, **E. O. Nadler** et al. (SAGA Collaboration). *The SAGA Survey. V. Modeling Satellite Systems around Milky Way–Mass Galaxies with Updated <tt>UNIVERSEMACHINE</tt>*. 2024, [ApJ, 976, 119](https://iopscience.iop.org/article/10.3847/1538-4357/ad7f4c).
+
+(49) M. Geha et al. (SAGA Collaboration, incl. **E. O. Nadler**). *The SAGA Survey. IV. The Star Formation Properties of 101 Satellite Systems around Milky Way–mass Galaxies*. 2024, [ApJ, 976, 118](https://iopscience.iop.org/article/10.3847/1538-4357/ad61e7).
+
+(48) Y.-Y. Mao et al. (SAGA Collaboration, incl. **E. O. Nadler**). *The SAGA Survey. III. A Census of 101 Satellite Systems around Milky Way–mass Galaxies*. 2024, [ApJ, 976, 117](https://iopscience.iop.org/article/10.3847/1538-4357/ad64c4).
+
 (47) E. Kado-Fong et al. (SAGA Collaboration, incl. **E. O. Nadler**). *SAGAbg. II. The Low-mass Star-forming Sequence Evolves Significantly between 0.05 < z < 0.21*. 2024, [ApJ, 976, 83](https://iopscience.iop.org/article/10.3847/1538-4357/ad8137).
 
 (46) D. Buch, **E. O. Nadler**, R. H. Wechsler, and Y.-Y. Mao. *Milky Way-est: Cosmological Zoom-in Simulations with Large Magellanic Cloud and Gaia–Sausage–Enceladus Analogs*. 2024, [ApJ, 971, 179](https://iopscience.iop.org/article/10.3847/1538-4357/ad554c).
