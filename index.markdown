@@ -6,9 +6,7 @@ layout: default
 cover:  true
 ---
 
-Welcome! I am a joint postdoctoral research fellow at [Carnegie Observatories](https://carnegiescience.edu/obs) in the [Theoretical Astrophysics Center](https://ctac.carnegiescience.edu/) and the [University of Southern California Department of Physics & Astronomy](https://dornsife.usc.edu/physics/) in [Cosmolab](https://cosmolab.usc.edu/).
-
-In January 2025, I will begin as an assistant professor at the [University of California, San Diego Department of Astronomy & Astrophysics](https://astro.ucsd.edu/).
+Welcome! I am an assistant professor at the [University of California, San Diego Department of Astronomy & Astrophysics](https://astro.ucsd.edu/).
 
 My [research](./research.markdown) focuses on galaxy formation, dark matter, and near-field cosmology. I study the formation and evolution of the faintest galaxies, the microphysical nature of dark matter, and the growth of nonlinear cosmic structure. I tackle these problems using cosmological simulations, semi-analytic models of the galaxy--halo connection, dark matter theory, and observations of dwarf galaxies and strong gravitational lenses.
 
@@ -23,6 +21,8 @@ Please see my [CV](./CV.pdf), [publications](./publications.markdown), and [medi
 I am recruiting undergraduate, graduate, and postdoctoral researchers to join my group at UC San Diego. If you're interested, please email me at [enadler@ucsd.edu](mailto:enadler@ucsd.edu). A postdoctoral scholar ad is posted on the [AAS job register](https://aas.org/jobregister/ad/99c4e272). 
 
 ## About Me
+
+From 2021 to 2024, I was a joint postdoctoral research fellow at [Carnegie Observatories](https://carnegiescience.edu/obs) in the [Theoretical Astrophysics Center](https://ctac.carnegiescience.edu/) and the [University of Southern California Department of Physics & Astronomy](https://dornsife.usc.edu/physics/) in [Cosmolab](https://cosmolab.usc.edu/).
 
 In 2021, I received my Ph.D. in Physics from [Stanford University](https://physics.stanford.edu/), where I was an [NSF Graduate Research Fellow](https://www.nsfgrfp.org/) in the [Kavli Institute for Particle Astrophysics and Cosmology](https://kipac.stanford.edu/), advised by [Risa Wechsler](https://www.risawechsler.com/).
 
