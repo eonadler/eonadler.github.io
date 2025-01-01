@@ -22,7 +22,7 @@ I am recruiting undergraduate, graduate, and postdoctoral researchers to join my
 
 ## About Me
 
-From 2021 to 2024, I was a joint postdoctoral research fellow at [Carnegie Observatories](https://carnegiescience.edu/obs) in the [Theoretical Astrophysics Center](https://ctac.carnegiescience.edu/) and the [University of Southern California Department of Physics & Astronomy](https://dornsife.usc.edu/physics/) in [Cosmolab](https://cosmolab.usc.edu/).
+From 2021 through 2024, I was a joint postdoctoral research fellow at [Carnegie Observatories](https://carnegiescience.edu/obs) in the [Theoretical Astrophysics Center](https://ctac.carnegiescience.edu/) and the [University of Southern California Department of Physics & Astronomy](https://dornsife.usc.edu/physics/) in [Cosmolab](https://cosmolab.usc.edu/).
 
 In 2021, I received my Ph.D. in Physics from [Stanford University](https://physics.stanford.edu/), where I was an [NSF Graduate Research Fellow](https://www.nsfgrfp.org/) in the [Kavli Institute for Particle Astrophysics and Cosmology](https://kipac.stanford.edu/), advised by [Risa Wechsler](https://www.risawechsler.com/).
 
