@@ -11,6 +11,10 @@ title:  Publications
 Refereed journal publications are listed by year below. For a list including papers in review, white papers, and interdisciplinary publications, please see my <a href="./CV.pdf">CV</a>. All articles below are available on the <a href="https://arxiv.org/">arXiv</a>.
 </p>
 
+## 2025
+
+(51) X. Zhang, H.-B. Yu, D. Yang, and **E. O. Nadler**. *The GD-1 Stellar Stream Perturber as a Core-collapsed Self-interacting Dark Matter Halo*. 2025, [ApJL, 978, L23](https://iopscience.iop.org/article/10.3847/2041-8213/ada02b).
+
 ## 2024
 
 (50) Y. Wang, **E. O. Nadler** et al. (SAGA Collaboration). *The SAGA Survey. V. Modeling Satellite Systems around Milky Way–Mass Galaxies with Updated <tt>UNIVERSEMACHINE</tt>*. 2024, [ApJ, 976, 119](https://iopscience.iop.org/article/10.3847/1538-4357/ad7f4c).
