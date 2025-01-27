@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2025
 
+(53) W. Crumrine, **E. O. Nadler**, R. An, and V. Gluscevic. *Dark matter coupled to radiation: Limits from the Milky Way satellites*. 2025, [PRD, 111, 023530](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.023530).
+
 (52) D. Yang, **E. O. Nadler**, and H.-B. Yu. *Testing the parametric model for self-interacting dark matter using matched halos in cosmological simulations*. 2025, [Physics of the Dark Universe, 47, 101807](https://www.sciencedirect.com/science/article/pii/S2212686425000020).
 
 (51) X. Zhang, H.-B. Yu, D. Yang, and **E. O. Nadler**. *The GD-1 Stellar Stream Perturber as a Core-collapsed Self-interacting Dark Matter Halo*. 2025, [ApJL, 978, L23](https://iopscience.iop.org/article/10.3847/2041-8213/ada02b).
