@@ -70,20 +70,22 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 ## Teaching
 
 <p style="margin-bottom: -38px">
-I am teaching undergraduate and graduate courses in the Astronomy & Astrophysics department at UC San Diego:
+I am teaching undergraduate and graduate courses in the Astronomy & Astrophysics department at UC San Diego. I have also lectured and authored course materials for several courses at other institutions. Highlights include:
 </p>
 
 ### UC San Diego
 
 * *[ASTR 2 (Galaxies and the Universe)](https://catalog.ucsd.edu/courses/ASTR.html)* (professor, Spring 2025)
 
-<p style="margin-bottom: -38px">
-I have also lectured and authored course materials for several courses at other institutions. Highlights include:
+<p style="margin-bottom: -32px">
 </p>
 
 ### University of Southern California
 
 * *[Advanced Cosmology](https://catalogue.usc.edu/preview_course_nopop.php?catoid=8&coid=114328)* (lecturer for *Structure Formation & Galaxies*)
+
+<p style="margin-bottom: -32px">
+</p>
 
 ### University of California, Davis
 
