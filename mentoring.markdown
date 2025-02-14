@@ -20,11 +20,11 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 * [Niusha Ahvazi](https://ctac.carnegiescience.edu/niusha-ahvazi), UCR/Carnegie &rarr; UVA: Semi-analytic modeling of dwarf galaxy formation and evolution ([N. Ahvazi, A. Benson, L. Sales, E. O. Nadler *et al.* 2024)](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stae761/7631365);
 
-* [Wendy Crumrine](https://wcrumrine.github.io/), USC: Constraining dark matter--radiation interactions with small-scale structure ([W. Crumrine, E. O. Nadler *et al.* 2024](https://arxiv.org/abs/2406.19458));
+* [Wendy Crumrine](https://wcrumrine.github.io/), USC: Constraining dark matter--radiation interactions with small-scale structure ([W. Crumrine, E. O. Nadler *et al.* 2024](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.023530));
 
 * [Elise Darragh-Ford](https://kipac.stanford.edu/people/elise-darragh-ford), Stanford: Dwarf galaxy searches using *Gaia* ([E. Darragh-Ford, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac0053/meta));
 
-* [Trey Driskell](https://www.linkedin.com/in/george-driskell/), USC: Semi-analytic modeling of structure and galaxy formation ([T. Driskell, E. O. Nadler *et al.* 2022](https://arxiv.org/abs/2209.04499), [2024](https://arxiv.org/abs/2410.11680));
+* [Trey Driskell](https://www.linkedin.com/in/george-driskell/), USC: Semi-analytic modeling of structure and galaxy formation ([T. Driskell, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.103525), [2024](https://arxiv.org/abs/2410.11680));
 
 * [Noah Glennon](https://kipac.stanford.edu/people/noah-glennon-0), UNH: Soliton orbital evolution in self-interacting ultra-light dark matter ([N. Glennon, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540), [N. Glennon, N. Musoke, E. O. Nadler *et al.* 2024](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.063501));
 
@@ -32,14 +32,14 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 * [Siddhesh Raut](https://www.linkedin.com/in/siddheshraut), USC/Carnegie: Self-interacting dark matter halo gravothermal evolution modeling;
 
-* [Yunchong (Richie) Wang](https://profiles.stanford.edu/richie-wang), Stanford: Empirically modeling dwarf galaxy star formation histories ([Y. Wang, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac024a), [2024a](https://arxiv.org/abs/2404.14500); [Y. Wang, P. Mansfield, E. O. Nadler *et al.* 2024b](https://arxiv.org/abs/2408.01487)).
+* [Yunchong (Richie) Wang](https://profiles.stanford.edu/richie-wang), Stanford: Empirically modeling dwarf galaxy star formation histories ([Y. Wang, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac024a), [2024a](https://iopscience.iop.org/article/10.3847/1538-4357/ad7f4c); [Y. Wang, P. Mansfield, E. O. Nadler *et al.* 2024b](https://arxiv.org/abs/2408.01487)).
 
 <p style="margin-bottom: -38px">
 </p>
 
 ### Undergraduate, Post-baccalaureate, & High School students
 
-* [Deveshi Buch](https://profiles.stanford.edu/deveshi-buch), Stanford: Constrained cosmological simulation suite of Milky Way analogs ([D. Buch, E. O. Nadler *et al.* 2024](https://arxiv.org/abs/2404.08043));
+* [Deveshi Buch](https://profiles.stanford.edu/deveshi-buch), Stanford: Constrained cosmological simulation suite of Milky Way analogs ([D. Buch, E. O. Nadler *et al.* 2024](https://iopscience.iop.org/article/10.3847/1538-4357/ad554c));
 
 * [Shuxing Fang](https://www.linkedin.com/in/shuxing-fang-aa7747113/), USC: Large Magellanic Cloud infall in self-interacting dark matter cosmologies;
 
@@ -70,7 +70,15 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 ## Teaching
 
 <p style="margin-bottom: -38px">
-I have assisted with several undergraduate and graduate physics courses, including as a guest lecturer and author of course materials. Highlights include:
+I am teaching undergraduate and graduate courses in the Astronomy & Astrophysics department at UC San Diego:
+</p>
+
+### UC San Diego
+
+* *[ASTR 2 (Galaxies and the Universe)](https://catalog.ucsd.edu/courses/ASTR.html)* (professor, Spring 2025)
+
+<p style="margin-bottom: -38px">
+I have also lectured and authored course materials for several courses at other institutions. Highlights include:
 </p>
 
 ### University of Southern California
