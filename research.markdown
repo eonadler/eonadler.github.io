@@ -62,14 +62,14 @@ COZMIC simulations with initial conditions for warm dark matter (first row), ult
 
 #### [SIDM Concerto](https://zenodo.org/records/14933624)
 
-<p style="margin-bottom: 25px">
+<p style="margin-bottom: 35px">
 I am leading SIDM Concerto: cosmological zoom-in simulations of strong, velocity-dependent self-interacting dark matter (SIDM) models spanning seven decades of subhalo mass. These simulations provide a benchmark for testing SIDM predictions with astrophysical observations of dwarf galaxies, strong lenses, and stellar streams.
 </p>
 
 <p align="center">
 <img src="https://eonadler.github.io/assets/img/concerto_viz.jpeg" alt="concerto" width="75%">
 </p>
-<p style="line-height: 1.0; margin-top: -10px; margin-bottom: -20px"><sub> 
+<p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
 SIDM Concerto simulations of an LMC-mass (top left), Milky Way-mass (top right), group-mass (bottom left), and cluster-mass (bottom right) host. Adapted from <a href="https://arxiv.org/abs/2503.10748">Nadler et al. 2025</a>.
 </sub></p>
 
