@@ -50,7 +50,7 @@ My work in this area addresses the following key questions:
 #### [COZMIC](https://zenodo.org/records/14649137)
 
 <p style="margin-bottom: 35px">
-I am leading COZMIC: <b>CO</b>smological <b>Z</b>oo<b>M</b>-in simulations with <b>I</b>nitial <b>C</b>onditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, interacting, and mixed dark matter. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and accurately captures how dark matter physics that changes small-scale density perturbations impacts substructure. See the <a href="https://arxiv.org/abs/2410.03635">COZMIC I</a>, <a href="https://arxiv.org/abs/2411.03431">COZMIC II</a>, and <a href="https://arxiv.org/abs/2412.13065">COZMIC III</a> papers.
+I am leading COZMIC: <b>CO</b>smological <b>Z</b>oo<b>M</b>-in simulations with <b>I</b>nitial <b>C</b>onditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, interacting, and mixed dark matter. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and accurately captures how dark matter physics impacts Milky Way substructure. See the <a href="https://arxiv.org/abs/2410.03635">COZMIC I</a>, <a href="https://arxiv.org/abs/2411.03431">COZMIC II</a>, and <a href="https://arxiv.org/abs/2412.13065">COZMIC III</a> papers.
 </p>
 
 <p align="center">
@@ -62,7 +62,7 @@ COZMIC simulations with initial conditions for warm dark matter (first row), ult
 
 #### [SIDM Concerto](https://zenodo.org/records/14933624)
 
-<p style="margin-bottom: 35px">
+<p style="margin-top: -10px; margin-bottom: 35px">
 I am leading SIDM Concerto: cosmological zoom-in simulations of strong, velocity-dependent self-interacting dark matter (SIDM) models spanning seven decades of subhalo mass. These simulations provide a benchmark for testing SIDM predictions with astrophysical observations of dwarf galaxies, strong lenses, and stellar streams.
 </p>
 
@@ -102,7 +102,7 @@ I led <a href="https://iopscience.iop.org/article/10.3847/1538-4357/acb68c">Symp
 I am developing predictions for the mass spectrum of dark matter halos that form stars. By including molecular hydrogen cooling and relative streaming motion between dark matter and baryons, this model predicts that halos down to 10 million solar masses today form stars, while smaller systems remain dark. This threshold is significantly smaller than previous predictions that were based only on atomic hydrogen cooling and reionization.
 
 <p align="center">
-<img src="https://eonadler.github.io/assets/img/fgal_viz.jpeg" alt="fgal" width="75%">
+<img src="https://eonadler.github.io/assets/img/fgal_viz.jpeg" alt="fgal" width="100%">
 </p>
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
 The fraction of dark matter halos that form galaxies (left panel) and a sample of halo growth histories (right panel). Blue lines show predictions including molecular hydrogen cooling and dark matter--baryon streaming; the orange lines only include atomic hydrogen cooling and reionization. Halos that pass above the thick lines in the right panel form stars. Adapted from <a href="https://arxiv.org/abs/2503.04885">Nadler 2025</a>.
