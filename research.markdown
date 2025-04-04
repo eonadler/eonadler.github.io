@@ -47,10 +47,10 @@ My work in this area addresses the following key questions:
 
 ### Cosmological Simulations of Small-scale Structure
 
-#### COZMIC
+#### [COZMIC](https://zenodo.org/records/14649137)
 
 <p style="margin-bottom: 35px">
-I am leading COZMIC: <b>CO</b>smological <b>Z</b>oo<b>M</b>-in simulations with <b>I</b>nitial <b>C</b>onditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, and interacting dark matter; many of these simulations include dark matter self-interactions. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and accurately captures the impact of dark matter physics on small-scale structure.
+I am leading COZMIC: <b>CO</b>smological <b>Z</b>oo<b>M</b>-in simulations with <b>I</b>nitial <b>C</b>onditions beyond CDM. COZMIC includes hundreds of simulations with initial conditions for warm, ultra-light, interacting, and mixed dark matter. COZMIC is the largest collection of beyond-CDM zoom-in simulations to date, and accurately captures how dark matter physics that changes small-scale density perturbations impacts substructure. See the <a href="https://arxiv.org/abs/2410.03635">COZMIC I</a>, <a href="https://arxiv.org/abs/2411.03431">COZMIC II</a>, and <a href="https://arxiv.org/abs/2412.13065">COZMIC III</a> papers.
 </p>
 
 <p align="center">
@@ -59,6 +59,20 @@ I am leading COZMIC: <b>CO</b>smological <b>Z</b>oo<b>M</b>-in simulations with 
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
 COZMIC simulations with initial conditions for warm dark matter (first row), ultra-light "fuzzy" dark matter (second row), and dark matter--proton scattering models (bottom rows). Adapted from <a href="https://arxiv.org/abs/2410.03635">Nadler et al. 2024</a>.
 </sub></p>
+
+#### [SIDM Concerto](https://zenodo.org/records/14933624)
+
+<p style="margin-bottom: 35px">
+I am leading SIDM Concerto: cosmological zoom-in simulations of strong, velocity-dependent self-interacting dark matter (SIDM) models spanning seven decades of subhalo mass. These simulations provide a benchmark for testing SIDM predictions with astrophysical observations of dwarf galaxies, strong lenses, and stellar streams.
+</p>
+
+<p align="center">
+<img src="https://eonadler.github.io/assets/img/concerto_viz.jpeg" alt="concerto" width="75%">
+</p>
+<p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
+SIDM Concerto simulations of an LMC-mass (top left), Milky Way-mass (top right), group-mass (bottom left), and cluster-mass (bottom right) host. Adapted from <a href="https://arxiv.org/abs/2503.10748">Nadler et al. 2025</a>.
+</sub></p>
+
 
 #### [Milky Way-est](https://web.stanford.edu/group/gfc/gfcsims/build/html/mwest_overview.html)
 
@@ -83,15 +97,15 @@ I led <a href="https://iopscience.iop.org/article/10.3847/1538-4357/acb68c">Symp
 
 ### Empirical and Semi-analytic Models
 
-#### Constrained Merger Trees
+#### Galaxy Formation Threshold
 
-<p style="margin-bottom: 32px">
-I am expanding the open-source structure and galaxy formation model <a href="https://github.com/galacticusorg/galacticus/wiki">GALACTICUS</a> to efficiently and accurately generate constrained realizations of the Milky Way's subhalo and satellite galaxy population. This tool will be thousands of times faster than existing methods and calibrated on COZMIC simulations. In <a href="https://academic.oup.com/mnras/article/521/3/3201/7068109?login=false">Nadler et al. 2022</a>, I introduced the constrained merger tree technique to model high-redshift JWST galaxies.
+I am developing predictions for the mass spectrum of dark matter halos that form stars. By including molecular hydrogen cooling and relative streaming motion between dark matter and baryons, this model predicts that halos down to 10 million solar masses today form stars, while smaller systems remain dark. This threshold is significantly smaller than previous predictions that were based only on atomic hydrogen cooling and reionization.
+
+<p align="center">
+<img src="https://eonadler.github.io/assets/img/fgal_viz.jpeg" alt="fgal" width="75%">
 </p>
-
-![galacticus]({{eonadler.github.io}}/assets/img/galacticus.png){:width="100%"}
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
-Example of a Milky Way system's merger tree (left panel) and dark matter substructure (right panel) generated using GALACTICUS. The constrained merger tree technique guarantees that the Milky Way host (black) accretes an LMC analog (red).
+The fraction of dark matter halos that form galaxies (left panel) and a sample of halo growth histories (right panel). Blue lines show predictions including molecular hydrogen cooling and dark matter--baryon streaming; the orange lines only include atomic hydrogen cooling and reionization. Halos that pass above the thick lines in the right panel form stars. Adapted from <a href="https://arxiv.org/abs/2503.04885">Nadler 2025</a>.
 </sub></p>
 
 #### Faint-end Galaxy--Halo Connection
@@ -107,6 +121,17 @@ In <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab846a">Nadler 
 ![galhalo]({{eonadler.github.io}}/assets/img/galhalo.png){:width="100%"}
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -15px"><sub>
 The fraction of low-mass halos that host galaxies (left panel) and the corresponding stellar mass--halo mass relation (right panel), derived by combining a galaxy--halo connection model with observations of the Milky Way dwarf satellite galaxy population. Blue regions are allowed by the data. The smallest halos consistent with hosting ultra-faint dwarf galaxies weigh ~100 million solar masses, and may have formed stars through molecular hydrogen cooling. Adapted from <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab846a">Nadler et al. (2020)</a>.
+</sub></p>
+
+#### Constrained Merger Trees
+
+<p style="margin-bottom: 32px">
+I am expanding the open-source structure and galaxy formation model <a href="https://github.com/galacticusorg/galacticus/wiki">GALACTICUS</a> to efficiently and accurately generate constrained realizations of the Milky Way's subhalo and satellite galaxy population. This tool will be thousands of times faster than existing methods and calibrated on COZMIC simulations. In <a href="https://academic.oup.com/mnras/article/521/3/3201/7068109?login=false">Nadler et al. 2022</a>, I introduced the constrained merger tree technique to model high-redshift JWST galaxies.
+</p>
+
+![galacticus]({{eonadler.github.io}}/assets/img/galacticus.png){:width="100%"}
+<p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
+Example of a Milky Way system's merger tree (left panel) and dark matter substructure (right panel) generated using GALACTICUS. The constrained merger tree technique guarantees that the Milky Way host (black) accretes an LMC analog (red).
 </sub></p>
 
 ### Dark Matter Constraints and Predictions
