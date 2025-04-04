@@ -62,14 +62,14 @@ COZMIC simulations with initial conditions for warm dark matter (first row), ult
 
 #### [SIDM Concerto](https://zenodo.org/records/14933624)
 
-<p style="margin-top: -10px; margin-bottom: 35px">
+<p style="margin-bottom: 35px">
 I am leading SIDM Concerto: cosmological zoom-in simulations of strong, velocity-dependent self-interacting dark matter (SIDM) models spanning seven decades of subhalo mass. These simulations provide a benchmark for testing SIDM predictions with astrophysical observations of dwarf galaxies, strong lenses, and stellar streams.
 </p>
 
 <p align="center">
 <img src="https://eonadler.github.io/assets/img/concerto_viz.jpeg" alt="concerto" width="75%">
 </p>
-<p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
+<p style="line-height: 1.0; margin-top: -25px; margin-bottom: -20px"><sub> 
 SIDM Concerto simulations of an LMC-mass (top left), Milky Way-mass (top right), group-mass (bottom left), and cluster-mass (bottom right) host. Adapted from <a href="https://arxiv.org/abs/2503.10748">Nadler et al. 2025</a>.
 </sub></p>
 
@@ -102,7 +102,7 @@ I led <a href="https://iopscience.iop.org/article/10.3847/1538-4357/acb68c">Symp
 I am developing predictions for the mass spectrum of dark matter halos that form stars. By including molecular hydrogen cooling and relative streaming motion between dark matter and baryons, this model predicts that halos down to 10 million solar masses today form stars, while smaller systems remain dark. This threshold is significantly smaller than previous predictions that were based only on atomic hydrogen cooling and reionization.
 
 <p align="center">
-<img src="https://eonadler.github.io/assets/img/fgal_viz.jpeg" alt="fgal" width="100%">
+<img src="https://eonadler.github.io/assets/img/fgal_viz.jpeg" alt="fgal" width="125%">
 </p>
 <p style="line-height: 1.0; margin-top: -15px; margin-bottom: -20px"><sub> 
 The fraction of dark matter halos that form galaxies (left panel) and a sample of halo growth histories (right panel). Blue lines show predictions including molecular hydrogen cooling and dark matter--baryon streaming; the orange lines only include atomic hydrogen cooling and reionization. Halos that pass above the thick lines in the right panel form stars. Adapted from <a href="https://arxiv.org/abs/2503.04885">Nadler 2025</a>.

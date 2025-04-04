@@ -6,7 +6,7 @@ layout: default
 cover:  true
 ---
 
-Welcome! I am an assistant professor at the [University of California, San Diego](https://www.ucsd.edu/) in the Department of Astronomy & Astrophysics](https://astro.ucsd.edu/).
+Welcome! I am an assistant professor at the [University of California, San Diego](https://www.ucsd.edu/) in the [Department of Astronomy & Astrophysics](https://astro.ucsd.edu/).
 
 My [research](./research.markdown) focuses on galaxy formation, dark matter, and near-field cosmology. In particular, I study the formation and evolution of the faintest galaxies, the microphysical nature of dark matter, and small-scale cosmic structure. I tackle these problems using cosmological simulations, semi-analytic models of the galaxy--halo connection, dark matter theory, and observations of dwarf galaxies and strong gravitational lenses.
 
