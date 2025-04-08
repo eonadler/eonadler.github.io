@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2025
 
+(55) **E. O. Nadler**. *The Impact of Molecular Hydrogen Cooling on the Galaxy Formation Threshold*. 2025, [ApJL, 983, L23](https://iopscience.iop.org/article/10.3847/2041-8213/adbc6e).
+
 (54) S. Ando, S. Horigome, **E. O. Nadler**, D. Yang, and H.-B. Yu. *SASHIMI-SIDM: semi-analytical subhalo modelling for self-interacting dark matter at sub-galactic scales*. 2025, [JCAP, 2, 053](https://iopscience.iop.org/article/10.1088/1475-7516/2025/02/053).
 
 (53) W. Crumrine, **E. O. Nadler**, R. An, and V. Gluscevic. *Dark matter coupled to radiation: Limits from the Milky Way satellites*. 2025, [PRD, 111, 023530](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.023530).

@@ -14,6 +14,8 @@ title:  Media
 
 My work has been highlighted in a number of press releases, including:
 
+* **[UC San Diego Today](https://today.ucsd.edu/story/dark-dark-matter-halos)**: *Do “Completely Dark” Dark Matter Halos Exist?* (4/8/2025);
+
 * **[UC Riverside News](https://news.ucr.edu/articles/2023/12/06/new-dark-matter-theory-explains-two-puzzles-astrophysics)**: *New dark matter theory explains two puzzles in astrophysics* (12/6/2023);
 
 * **[Quanta Magazine](https://www.quantamagazine.org/in-a-monster-stars-light-a-hint-of-darkness-20230829/)**: *In a Monster Star’s Light, a Hint of Darkness* (8/29/2023);
