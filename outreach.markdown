@@ -16,7 +16,7 @@ I am involved in several outreach activies to help foster a diverse, equitable, 
 
 * I run **[AstroReach](https://sites.google.com/ucsd.edu/astroreach/)**, a hands-on astronomy education program for high-school students.
 
-	* **[AstroReach SD](https://sites.google.com/ucsd.edu/astroreach/astroreach-sd?authuser=0)** is currently running at [The Preuss School](https://preuss.ucsd.edu/). I am teaching the first course, *Dark Matter & Python*, supported by the UCSD [School of Physical Sciences](https://physicalsciences.ucsd.edu/). 
+	* **[AstroReach SD](https://sites.google.com/ucsd.edu/astroreach/astroreach-sd?authuser=0)** is currently running at [The Preuss School](https://preuss.ucsd.edu/). I taught the first course in Winter 2025, *Dark Matter & Python*, supported by the UCSD [School of Physical Sciences](https://physicalsciences.ucsd.edu/). 
 
     * **[AstroReach LA](https://sites.google.com/ucsd.edu/astroreach/astroreach-la?authuser=0)** was held at [USC Hybrid High School](https://www.ednovate.org/hybrid) in Spring 2022. I taught the course *Dark Matter & Data Visualization*, which was supported by a **[Carnegie Outreach Grant](https://carnegiescience.edu/news/inaugural-carnegie-dei-mini-grants-awarded)** and run in partnership with [Create Now](https://createnow.org/whatwedo/ourmission/), an arts education organization that empowers underserved youth throughout Los Angeles. All course materials are [online](https://docs.google.com/document/d/1f9bxYBslAa2ewfoNRDVXP7rPLzTOJFpWmnJYcIwo1MU/edit?usp=sharing).
 

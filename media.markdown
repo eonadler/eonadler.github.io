@@ -14,6 +14,8 @@ title:  Media
 
 My work has been highlighted in a number of press releases, including:
 
+* **[UC San Diego Today](https://today.ucsd.edu/story/astroreachsd-young-minds-big-questions)**: *A New Astronomy Programs Helps Young Minds Tackle Big Questions* (4/22/2025);
+
 * **[UC San Diego Today](https://today.ucsd.edu/story/dark-dark-matter-halos)**: *Do “Completely Dark” Dark Matter Halos Exist?* (4/8/2025);
 
 * **[UC Riverside News](https://news.ucr.edu/articles/2023/12/06/new-dark-matter-theory-explains-two-puzzles-astrophysics)**: *New dark matter theory explains two puzzles in astrophysics* (12/6/2023);
