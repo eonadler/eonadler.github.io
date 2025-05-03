@@ -41,7 +41,7 @@ My work has been highlighted in a number of press releases, including:
  
 I have given over fifty contributed and invited talks, listed on my [CV](./CV.pdf), several of which are highlighted below:
 
-* **[UCSD Stellar Beginnings: Astronomy & Astrophysics Department Launch]**: *Small Galaxies Packed with Dark Matter* (5/2/2025);
+* **[UCSD Stellar Beginnings: Astronomy & Astrophysics Department Launch](https://universitydevelopment.cmail19.com/t/d-e-sdriuht-dkijeuldt-h/)**: *Small Galaxies Packed with Dark Matter* (5/2/2025);
 
 * **[KITP: Blackboard Talk](https://online.kitp.ucsb.edu/online/bblunch/)**: *Dark Matter Physics in the Sky* (6/17/2024) ([video](https://online.kitp.ucsb.edu/online/bblunch/nadler/));
 
