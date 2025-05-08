@@ -71,7 +71,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (29) **E. O. Nadler**, P. Mansfield, Y. Wang, X. Du et al. *Symphony: Cosmological Zoom-in Simulation Suites over Four Decades of Host Halo Mass*. 2023, [ApJ, 945, 159](https://iopscience.iop.org/article/10.3847/1538-4357/acb68c).
 
-(28) **E. O. Nadler**, A. Benson, T. Driskell, V. Gluscevic, and X. Du. *Growing the First Galaxies' Merger Trees*. 2023, [MNRAS, 521, 3201](https://academic.oup.com/mnras/article-abstract/521/3/3201/7068109).
+(28) **E. O. Nadler**, A. Benson, T. Driskell, V. Gluscevic, and X. Du. *Growing the first galaxies' merger trees*. 2023, [MNRAS, 521, 3201](https://academic.oup.com/mnras/article-abstract/521/3/3201/7068109).
 
 (27) S. Wagner-Carena, J. Aalbers, S. Birrer, **E. O. Nadler**, E. Darragh-Ford, P. J. Marshall, and R. H. Wechsler. *From Images to Dark Matter: End-to-end Inference of Substructure from Hundreds of Strong Gravitational Lenses*. 2023, [ApJ, 942, 75](https://iopscience.iop.org/article/10.3847/1538-4357/aca525).
 
@@ -109,7 +109,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (15) **E. O. Nadler**, A. Drlica-Wagner et al. (DES Collaboration). *Constraints on Dark Matter Properties from Observations of Milky Way Satellite Galaxies*. 2021, [PRL, 126, 091101](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.091101).
 
-(14) S. Das & **E. O. Nadler**. *Constraints on the epoch of dark matter formation from Milky Way satellites*. 2021, [PRD, 103, 043517](https://arxiv.org/abs/2010.01137).
+(14) S. Das & **E. O. Nadler**. *Constraints on the epoch of dark matter formation from Milky Way satellites*. 2021, [PRD, 103, 043517](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.103.043517).
 
 (13) K. Maamari, V. Gluscevic, K. K. Boddy, **E. O. Nadler**, and R. H. Wechsler. *Bounds on velocity-dependent dark matter–proton scattering from Milky Way satellite abundance*. 2021, [ApJL, 907, L46](https://iopscience.iop.org/article/10.3847/2041-8213/abd807).
 

@@ -16,7 +16,7 @@ I collaborate on and lead interdisciplinary research at the intersection of cogn
 
 (5) D. Guilbeault, S. Delecourt, T. Hull, B. S. Desikan, M. Chu, and **E. O. Nadler**. *Online images amplify gender bias*. 2024, [Nature, 626, 1049](https://www.nature.com/articles/s41586-024-07068-x).
 
-(4) **E. O. Nadler**, E. Darragh-Ford, B. S. Desikan, C. Conaway, M. Chu, T. Hull, and D. Guilbeault. *Divergences in Color Perception between Deep Neural Networks and Humans*. 2023, [Cognition, 241, 105621](https://www.sciencedirect.com/science/article/abs/pii/S001002772300255X).
+(4) **E. O. Nadler**, E. Darragh-Ford, B. S. Desikan, C. Conaway, M. Chu, T. Hull, and D. Guilbeault. *Divergences in Color Perception between deep neural networks and humans*. 2023, [Cognition, 241, 105621](https://www.sciencedirect.com/science/article/abs/pii/S001002772300255X).
 
 (3) M. Chu, B. S. Desikan, **E. O. Nadler**, R. L. Sardo, E. Darragh-Ford, and D. Guilbeault. *Signal in Noise: Exploring Meaning Encoded in Random Character Sequences with Character-Aware Language Models*. 2022, [Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics, 7120](https://aclanthology.org/2022.acl-long.492/).
 
