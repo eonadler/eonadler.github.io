@@ -13,7 +13,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2025
 
-(60) Y. Wang, P. Mansfield, **E. O. Nadler**, E. Darragh-Ford, R. H. Wechsler, D. Yang, and H.-B. Yu. *EDEN: Exploring Disks Embedded in N-body Simulations of Milky Way–mass Halos from Symphony*. 2025, [ApJ, 986, 147].
+(60) Y. Wang, P. Mansfield, **E. O. Nadler**, E. Darragh-Ford, R. H. Wechsler, D. Yang, and H.-B. Yu. *EDEN: Exploring Disks Embedded in N-body Simulations of Milky Way–mass Halos from Symphony*. 2025, [ApJ, 986, 147](https://iopscience.iop.org/article/10.3847/1538-4357/adcfa3).
 
 (59) **E. O. Nadler**, R. An, D. Yang, H.-B. Yu, A. Benson, and V. Gluscevic. *COZMIC. III. Cosmological Zoom-in Simulations of Self-interacting Dark Matter with Suppressed Initial Conditions*. 2025, [ApJ, 986, 129](https://iopscience.iop.org/article/10.3847/1538-4357/adce82).
 
