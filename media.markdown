@@ -14,6 +14,8 @@ title:  Media
 
 My work has been highlighted in a number of press releases, including:
 
+* **[USC Today](https://today.usc.edu/scientists-code-milky-way-twin-galaxies-to-better-understand-dark-matter/)**: *Scientists code Milky Way twin galaxies to better understand dark matter* (6/16/2025);
+
 * **[UC San Diego Today](https://today.ucsd.edu/story/astroreachsd-young-minds-big-questions)**: *A New Astronomy Programs Helps Young Minds Tackle Big Questions* (4/22/2025);
 
 * **[UC San Diego Today](https://today.ucsd.edu/story/dark-dark-matter-halos)**: *Do “Completely Dark” Dark Matter Halos Exist?* (4/8/2025);
