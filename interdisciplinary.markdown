@@ -36,3 +36,7 @@ I am involved in several artistic pursuits related to my research. Examples incl
 * **[CharityBuzz](https://www.charitybuzz.com/catalog_items/auction-144-poems-by-emily-dickinson-144-poems-by-2068100)**: *[144 Poems by Emily Dickinson and 144 Poems by Shakespeare](https://comp-syn.com/#/gallery/dickinsonthenshakespeare)* (proceeds donated to [Black Artists + Designers Guild](https://www.badguild.info/)).
 
 * **[Stanford Art of Science 2020](https://stanforddaily.com/2020/06/11/creative-reencounters-with-research-in-art-of-science-2020-exhibition/)**: *[Changing Views in Data Science over Fifty Years](https://comp-syn.com/#/gallery/changingviewsindatascienceoverfiftyyears)* (The Graduate Students in Electrical Engineering 2nd Place Prize; proceeds donated to [Black Futures Lab](https://blackfutureslab.org/)).
+
+## Media
+
+* **[UC Berkeley Haas News](https://today.ucsd.edu/story/astroreachsd-young-minds-big-questions)**: *Online images may be turning back the clock on gender bias, research finds* (2/14/2024).
