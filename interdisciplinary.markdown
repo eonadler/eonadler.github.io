@@ -14,6 +14,8 @@ title:  Interdisciplinary
 
 I collaborate on and lead interdisciplinary research at the intersection of cognition, linguistics, data science, and machine learning, often with the [comp-syn](https://comp-syn.com/) team. My interdisciplinary publications are listed below:
 
+(6) **E. O. Nadler**, D. Guilbeault, S. M. Ringold, T. R. Williamson, A. Bellemare-Pepin, I. M. Comşa, K. Jerbi, S. Narayanan, and L. Aziz-Zadeh. *Statistical or Embodied? Comparing Colorseeing, Colorblind, Painters, and Large Language Models in Their Processing of Color Metaphors*. 2025, [Cognitive Science, 49, e70083](https://onlinelibrary.wiley.com/doi/10.1111/cogs.70083).
+
 (5) D. Guilbeault, S. Delecourt, T. Hull, B. S. Desikan, M. Chu, and **E. O. Nadler**. *Online images amplify gender bias*. 2024, [Nature, 626, 1049](https://www.nature.com/articles/s41586-024-07068-x).
 
 (4) **E. O. Nadler**, E. Darragh-Ford, B. S. Desikan, C. Conaway, M. Chu, T. Hull, and D. Guilbeault. *Divergences in Color Perception between deep neural networks and humans*. 2023, [Cognition, 241, 105621](https://www.sciencedirect.com/science/article/abs/pii/S001002772300255X).
@@ -38,5 +40,7 @@ I am involved in several artistic pursuits related to my research. Examples incl
 * **[Stanford Art of Science 2020](https://stanforddaily.com/2020/06/11/creative-reencounters-with-research-in-art-of-science-2020-exhibition/)**: *[Changing Views in Data Science over Fifty Years](https://comp-syn.com/#/gallery/changingviewsindatascienceoverfiftyyears)* (The Graduate Students in Electrical Engineering 2nd Place Prize; proceeds donated to [Black Futures Lab](https://blackfutureslab.org/)).
 
 ## Media
+
+* **[Cogsci Unpacked](https://cognitivesciencesociety.org/color-metaphors-language-models-and-embodied-minds/)**: *Color Metaphors, Language Models, and Embodied Minds* (7/7/2025).
 
 * **[UC Berkeley Haas News](https://today.ucsd.edu/story/astroreachsd-young-minds-big-questions)**: *Online images may be turning back the clock on gender bias, research finds* (2/14/2024).

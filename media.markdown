@@ -14,7 +14,7 @@ title:  Media
 
 My work has been highlighted in a number of press releases, including:
 
-* **[Astronomy Magazine](https://www.qgdigitalpublishing.com/publication/?i=846120&p=12&view=issueViewer)**: *How Weird is the Milky Way?* (7/1/2025);
+* **[Astronomy Magazine](https://www.astronomy.com/science/how-weird-is-the-milky-way/)**: *How Weird is the Milky Way?* (7/1/2025);
 
 * **[USC Today](https://today.usc.edu/scientists-code-milky-way-twin-galaxies-to-better-understand-dark-matter/)**: *Scientists code Milky Way twin galaxies to better understand dark matter* (6/16/2025);
 
