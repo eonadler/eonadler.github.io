@@ -21,7 +21,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (57) **E. O. Nadler**, R. An, V. Gluscevic, A. Benson, and X. Du. *COZMIC. I. Cosmological Zoom-in Simulations with Initial Conditions Beyond Cold Dark Matter*. 2025, [ApJ, 986, 127](https://iopscience.iop.org/article/10.3847/1538-4357/adceef).
 
-(56) **E.O. Nadler** & A. Benson. *Semianalytic model for decaying dark matter halos*. 2025, [PRD, 111, 103522](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.103522).
+(56) **E. O. Nadler** & A. Benson. *Semianalytic model for decaying dark matter halos*. 2025, [PRD, 111, 103522](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.103522).
 
 (55) **E. O. Nadler**. *The Impact of Molecular Hydrogen Cooling on the Galaxy Formation Threshold*. 2025, [ApJL, 983, L23](https://iopscience.iop.org/article/10.3847/2041-8213/adbc6e).
 
