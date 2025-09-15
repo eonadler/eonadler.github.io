@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2025
 
+(63) D. C. Baxter, A. L. Coil, **E. O. Nadler**, D. Nelson, A. Pillepich, B. Forrest, F. Giddings, E. Golden-Marx, B. C. Lemaux, and D. Sikorski. *Quantifying the Impact of Incompleteness on Identifying and Interpreting Galaxy Protocluster Populations with the TNG-Cluster Simulation*. 2025, [ApJ, 990, 225](https://iopscience.iop.org/article/10.3847/1538-4357/adf644).
+
 (62) M. S. Fischer, K. Dolag, M. Garny, V. Gluscevic, F. Groth, and **E. O. Nadler**. *N-body simulations of dark matter–baryon interactions*. 2025, [A&A, 700, A145](https://www.aanda.org/articles/aa/full_html/2025/08/aa54983-25/aa54983-25.html).
 
 (61) K. Tsiane et al. (DESC Collaboration, incl. **E. O. Nadler**). *Predictions for the Detectability of Milky Way Satellite Galaxies and Outer-Halo Star Clusters with the Vera C. Rubin Observatory*. 2025, [OJAp, 8](https://astro.theoj.org/article/142072-predictions-for-the-detectability-of-milky-way-satellite-galaxies-and-outer-halo-star-clusters-with-the-vera-c-rubin-observatory).
