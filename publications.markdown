@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2025
 
+(64) **E. O. Nadler**, D. Kong, D. Yang, and H.-B. Yu. *SIDM Concerto: Compilation and Data Release of Self-interacting Dark Matter Zoom-in Simulations*. 2025, [ApJ, 991, 69](https://iopscience.iop.org/article/10.3847/1538-4357/adf553).
+
 (63) D. C. Baxter, A. L. Coil, **E. O. Nadler**, D. Nelson, A. Pillepich, B. Forrest, F. Giddings, E. Golden-Marx, B. C. Lemaux, and D. Sikorski. *Quantifying the Impact of Incompleteness on Identifying and Interpreting Galaxy Protocluster Populations with the TNG-Cluster Simulation*. 2025, [ApJ, 990, 225](https://iopscience.iop.org/article/10.3847/1538-4357/adf644).
 
 (62) M. S. Fischer, K. Dolag, M. Garny, V. Gluscevic, F. Groth, and **E. O. Nadler**. *N-body simulations of dark matter–baryon interactions*. 2025, [A&A, 700, A145](https://www.aanda.org/articles/aa/full_html/2025/08/aa54983-25/aa54983-25.html).
