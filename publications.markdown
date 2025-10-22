@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2025
 
+(66) **E. O. Nadler**, V. Gluscevic, and A. Benson. *The Effects of Linear Matter Power Spectrum Enhancement on Dark Matter Substructure*. 2025, [ApJ, 993, 17](https://iopscience.iop.org/article/10.3847/1538-4357/ae073b).
+
 (65) D. Kong, H.-B. Yu, **E. O. Nadler**, P. Mansfield, and A. Benson. *Novel challenges in tracking self-interacting dark matter subhalos*. 2025, [JCAP, 10, 074](https://iopscience.iop.org/article/10.1088/1475-7516/2025/10/074).
 
 (64) **E. O. Nadler**, D. Kong, D. Yang, and H.-B. Yu. *SIDM Concerto: Compilation and Data Release of Self-interacting Dark Matter Zoom-in Simulations*. 2025, [ApJ, 991, 69](https://iopscience.iop.org/article/10.3847/1538-4357/adf553).
