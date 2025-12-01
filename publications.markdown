@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2025
 
+(67) E. Kado-Fong et al. (SAGA Collaboration, incl. **E. O. Nadler**). *SAGAbg. III. Environmental Stellar Mass Functions, Self-quenching, and the Stellar-to-halo Mass Relation in the Dwarf Galaxy Regime*. 2025, [ApJ, 994, 231](https://iopscience.iop.org/article/10.3847/1538-4357/ae102d).
+
 (66) **E. O. Nadler**, V. Gluscevic, and A. Benson. *The Effects of Linear Matter Power Spectrum Enhancement on Dark Matter Substructure*. 2025, [ApJ, 993, 17](https://iopscience.iop.org/article/10.3847/1538-4357/ae073b).
 
 (65) D. Kong, H.-B. Yu, **E. O. Nadler**, P. Mansfield, and A. Benson. *Novel challenges in tracking self-interacting dark matter subhalos*. 2025, [JCAP, 10, 074](https://iopscience.iop.org/article/10.1088/1475-7516/2025/10/074).
