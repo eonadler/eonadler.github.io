@@ -13,7 +13,9 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2025
 
-(67) E. Kado-Fong et al. (SAGA Collaboration, incl. **E. O. Nadler**). *SAGAbg. III. Environmental Stellar Mass Functions, Self-quenching, and the Stellar-to-halo Mass Relation in the Dwarf Galaxy Regime*. 2025, [ApJ, 994, 231](https://iopscience.iop.org/article/10.3847/1538-4357/ae102d).
+(68) Y. Asali et al. (SAGA Survey, incl. **E. O. Nadler**). *The SAGA Survey. VI. The Size–Mass Relation for Low-mass Galaxies Across Environments*. 2025, [ApJ, 995, 79](https://iopscience.iop.org/article/10.3847/1538-4357/ae147d/meta).
+
+(67) E. Kado-Fong et al. (SAGA Survey, incl. **E. O. Nadler**). *SAGAbg. III. Environmental Stellar Mass Functions, Self-quenching, and the Stellar-to-halo Mass Relation in the Dwarf Galaxy Regime*. 2025, [ApJ, 994, 231](https://iopscience.iop.org/article/10.3847/1538-4357/ae102d).
 
 (66) **E. O. Nadler**, V. Gluscevic, and A. Benson. *The Effects of Linear Matter Power Spectrum Enhancement on Dark Matter Substructure*. 2025, [ApJ, 993, 17](https://iopscience.iop.org/article/10.3847/1538-4357/ae073b).
 
@@ -49,13 +51,13 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2024
 
-(50) Y. Wang, **E. O. Nadler** et al. (SAGA Collaboration). *The SAGA Survey. V. Modeling Satellite Systems around Milky Way–Mass Galaxies with Updated <tt>UNIVERSEMACHINE</tt>*. 2024, [ApJ, 976, 119](https://iopscience.iop.org/article/10.3847/1538-4357/ad7f4c).
+(50) Y. Wang, **E. O. Nadler** et al. (SAGA Survey). *The SAGA Survey. V. Modeling Satellite Systems around Milky Way–Mass Galaxies with Updated <tt>UNIVERSEMACHINE</tt>*. 2024, [ApJ, 976, 119](https://iopscience.iop.org/article/10.3847/1538-4357/ad7f4c).
 
-(49) M. Geha et al. (SAGA Collaboration, incl. **E. O. Nadler**). *The SAGA Survey. IV. The Star Formation Properties of 101 Satellite Systems around Milky Way–mass Galaxies*. 2024, [ApJ, 976, 118](https://iopscience.iop.org/article/10.3847/1538-4357/ad61e7).
+(49) M. Geha et al. (SAGA Survey, incl. **E. O. Nadler**). *The SAGA Survey. IV. The Star Formation Properties of 101 Satellite Systems around Milky Way–mass Galaxies*. 2024, [ApJ, 976, 118](https://iopscience.iop.org/article/10.3847/1538-4357/ad61e7).
 
-(48) Y.-Y. Mao et al. (SAGA Collaboration, incl. **E. O. Nadler**). *The SAGA Survey. III. A Census of 101 Satellite Systems around Milky Way–mass Galaxies*. 2024, [ApJ, 976, 117](https://iopscience.iop.org/article/10.3847/1538-4357/ad64c4).
+(48) Y.-Y. Mao et al. (SAGA Survey, incl. **E. O. Nadler**). *The SAGA Survey. III. A Census of 101 Satellite Systems around Milky Way–mass Galaxies*. 2024, [ApJ, 976, 117](https://iopscience.iop.org/article/10.3847/1538-4357/ad64c4).
 
-(47) E. Kado-Fong et al. (SAGA Collaboration, incl. **E. O. Nadler**). *SAGAbg. II. The Low-mass Star-forming Sequence Evolves Significantly between 0.05 < z < 0.21*. 2024, [ApJ, 976, 83](https://iopscience.iop.org/article/10.3847/1538-4357/ad8137).
+(47) E. Kado-Fong et al. (SAGA Survey, incl. **E. O. Nadler**). *SAGAbg. II. The Low-mass Star-forming Sequence Evolves Significantly between 0.05 < z < 0.21*. 2024, [ApJ, 976, 83](https://iopscience.iop.org/article/10.3847/1538-4357/ad8137).
 
 (46) D. Buch, **E. O. Nadler**, R. H. Wechsler, and Y.-Y. Mao. *Milky Way-est: Cosmological Zoom-in Simulations with Large Magellanic Cloud and Gaia–Sausage–Enceladus Analogs*. 2024, [ApJ, 971, 179](https://iopscience.iop.org/article/10.3847/1538-4357/ad554c).
 
@@ -65,7 +67,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (43) **E. O. Nadler**, V. Gluscevic, T. Driskell, R. H. Wechsler, L. A. Moustakas, A. Benson, and Y.-Y. Mao. *Forecasts for Galaxy Formation and Dark Matter Constraints from Dwarf Galaxy Surveys*. 2024, [ApJ, 967, 61](https://iopscience.iop.org/article/10.3847/1538-4357/ad3bb1).
 
-(42) E. Kado-Fong et al. (SAGA Collaboration, incl. **E. O. Nadler**). *SAGAbg. I. A Near-unity Mass-loading Factor in Low-mass Galaxies via Their Low-redshift Evolution in Stellar Mass, Oxygen Abundance, and Star Formation Rate*. 2024, [ApJ, 966, 129](https://iopscience.iop.org/article/10.3847/1538-4357/ad3042).
+(42) E. Kado-Fong et al. (SAGA Survey, incl. **E. O. Nadler**). *SAGAbg. I. A Near-unity Mass-loading Factor in Low-mass Galaxies via Their Low-redshift Evolution in Stellar Mass, Oxygen Abundance, and Star Formation Rate*. 2024, [ApJ, 966, 129](https://iopscience.iop.org/article/10.3847/1538-4357/ad3042).
 
 (41) N. Ahvazi, A. Benson, L. V. Sales, **E. O. Nadler**, S. Weerasooriya, X. Du, and M. S. Bovill. *A comprehensive model for the formation and evolution of the faintest Milky Way dwarf satellites*. 2024, [MNRAS, 529, 3387](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stae761/7631365).
 
