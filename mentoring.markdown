@@ -75,7 +75,8 @@ I am teaching undergraduate and graduate courses in the Astronomy & Astrophysics
 
 ### UC San Diego
 
-* *[ASTR 2 (Galaxies and the Universe)](https://catalog.ucsd.edu/courses/ASTR.html)* (professor, Spring 2025)
+* *[ASTR 2 (Galaxies and the Universe)](https://catalog.ucsd.edu/courses/ASTR.html)* (professor, Spring 2025, 2026)
+* *[ASTR 122 (Physical Cosmology)](https://catalog.ucsd.edu/courses/ASTR.html)* (professor, Winter 2026)
 
 <p style="margin-bottom: -32px">
 </p>
