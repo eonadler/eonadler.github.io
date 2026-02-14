@@ -38,5 +38,3 @@ I give back to the scientific community through public lectures, workshops, peer
 * I am currently the **postdoctoral scholar mentor** for the UCSD Department of Astronomy & Astrophysics.
 
 * I was the postdoc and staff representative for the **[USC Physics & Astronomy Climate Committee](https://docs.google.com/document/d/1bk8EV-XkrqwboUlVhjYrmi--NbCFyo3s86ffWheQjbo/edit)** from 2021--2024. I developed and analyzed a department-wide climate survey in 2022.
-
-* I have led **data visualization workshops** at the Santa Fe Institute [Complex Systems Summer School](https://wiki.santafe.edu/index.php/Complex_Systems_Summer_School_2019_(CSSS)) and [KIPAC](https://kipac.github.io/BootCamp/). 

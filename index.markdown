@@ -28,4 +28,4 @@ In 2021, I received my Ph.D. in Physics from [Stanford University](https://physi
 
 In 2016, I received my B.S. in Physics from the [University of California, Santa Barbara](https://www.physics.ucsb.edu/) in the [College of Creative Studies](https://www.ccs.ucsb.edu/), advised by [Peng Oh](https://web.physics.ucsb.edu/~peng/).
 
-I am passionate about interdisciplinary science; for example, I have participated in programs at the [Santa Fe Institute](https://www.santafe.edu/), where I co-founded the research collective [comp-syn](https://comp-syn.com/#/). My interdisciplinary work is described [here](./interdisciplinary.markdown).
+I am passionate about interdisciplinary research; for example, I am a Lattimer Research Fellow for Cross-disciplinary Explorations at UCSD, and I co-founded the research collective [comp-syn](https://comp-syn.com/#/). My interdisciplinary work is described [here](./interdisciplinary.markdown).

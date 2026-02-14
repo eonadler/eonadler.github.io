@@ -24,7 +24,7 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 * [Elise Darragh-Ford](https://kipac.stanford.edu/people/elise-darragh-ford), Stanford: Dwarf galaxy searches using *Gaia* ([E. Darragh-Ford, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac0053/meta));
 
-* [Trey Driskell](https://www.linkedin.com/in/george-driskell/), USC: Semi-analytic modeling of structure and galaxy formation ([T. Driskell, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.103525), [2024](https://arxiv.org/abs/2410.11680));
+* [Trey Driskell](https://www.linkedin.com/in/george-driskell/), USC: Semi-analytic modeling of structure and galaxy formation ([T. Driskell, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.103525));
 
 * [Noah Glennon](https://kipac.stanford.edu/people/noah-glennon-0), UNH: Soliton orbital evolution in self-interacting ultra-light dark matter ([N. Glennon, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540), [N. Glennon, N. Musoke, E. O. Nadler *et al.* 2024](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.063501));
 
