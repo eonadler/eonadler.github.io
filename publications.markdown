@@ -11,6 +11,10 @@ title:  Publications
 Refereed journal publications are listed by year below. For a list including papers in review, white papers, and interdisciplinary publications, please see my <a href="./CV.pdf">CV</a>. All articles below are available on the <a href="https://arxiv.org/">arXiv</a>.
 </p>
 
+## 2026
+
+(69) C. Y. Tan, A. Drlica-Wagner, A. B. Pace, W. Cerny, **E. O. Nadler** et al. (DELVE Collaboration). *DELVE Milky Way Satellite Galaxy Census. I. Satellite Population and Survey Selection Function in DES, DELVE, and Pan-STARRS*. 2026, [ApJ, 1000, 87](https://iopscience.iop.org/article/10.3847/1538-4357/ae4479/meta).
+
 ## 2025
 
 (68) Y. Asali et al. (SAGA Survey, incl. **E. O. Nadler**). *The SAGA Survey. VI. The Size–Mass Relation for Low-mass Galaxies Across Environments*. 2025, [ApJ, 995, 79](https://iopscience.iop.org/article/10.3847/1538-4357/ae147d/meta).
