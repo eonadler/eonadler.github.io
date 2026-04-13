@@ -13,7 +13,9 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2026
 
-(69) C. Y. Tan, A. Drlica-Wagner, A. B. Pace, W. Cerny, **E. O. Nadler** et al. (DELVE Collaboration). *DELVE Milky Way Satellite Galaxy Census. I. Satellite Population and Survey Selection Function in DES, DELVE, and Pan-STARRS*. 2026, [ApJ, 1000, 87](https://iopscience.iop.org/article/10.3847/1538-4357/ae4479/meta).
+(70) C. Y. Tan, A. Drlica-Wagner, A. B. Pace, W. Cerny, **E. O. Nadler** et al. (DELVE Collaboration). *DELVE Milky Way Satellite Galaxy Census. I. Satellite Population and Survey Selection Function in DES, DELVE, and Pan-STARRS*. 2026, [ApJ, 1000, 87](https://iopscience.iop.org/article/10.3847/1538-4357/ae4479/meta).
+
+(69) B. Feng, **E. O. Nadler**, S. P. Oh, and S. Ji. *The non-universal pseudo-phase-space density profiles of symphony host haloes*. 2026, [MNRAS, 546, stag215](https://academic.oup.com/mnras/article/546/4/stag215/8450193).
 
 ## 2025
 
