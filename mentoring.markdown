@@ -30,7 +30,7 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 * [Sidney Mau](https://sidneymau.com/), Stanford: Constraining the dark matter particle lifetime using ultra-faint dwarf galaxies ([S. Mau, E. O. Nadler *et al.* 2022](https://iopscience.iop.org/article/10.3847/1538-4357/ac6e65));
 
-* [Siddhesh Raut](https://www.linkedin.com/in/siddheshraut), USC/Carnegie: Self-interacting dark matter halo gravothermal evolution modeling;
+* [Siddhesh Raut](https://www.linkedin.com/in/siddheshraut), USC/Carnegie: Self-interacting dark matter halo gravothermal evolution modeling ([S. Raut, E. O. Nadler *et al.* 2026](https://arxiv.org/abs/2604.22013));
 
 * [Yunchong (Richie) Wang](https://profiles.stanford.edu/richie-wang), Stanford: Empirically modeling dwarf galaxy star formation histories ([Y. Wang, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac024a), [2024a](https://iopscience.iop.org/article/10.3847/1538-4357/ad7f4c); [Y. Wang, P. Mansfield, E. O. Nadler *et al.* 2024b](https://arxiv.org/abs/2408.01487)).
 
