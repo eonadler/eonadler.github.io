@@ -20,7 +20,7 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 * [Niusha Ahvazi](https://ctac.carnegiescience.edu/niusha-ahvazi), UCR/Carnegie &rarr; UVA: Semi-analytic modeling of dwarf galaxy formation and evolution ([N. Ahvazi, A. Benson, L. Sales, E. O. Nadler *et al.* 2024)](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stae761/7631365);
 
-* [Wendy Crumrine](https://wcrumrine.github.io/), USC: Constraining dark matter--radiation interactions with small-scale structure ([W. Crumrine, E. O. Nadler *et al.* 2024](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.023530));
+* [Wendy Crumrine](https://wcrumrine.github.io/), USC: Constraining dark matter--radiation interactions with small-scale structure ([W. Crumrine, E. O. Nadler *et al.* 2024](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.023530); [W. Crumrine, D. Pang, E. O. Nadler *et al.* 2026](https://arxiv.org/abs/2606.10006));
 
 * [Elise Darragh-Ford](https://kipac.stanford.edu/people/elise-darragh-ford), Stanford: Dwarf galaxy searches using *Gaia* ([E. Darragh-Ford, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac0053/meta));
 
