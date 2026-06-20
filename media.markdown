@@ -12,7 +12,9 @@ title:  Media
 
 ## News
 
-My work has been highlighted in a number of press releases, including:
+My work has been highlighted in a number of press releases and articles, including:
+
+* **[Space.com](https://www.space.com/astronomy/galaxies/dark-subhaloes-may-explain-why-galaxies-seem-to-form-pre-determined-shapes)**: *'Dark subhaloes' may explain why galaxies seem to form pre-determined shapes* (4/20/2026);
 
 * **[Astronomy Magazine](https://www.astronomy.com/science/how-weird-is-the-milky-way/)**: *How Weird is the Milky Way?* (7/1/2025);
 
@@ -45,7 +47,7 @@ My work has been highlighted in a number of press releases, including:
 
 ## Talks
  
-I have given over fifty contributed and invited talks, listed on my [CV](./CV.pdf), several of which are highlighted below:
+I have given over fifty contributed and invited talks, summarized on my [CV](./CV.pdf), several of which are highlighted below:
 
 * **[Valencia Instituto de Física Corpuscular: Small-scale Structure of the Universe and SIDM](https://indico.ific.uv.es/event/7815/)** *[Review: Satellite Galaxies and Stellar Streams as Probes of SIDM](https://indico.ific.uv.es/event/7815/contributions/26820/attachments/13575/19553/Nadler_Valencia_2025.pdf)* (6/16/2025);
 
