@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2026
 
+(72) **E. O. Nadler**. *Warm, Not Fuzzy: Generalized Ultralight Dark Matter Limits from Milky Way Satellites*. 2026, [ApJL, 1006, L65](https://iopscience.iop.org/article/10.3847/2041-8213/ae8b9f).
+
 (71) J. Peñarrubia & **E. O. Nadler**. *A dynamical attractor in the evolution of dwarf spheroidal galaxies*. 2026, [MNRAS, 548, stag803](https://academic.oup.com/mnras/article/548/4/stag803/8666387).
 
 (70) C. Y. Tan, A. Drlica-Wagner, A. B. Pace, W. Cerny, **E. O. Nadler** et al. (DELVE Collaboration). *DELVE Milky Way Satellite Galaxy Census. I. Satellite Population and Survey Selection Function in DES, DELVE, and Pan-STARRS*. 2026, [ApJ, 1000, 87](https://iopscience.iop.org/article/10.3847/1538-4357/ae4479/meta).
