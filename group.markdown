@@ -1,16 +1,14 @@
 ---
 layout: default
 cover:  true
-title:  Group
+title:  GalaxyHalo Group @ UCSD
 ---
-
-## GalaxyHalo Group @ UCSD
 
 Our group's research spans the evolution of the faintest galaxies in the nearby universe, the formation of cosmic structure, and the fundamental nature of dark matter. We tackle these problems using advanced cosmological simulations, computational and theoretical techniques, and the latest galaxy survey and gravitational lensing data.
 
 ---
 
-### Group Members
+## Group Members
 
 
 <div style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:24px; margin-bottom:32px;">
@@ -55,7 +53,7 @@ Our group's research spans the evolution of the faintest galaxies in the nearby 
 
 ---
 
-### Undergraduate Students
+## Undergraduate Students
 
 - <strong><a href="https://www.linkedin.com/in/stephen-canino-156ba1314/">Stephen Canino</a></strong> — UCSD Undergraduate Research Assistant — Stephen is modeling the evolution of cosmic structure using high-resolution zoom-in simulations.
 - <strong><a href="https://www.linkedin.com/in/kaushal-jagdish-66a9483b4/">Kaushal Jagdish</a></strong> — UCSD Undergraduate Research Assistant — Kaushal is studying the density profiles of dark matter halos in warm, fuzzy, and interacting dark matter models.
@@ -63,7 +61,7 @@ Our group's research spans the evolution of the faintest galaxies in the nearby 
 
 ---
 
-### Alumni
+## Alumni
 
 - <strong><a href="https://sentientstarstuff.github.io/">Devontae Baxter</a></strong> — NSF AAPF and UC Chancellor's Postdoctoral Fellow (2024-2026) — Moving to Princeton as a Future Faculty Fellow; <a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&q=%20author%3A%22baxter%2C%20devontae%22%20and%20%22nadler%2C%20ethan%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">our papers</a>.
 - <strong><a href="https://www.linkedin.com/in/kimmy-dang-62394b235/">Kimmy Dang</a></strong> — UCSD Undergraduate Summer Experience Award Fellow (2025) — Astronomy undergraduate at Yale.
@@ -72,9 +70,9 @@ Our group's research spans the evolution of the faintest galaxies in the nearby 
 
 ---
 
-### Group Photos
+## Group Photos
 
-#### 2025--2026
+### 2025--2026
 
 [![group-2025](/assets/img/group/2025-26.jpg)](/assets/img/group/2025-26.jpg){:width="100%"}
 <figcaption style="text-align: center; font-size: 0.9em; color: #666; margin-top: 0.5em;">From left: Sandip Roy, Devontae Baxter, Stephen Canino, Ethan Nadler, Roxanne Lai, Sophia Um, Zewei Wu, Ollie Jackson.</figcaption>
