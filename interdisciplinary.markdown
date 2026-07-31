@@ -10,6 +10,10 @@ title:  Interdisciplinary
 <p style="margin-bottom: -24px">
 </p>
 
+## Philosophy
+
+I am currently a Lattimer Research Fellow for Cross-disciplinary Explorations at UC San Diego. In this role, I am studying the philosophy of dark matter, with a focus on how recent observations of small-scale cosmic structure inform discussions of dark matter underdetermination, falsifiability, and realism. An abstract from my talk on this topic at [Foundations of Physics 2026](https://foundations2026.oa-event.com/) is [here](https://cloud-1de12d.becdn.net/customfile/fee2031a86aa0a76f41d8a1aea2ddbe743323a8051472e37d9e3c402851327c2/Book-of-Abstracts.pdf#page=85).
+
 ## Science
 
 I collaborate on and lead interdisciplinary research at the intersection of cognition, linguistics, data science, and machine learning, often with the [comp-syn](https://comp-syn.com/) team. My interdisciplinary publications are listed below:

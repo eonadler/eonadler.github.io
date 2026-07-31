@@ -8,7 +8,7 @@ cover:  true
 
 Welcome! I am an assistant professor at the [University of California, San Diego](https://www.ucsd.edu/) in the [Department of Astronomy & Astrophysics](https://astro.ucsd.edu/).
 
-My [research](./research.markdown) focuses on galaxy formation, dark matter, and near-field cosmology. In particular, I study the formation and evolution of the faintest galaxies, the microphysical nature of dark matter, and small-scale cosmic structure. I tackle these problems using cosmological simulations, semi-analytic models of the galaxy--halo connection, dark matter theory, and observations of dwarf galaxies and strong gravitational lenses.
+My [research](./research.markdown) and [group](./group.markdown) focuses on galaxy formation, dark matter, and near-field cosmology. In particular, I study the formation of the faintest galaxies, the nature of dark matter, and small-scale cosmic structure. My group tackles these problems using cosmological simulations, models of the galaxy--halo connection, dark matter theory, and observations of dwarf galaxies and strong gravitational lenses.
 
 Building an inclusive scientific community through [mentoring](./mentoring.markdown), [outreach and community service](./outreach.markdown), and [teaching](./mentoring.html#teaching) is important to me; my efforts in these contexts are described on the corresponding pages.
 
@@ -22,10 +22,10 @@ I am recruiting undergraduate, graduate, and postdoctoral researchers to join my
 
 ## About Me
 
-From 2021 through 2024, I was a joint postdoctoral research fellow at [Carnegie Observatories](https://carnegiescience.edu/obs) in the [Theoretical Astrophysics Center](https://ctac.carnegiescience.edu/) and the [University of Southern California Department of Physics & Astronomy](https://dornsife.usc.edu/physics/) in [Cosmolab](https://cosmolab.usc.edu/).
+From 2021 through 2024, I was a joint postdoctoral research fellow at [Carnegie Observatories](https://carnegiescience.edu/obs) in the [Theoretical Astrophysics Center](https://carnegiescience.edu/our-research-areas/astronomy/theory) and the [University of Southern California Department of Physics & Astronomy](https://dornsife.usc.edu/physics/) in [Cosmolab](https://cosmolab.usc.edu/).
 
-In 2021, I received my Ph.D. in Physics from [Stanford University](https://physics.stanford.edu/), where I was an [NSF Graduate Research Fellow](https://www.nsfgrfp.org/) in the [Kavli Institute for Particle Astrophysics and Cosmology](https://kipac.stanford.edu/), advised by [Risa Wechsler](https://www.risawechsler.com/).
+In 2021, I received my Ph.D. in Physics from [Stanford University](https://physics.stanford.edu/), where I was an [NSF Graduate Research Fellow](https://www.nsfgrfp.org/) in the [Kavli Institute for Particle Astrophysics and Cosmology](https://kipac.stanford.edu/).
 
-In 2016, I received my B.S. in Physics from the [University of California, Santa Barbara](https://www.physics.ucsb.edu/) in the [College of Creative Studies](https://www.ccs.ucsb.edu/), advised by [Peng Oh](https://web.physics.ucsb.edu/~peng/).
+In 2016, I received my B.S. in Physics from the [University of California, Santa Barbara](https://www.physics.ucsb.edu/) in the [College of Creative Studies](https://www.ccs.ucsb.edu/).
 
-I am passionate about interdisciplinary research. I am a Lattimer Research Fellow for Cross-disciplinary Explorations at UCSD, and I co-founded the research collective [comp-syn](https://comp-syn.com/#/). My interdisciplinary work is described [here](./interdisciplinary.markdown).
+I am passionate about interdisciplinary research. I am currently a Lattimer Research Fellow for Cross-disciplinary Explorations at UC San Diego. Earlier, I co-founded the research collective [comp-syn](https://comp-syn.com/#/). My interdisciplinary work is described [here](./interdisciplinary.markdown).

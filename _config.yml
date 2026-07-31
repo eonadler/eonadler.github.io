@@ -50,6 +50,8 @@ menu:
     url:   /research.html
   - title: CV
     url:   ./CV.pdf
+  - title: Group
+    url:   /group.html
   - title: Publications
     url:   /publications.html
   - title: Mentoring & Teaching

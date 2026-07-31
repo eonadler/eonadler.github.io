@@ -13,51 +13,55 @@ title: Mentoring & Teaching
 ## Mentoring
 
 <p style="margin-bottom: -38px">
-Mentoring a diverse group of students on research in astrophysics and cosmology is an important part of my scientific practice. My graduate and undergraduate mentorship experiences are listed below:
+Mentoring a diverse group of students on research in astrophysics and cosmology is an important part of my scientific practice. My graduate and undergraduate mentees are listed below; for students who have worked in my UC San Diego group, see my <a href="./group.html">group page</a>.
 </p>
 
 ### Graduate students
 
-* [Niusha Ahvazi](https://ctac.carnegiescience.edu/niusha-ahvazi), UCR/Carnegie &rarr; UVA: Semi-analytic modeling of dwarf galaxy formation and evolution ([N. Ahvazi, A. Benson, L. Sales, E. O. Nadler *et al.* 2024)](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stae761/7631365);
+* [Niusha Ahvazi](https://astronomy.as.virginia.edu/niusha-ahvazi), UCR/Carnegie &rarr; UVA: Semi-analytic modeling of dwarf galaxy formation and evolution ([N. Ahvazi, A. Benson, L. Sales, E. O. Nadler *et al.* 2024)](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stae761/7631365);
 
 * [Wendy Crumrine](https://wcrumrine.github.io/), USC: Constraining dark matter--radiation interactions with small-scale structure ([W. Crumrine, E. O. Nadler *et al.* 2024](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.023530); [W. Crumrine, D. Pang, E. O. Nadler *et al.* 2026](https://arxiv.org/abs/2606.10006));
 
 * [Elise Darragh-Ford](https://kipac.stanford.edu/people/elise-darragh-ford), Stanford: Dwarf galaxy searches using *Gaia* ([E. Darragh-Ford, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac0053/meta));
 
-* [Trey Driskell](https://www.linkedin.com/in/george-driskell/), USC: Semi-analytic modeling of structure and galaxy formation ([T. Driskell, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.103525));
+* [Trey Driskell](https://www.linkedin.com/in/trey-driskell-4a9286332/), USC &rarr; Anduril: Semi-analytic modeling of structure and galaxy formation ([T. Driskell, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.103525));
 
-* [Noah Glennon](https://kipac.stanford.edu/people/noah-glennon-0), UNH: Soliton orbital evolution in self-interacting ultra-light dark matter ([N. Glennon, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540), [N. Glennon, N. Musoke, E. O. Nadler *et al.* 2024](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.063501));
+* [Noah Glennon](https://www.linkedin.com/in/njglennon/), UNH: Soliton orbital evolution in self-interacting ultra-light dark matter ([N. Glennon, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540), [N. Glennon, N. Musoke, E. O. Nadler *et al.* 2024](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.063501));
+
+* [Demao Kong](https://inspirehep.net/authors/1901590), UCR: Modeling SIDM subhalo populations in the Milky Way and strong lens analogs ([D. Kong, H.-B. Yu, E. O. Nadler et al. 2025](https://arxiv.org/abs/2507.09799); [D. Kong, E. O. Nadler, H.-B. Yu 2025](https://arxiv.org/abs/2510.01491));
 
 * [Sidney Mau](https://sidneymau.com/), Stanford: Constraining the dark matter particle lifetime using ultra-faint dwarf galaxies ([S. Mau, E. O. Nadler *et al.* 2022](https://iopscience.iop.org/article/10.3847/1538-4357/ac6e65));
 
 * [Siddhesh Raut](https://www.linkedin.com/in/siddheshraut), USC/Carnegie: Self-interacting dark matter halo gravothermal evolution modeling ([S. Raut, E. O. Nadler *et al.* 2026](https://arxiv.org/abs/2604.22013));
 
-* [Yunchong (Richie) Wang](https://profiles.stanford.edu/richie-wang), Stanford: Empirically modeling dwarf galaxy star formation histories ([Y. Wang, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac024a), [2024a](https://iopscience.iop.org/article/10.3847/1538-4357/ad7f4c); [Y. Wang, P. Mansfield, E. O. Nadler *et al.* 2024b](https://arxiv.org/abs/2408.01487)).
+* [Yunchong (Richie) Wang](https://www.linkedin.com/in/yunchong-wang-6b8830170/), Stanford &rarr; Jump Trading: Empirically modeling dwarf galaxy star formation histories ([Y. Wang, E. O. Nadler *et al.* 2021](https://iopscience.iop.org/article/10.3847/1538-4357/ac024a), [2024a](https://iopscience.iop.org/article/10.3847/1538-4357/ad7f4c); [Y. Wang, P. Mansfield, E. O. Nadler *et al.* 2024b](https://arxiv.org/abs/2408.01487));
+
+* [Xingyu Zhang](https://inspirehep.net/authors/2894598), Tsinghua &rarr; UCR: Modeling stellar stream perturbers as SIDM subhalos ([X. Zhang, H.-B. Yu, D. Yang, and E. O. Nadler 2025](https://iopscience.iop.org/article/10.3847/2041-8213/ada02b)).
 
 <p style="margin-bottom: -38px">
 </p>
 
 ### Undergraduate, Post-baccalaureate, & High School students
 
-* [Deveshi Buch](https://profiles.stanford.edu/deveshi-buch), Stanford: Constrained cosmological simulation suite of Milky Way analogs ([D. Buch, E. O. Nadler *et al.* 2024](https://iopscience.iop.org/article/10.3847/1538-4357/ad554c));
+* Deveshi Buch, Stanford: Constrained cosmological simulation suite of Milky Way analogs ([D. Buch, E. O. Nadler *et al.* 2024](https://iopscience.iop.org/article/10.3847/1538-4357/ad554c));
 
 * [Shuxing Fang](https://www.linkedin.com/in/shuxing-fang-aa7747113/), USC: Large Magellanic Cloud infall in self-interacting dark matter cosmologies;
 
-* [Abigail Lee](https://abiglee7.github.io//), UPenn &rarr; University of Chicago: Universality of subhalo disruption from Milky Way to galaxy cluster scales;
+* [Abigail Lee](https://abiglee7.github.io//), UPenn &rarr; University of Chicago &rarr; Berkeley: Universality of subhalo disruption from Milky Way to galaxy cluster scales;
 
 * [Nyal McCrea](https://www.simonsfoundation.org/people/nyal-mccrea/), CWU (Simons--NSBP Scholar): Visualizing subhalo evolution in cosmological hydrodynamic simulations;
 
-* [Ellen Min](https://www.linkedin.com/in/mintyellen/), Caltech: Code development and Python implementation for [Galacticus](https://github.com/galacticusorg/galacticus);
+* [Ellen Min](https://www.linkedin.com/in/ellenmin1/), Caltech: Code development and Python implementation for [Galacticus](https://github.com/galacticusorg/galacticus);
 
-* [Nicel Mohamed-Hinds](https://phys.washington.edu/people/nicel-mohamed-hinds), Stanford &rarr; University of Washington: Modeling subhalo disruption in hydrodynamic cosmological simulations;
+* Nicel Mohamed-Hinds, Stanford &rarr; University of Washington: Modeling subhalo disruption in hydrodynamic cosmological simulations;
 
 * [Ezra Msolla](https://ca.linkedin.com/in/ezra-msolla-4629522aa), UToronto (Simons--NSBP Scholar): Neutrino self-interaction impact on cosmic structure;
 
-* [Veronica Pratt](https://profiles.stanford.edu/veronica-pratt?tab=bio), Stanford &rarr; Tufts: Large Magellanic Cloud analogs in the Satellites Around Galactic Analogs Survey;
+* [Veronica Pratt](https://www.linkedin.com/in/veronica-pratt), Stanford &rarr; Tufts: Large Magellanic Cloud analogs in the Satellites Around Galactic Analogs Survey;
 
 * [Juan Quiroz](https://www.linkedin.com/in/juan-quiroz-jaraba-71a666111/), Caltech: Semi-analytically modeling subhalo evolution in decaying dark matter cosmologies;
 
-* [Derek Rodriguez](https://www.ednovate.org/hybrid), USC Hybrid High School &rarr; UCLA: Subhalo evolution and dark matter host halo structure in the [Symphony](https://arxiv.org/abs/2209.02675) simulations;
+* [Derek Rodriguez](https://www.linkedin.com/in/derek-rodriguez-02356a232), USC Hybrid High School &rarr; UCLA: Subhalo evolution and dark matter host halo structure in the [Symphony](https://arxiv.org/abs/2209.02675) simulations;
 
 * [Resherle Verna](https://www.linkedin.com/in/resherle-verna-m-s-96945898/), USC &rarr; UT Austin: Evolution of the subhalo and splashback mass function in hydrodynamic simulations of self-interacting dark matter;
 

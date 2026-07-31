@@ -49,9 +49,11 @@ My work has been highlighted in a number of press releases and articles, includi
  
 I have given over fifty contributed and invited talks, summarized on my [CV](./CV.pdf), several of which are highlighted below:
 
-* **[Valencia Instituto de Física Corpuscular: Small-scale Structure of the Universe and SIDM](https://indico.ific.uv.es/event/7815/)** *[Review: Satellite Galaxies and Stellar Streams as Probes of SIDM](https://indico.ific.uv.es/event/7815/contributions/26820/attachments/13575/19553/Nadler_Valencia_2025.pdf)* (6/16/2025);
+* **[Fields Institute: Near Field Cosmology in the Era of Big Data](hhttp://www.fields.utoronto.ca/activities/26-27/Nearfieldcosmology)**: *Review: Probing Dark Matter with Near Field Cosmology]* (7/23/2026);
 
-* **[UCSD Stellar Beginnings: Astronomy & Astrophysics Department Launch](https://www.youtube.com/watch?v=cJj191cJSPg)**: *Small Galaxies Packed with Dark Matter* (5/2/2025);
+* **[Valencia Instituto de Física Corpuscular: Small-scale Structure of the Universe and SIDM](https://indico.ific.uv.es/event/7815/)**: *[Review: Satellite Galaxies and Stellar Streams as Probes of SIDM](https://indico.ific.uv.es/event/7815/contributions/26820/attachments/13575/19553/Nadler_Valencia_2025.pdf)* (6/16/2025);
+
+* **[UC San Diego Stellar Beginnings: Astronomy & Astrophysics Department Launch](https://youtu.be/cJj191cJSPg?t=1831)**: *Small Galaxies Packed with Dark Matter* (5/2/2025);
 
 * **[Durham University: Small Galaxies, Cosmic Questions II](https://durhamdwarfsconference.github.io/)**: *[Review: What can Dwarf Galaxies Reveal about the Nature of Dark Matter?](https://drive.google.com/file/d/10NTI48ms2aPJ7Qrp5aCSX_RFwonR-due/view)* (7/30/2024);
 
