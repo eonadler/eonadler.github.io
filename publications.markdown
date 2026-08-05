@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2026
 
+(73) D. Kong, **E. O. Nadler**, and H.-B. Yu. *Strong-lensing perturber signatures in self-interacting dark matter simulations*. 2026, [PRD, 114, 043011](https://journals.aps.org/prd/abstract/10.1103/xrqk-1w95).
+
 (72) **E. O. Nadler**. *Warm, Not Fuzzy: Generalized Ultralight Dark Matter Limits from Milky Way Satellites*. 2026, [ApJL, 1006, L65](https://iopscience.iop.org/article/10.3847/2041-8213/ae8b9f).
 
 (71) J. Peñarrubia & **E. O. Nadler**. *A dynamical attractor in the evolution of dwarf spheroidal galaxies*. 2026, [MNRAS, 548, stag803](https://academic.oup.com/mnras/article/548/4/stag803/8666387).

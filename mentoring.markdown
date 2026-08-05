@@ -28,7 +28,7 @@ Mentoring a diverse group of students on research in astrophysics and cosmology 
 
 * [Noah Glennon](https://www.linkedin.com/in/njglennon/), UNH: Soliton orbital evolution in self-interacting ultra-light dark matter ([N. Glennon, E. O. Nadler *et al.* 2022](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540), [N. Glennon, N. Musoke, E. O. Nadler *et al.* 2024](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.063501));
 
-* [Demao Kong](https://inspirehep.net/authors/1901590), UCR: Modeling SIDM subhalo populations in the Milky Way and strong lens analogs ([D. Kong, H.-B. Yu, E. O. Nadler et al. 2025](https://arxiv.org/abs/2507.09799); [D. Kong, E. O. Nadler, H.-B. Yu 2025](https://arxiv.org/abs/2510.01491));
+* [Demao Kong](https://inspirehep.net/authors/1901590), UCR: Modeling SIDM subhalo populations in the Milky Way and strong lens analogs ([D. Kong, H.-B. Yu, E. O. Nadler et al. 2025](https://arxiv.org/abs/2507.09799); [D. Kong, E. O. Nadler, H.-B. Yu 2026](https://journals.aps.org/prd/abstract/10.1103/xrqk-1w95));
 
 * [Sidney Mau](https://sidneymau.com/), Stanford: Constraining the dark matter particle lifetime using ultra-faint dwarf galaxies ([S. Mau, E. O. Nadler *et al.* 2022](https://iopscience.iop.org/article/10.3847/1538-4357/ac6e65));
 
