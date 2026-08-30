@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2026
 
+(74) A. Engelhardt, F. Munshi, A. H. G. Peter, **E. O. Nadler**, A. Cruz, A. M. Brooks, Z. Carton Zeng, T. R. Quinn, and B. Keith. *MARVELously Dark: the density profile evolution of dwarf halos in velocity-dependent SIDM*. 2026, [JCAP, 8, 059](https://iopscience.iop.org/article/10.1088/1475-7516/2026/08/059).
+
 (73) D. Kong, **E. O. Nadler**, and H.-B. Yu. *Strong-lensing perturber signatures in self-interacting dark matter simulations*. 2026, [PRD, 114, 043011](https://journals.aps.org/prd/abstract/10.1103/xrqk-1w95).
 
 (72) **E. O. Nadler**. *Warm, Not Fuzzy: Generalized Ultralight Dark Matter Limits from Milky Way Satellites*. 2026, [ApJL, 1006, L65](https://iopscience.iop.org/article/10.3847/2041-8213/ae8b9f).
