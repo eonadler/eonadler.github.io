@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2026
 
+(75) A. Benson, **E. O. Nadler**, X. Du, and V. Gluscevic. *A Unified Halo Mass Function Across Dark Matter Models from High-Resolution Multi-Scale Simulations*. 2026, [OJAp, 9, 177087](https://astro.theoj.org/article/170877-a-unified-halo-mass-function-across-dark-matter-models-from-high-resolution-multi-scale-simulations).
+
 (74) A. Engelhardt, F. Munshi, A. H. G. Peter, **E. O. Nadler**, A. Cruz, A. M. Brooks, Z. Carton Zeng, T. R. Quinn, and B. Keith. *MARVELously Dark: the density profile evolution of dwarf halos in velocity-dependent SIDM*. 2026, [JCAP, 8, 059](https://iopscience.iop.org/article/10.1088/1475-7516/2026/08/059).
 
 (73) D. Kong, **E. O. Nadler**, and H.-B. Yu. *Strong-lensing perturber signatures in self-interacting dark matter simulations*. 2026, [PRD, 114, 043011](https://journals.aps.org/prd/abstract/10.1103/xrqk-1w95).
@@ -41,7 +43,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (62) M. S. Fischer, K. Dolag, M. Garny, V. Gluscevic, F. Groth, and **E. O. Nadler**. *N-body simulations of dark matter–baryon interactions*. 2025, [A&A, 700, A145](https://www.aanda.org/articles/aa/full_html/2025/08/aa54983-25/aa54983-25.html).
 
-(61) K. Tsiane et al. (DESC Collaboration, incl. **E. O. Nadler**). *Predictions for the Detectability of Milky Way Satellite Galaxies and Outer-Halo Star Clusters with the Vera C. Rubin Observatory*. 2025, [OJAp, 8](https://astro.theoj.org/article/142072-predictions-for-the-detectability-of-milky-way-satellite-galaxies-and-outer-halo-star-clusters-with-the-vera-c-rubin-observatory).
+(61) K. Tsiane et al. (DESC Collaboration, incl. **E. O. Nadler**). *Predictions for the Detectability of Milky Way Satellite Galaxies and Outer-Halo Star Clusters with the Vera C. Rubin Observatory*. 2025, [OJAp, 8, 142072](https://astro.theoj.org/article/142072-predictions-for-the-detectability-of-milky-way-satellite-galaxies-and-outer-halo-star-clusters-with-the-vera-c-rubin-observatory).
 
 (60) Y. Wang, P. Mansfield, **E. O. Nadler**, E. Darragh-Ford, R. H. Wechsler, D. Yang, and H.-B. Yu. *EDEN: Exploring Disks Embedded in N-body Simulations of Milky Way–mass Halos from Symphony*. 2025, [ApJ, 986, 147](https://iopscience.iop.org/article/10.3847/1538-4357/adcfa3).
 
