@@ -8,7 +8,7 @@ title:  Publications
 ---
 
 <p style="margin-bottom: -24px">
-Refereed journal publications are listed by year below. For a list including papers in review and white papers, please see my <a href="./CV.pdf">CV</a>. Lead authors of papers from my group are in <span style="color: blue;">blue</span>. All articles below are available on the <a href="https://arxiv.org/">arXiv</a>.
+Refereed journal publications are listed by year below. For a list including papers in review and white papers, please see my <a href="./CV.pdf">CV</a>. Early-career authors of papers from my group are in <span style="color: blue;">blue</span>. All articles below are available on the <a href="https://arxiv.org/">arXiv</a>.
 </p>
 
 ## 2026
