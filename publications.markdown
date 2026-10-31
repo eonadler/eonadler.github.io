@@ -8,7 +8,7 @@ title:  Publications
 ---
 
 <p style="margin-bottom: -24px">
-Refereed journal publications are listed by year below. For a list including papers in review and white papers, please see my <a href="./CV.pdf">CV</a>. Lead authors of papers from my group are underlined. All articles below are available on the <a href="https://arxiv.org/">arXiv</a>.
+Refereed journal publications are listed by year below. For a list including papers in review and white papers, please see my <a href="./CV.pdf">CV</a>. Lead authors of papers from my group are in <span style="color: blue;">blue</span>. All articles below are available on the <a href="https://arxiv.org/">arXiv</a>.
 </p>
 
 ## 2026
@@ -25,7 +25,7 @@ Refereed journal publications are listed by year below. For a list including pap
 
 (70) C. Y. Tan, A. Drlica-Wagner, A. B. Pace, W. Cerny, **E. O. Nadler** et al. (DELVE Collaboration). *DELVE Milky Way Satellite Galaxy Census. I. Satellite Population and Survey Selection Function in DES, DELVE, and Pan-STARRS*. 2026, [ApJ, 1000, 87](https://iopscience.iop.org/article/10.3847/1538-4357/ae4479/meta).
 
-(69) <u>B. Feng</u>, **E. O. Nadler**, S. P. Oh, and S. Ji. *The non-universal pseudo-phase-space density profiles of symphony host haloes*. 2026, [MNRAS, 546, stag215](https://academic.oup.com/mnras/article/546/4/stag215/8450193).
+(69) <span style="color: blue;">B. Feng</span>, **E. O. Nadler**, S. P. Oh, and S. Ji. *The non-universal pseudo-phase-space density profiles of symphony host haloes*. 2026, [MNRAS, 546, stag215](https://academic.oup.com/mnras/article/546/4/stag215/8450193).
 
 ## 2025
 
