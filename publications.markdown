@@ -13,6 +13,8 @@ Refereed journal publications are listed by year below. For a list including pap
 
 ## 2026
 
+(76) D. C. Baxter, A. L. Coil, **E. O. Nadler**, X. Shen, and M. Vogelsberger. *What Becomes of JWST/NIRCam-selected High-redshift Massive Galaxies?*. 2026, [ApJ, 1011, 83](https://iopscience.iop.org/article/10.3847/1538-4357/aeace0/meta).
+
 (75) A. Benson, **E. O. Nadler**, X. Du, and V. Gluscevic. *A Unified Halo Mass Function Across Dark Matter Models from High-Resolution Multi-Scale Simulations*. 2026, [OJAp, 9, 177087](https://astro.theoj.org/article/170877-a-unified-halo-mass-function-across-dark-matter-models-from-high-resolution-multi-scale-simulations).
 
 (74) A. Engelhardt, F. Munshi, A. H. G. Peter, **E. O. Nadler**, A. Cruz, A. M. Brooks, Z. Carton Zeng, T. R. Quinn, and B. Keith. *MARVELously Dark: the density profile evolution of dwarf halos in velocity-dependent SIDM*. 2026, [JCAP, 8, 059](https://iopscience.iop.org/article/10.1088/1475-7516/2026/08/059).
