@@ -12,9 +12,9 @@
       <img class="dial-base" src="{{ dmdir }}{{ dial.cdm }}" alt="A simulated Milky Way-mass dark matter halo in cold dark matter" loading="lazy">
       <img class="dial-alt" src="{{ dmdir }}{{ fam.img }}" alt="The same halo in {{ fam.title }}" loading="lazy">
       <div class="dial-handle"><div class="dial-knob">{% include icon.html name="drag" %}</div></div>
-      <input type="range" min="0" max="100" value="50" step="0.5" aria-label="Slide from cold dark matter (left) to the selected model (right)">
+      <input type="range" min="0" max="100" value="50" step="0.5" aria-label="Slide from {{ fam.left }} (left) to {{ fam.right }} (right)">
     </div>
-    <div class="dial-labels"><span>← CDM</span><span data-right>{{ fam.tab }} →</span></div>
+    <div class="dial-labels"><span data-left>← {{ fam.left }}</span><span data-right>{{ fam.right }} →</span></div>
   </div>
   <div class="dial-info">
     <div class="tabs" role="tablist" aria-label="Dark matter model">

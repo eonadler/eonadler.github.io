@@ -124,7 +124,9 @@
         var f = data.families.filter(function (x) { return x.id === b.getAttribute('data-family'); })[0];
         base.src = dir + (f.cdm || data.cdm);
         alt.src = dir + f.img; alt.alt = 'The same halo in ' + f.title;
-        $('[data-right]', root).textContent = f.tab + ' →';
+        $('[data-left]', root).textContent = '← ' + f.left;
+        $('[data-right]', root).textContent = f.right + ' →';
+        range.setAttribute('aria-label', 'Slide from ' + f.left + ' (left) to ' + f.right + ' (right)');
         $('[data-title]', root).textContent = f.title;
         $('[data-what]', root).textContent = f.what;
         var paper = $('[data-paper]', root); paper.textContent = f.suite; paper.href = f.url;

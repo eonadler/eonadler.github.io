@@ -1,9 +1,12 @@
 # Dark matter comparison (home page). Every frame is the same simulated Milky Way-mass host.
 # The slider runs from CDM (far left) to the selected model (far right); one model per tab, the most extreme run shown.
+# left/right: the labels at the two ends of the slider for that model.
 # Images live in /assets/img/web/dm/.
 cdm: cdm.jpg
 families:
   - id: wdm
+    left: Cold
+    right: Warm
     tab: Warm
     title: Warm dark matter (3 keV)
     img: wdm-3.jpg
@@ -11,6 +14,8 @@ families:
     suite: COZMIC I
     url: "https://arxiv.org/abs/2410.03635"
   - id: fdm
+    left: Particle-like
+    right: Wave-like
     tab: Fuzzy
     title: "Fuzzy dark matter (25.9×10⁻²² eV)"
     img: fdm-25p9.jpg
@@ -18,6 +23,8 @@ families:
     suite: COZMIC I
     url: "https://arxiv.org/abs/2410.03635"
   - id: idm
+    left: Non-interacting
+    right: Interacting
     tab: Interacting
     title: "Dark matter–proton scattering (10⁻² GeV, σ ∝ v²)"
     img: idm2-env.jpg
@@ -25,6 +32,8 @@ families:
     suite: COZMIC I
     url: "https://arxiv.org/abs/2410.03635"
   - id: sidm
+    left: Collisionless
+    right: Self-interacting
     tab: Self-interacting
     title: Self-interacting dark matter
     img: sidm.jpg
@@ -32,6 +41,8 @@ families:
     suite: COZMIC III
     url: "https://arxiv.org/abs/2412.13065"
   - id: pk
+    left: Scale-free
+    right: Primordial features
     tab: Primordial features
     title: Enhanced small-scale power
     cdm: enh-cdm.jpg
