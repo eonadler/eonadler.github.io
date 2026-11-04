@@ -1,0 +1,1295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SIDM Simulation Compilation</title>
+<meta name="description" content="Interactive compilation of cosmological self-interacting dark matter (SIDM) simulations: every simulated model in the Yukawa (w, sigma_0) plane, its velocity-dependent cross section, resolution and source paper.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap">
+<style>
+/* Layout: one working sheet. Header with live counts, one filter bar, a timeline brush of every paper,
+   then two linked plots side by side (stacked on phones); legend, selection, table and conventions below. */
+:root {
+  --bg: #f4f4f8;          /* page plane, cool neutral leaning violet */
+  --surface: #ffffff;     /* plot cards */
+  --surface-2: #efeef5;   /* strip, chips, table head */
+  --ink: #16151d;
+  --ink-2: #4a4858;
+  --muted: #74728a;
+  --faint: #a9a7b8;
+  --grid: #ebeaf2;
+  --line: #dddce7;
+  --accent: #8c2a8f;      /* the Milky-Way step of the host-mass ramp; selection only */
+  --accent-wash: rgba(140, 42, 143, 0.08);
+  --shadow: 0 1px 2px rgba(22, 21, 29, 0.05), 0 8px 24px -12px rgba(22, 21, 29, 0.12);
+  --f-display: "STIX Two Text", "STIX Two", "Times New Roman", serif;
+  --f-ui: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --r: 10px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b0a12; --surface: #12111c; --surface-2: #1a1928; --ink: #ecebf3; --ink-2: #b9b7c9; --muted: #8f8da3;
+    --faint: #5d5b70; --grid: #201f2e; --line: #2a2939; --accent: #d07be6; --accent-wash: rgba(208, 123, 230, 0.10);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px -14px rgba(0, 0, 0, 0.7);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b0a12; --surface: #12111c; --surface-2: #1a1928; --ink: #ecebf3; --ink-2: #b9b7c9; --muted: #8f8da3;
+  --faint: #5d5b70; --grid: #201f2e; --line: #2a2939; --accent: #d07be6; --accent-wash: rgba(208, 123, 230, 0.10);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px -14px rgba(0, 0, 0, 0.7);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink); font: 400 14px/1.5 var(--f-ui);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 40px;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 1440px; margin: 0 auto; display: grid; gap: 14px; }
+a { color: inherit; text-decoration-color: var(--faint); text-underline-offset: 2px; }
+a:hover { text-decoration-color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.m { font-family: var(--f-display); font-style: italic; }
+.mono { font-family: var(--f-data); font-variant-numeric: tabular-nums; }
+sub, sup { font-size: 0.72em; line-height: 0; }
+
+/* header */
+header.top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px 40px; align-items: end; padding-block: 28px 4px; }
+.eyebrow { font: 500 11.5px/1.2 var(--f-ui); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+h1 { font: 600 clamp(30px, 4.4vw, 48px)/1.02 var(--f-display); letter-spacing: -0.01em; margin: 0; text-wrap: balance; }
+.lede { color: var(--ink-2); max-width: 70ch; margin: 12px 0 0; text-wrap: pretty; }
+.hright { display: flex; flex-direction: column; align-items: flex-end; gap: 18px; }
+.stats { display: flex; gap: 28px; align-items: flex-end; }
+.stat { display: grid; gap: 3px; }
+.stat b { font: 600 34px/1 var(--f-display); }
+.stat span { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.stat i { font-style: normal; color: var(--faint); }
+
+/* controls */
+.bar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; padding: 10px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; box-shadow: var(--shadow); }
+.grp { display: flex; align-items: center; gap: 8px; min-width: 0; flex-wrap: wrap; }
+.grp > .lbl { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.seg { display: inline-flex; flex-wrap: wrap; background: var(--surface-2); border-radius: 8px; padding: 2px; gap: 2px; }
+.seg button, .btn {
+  font: 500 12.5px/1 var(--f-ui); color: var(--ink-2); background: transparent; border: 0; border-radius: 6px; padding: 7px 10px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+}
+.seg button:hover, .btn:hover { color: var(--ink); background: var(--accent-wash); }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 0 0 1px var(--line), 0 1px 2px rgba(0,0,0,0.06); }
+#kindSeg button[aria-pressed="false"], #xsSeg button[aria-pressed="false"] { color: var(--faint); }
+#kindSeg button[aria-pressed="false"] svg { opacity: 0.4; }
+.btn { border: 1px solid var(--line); background: var(--surface); }
+.btn[aria-pressed="true"] { border-color: var(--faint); color: var(--ink); }
+.search { position: relative; flex: 1 1 200px; max-width: 300px; min-width: 150px; display: block; }
+.search input {
+  width: 100%; font: 400 13px/1 var(--f-ui); color: var(--ink); background: var(--surface-2); border: 1px solid transparent; border-radius: 8px;
+  padding: 8px 10px 8px 30px;
+}
+.search input::placeholder { color: var(--muted); }
+.search input:focus { outline: none; border-color: var(--accent); background: var(--surface); }
+.search svg { position: absolute; left: 9px; top: 50%; transform: translateY(-50%); pointer-events: none; color: var(--muted); }
+.spacer { flex: 1 1 0; }
+
+/* cards */
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow); min-width: 0; }
+.card-h { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; padding: 14px 16px 0; }
+.card-h h2 { font: 600 15px/1.3 var(--f-ui); margin: 0; }
+.card-h h2 .k { color: var(--muted); font-weight: 500; margin-right: 8px; }
+.card-h p { margin: 0; font-size: 12.5px; color: var(--muted); }
+.timeline { padding-bottom: 6px; }
+.tl-row { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; align-items: stretch; padding: 4px 12px 0 12px; }
+.play { align-self: center; width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); cursor: pointer; display: grid; place-items: center; }
+.play:hover { border-color: var(--accent); color: var(--accent); }
+.range-read { font: 500 12.5px/1 var(--f-data); color: var(--ink-2); margin-left: 6px; }
+
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
+.tabs button { font: 500 13.5px/1 var(--f-ui); color: var(--muted); background: none; border: 0; padding: 10px 12px 11px; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.tabs button:hover { color: var(--ink); }
+.panels { display: grid; grid-template-columns: minmax(0, 1.42fr) minmax(0, 1fr); gap: 14px; }
+.panel { position: relative; padding-bottom: 6px; }
+.panel svg { display: block; width: 100%; overflow: visible; touch-action: pan-y; }
+.formula { font-family: var(--f-display); font-size: 14px; color: var(--ink-2); display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.frac { display: inline-grid; text-align: center; vertical-align: middle; line-height: 1.15; }
+.frac > span:first-child { border-bottom: 1px solid currentColor; padding: 0 3px; }
+.frac > span:last-child { padding: 0 3px; }
+
+/* legend */
+.legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px 24px; padding: 14px 16px; }
+.lg h3 { font: 600 10.5px/1.2 var(--f-ui); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+.lg ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
+.lg li { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--ink-2); }
+.lg li svg { flex: none; }
+.lg .note { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
+.lg .chips { display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.cbar { display: block; width: 100%; max-width: 280px; }
+
+/* detail */
+.detail { padding: 14px 16px; display: grid; gap: 8px; border-color: var(--accent); }
+.detail .dh { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.detail h3 { font: 600 16px/1.35 var(--f-ui); margin: 0; text-wrap: balance; }
+.detail h3 .m { font-weight: 400; }
+.detail .sub { color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+.dl { display: grid; }
+.dr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; padding: 9px 0; border-top: 1px solid var(--line); }
+.dr .t { font-weight: 500; }
+.dr .tt { color: var(--ink-2); font-size: 12.5px; }
+.dr .meta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12px; color: var(--muted); }
+.dr .meta b { color: var(--ink-2); font-weight: 500; }
+.x { border: 0; background: var(--surface-2); color: var(--ink-2); width: 30px; height: 30px; border-radius: 50%; cursor: pointer; font-size: 17px; line-height: 1; flex: none; }
+.x:hover { color: var(--ink); }
+
+/* table */
+.tbl-wrap { overflow-x: auto; margin-top: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; min-width: 860px; }
+thead th { background: var(--surface-2); text-align: left; font: 600 11px/1.2 var(--f-ui); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); padding: 9px 10px; white-space: nowrap; }
+thead th button { all: unset; cursor: pointer; display: inline-flex; gap: 5px; align-items: center; }
+thead th button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+thead th .arr { opacity: 0.45; font-size: 9px; }
+thead th[aria-sort="ascending"] .arr, thead th[aria-sort="descending"] .arr { opacity: 1; color: var(--accent); }
+tbody td { padding: 9px 10px; border-top: 1px solid var(--line); vertical-align: top; }
+tbody tr { cursor: pointer; }
+tbody tr:hover, tbody tr.on { background: var(--accent-wash); }
+tbody tr.on td:first-child { box-shadow: inset 2px 0 0 var(--accent); }
+td .tag { font-weight: 600; }
+td .ttl { color: var(--ink-2); font-size: 12.5px; max-width: 48ch; display: block; margin-top: 1px; }
+td .suite { display: inline-block; font-size: 11px; font-weight: 500; padding: 1px 7px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); margin-left: 6px; vertical-align: 1px; }
+td .ids { font: 400 11.5px/1.4 var(--f-data); color: var(--muted); }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+td .mods { display: flex; flex-wrap: wrap; gap: 3px 5px; max-width: 30ch; }
+td .mod { font: 400 11.5px/1.45 var(--f-data); padding: 0 6px; border-radius: 4px; background: var(--surface-2); color: var(--ink-2); white-space: nowrap; }
+td .kinds { display: inline-flex; gap: 3px; vertical-align: middle; }
+.tbl-foot { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between; align-items: center; padding: 10px 16px 12px; color: var(--muted); font-size: 12.5px; }
+
+/* about */
+.about { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px 28px; padding: 16px; }
+.about h3 { font: 600 13px/1.3 var(--f-ui); margin: 0 0 6px; }
+.about p { margin: 0 0 8px; color: var(--ink-2); font-size: 13px; max-width: 66ch; }
+.eq { font-family: var(--f-display); font-size: 15px; color: var(--ink); margin: 6px 0 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+footer { color: var(--muted); font-size: 12px; display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: space-between; padding: 4px 2px; }
+
+/* tooltip */
+#tip {
+  position: fixed; left: 0; top: 0; z-index: 50; pointer-events: none; max-width: min(380px, calc(100vw - 24px));
+  background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 12px 32px -8px rgba(0,0,0,0.3);
+  padding: 10px 12px; font-size: 12.5px; line-height: 1.45; opacity: 0; transform: translateY(4px); transition: opacity .12s, transform .12s;
+}
+#tip.on { opacity: 1; transform: none; }
+#tip .v { font: 600 14px/1.35 var(--f-ui); }
+#tip .v .m { font-weight: 400; }
+#tip .s { color: var(--ink-2); }
+#tip .p { margin-top: 7px; padding-top: 7px; border-top: 1px solid var(--line); display: grid; gap: 4px; }
+#tip .p > div { display: flex; gap: 7px; align-items: baseline; }
+#tip .p .key { flex: none; width: 10px; height: 2px; border-radius: 1px; transform: translateY(-3px); }
+#tip .h { color: var(--muted); font-size: 11.5px; margin-top: 6px; }
+
+@media (max-width: 980px) {
+  .panels { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 760px) {
+  header.top { grid-template-columns: minmax(0, 1fr); padding-top: 18px; }
+  .hright { align-items: flex-start; flex-direction: column-reverse; }
+  .stats { gap: 20px; }
+  .stat b { font-size: 26px; }
+  .bar { position: static; }
+  .search { max-width: none; flex-basis: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <p class="eyebrow">Cosmological simulations of self-interacting dark matter</p>
+      <h1>SIDM Simulation Compilation</h1>
+      <p class="lede">Every cosmological SIDM simulation in the compilation, placed by its Yukawa cross-section parameters
+        (<span class="m">w</span>,&nbsp;<span class="m">σ</span><sub>0</sub>/<span class="m">m</span>) and by the halo it resolves.
+        Hover a marker for the papers behind it, click to pin it, and drag across the timeline to see the field grow.</p>
+    </div>
+    <div class="hright">
+      <button class="btn" id="themeBtn" type="button" aria-label="Switch colour theme">
+        <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg>
+        <span id="themeLbl">Dark</span>
+      </button>
+      <div class="stats" aria-live="polite">
+        <div class="stat"><b id="nPap">–</b><span>papers <i id="nPapT"></i></span></div>
+        <div class="stat"><b id="nSim">–</b><span>simulations <i id="nSimT"></i></span></div>
+        <div class="stat"><b id="nMod">–</b><span>distinct models <i id="nModT"></i></span></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="bar" role="toolbar" aria-label="Filters">
+    <label class="search" for="q">
+      <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.6 10.6 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="Author, suite, code or arXiv ID" autocomplete="off" aria-label="Search papers">
+    </label>
+    <div class="grp"><span class="lbl">Runs</span>
+      <div class="seg" id="kindSeg">
+        <button type="button" data-k="dmo" aria-pressed="true"><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="currentColor"/></svg>DM-only zoom</button>
+        <button type="button" data-k="hydro" aria-pressed="true"><svg width="12" height="12" aria-hidden="true"><rect x="2.3" y="2.3" width="7.4" height="7.4" transform="rotate(45 6 6)" fill="currentColor"/></svg>Hydro zoom</button>
+        <button type="button" data-k="box" aria-pressed="true"><svg width="12" height="12" aria-hidden="true"><rect x="1.6" y="1.6" width="8.8" height="8.8" fill="currentColor"/></svg>Box</button>
+      </div>
+    </div>
+    <div class="grp"><span class="lbl">Cross section</span>
+      <div class="seg" id="xsSeg">
+        <button type="button" data-k="const" aria-pressed="true">Constant</button>
+        <button type="button" data-k="vd" aria-pressed="true">Velocity-dependent</button>
+      </div>
+    </div>
+    <div class="grp"><span class="lbl">Colour</span>
+      <div class="seg" id="colSeg">
+        <button type="button" data-k="mass" aria-pressed="true">Host mass</button>
+        <button type="button" data-k="code" aria-pressed="false">Code</button>
+        <button type="button" data-k="year" aria-pressed="false">Year</button>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="grp">
+      <button class="btn" id="lblBtn" type="button" aria-pressed="true">Labels</button>
+      <button class="btn" id="resetBtn" type="button">Reset</button>
+    </div>
+  </div>
+
+  <section class="card timeline" aria-label="Timeline of papers">
+    <div class="card-h">
+      <h2><span class="k">Timeline</span>One square per paper</h2>
+      <p>Drag across the years to filter, or press play.<span class="range-read" id="rangeRead"></span></p>
+    </div>
+    <div class="tl-row">
+      <button class="play" id="playBtn" type="button" aria-label="Play the history of SIDM simulations">
+        <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" id="playIco"><path d="M3 1.8v10.4L12 7z" fill="currentColor"/></svg>
+      </button>
+      <div id="tl" style="min-width:0"></div>
+    </div>
+  </section>
+
+  <div class="tabs" role="tablist" aria-label="View">
+    <button role="tab" id="tab-models" aria-selected="true" aria-controls="view-models" data-v="models">Cross sections</button>
+    <button role="tab" id="tab-resolution" aria-selected="false" aria-controls="view-resolution" data-v="resolution">Resolution</button>
+  </div>
+
+  <section id="view-models" role="tabpanel" aria-labelledby="tab-models" class="panels">
+    <div class="card panel">
+      <div class="card-h">
+        <h2><span class="k">a</span>Simulated models in the Yukawa (<span class="m">w</span>, <span class="m">σ</span><sub>0</sub>) plane</h2>
+        <span class="formula" aria-label="Differential cross section">
+          <span class="frac"><span>d<span class="m">σ</span></span><span>dΩ</span></span>=
+          <span class="frac"><span><span class="m">σ</span><sub>0</sub>/<span class="m">m</span></span><span>4π [1 + (<span class="m">v</span>²/<span class="m">w</span>²) sin²(<span class="m">θ</span>/2)]²</span></span>
+        </span>
+      </div>
+      <div id="pA"></div>
+    </div>
+    <div class="card panel">
+      <div class="card-h">
+        <h2><span class="k">b</span>The same models as <span class="m">σ</span><sub>T</sub>(<span class="m">v</span>)</h2>
+        <p>Bold where each host halo probes them</p>
+      </div>
+      <div id="pB"></div>
+    </div>
+  </section>
+
+  <section id="view-resolution" role="tabpanel" aria-labelledby="tab-resolution" class="panels" hidden>
+    <div class="card panel">
+      <div class="card-h">
+        <h2><span class="k">a</span>Zoom-ins: particles per host</h2>
+        <p>Diagonals: <span class="m">N</span><sub>host</sub> = <span class="m">M</span><sub>host</sub>/<span class="m">m</span><sub>DM</sub></p>
+      </div>
+      <div id="pR1"></div>
+    </div>
+    <div class="card panel">
+      <div class="card-h">
+        <h2><span class="k">b</span>Cosmological boxes</h2>
+        <p>Diagonals: <span class="m">N</span>³ DM particles (Ω<sub>m</sub> = 0.31, <span class="m">h</span> = 0.68)</p>
+      </div>
+      <div id="pR2"></div>
+    </div>
+  </section>
+
+  <section class="card legend" id="legend" aria-label="Legend"></section>
+
+  <section class="card detail" id="detail" hidden aria-live="polite"></section>
+
+  <section class="card" aria-label="Papers">
+    <div class="card-h"><h2><span class="k">Papers</span><span id="tblCount"></span></h2><p>Click a row to highlight its simulations.</p></div>
+    <div class="tbl-wrap"><table id="tbl"><thead></thead><tbody></tbody></table></div>
+    <div class="tbl-foot">
+      <span id="tblNote"></span>
+      <span style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn" id="csvBtn" type="button">Download table (CSV)</button>
+        <button class="btn" id="svgBtn" type="button">Download figure (SVG)</button>
+      </span>
+    </div>
+  </section>
+
+  <section class="card about" aria-label="Conventions">
+    <div>
+      <h3>Cross-section model</h3>
+      <div class="eq"><span class="frac"><span>d<span class="m">σ</span></span><span>dΩ</span></span>=
+        <span class="frac"><span><span class="m">σ</span><sub>0</sub>/<span class="m">m</span></span><span>4π [1 + (<span class="m">v</span>²/<span class="m">w</span>²) sin²(<span class="m">θ</span>/2)]²</span></span></div>
+      <p>Constant cross sections correspond to <span class="m">w</span> → ∞ and sit in the shaded strip; within each strip row, markers are packed by host mass, so horizontal position there carries no other meaning.
+        Hollow markers use an approximate (<span class="m">σ</span><sub>0</sub>, <span class="m">w</span>) mapping of the paper's own parametrisation (a fit or a Rutherford-like form).</p>
+    </div>
+    <div>
+      <h3>Transfer cross section</h3>
+      <p class="eq"><span class="m">σ</span><sub>T</sub>(<span class="m">v</span>) = 2<span class="m">σ</span><sub>0</sub>(<span class="m">w</span>/<span class="m">v</span>)<sup>4</sup> [ln(1 + <span class="m">v</span>²/<span class="m">w</span>²) − (<span class="m">v</span>²/<span class="m">w</span>²)/(1 + <span class="m">v</span>²/<span class="m">w</span>²)]</p>
+      <p>which tends to <span class="m">σ</span><sub>0</sub> for <span class="m">v</span> ≪ <span class="m">w</span>. Bold segments span 0.5–2 <span class="m">V</span><sub>max</sub> of each zoom-in host, with
+        <span class="m">V</span><sub>max</sub> = 37 km s<sup>−1</sup> (<span class="m">M</span><sub>host</sub>/10<sup>10</sup> M<sub>⊙</sub>)<sup>1/3</sup>. The coloured ruler above both plots uses the same relation: it marks the host whose <span class="m">V</span><sub>max</sub> equals <span class="m">w</span> (or <span class="m">v</span>), so a marker sitting left of its own colour is a model whose cross section is strongly velocity-suppressed in that host.</p>
+    </div>
+    <div>
+      <h3>What is counted</h3>
+      <p>Each marker groups runs that share (<span class="m">σ</span><sub>0</sub>, <span class="m">w</span>), the colour attribute (host-mass bin, code or year) and the run type; marker area grows as √<span class="m">N</span>.
+        Re-analyses of existing runs, convergence re-runs and CDM twins are not counted. Faded markers come mostly from low-confidence table entries.</p>
+      <p id="builtNote"></p>
+    </div>
+  </section>
+  <footer><span id="footL"></span><span>Paper titles and journal references from the arXiv API.</span></footer>
+</div>
+<div id="tip" role="tooltip"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+const D = {"rows":[{"a":"Nadler","y":2025,"id":"2503.10748","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":147.1,"w":120.0,"map":"exact","M":10.9,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":6300.0,"L":null,"np":null,"suite":"Concerto","model":""},{"a":"Nadler","y":2025,"id":"2503.10748","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":147.1,"w":120.0,"map":"exact","M":12.0,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":50000.0,"L":null,"np":null,"suite":"Concerto","model":""},{"a":"Nadler","y":2025,"id":"2503.10748","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":70.0,"w":120.0,"map":"exact","M":13.3,"n":2.0,"c":"high","code":"GADGET-1/2","mdm":400000.0,"L":null,"np":null,"suite":"Concerto","model":""},{"a":"Nadler","y":2025,"id":"2503.10748","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":147.1,"w":120.0,"map":"exact","M":14.2,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":27000000.0,"L":null,"np":null,"suite":"Concerto","model":""},{"a":"Sameie","y":2018,"id":"1801.09682","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":12.09,"n":5.0,"c":"med","code":"AREPO","mdm":null,"L":null,"np":null,"suite":"","model":""},{"a":"Sameie","y":2021,"id":"2102.12480","t":"zoom","b":"hydro","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":12.05,"n":3.0,"c":"high","code":"GIZMO","mdm":35000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Sameie","y":2021,"id":"2102.12480","t":"zoom","b":"hydro","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":12.03,"n":3.0,"c":"high","code":"GIZMO","mdm":35000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Sameie","y":2021,"id":"2102.12480","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":12.15,"n":1.0,"c":"high","code":"GIZMO","mdm":35000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Sameie","y":2021,"id":"2102.12480","t":"zoom","b":"DMO","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":12.15,"n":1.0,"c":"high","code":"GIZMO","mdm":35000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Vargya","y":2022,"id":"2104.14069","t":"zoom","b":"hydro","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":12.09,"n":1.0,"c":"med","code":"GIZMO","mdm":35000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Rose","y":2022,"id":"2206.14830","t":"zoom","b":"hydro","xm":"yukawa_iso","s":22.439,"w":59.0,"map":"approx","M":12.19,"n":1.0,"c":"med","code":"AREPO","mdm":190000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Rose","y":2022,"id":"2206.14830","t":"zoom","b":"DMO","xm":"yukawa_iso","s":22.439,"w":59.0,"map":"approx","M":12.19,"n":2.0,"c":"med","code":"AREPO","mdm":190000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Rose","y":2022,"id":"2206.14830","t":"zoom","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":12.19,"n":1.0,"c":"med","code":"AREPO","mdm":190000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Rose","y":2022,"id":"2206.14830","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":12.19,"n":1.0,"c":"med","code":"AREPO","mdm":190000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Rose","y":2022,"id":"2206.14830","t":"zoom","b":"DMO","xm":"const_iso","s":5.0,"w":null,"map":"exact","M":12.19,"n":1.0,"c":"med","code":"AREPO","mdm":190000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Zavala","y":2019,"id":"1904.09998","t":"zoom","b":"DMO","xm":"sigmax_vmax_iso","s":165.02,"w":24.97,"map":"approx","M":12.27,"n":1.0,"c":"med","code":"","mdm":49000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Nadler","y":2020,"id":"2001.08754","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":16.0,"w":10.0,"map":"exact","M":12.0,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":57100.0,"L":null,"np":null,"suite":"","model":""},{"a":"Nadler","y":2020,"id":"2001.08754","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":4.0,"w":100.0,"map":"exact","M":12.0,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":57100.0,"L":null,"np":null,"suite":"","model":""},{"a":"Nadler","y":2020,"id":"2001.08754","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":4.0,"w":200.0,"map":"exact","M":12.0,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":57100.0,"L":null,"np":null,"suite":"","model":""},{"a":"Nadler","y":2020,"id":"2001.08754","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":2.0,"w":500.0,"map":"exact","M":12.0,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":57100.0,"L":null,"np":null,"suite":"","model":""},{"a":"Yang","y":2023,"id":"2211.13768","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":147.1,"w":24.33,"map":"exact","M":12.2,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":57100.0,"L":null,"np":null,"suite":"","model":""},{"a":"Nadler","y":2024,"id":"2412.13065","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":147.1,"w":24.33,"map":"exact","M":12.01,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":50000.0,"L":null,"np":null,"suite":"COZMIC III","model":""},{"a":"Nadler","y":2024,"id":"2412.13065","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":147.1,"w":24.33,"map":"exact","M":12.01,"n":3.0,"c":"high","code":"GADGET-1/2","mdm":50000.0,"L":null,"np":null,"suite":"COZMIC III","model":""},{"a":"Nadler","y":2023,"id":"2306.01830","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":147.1,"w":120.0,"map":"exact","M":13.04,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":429000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Forouhar Moreno","y":2022,"id":"2208.07376","t":"box","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":400000.0,"L":12.0,"np":512.0,"suite":"","model":""},{"a":"Forouhar Moreno","y":2022,"id":"2208.07376","t":"box","b":"hydro","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":400000.0,"L":12.0,"np":512.0,"suite":"","model":""},{"a":"Forouhar Moreno","y":2022,"id":"2208.07376","t":"box","b":"DMO","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":400000.0,"L":12.0,"np":512.0,"suite":"","model":""},{"a":"Forouhar Moreno","y":2022,"id":"2208.07376","t":"box","b":"hydro","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":400000.0,"L":12.0,"np":512.0,"suite":"","model":""},{"a":"Forouhar Moreno","y":2022,"id":"2208.07376","t":"box","b":"DMO","xm":"yukawa_iso","s":3.04,"w":560.0,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":400000.0,"L":12.0,"np":512.0,"suite":"","model":""},{"a":"Forouhar Moreno","y":2022,"id":"2208.07376","t":"box","b":"hydro","xm":"yukawa_iso","s":3.04,"w":560.0,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":400000.0,"L":12.0,"np":512.0,"suite":"","model":""},{"a":"Nadler","y":2021,"id":"2109.12120","t":"zoom","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":12.0,"n":2.0,"c":"med","code":"GADGET-1/2","mdm":429000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Mastromarino","y":2023,"id":"2212.01403","t":"box","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":9700000.0,"L":50.0,"np":752.0,"suite":"","model":""},{"a":"Mastromarino","y":2023,"id":"2212.01403","t":"box","b":"hydro","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":9700000.0,"L":50.0,"np":752.0,"suite":"","model":""},{"a":"Mastromarino","y":2023,"id":"2212.01403","t":"box","b":"DMO","xm":"yukawa_iso","s":3.04,"w":560.0,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":9700000.0,"L":50.0,"np":752.0,"suite":"","model":""},{"a":"Mastromarino","y":2023,"id":"2212.01403","t":"box","b":"hydro","xm":"yukawa_iso","s":3.04,"w":560.0,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":9700000.0,"L":50.0,"np":752.0,"suite":"","model":""},{"a":"Robles","y":2017,"id":"1706.07514","t":"zoom","b":"hydro","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":9.9785,"n":4.0,"c":"high","code":"GIZMO","mdm":2500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Robles","y":2017,"id":"1706.07514","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":9.9785,"n":4.0,"c":"high","code":"GIZMO","mdm":3000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Fitts","y":2019,"id":"1811.11791","t":"zoom","b":"hydro","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":9.98,"n":4.0,"c":"med","code":"GIZMO","mdm":2500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Fitts","y":2019,"id":"1811.11791","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":9.98,"n":1.0,"c":"med","code":"GIZMO","mdm":3000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Straight","y":2025,"id":"2501.16602","t":"zoom","b":"hydro","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":10.0,"n":1.0,"c":"med","code":"GIZMO","mdm":2500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Straight","y":2025,"id":"2501.16602","t":"zoom","b":"hydro","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":10.0,"n":1.0,"c":"med","code":"GIZMO","mdm":2500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Straight","y":2025,"id":"2501.16602","t":"zoom","b":"DMO","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":10.0,"n":1.0,"c":"med","code":"GIZMO","mdm":2500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Despali","y":2019,"id":"1811.02569","t":"zoom","b":"hydro","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":13.0245,"n":9.0,"c":"med","code":"AREPO","mdm":4400000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Ebisu","y":2022,"id":"2107.05967","t":"box","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"high","code":"","mdm":58600.0,"L":11.43,"np":1024.0,"suite":"","model":""},{"a":"Ebisu","y":2022,"id":"2107.05967","t":"box","b":"DMO","xm":"const_iso","s":3.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"high","code":"","mdm":58600.0,"L":11.43,"np":1024.0,"suite":"","model":""},{"a":"Gutcke","y":2025,"id":"2510.05258","t":"zoom","b":"hydro","xm":"yukawa_aniso","s":109.0,"w":29.4,"map":"approx","M":9.954,"n":1.0,"c":"med","code":"AREPO","mdm":80.0,"L":null,"np":null,"suite":"Lyra","model":""},{"a":"Gutcke","y":2025,"id":"2510.05258","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":109.0,"w":29.4,"map":"approx","M":9.954,"n":1.0,"c":"med","code":"AREPO","mdm":80.0,"L":null,"np":null,"suite":"Lyra","model":""},{"a":"Gutcke","y":2025,"id":"2510.05258","t":"zoom","b":"DMO","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":9.954,"n":1.0,"c":"med","code":"AREPO","mdm":80.0,"L":null,"np":null,"suite":"Lyra","model":""},{"a":"Harvey","y":2025,"id":"2509.19842","t":"zoom","b":"hydro","xm":"const_iso","s":0.01,"w":null,"map":"exact","M":15.05,"n":100.0,"c":"med","code":"SWIFT","mdm":68000000.0,"L":null,"np":null,"suite":"DARKSKIES","model":""},{"a":"Harvey","y":2025,"id":"2509.19842","t":"zoom","b":"hydro","xm":"const_iso","s":0.05,"w":null,"map":"exact","M":15.05,"n":100.0,"c":"med","code":"SWIFT","mdm":68000000.0,"L":null,"np":null,"suite":"DARKSKIES","model":""},{"a":"Harvey","y":2025,"id":"2509.19842","t":"zoom","b":"hydro","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":15.05,"n":100.0,"c":"med","code":"SWIFT","mdm":68000000.0,"L":null,"np":null,"suite":"DARKSKIES","model":""},{"a":"Harvey","y":2025,"id":"2509.19842","t":"zoom","b":"hydro","xm":"const_iso","s":0.2,"w":null,"map":"exact","M":15.05,"n":100.0,"c":"med","code":"SWIFT","mdm":68000000.0,"L":null,"np":null,"suite":"DARKSKIES","model":""},{"a":"Correa","y":2024,"id":"2403.09186","t":"box","b":"hydro","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":null,"n":2.0,"c":"med","code":"SWIFT","mdm":9820000.0,"L":25.0,"np":376.0,"suite":"TangoSIDM","model":""},{"a":"Correa","y":2024,"id":"2403.09186","t":"box","b":"hydro","xm":"yukawa_aniso","s":31.09,"w":104.73,"map":"exact","M":null,"n":2.0,"c":"med","code":"SWIFT","mdm":9820000.0,"L":25.0,"np":376.0,"suite":"TangoSIDM","model":"TangoSIDM Vel30"},{"a":"Correa","y":2024,"id":"2403.09186","t":"box","b":"hydro","xm":"yukawa_aniso","s":69.48,"w":27.69,"map":"exact","M":null,"n":2.0,"c":"med","code":"SWIFT","mdm":9820000.0,"L":25.0,"np":376.0,"suite":"TangoSIDM","model":"TangoSIDM Vel60"},{"a":"Robles","y":2019,"id":"1903.01469","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":12.0,"n":1.0,"c":"med","code":"GIZMO","mdm":30000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Silverman","y":2022,"id":"2203.10104","t":"zoom","b":"DMO","xm":"const_iso","s":5.0,"w":null,"map":"exact","M":12.0,"n":1.0,"c":"med","code":"GIZMO","mdm":30000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Fischer","y":2022,"id":"2205.02243","t":"box","b":"DMO","xm":"const_iso","s":0.2,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":62400000.0,"L":68.57,"np":576.0,"suite":"","model":""},{"a":"Fischer","y":2022,"id":"2205.02243","t":"box","b":"DMO","xm":"const_iso","s":2.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":62400000.0,"L":68.57,"np":576.0,"suite":"","model":""},{"a":"Fischer","y":2022,"id":"2205.02243","t":"zoom","b":"DMO","xm":"const_iso","s":2.0,"w":null,"map":"exact","M":12.097,"n":1.0,"c":"med","code":"GADGET-3","mdm":47400000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Fischer","y":2024,"id":"2310.07750","t":"box","b":"DMO","xm":"rutherford","s":0.633,"w":394.0,"map":"approx","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":62400000.0,"L":68.57,"np":576.0,"suite":"","model":""},{"a":"Fischer","y":2024,"id":"2310.07750","t":"box","b":"DMO","xm":"rutherford","s":6.33,"w":394.0,"map":"approx","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":62400000.0,"L":68.57,"np":576.0,"suite":"","model":""},{"a":"Fischer","y":2024,"id":"2310.07750","t":"box","b":"DMO","xm":"rutherford","s":26.8,"w":107.0,"map":"approx","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":62400000.0,"L":68.57,"np":576.0,"suite":"","model":""},{"a":"Fischer","y":2024,"id":"2310.07750","t":"box","b":"DMO","xm":"rutherford","s":268.0,"w":107.0,"map":"approx","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":62400000.0,"L":68.57,"np":576.0,"suite":"","model":""},{"a":"Silverman","y":2026,"id":"2606.02566","t":"zoom","b":"DMO","xm":"const_iso","s":70.0,"w":null,"map":"exact","M":10.079,"n":6.0,"c":"med","code":"GIZMO","mdm":1500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Silverman","y":2026,"id":"2606.02566","t":"zoom","b":"DMO","xm":"const_iso","s":30.0,"w":null,"map":"exact","M":10.079,"n":1.0,"c":"med","code":"GIZMO","mdm":1500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Lovell","y":2020,"id":"2002.11129","t":"zoom","b":"hydro","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":12.13,"n":1.0,"c":"med","code":"","mdm":50000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Robertson","y":2018,"id":"1711.09096","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":14.370000000000001,"n":2.0,"c":"high","code":"GADGET-3","mdm":9700000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Robertson","y":2018,"id":"1711.09096","t":"zoom","b":"hydro","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":14.370000000000001,"n":2.0,"c":"high","code":"GADGET-3","mdm":9700000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Robertson","y":2019,"id":"1810.05649","t":"box","b":"hydro","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":null,"n":1.0,"c":"high","code":"GADGET-3","mdm":7860000000.0,"L":571.4,"np":1024.0,"suite":"BAHAMAS-SIDM","model":""},{"a":"Robertson","y":2019,"id":"1810.05649","t":"box","b":"hydro","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"high","code":"GADGET-3","mdm":7860000000.0,"L":571.4,"np":1024.0,"suite":"BAHAMAS-SIDM","model":""},{"a":"Robertson","y":2019,"id":"1810.05649","t":"box","b":"hydro","xm":"yukawa","s":3.04,"w":560.0,"map":"exact","M":null,"n":1.0,"c":"high","code":"GADGET-3","mdm":7860000000.0,"L":571.4,"np":1024.0,"suite":"BAHAMAS-SIDM","model":""},{"a":"Robertson","y":2019,"id":"1810.05649","t":"box","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":7860000000.0,"L":571.4,"np":1024.0,"suite":"BAHAMAS-SIDM","model":""},{"a":"Robertson","y":2019,"id":"1810.05649","t":"box","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":7860000000.0,"L":571.4,"np":1024.0,"suite":"BAHAMAS-SIDM","model":""},{"a":"Robertson","y":2019,"id":"1810.05649","t":"box","b":"DMO","xm":"yukawa","s":3.04,"w":560.0,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":7860000000.0,"L":571.4,"np":1024.0,"suite":"BAHAMAS-SIDM","model":""},{"a":"Ragagnin","y":2024,"id":"2404.01383","t":"zoom","b":"DMO","xm":"yukawa_iso","s":40.0,"w":200.0,"map":"approx","M":14.5,"n":6.0,"c":"med","code":"GADGET-3","mdm":1190000000.0,"L":null,"np":null,"suite":"Dianoga","model":""},{"a":"Ragagnin","y":2024,"id":"2404.01383","t":"zoom","b":"hydro","xm":"yukawa_iso","s":40.0,"w":200.0,"map":"approx","M":14.5,"n":6.0,"c":"med","code":"GADGET-3","mdm":1190000000.0,"L":null,"np":null,"suite":"Dianoga","model":""},{"a":"Yoshida","y":2000,"id":"astro-ph/0006134","t":"zoom","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":15.02,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":9710000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Yoshida","y":2000,"id":"astro-ph/0006134","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":15.02,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":9710000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Yoshida","y":2000,"id":"astro-ph/0006134","t":"zoom","b":"DMO","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":15.02,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":9710000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Dave","y":2001,"id":"astro-ph/0006218","t":"box","b":"DMO","xm":"const_iso","s":0.561,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":3540000.0,"L":5.714,"np":128.0,"suite":"","model":""},{"a":"Dave","y":2001,"id":"astro-ph/0006218","t":"box","b":"DMO","xm":"const_iso","s":5.609,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":3540000.0,"L":5.714,"np":128.0,"suite":"","model":""},{"a":"Colin","y":2002,"id":"astro-ph/0205322","t":"zoom","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":14.8,"n":1.0,"c":"med","code":"ART","mdm":7100000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Colin","y":2002,"id":"astro-ph/0205322","t":"zoom","b":"DMO","xm":"const_iso","s":0.5,"w":null,"map":"exact","M":14.81,"n":1.0,"c":"med","code":"ART","mdm":7100000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Colin","y":2002,"id":"astro-ph/0205322","t":"zoom","b":"DMO","xm":"const_iso","s":3.0,"w":null,"map":"exact","M":14.755,"n":2.0,"c":"med","code":"ART","mdm":7100000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Colin","y":2002,"id":"astro-ph/0205322","t":"zoom","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":12.27,"n":1.0,"c":"med","code":"ART","mdm":14000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Colin","y":2002,"id":"astro-ph/0205322","t":"zoom","b":"DMO","xm":"const_iso","s":0.5,"w":null,"map":"exact","M":12.385,"n":4.0,"c":"med","code":"ART","mdm":14000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Colin","y":2002,"id":"astro-ph/0205322","t":"zoom","b":"DMO","xm":"const_iso","s":3.0,"w":null,"map":"exact","M":12.295,"n":3.0,"c":"med","code":"ART","mdm":14000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Colin","y":2002,"id":"astro-ph/0205322","t":"zoom","b":"DMO","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":12.27,"n":1.0,"c":"med","code":"ART","mdm":14000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Vogelsberger","y":2012,"id":"1201.5892","t":"zoom","b":"DMO","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":12.26,"n":1.0,"c":"high","code":"GADGET-3","mdm":49100.0,"L":null,"np":null,"suite":"","model":""},{"a":"Vogelsberger","y":2012,"id":"1201.5892","t":"zoom","b":"DMO","xm":"sigmax_vmax_iso","s":10.03,"w":29.5,"map":"approx","M":12.26,"n":1.0,"c":"med","code":"GADGET-3","mdm":49100.0,"L":null,"np":null,"suite":"","model":"vdSIDMa"},{"a":"Vogelsberger","y":2012,"id":"1201.5892","t":"zoom","b":"DMO","xm":"sigmax_vmax_iso","s":91.39,"w":10.1,"map":"approx","M":12.26,"n":1.0,"c":"med","code":"GADGET-3","mdm":49100.0,"L":null,"np":null,"suite":"","model":"vdSIDMb"},{"a":"Vogelsberger","y":2013,"id":"1211.1377","t":"zoom","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":12.26,"n":1.0,"c":"med","code":"GADGET-3","mdm":49000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Vogelsberger","y":2013,"id":"1211.1377","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":12.26,"n":1.0,"c":"med","code":"GADGET-3","mdm":49000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Rocha","y":2013,"id":"1208.3025","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":12.0,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":186000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Rocha","y":2013,"id":"1208.3025","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":11.7,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":1570000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Rocha","y":2013,"id":"1208.3025","t":"box","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":98600000.0,"L":71.43,"np":512.0,"suite":"","model":""},{"a":"Rocha","y":2013,"id":"1208.3025","t":"box","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":12300000.0,"L":35.71,"np":512.0,"suite":"","model":""},{"a":"Rocha","y":2013,"id":"1208.3025","t":"zoom","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":12.0,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":186000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Rocha","y":2013,"id":"1208.3025","t":"zoom","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":11.7,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":1570000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Rocha","y":2013,"id":"1208.3025","t":"box","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":null,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":98600000.0,"L":71.43,"np":512.0,"suite":"","model":""},{"a":"Rocha","y":2013,"id":"1208.3025","t":"box","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":null,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":12300000.0,"L":35.71,"np":512.0,"suite":"","model":""},{"a":"Rocha","y":2013,"id":"1208.3025","t":"box","b":"DMO","xm":"const_iso","s":0.03,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":98600000.0,"L":71.43,"np":512.0,"suite":"","model":""},{"a":"Rocha","y":2013,"id":"1208.3025","t":"box","b":"DMO","xm":"const_iso","s":0.03,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":12300000.0,"L":35.71,"np":512.0,"suite":"","model":""},{"a":"Vogelsberger","y":2014,"id":"1405.5216","t":"zoom","b":"hydro","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":10.465,"n":2.0,"c":"med","code":"AREPO","mdm":970.0,"L":null,"np":null,"suite":"","model":""},{"a":"Vogelsberger","y":2014,"id":"1405.5216","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":10.465,"n":2.0,"c":"med","code":"AREPO","mdm":970.0,"L":null,"np":null,"suite":"","model":""},{"a":"Vogelsberger","y":2014,"id":"1405.5216","t":"zoom","b":"hydro","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":10.455,"n":2.0,"c":"med","code":"AREPO","mdm":970.0,"L":null,"np":null,"suite":"","model":""},{"a":"Vogelsberger","y":2014,"id":"1405.5216","t":"zoom","b":"DMO","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":10.455,"n":2.0,"c":"med","code":"AREPO","mdm":970.0,"L":null,"np":null,"suite":"","model":""},{"a":"Vogelsberger","y":2014,"id":"1405.5216","t":"zoom","b":"hydro","xm":"sigmax_vmax_iso","s":10.03,"w":29.5,"map":"approx","M":10.465,"n":2.0,"c":"med","code":"AREPO","mdm":970.0,"L":null,"np":null,"suite":"","model":"vdSIDMa"},{"a":"Vogelsberger","y":2014,"id":"1405.5216","t":"zoom","b":"DMO","xm":"sigmax_vmax_iso","s":10.03,"w":29.5,"map":"approx","M":10.465,"n":2.0,"c":"med","code":"AREPO","mdm":970.0,"L":null,"np":null,"suite":"","model":"vdSIDMa"},{"a":"Vogelsberger","y":2014,"id":"1405.5216","t":"zoom","b":"hydro","xm":"sigmax_vmax_iso","s":91.39,"w":10.1,"map":"approx","M":10.469999999999999,"n":2.0,"c":"med","code":"AREPO","mdm":970.0,"L":null,"np":null,"suite":"","model":"vdSIDMb"},{"a":"Vogelsberger","y":2014,"id":"1405.5216","t":"zoom","b":"DMO","xm":"sigmax_vmax_iso","s":91.39,"w":10.1,"map":"approx","M":10.469999999999999,"n":2.0,"c":"med","code":"AREPO","mdm":970.0,"L":null,"np":null,"suite":"","model":"vdSIDMb"},{"a":"Elbert","y":2015,"id":"1412.1477","t":"zoom","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":9.95,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":1500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Elbert","y":2015,"id":"1412.1477","t":"zoom","b":"DMO","xm":"const_iso","s":0.5,"w":null,"map":"exact","M":10.015,"n":2.0,"c":"high","code":"GADGET-1/2","mdm":1500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Elbert","y":2015,"id":"1412.1477","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":10.015,"n":2.0,"c":"med","code":"GADGET-1/2","mdm":1500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Elbert","y":2015,"id":"1412.1477","t":"zoom","b":"DMO","xm":"const_iso","s":5.0,"w":null,"map":"exact","M":9.95,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":1500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Elbert","y":2015,"id":"1412.1477","t":"zoom","b":"DMO","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":10.015,"n":2.0,"c":"high","code":"GADGET-1/2","mdm":1500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Elbert","y":2015,"id":"1412.1477","t":"zoom","b":"DMO","xm":"const_iso","s":50.0,"w":null,"map":"exact","M":9.95,"n":1.0,"c":"high","code":"GADGET-1/2","mdm":1500.0,"L":null,"np":null,"suite":"","model":""},{"a":"Fry","y":2015,"id":"1501.00497","t":"zoom","b":"hydro","xm":"const_iso","s":2.0,"w":null,"map":"exact","M":10.325,"n":2.0,"c":"med","code":"ChaNGa/Gasoline","mdm":16000.0,"L":null,"np":null,"suite":"Eris","model":""},{"a":"Fry","y":2015,"id":"1501.00497","t":"zoom","b":"DMO","xm":"const_iso","s":2.0,"w":null,"map":"exact","M":10.325,"n":2.0,"c":"med","code":"ChaNGa/Gasoline","mdm":16000.0,"L":null,"np":null,"suite":"Eris","model":""},{"a":"Fry","y":2015,"id":"1501.00497","t":"zoom","b":"DMO","xm":"const_iso","s":2.0,"w":null,"map":"exact","M":9.515,"n":1.0,"c":"med","code":"ChaNGa/Gasoline","mdm":null,"L":null,"np":null,"suite":"Eris","model":""},{"a":"Fry","y":2015,"id":"1501.00497","t":"zoom","b":"DMO","xm":"const_iso","s":2.0,"w":null,"map":"exact","M":12.3,"n":1.0,"c":"med","code":"ChaNGa/Gasoline","mdm":null,"L":null,"np":null,"suite":"Eris","model":""},{"a":"Vogelsberger","y":2016,"id":"1512.05349","t":"zoom","b":"DMO","xm":"yukawa_iso","s":4.504,"w":76.4,"map":"none","M":12.21,"n":1.0,"c":"med","code":"AREPO","mdm":null,"L":null,"np":null,"suite":"ETHOS","model":""},{"a":"Vogelsberger","y":2016,"id":"1512.05349","t":"zoom","b":"DMO","xm":"yukawa_iso","s":13.166,"w":51.5,"map":"approx","M":12.21,"n":1.0,"c":"med","code":"AREPO","mdm":null,"L":null,"np":null,"suite":"ETHOS","model":""},{"a":"Vogelsberger","y":2016,"id":"1512.05349","t":"zoom","b":"DMO","xm":"yukawa_iso","s":22.439,"w":59.0,"map":"approx","M":12.21,"n":1.0,"c":"med","code":"AREPO","mdm":null,"L":null,"np":null,"suite":"ETHOS","model":""},{"a":"Vogelsberger","y":2016,"id":"1512.05349","t":"zoom","b":"DMO","xm":"yukawa_iso","s":0.125,"w":172.5,"map":"none","M":12.21,"n":1.0,"c":"med","code":"AREPO","mdm":null,"L":null,"np":null,"suite":"ETHOS","model":""},{"a":"Vogelsberger","y":2016,"id":"1512.05349","t":"zoom","b":"DMO","xm":"yukawa_iso","s":4.504,"w":76.4,"map":"none","M":12.21,"n":1.0,"c":"med","code":"AREPO","mdm":28000.0,"L":null,"np":null,"suite":"ETHOS","model":""},{"a":"Vogelsberger","y":2016,"id":"1512.05349","t":"zoom","b":"DMO","xm":"yukawa_iso","s":13.166,"w":51.5,"map":"approx","M":12.21,"n":1.0,"c":"med","code":"AREPO","mdm":28000.0,"L":null,"np":null,"suite":"ETHOS","model":""},{"a":"Vogelsberger","y":2016,"id":"1512.05349","t":"zoom","b":"DMO","xm":"yukawa_iso","s":22.439,"w":59.0,"map":"approx","M":12.21,"n":1.0,"c":"med","code":"AREPO","mdm":28000.0,"L":null,"np":null,"suite":"ETHOS","model":""},{"a":"Vogelsberger","y":2016,"id":"1512.05349","t":"box","b":"DMO","xm":"yukawa_iso","s":4.504,"w":76.4,"map":"none","M":null,"n":1.0,"c":"med","code":"AREPO","mdm":108000000.0,"L":142.9,"np":1024.0,"suite":"ETHOS","model":""},{"a":"Vogelsberger","y":2016,"id":"1512.05349","t":"box","b":"DMO","xm":"yukawa_iso","s":13.166,"w":51.5,"map":"approx","M":null,"n":1.0,"c":"med","code":"AREPO","mdm":108000000.0,"L":142.9,"np":1024.0,"suite":"ETHOS","model":""},{"a":"Vogelsberger","y":2016,"id":"1512.05349","t":"box","b":"DMO","xm":"yukawa_iso","s":22.439,"w":59.0,"map":"approx","M":null,"n":1.0,"c":"med","code":"AREPO","mdm":108000000.0,"L":142.9,"np":1024.0,"suite":"ETHOS","model":""},{"a":"Banerjee","y":2020,"id":"1906.12026","t":"box","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":14.305,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":13500000000.0,"L":714.3,"np":1024.0,"suite":"","model":""},{"a":"Banerjee","y":2020,"id":"1906.12026","t":"box","b":"DMO","xm":"const_iso","s":2.0,"w":null,"map":"exact","M":14.305,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":13500000000.0,"L":714.3,"np":1024.0,"suite":"","model":""},{"a":"Banerjee","y":2020,"id":"1906.12026","t":"box","b":"DMO","xm":"rutherford","s":13.61,"w":500.0,"map":"exact","M":14.305,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":13500000000.0,"L":714.3,"np":1024.0,"suite":"","model":""},{"a":"Banerjee","y":2020,"id":"1906.12026","t":"box","b":"DMO","xm":"rutherford","s":5.71,"w":1600.0,"map":"exact","M":14.305,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":13500000000.0,"L":714.3,"np":1024.0,"suite":"","model":""},{"a":"Banerjee","y":2020,"id":"1906.12026","t":"box","b":"DMO","xm":"rutherford","s":13.61,"w":1000.0,"map":"exact","M":14.305,"n":1.0,"c":"med","code":"GADGET-1/2","mdm":13500000000.0,"L":714.3,"np":1024.0,"suite":"","model":""},{"a":"Zier","y":2026,"id":"2607.05504","t":"zoom","b":"DMO","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":12.0,"n":1.0,"c":"med","code":"AREPO","mdm":1760000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Zier","y":2026,"id":"2607.05504","t":"box","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"AREPO","mdm":570000.0,"L":25.0,"np":1024.0,"suite":"","model":""},{"a":"Zier","y":2026,"id":"2607.05504","t":"box","b":"hydro","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"AREPO","mdm":30000000.0,"L":25.0,"np":256.0,"suite":"","model":""},{"a":"Zier","y":2026,"id":"2607.05504","t":"box","b":"DMO","xm":"yukawa_iso","s":109.0,"w":29.4,"map":"approx","M":null,"n":1.0,"c":"med","code":"AREPO","mdm":4500000.0,"L":25.0,"np":512.0,"suite":"","model":""},{"a":"Despali","y":2025,"id":"2501.12439","t":"box","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":2.0,"c":"med","code":"AREPO","mdm":4300000.0,"L":51.7,"np":null,"suite":"AIDA-TNG","model":""},{"a":"Despali","y":2025,"id":"2501.12439","t":"box","b":"DMO","xm":"yukawa_aniso","s":109.0,"w":29.4,"map":"exact","M":null,"n":2.0,"c":"med","code":"AREPO","mdm":4300000.0,"L":51.7,"np":null,"suite":"AIDA-TNG","model":""},{"a":"Despali","y":2025,"id":"2501.12439","t":"box","b":"hydro","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":2.0,"c":"med","code":"AREPO","mdm":3600000.0,"L":51.7,"np":null,"suite":"AIDA-TNG","model":""},{"a":"Despali","y":2025,"id":"2501.12439","t":"box","b":"hydro","xm":"yukawa_aniso","s":109.0,"w":29.4,"map":"exact","M":null,"n":2.0,"c":"med","code":"AREPO","mdm":3600000.0,"L":51.7,"np":null,"suite":"AIDA-TNG","model":""},{"a":"Di Cintio","y":2017,"id":"1701.04410","t":"box","b":"hydro","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":11.4,"n":1.0,"c":"med","code":"ChaNGa/Gasoline","mdm":340000.0,"L":8.0,"np":null,"suite":"","model":""},{"a":"Correa","y":2022,"id":"2206.11298","t":"box","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"SWIFT","mdm":1460000.0,"L":25.0,"np":752.0,"suite":"TangoSIDM","model":""},{"a":"Correa","y":2022,"id":"2206.11298","t":"box","b":"DMO","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"SWIFT","mdm":1460000.0,"L":25.0,"np":752.0,"suite":"TangoSIDM","model":""},{"a":"Correa","y":2022,"id":"2206.11298","t":"box","b":"DMO","xm":"yukawa_aniso","s":21.9,"w":36.7,"map":"approx","M":null,"n":1.0,"c":"med","code":"SWIFT","mdm":1460000.0,"L":25.0,"np":752.0,"suite":"TangoSIDM","model":"TangoSIDM Vel20"},{"a":"Correa","y":2022,"id":"2206.11298","t":"box","b":"DMO","xm":"yukawa_aniso","s":69.48,"w":27.69,"map":"exact","M":null,"n":1.0,"c":"med","code":"SWIFT","mdm":1460000.0,"L":25.0,"np":752.0,"suite":"TangoSIDM","model":"TangoSIDM Vel60"},{"a":"Correa","y":2022,"id":"2206.11298","t":"box","b":"DMO","xm":"yukawa_aniso","s":115.9,"w":30.4,"map":"approx","M":null,"n":1.0,"c":"med","code":"SWIFT","mdm":1460000.0,"L":25.0,"np":752.0,"suite":"TangoSIDM","model":"TangoSIDM Vel100"},{"a":"Brinckmann","y":2018,"id":"1705.00623","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":15.16,"n":28.0,"c":"med","code":"AREPO","mdm":1820000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Brinckmann","y":2018,"id":"1705.00623","t":"zoom","b":"DMO","xm":"const_iso","s":0.1,"w":null,"map":"exact","M":15.16,"n":28.0,"c":"med","code":"AREPO","mdm":1820000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Despali","y":2022,"id":"2204.12502","t":"zoom","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":13.215,"n":5.0,"c":"med","code":"AREPO","mdm":7000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Vega-Ferrero","y":2021,"id":"2006.08596","t":"zoom","b":"nonrad","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":15.325,"n":6.0,"c":"med","code":"GIZMO","mdm":1560000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Bhattacharyya","y":2022,"id":"2106.08292","t":"zoom","b":"DMO","xm":"yukawa_aniso","s":6.313,"w":1500.0,"map":"exact","M":14.635000000000002,"n":30.0,"c":"med","code":"GADGET-1/2","mdm":214000000.0,"L":null,"np":null,"suite":"","model":""},{"a":"Gonzalez","y":2023,"id":"2308.13461","t":"box","b":"DMO","xm":"const_iso","s":1.0,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GIZMO","mdm":187000000.0,"L":171.4,"np":1024.0,"suite":"","model":""},{"a":"Harvey","y":2019,"id":"1812.06981","t":"box","b":"hydro","xm":"const_iso","s":0.3,"w":null,"map":"exact","M":null,"n":1.0,"c":"med","code":"GADGET-3","mdm":7860000000.0,"L":571.4,"np":1024.0,"suite":"BAHAMAS-SIDM","model":""},{"a":"Harvey","y":2018,"id":"1808.10451","t":"zoom","b":"hydro","xm":"const_iso","s":10.0,"w":null,"map":"exact","M":9.23,"n":19.0,"c":"med","code":"GADGET-1/2","mdm":null,"L":null,"np":null,"suite":"","model":""}],"papers":{"1201.5892":{"title":"Subhaloes in Self-Interacting Galactic Dark Matter Haloes","authors":["Mark Vogelsberger","Jesus Zavala","Abraham Loeb"],"nauth":3,"journal":"","doi":"10.1111/j.1365-2966.2012.21182.x","date":"2012-01-27"},"1208.3025":{"title":"Cosmological Simulations with Self-Interacting Dark Matter I: Constant Density Cores and Substructure","authors":["Miguel Rocha","Annika H. G. Peter","James S. Bullock","Manoj Kaplinghat","Shea Garrison-Kimmel","Jose Onorbe","et al."],"nauth":7,"journal":"","doi":"10.1093/mnras/sts514","date":"2012-08-15"},"1211.1377":{"title":"Direct detection of self-interacting dark matter","authors":["Mark Vogelsberger","Jesus Zavala"],"nauth":2,"journal":"","doi":"10.1093/mnras/sts712","date":"2012-11-06"},"1405.5216":{"title":"Dwarf galaxies in CDM and SIDM with baryons: observational probes of the nature of dark matter","authors":["Mark Vogelsberger","Jesus Zavala","Christine Simpson","Adrian Jenkins"],"nauth":4,"journal":"","doi":"10.1093/mnras/stu1713","date":"2014-05-20"},"1412.1477":{"title":"Core Formation in Dwarf Halos with Self Interacting Dark Matter: No Fine-Tuning Necessary","authors":["Oliver D. Elbert","James S. Bullock","Shea Garrison-Kimmel","Miguel Rocha","Jose Oñorbe","Annika H. G. Peter"],"nauth":6,"journal":"","doi":"10.1093/mnras/stv1470","date":"2014-12-03"},"1501.00497":{"title":"All about baryons: revisiting SIDM predictions at small halo masses","authors":["A. Bastidas Fry","F. Governato","A. Pontzen","T. Quinn","M. Tremmel","L. Anderson","et al."],"nauth":9,"journal":"Monthly Notices of the Royal Astronomical Society 2015, 452, 1468","doi":"10.1093/mnras/stv1330","date":"2015-01-02"},"1512.05349":{"title":"ETHOS - An Effective Theory of Structure Formation: Dark matter physics as a possible explanation of the small-scale CDM problems","authors":["Mark Vogelsberger","Jesus Zavala","Francis-Yan Cyr-Racine","Christoph Pfrommer","Torsten Bringmann","Kris Sigurdson"],"nauth":6,"journal":"MNRAS 460, 1399 (2016)","doi":"10.1093/mnras/stw1076","date":"2015-12-16"},"1701.04410":{"title":"A rumble in the dark: signatures of self-interacting dark matter in Super-Massive Black Hole dynamics and galaxy density profiles","authors":["Arianna Di Cintio","Michael Tremmel","Fabio Governato","Andrew Pontzen","Jesús Zavala","Alexander Bastidas Fry","et al."],"nauth":8,"journal":"","doi":"10.1093/mnras/stx1043","date":"2017-01-16"},"1705.00623":{"title":"The structure and assembly history of cluster-size haloes in Self-Interacting Dark Matter","authors":["Thejs Brinckmann","Jesús Zavala","David Rapetti","Steen H. Hansen","Mark Vogelsberger"],"nauth":5,"journal":"","doi":"10.1093/mnras/stx2782","date":"2017-05-01"},"1706.07514":{"title":"SIDM on FIRE: Hydrodynamical Self-Interacting Dark Matter simulations of low-mass dwarf galaxies","authors":["Victor H. Robles","James S. Bullock","Oliver D. Elbert","Alex Fitts","Alejandro González-Samaniego","Michael Boylan-Kolchin","et al."],"nauth":10,"journal":"","doi":"10.1093/mnras/stx2253","date":"2017-06-22"},"1711.09096":{"title":"The diverse density profiles of galaxy clusters with self-interacting dark matter plus baryons","authors":["Andrew Robertson","Richard Massey","Vincent Eke","Sean Tulin","Hai-Bo Yu","Yannick Bahé","et al."],"nauth":13,"journal":"","doi":"10.1093/mnrasl/sly024","date":"2017-11-24"},"1801.09682":{"title":"The impact of baryonic discs on the shapes and profiles of self-interacting dark matter halos","authors":["Omid Sameie","Peter Creasey","Hai-Bo Yu","Laura V. Sales","Mark Vogelsberger","Jesus Zavala"],"nauth":6,"journal":"","doi":"10.1093/mnras/sty1516","date":"2018-01-29"},"1808.10451":{"title":"The impact of cored density profiles on the observable quantities of dwarf spheroidal galaxies","authors":["David Harvey","Yves Revaz","Andrew Robertson","Loic Hausammann"],"nauth":4,"journal":"","doi":"10.1093/mnrasl/sly159","date":"2018-08-30"},"1810.05649":{"title":"Observable tests of self-interacting dark matter in galaxy clusters: cosmological simulations with SIDM and baryons","authors":["Andrew Robertson","David Harvey","Richard Massey","Vincent Eke","Ian G. McCarthy","Mathilde Jauzac","et al."],"nauth":8,"journal":"","doi":"10.1093/mnras/stz1815","date":"2018-10-12"},"1811.02569":{"title":"The interplay of Self-Interacting Dark Matter and baryons in shaping the halo evolution","authors":["Giulia Despali","Martin Sparre","Simona Vegetti","Mark Vogelsberger","Jesús Zavala","Federico Marinacci"],"nauth":6,"journal":"","doi":"10.1093/mnras/stz273","date":"2018-11-06"},"1811.11791":{"title":"Dwarf Galaxies in CDM, WDM, and SIDM: Disentangling Baryons and Dark Matter Physics","authors":["Alex Fitts","Michael Boylan-Kolchin","Brandon Bozek","James S. Bullock","Andrew Graus","Victor Robles","et al."],"nauth":12,"journal":"","doi":"10.1093/mnras/stz2613","date":"2018-11-28"},"1812.06981":{"title":"Observable tests of self-interacting dark matter in galaxy clusters: BCG wobbles in a constant density core","authors":["David Harvey","Andrew Robertson","Richard Massey","Ian G. McCarthy"],"nauth":4,"journal":"","doi":"10.1093/mnras/stz1816","date":"2018-12-17"},"1903.01469":{"title":"The Milky Way's Halo and Subhalos in Self-Interacting Dark Matter","authors":["Victor H. Robles","Tyler Kelley","James S. Bullock","Manoj Kaplinghat"],"nauth":4,"journal":"","doi":"10.1093/mnras/stz2345","date":"2019-03-04"},"1904.09998":{"title":"The diverse dark matter density at sub-kiloparsec scales in Milky Way satellites:implications for the nature of dark matter","authors":["Jesús Zavala","Mark R. Lovell","Mark Vogelsberger","Jan D. Burger"],"nauth":4,"journal":"Phys. Rev. D 100, 063007 (2019)","doi":"10.1103/PhysRevD.100.063007","date":"2019-04-22"},"1906.12026":{"title":"Signatures of Self-Interacting dark matter on cluster density profile and subhalo distributions","authors":["Arka Banerjee","Susmita Adhikari","Neal Dalal","Surhud More","Andrey Kravtsov"],"nauth":5,"journal":"","doi":"10.1088/1475-7516/2020/02/024","date":"2019-06-28"},"2001.08754":{"title":"Signatures of Velocity-Dependent Dark Matter Self-Interactions in Milky Way-mass Halos","authors":["Ethan O. Nadler","Arka Banerjee","Susmita Adhikari","Yao-Yuan Mao","Risa H. Wechsler"],"nauth":5,"journal":"ApJ 896, 112 (2020)","doi":"10.3847/1538-4357/ab94b0","date":"2020-01-23"},"2002.11129":{"title":"Local Group star formation in warm and self-interacting dark matter cosmologies","authors":["Mark R. Lovell","Wojciech Hellwing","Aaron Ludlow","Jesús Zavala","Andrew Robertson","Azadeh Fattahi","et al."],"nauth":8,"journal":"","doi":"10.1093/mnras/staa2525","date":"2020-02-25"},"2006.08596":{"title":"Constraining the cross-section of dark matter with giant radial arcs in galaxy clusters","authors":["J. Vega-Ferrero","J. M. Dana","J. M. Diego","G. Yepes","W. Cui","M. Meneghetti"],"nauth":6,"journal":"","doi":"10.1093/mnras/staa3235","date":"2020-06-15"},"2102.12480":{"title":"The central densities of Milky Way-mass galaxies in cold and self-interacting dark matter models","authors":["Omid Sameie","Michael Boylan-Kolchin","Robyn Sanderson","Drona Vargya","Philip Hopkins","Andrew Wetzel","et al."],"nauth":9,"journal":"","doi":"10.1093/mnras/stab2173","date":"2021-02-24"},"2104.14069":{"title":"Shapes of Milky-Way-Mass Galaxies with Self-Interacting Dark Matter","authors":["Drona Vargya","Robyn Sanderson","Omid Sameie","Michael Boylan-Kolchin","Philip F. Hopkins","Andrew Wetzel","et al."],"nauth":7,"journal":"","doi":"10.1093/mnras/stac2069","date":"2021-04-29"},"2106.08292":{"title":"The Signatures of Self-Interacting Dark Matter and Subhalo Disruption on Cluster Substructure","authors":["Joy Bhattacharyya","Susmita Adhikari","Arka Banerjee","Surhud More","Amit Kumar","Ethan O. Nadler","et al."],"nauth":7,"journal":"ApJ 932 (2022) 30","doi":"10.3847/1538-4357/ac68e9","date":"2021-06-15"},"2107.05967":{"title":"Constraining Self-Interacting Dark Matter with Dwarf Spheroidal Galaxies and High-resolution Cosmological $N$-body Simulations","authors":["Toshihiro Ebisu","Tomoaki Ishiyama","Kohei Hayashi"],"nauth":3,"journal":"","doi":"10.1103/PhysRevD.105.023016","date":"2021-07-13"},"2109.12120":{"title":"The Effects of Dark Matter and Baryonic Physics on the Milky Way Subhalo Population in the Presence of the Large Magellanic Cloud","authors":["Ethan O. Nadler","Arka Banerjee","Susmita Adhikari","Yao-Yuan Mao","Risa H. Wechsler"],"nauth":5,"journal":"ApJL 920, 11 (2021)","doi":"10.3847/2041-8213/ac29c1","date":"2021-09-24"},"2203.10104":{"title":"Motivations for a Large Self-Interacting Dark Matter Cross Section from Milky Way Satellites","authors":["Maya Silverman","James S. Bullock","Manoj Kaplinghat","Victor H. Robles","Mauro Valli"],"nauth":5,"journal":"","doi":"10.1093/mnras/stac3232","date":"2022-03-18"},"2204.12502":{"title":"Constraining SIDM with halo shapes: revisited predictions from realistic simulations of early-type galaxies","authors":["Giulia Despali","Levi G. Walls","Simona Vegetti","Martin Sparre","Mark Vogelsberger","Jesús Zavala"],"nauth":6,"journal":"","doi":"10.1093/mnras/stac2521","date":"2022-04-26"},"2205.02243":{"title":"Cosmological simulations with rare and frequent dark matter self-interactions","authors":["Moritz S. Fischer","Marcus Brüggen","Kai Schmidt-Hoberg","Klaus Dolag","Felix Kahlhoefer","Antonio Ragagnin","et al."],"nauth":7,"journal":"","doi":"10.1093/mnras/stac2207","date":"2022-05-04"},"2206.11298":{"title":"TangoSIDM: Tantalizing models of Self-Interacting Dark Matter","authors":["Camila A. Correa","Matthieu Schaller","Sylvia Ploeckinger","Noemi Anau Montel","Christoph Weniger","Shinichiro Ando"],"nauth":6,"journal":"","doi":"10.1093/mnras/stac2830","date":"2022-06-22"},"2206.14830":{"title":"Unraveling the interplay between SIDM and baryons in MW halos: defining where baryons dictate heat transfer","authors":["Jonah C. Rose","Paul Torrey","Mark Vogelsberger","Stephanie O'Neil"],"nauth":4,"journal":"","doi":"10.1093/mnras/stac3634","date":"2022-06-29"},"2208.07376":{"title":"Galactic satellite systems in CDM, WDM and SIDM","authors":["Victor J. Forouhar Moreno","Alejandro Benitez-Llambay","Shaun Cole","Carlos Frenk"],"nauth":4,"journal":"","doi":"10.1093/mnras/stac3062","date":"2022-08-15"},"2211.13768":{"title":"Strong Dark Matter Self-interactions Diversify Halo Populations within and surrounding the Milky Way","authors":["Daneng Yang","Ethan O. Nadler","Hai-Bo Yu"],"nauth":3,"journal":"2023 ApJ 949 67","doi":"10.3847/1538-4357/acc73e","date":"2022-11-24"},"2212.01403":{"title":"Properties and observables of massive galaxies in self-interacting dark matter cosmologies","authors":["Claudio Mastromarino","Giulia Despali","Lauro Moscardini","Andrew Robertson","Massimo Meneghetti","Matteo Maturi"],"nauth":6,"journal":"","doi":"10.1093/mnras/stad1853","date":"2022-12-02"},"2306.01830":{"title":"A Self-interacting Dark Matter Solution to the Extreme Diversity of Low-mass Halo Properties","authors":["Ethan O. Nadler","Daneng Yang","Hai-Bo Yu"],"nauth":3,"journal":"ApJL 958, L39 (2023)","doi":"10.3847/2041-8213/ad0e09","date":"2023-06-02"},"2308.13461":{"title":"Cluster halo shapes in CDM and SIDM models: Unveiling the DM particle nature using a weak lensing approach","authors":["Elizabeth Johana Gonzalez","Agustín Rodriguez-Medrano","Luis Alberto Pereyra","Diego García Lambas"],"nauth":4,"journal":"","doi":"","date":"2023-08-25"},"2310.07750":{"title":"Cosmological and idealized simulations of dark matter haloes with velocity-dependent, rare and frequent self-interactions","authors":["Moritz S. Fischer","Lenard Kasselmann","Marcus Brüggen","Klaus Dolag","Felix Kahlhoefer","Antonio Ragagnin","et al."],"nauth":8,"journal":"","doi":"10.1093/mnras/stae699","date":"2023-10-11"},"2403.09186":{"title":"TangoSIDM Project: Is the Stellar Mass Tully-Fisher relation consistent with SIDM?","authors":["Camila Correa","Matthieu Schaller","Joop Schaye","Sylvia Ploeckinger","Josh Borrow","Yannick Bahe"],"nauth":6,"journal":"","doi":"","date":"2024-03-14"},"2404.01383":{"title":"Dianoga SIDM: galaxy cluster self-interacting dark matter simulations","authors":["Antonio Ragagnin","Massimo Meneghetti","Francesco Calura","Giulia Despali","Klaus Dolag","Moritz S. Fischer","et al."],"nauth":8,"journal":"A&A 687, A270 (2024)","doi":"10.1051/0004-6361/202449872","date":"2024-04-01"},"2412.13065":{"title":"COZMIC. III. Cosmological Zoom-in Simulations of Self-interacting Dark Matter with Suppressed Initial Conditions","authors":["Ethan O. Nadler","Rui An","Daneng Yang","Hai-Bo Yu","Andrew Benson","Vera Gluscevic"],"nauth":6,"journal":"ApJ, 986, 129 (2025)","doi":"10.3847/1538-4357/adce82","date":"2024-12-17"},"2501.12439":{"title":"Introducing the AIDA-TNG project: galaxy formation in alternative dark matter models","authors":["Giulia Despali","Lauro Moscardini","Dylan Nelson","Annalisa Pillepich","Volker Springel","Mark Vogelsberger"],"nauth":6,"journal":"A&A 697, A213 (2025)","doi":"10.1051/0004-6361/202553836","date":"2025-01-21"},"2501.16602":{"title":"Central densities of dark matter halos in FIRE-2 simulations of low-mass galaxies with cold dark matter and self-interacting dark matter","authors":["Maria C. Straight","Michael Boylan-Kolchin","James S. Bullock","Philip F. Hopkins","Xuejian Shen","Lina Necib","et al."],"nauth":9,"journal":"Mon Not R Astron Soc (2025) 1995-2005","doi":"10.1093/mnras/staf1539","date":"2025-01-28"},"2503.10748":{"title":"SIDM Concerto: Compilation and Data Release of Self-interacting Dark Matter Zoom-in Simulations","authors":["Ethan O. Nadler","Demao Kong","Daneng Yang","Hai-Bo Yu"],"nauth":4,"journal":"ApJ, 991, 69 (2025)","doi":"10.3847/1538-4357/adf553","date":"2025-03-13"},"2509.19842":{"title":"DARKSKIES: A suite of super-sampled zoom-in simulations of galaxy clusters with self-interacting dark matter","authors":["David Harvey","Yves Revaz","Matthieu Schaller","Aurel Schneider","Ethan Tregidga","Felix Vecchi"],"nauth":6,"journal":"A&A 703, A112 (2025)","doi":"10.1051/0004-6361/202555180","date":"2025-09-24"},"2510.05258":{"title":"Self-interacting dark matter in the center of a Local Group dwarf galaxy and its satellites","authors":["Thales A. Gutcke","Giulia Despali","Stephanie O'Neil","Mark Vogelsberger","Azadeh Fattahi","David B. Sanders"],"nauth":6,"journal":"","doi":"","date":"2025-10-06"},"2606.02566":{"title":"Mergers Matter: Gravothermal Collapse in Dwarf Halos with Self-Interacting Dark Matter","authors":["Maya Silverman","Abdelaziz Hussein","Arpit Arora","Mariangela Lisanti","Manoj Kaplinghat","Lina Necib","et al."],"nauth":11,"journal":"","doi":"","date":"2026-06-01"},"2607.05504":{"title":"A Novel Implementation of Self-Interacting Dark Matter in AREPO","authors":["Oliver Zier","Xuejian Shen","Vinh Tran","Martin Rosenlyst","Mark Vogelsberger","Rongrong Liu"],"nauth":6,"journal":"Mon Not R Astron Soc (2026)","doi":"10.1093/mnras/stag1674","date":"2026-07-06"},"astro-ph/0006134":{"title":"Weakly Self-Interacting Dark Matter and the Structure of Dark Halos","authors":["Naoki Yoshida","Volker Springel","Simon D. M. White","Giuseppe Tormen"],"nauth":4,"journal":"Astrophys.J.544:L87-L90,2000","doi":"10.1086/317306","date":"2000-06-09"},"astro-ph/0006218":{"title":"Halo Properties in Cosmological Simulations of Self-Interacting Cold Dark Matter","authors":["Romeel Davé","David N. Spergel","Paul J. Steinhardt","Benjamin D. Wandelt"],"nauth":4,"journal":"Astrophys.J.547:574-589,2001","doi":"10.1086/318417","date":"2000-06-15"},"astro-ph/0205322":{"title":"Structure and Subhalo Population of Halos in a Self-Interacting Dark Matter Cosmology","authors":["P. Colin","V. Avila-Reese","O. Valenzuela","C. Firmani"],"nauth":4,"journal":"Astrophys.J. 581 (2002) 777-793","doi":"10.1086/344259","date":"2002-05-19"}},"built":"2026-11-02","source":"sidm_sims_compilation.csv","nrows_total":204};
+(function () {
+'use strict';
+const $ = (s, e = document) => e.querySelector(s);
+
+// ------------------------------------------------------------------ data
+const KIND_LABEL = { dmo: 'DM-only zoom-in', hydro: 'hydro zoom-in', box: 'cosmological box' };
+const CODES = ['GADGET-1/2', 'GADGET-3', 'AREPO', 'GIZMO', 'SWIFT', 'ChaNGa/Gasoline', 'ART'];
+const ROWS = D.rows.map((r, i) => {
+  const kind = (r.t === 'box' || r.M == null) ? 'box' : (r.b === 'hydro' ? 'hydro' : 'dmo');
+  return Object.assign({}, r, { i, kind, approx: r.map !== 'exact', vd: r.w != null, tag: r.a + '+' + String(r.y).slice(2),
+    mk: (+r.s.toFixed(3)) + '|' + (r.w == null ? 'inf' : r.w), low: r.c === 'low' });
+});
+const PAP = D.papers;
+const Y0 = d3.min(ROWS, r => r.y), Y1 = d3.max(ROWS, r => r.y);
+const TOT = { pap: new Set(ROWS.map(r => r.id)).size, sim: d3.sum(ROWS, r => r.n), mod: new Set(ROWS.map(r => r.mk)).size };
+const RHO_M = 0.31 * 2.775e11 * 0.68 ** 2;            // Msun / cMpc^3
+
+const vmax = logM => 37 * Math.pow(10, (logM - 10) / 3);
+const logMofV = v => 10 + 3 * Math.log10(v / 37);
+function sigT(v, s0, w) {
+  if (w == null) return s0;
+  const x = (v / w) ** 2;
+  if (x < 1e-3) return s0 * (1 - 4 * x / 3 + 2 * x * x);   // series avoids cancellation for v << w
+  return 2 * s0 / (x * x) * (Math.log1p(x) - x / (1 + x));
+}
+
+// ------------------------------------------------------------------ state
+const S = { kinds: new Set(['dmo', 'hydro', 'box']), xs: new Set(['const', 'vd']), years: [Y0, Y1], q: '', colorBy: 'mass',
+  labels: true, view: 'models', pin: null, hover: null, playing: false, sort: { key: 'y', dir: -1 } };
+
+function matchesQuery(r, q) {
+  if (!q) return true;
+  const p = PAP[r.id] || {};
+  const hay = [r.a, r.tag, r.id, r.suite, r.model, r.code, p.title, (p.authors || []).join(' ')].join(' ').toLowerCase();
+  return q.split(/\s+/).every(t => hay.includes(t));
+}
+const baseFilter = r => S.kinds.has(r.kind) && S.xs.has(r.vd ? 'vd' : 'const') && matchesQuery(r, S.q);   // all but years
+const inYears = r => r.y >= S.years[0] && r.y <= S.years[1];
+let FR = [];   // rows passing every filter
+
+// ------------------------------------------------------------------ colour
+const PAL = {
+  light: { mass: ['#f2a03d', '#e0654f', '#c13b74', '#8c2a8f', '#55279a', '#1f1f73'], box: '#8a90a0',
+    year: ['#b9e2d5', '#6ec3ad', '#2b9a87', '#146a66', '#0d4250'], unknown: '#b9bcc6', glow: 0.09,
+    code: { 'GADGET-1/2': '#2a78d6', 'GADGET-3': '#1baf7a', AREPO: '#eb6834', GIZMO: '#e87ba4', SWIFT: '#eda100', 'ChaNGa/Gasoline': '#6250d6', ART: '#008300' } },
+  dark: { mass: ['#ffb54d', '#ff7a5c', '#f0508f', '#c454c9', '#8f6cf0', '#6f8cff'], box: '#9a98ad',
+    year: ['#1f514b', '#24826f', '#41b79d', '#8bdec6', '#d2f5e9'], unknown: '#5d5b70', glow: 0.5,
+    code: { 'GADGET-1/2': '#3987e5', 'GADGET-3': '#199e70', AREPO: '#d95926', GIZMO: '#d55181', SWIFT: '#c98500', 'ChaNGa/Gasoline': '#9085e9', ART: '#2fa52f' } }
+};
+const isDark = () => { const t = document.documentElement.dataset.theme; return t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches; };
+let P, massC, yearC, T;
+function setPalette() {
+  P = PAL[isDark() ? 'dark' : 'light'];
+  massC = d3.scaleLinear().domain(d3.range(6).map(i => 9 + 6.5 * i / 5)).range(P.mass).interpolate(d3.interpolateRgb).clamp(true);
+  yearC = d3.scaleLinear().domain(d3.range(5).map(i => 2000 + 26 * i / 4)).range(P.year).interpolate(d3.interpolateRgb).clamp(true);
+  const cs = getComputedStyle(document.documentElement);
+  T = {}; for (const k of ['bg', 'surface', 'surface-2', 'ink', 'ink-2', 'muted', 'faint', 'grid', 'line', 'accent']) T[k] = cs.getPropertyValue('--' + k).trim();
+}
+const codeC = c => P.code[c] || P.unknown;
+function colorOf(o) {
+  if (S.colorBy === 'code') return codeC(o.code);
+  if (S.colorBy === 'year') return yearC(o.y);
+  return o.kind === 'box' || o.M == null ? P.box : massC(o.M);
+}
+const colorKey = r => S.colorBy === 'code' ? (r.code || '?') : S.colorBy === 'year' ? r.y : (r.kind === 'box' ? 'box' : Math.round(r.M));
+
+// ------------------------------------------------------------------ formatting
+const f4 = d3.format('.4~r');
+const SUP = { '-': '⁻', '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹', '.': '·' };
+const sup = s => String(s).split('').map(c => SUP[c] || c).join('');
+function sci(x) { if (x == null) return '—'; const e = Math.floor(Math.log10(x) + 1e-9); const m = x / 10 ** e; return (Math.abs(m - 1) < 0.05 ? '' : m.toFixed(1) + '×') + '10' + sup(e); }
+const fmtM = M => M == null ? '—' : '10' + sup(M.toFixed(1));
+function el(tag, attrs, ...kids) {
+  const e = document.createElement(tag);
+  if (attrs) for (const [k, v] of Object.entries(attrs)) { if (k === 'class') e.className = v; else if (k === 'style') e.style.cssText = v; else e.setAttribute(k, v); }
+  for (const k of kids.flat(2)) if (k != null && k !== false) e.append(k instanceof Node ? k : document.createTextNode(String(k)));
+  return e;
+}
+const mi = s => el('span', { class: 'm' }, s);
+const sub = s => el('sub', null, s);
+const plural = (n, w) => Math.round(n) + ' ' + w + (Math.round(n) === 1 ? '' : 's');
+function paperLabel(rows) {           // "Nadler+23, Nadler+25 (Concerto)"
+  const by = new Map();
+  for (const r of rows) { const k = r.a + '|' + (r.suite || ''); if (!by.has(k)) by.set(k, new Set()); by.get(k).add(String(r.y).slice(2)); }
+  return [...by].sort((a, b) => a[0].localeCompare(b[0])).map(([k, ys]) => { const [a, su] = k.split('|'); return a + '+' + [...ys].sort().join(',') + (su ? ' (' + su + ')' : ''); }).join(', ');
+}
+
+// ------------------------------------------------------------------ svg helpers
+const svgNS = 'http://www.w3.org/2000/svg';
+function ensureSvg(host) {
+  let svg = d3.select(host).select('svg');
+  if (svg.empty()) {
+    svg = d3.select(host).append('svg').attr('xmlns', svgNS);
+    const defs = svg.append('defs');
+    defs.append('filter').attr('id', host.id + '-glow').attr('x', '-50%').attr('y', '-50%').attr('width', '200%').attr('height', '200%')
+      .append('feGaussianBlur').attr('stdDeviation', 5);
+    defs.append('clipPath').attr('id', host.id + '-clip').append('rect');
+    for (const n of ['axes', 'guides', 'curves', 'glow', 'marks', 'labels', 'over']) svg.append('g').attr('class', n);
+  }
+  return svg;
+}
+const FONT = 'IBM Plex Sans, system-ui, sans-serif';
+const MONO = 'IBM Plex Mono, ui-monospace, monospace';
+const MATH = 'STIX Two Text, Times New Roman, serif';
+function txt(g, x, y, s, o = {}) {
+  return g.append('text').attr('x', x).attr('y', y).attr('fill', o.fill || T.muted).attr('font-size', o.size || 11)
+    .attr('font-family', o.font || FONT).attr('text-anchor', o.anchor || 'start').attr('dominant-baseline', o.base || 'auto').text(s);
+}
+function richText(g, x, y, parts, o = {}) {  // parts: 'text' or {t, it, sub, sup}
+  const size = o.size || 12.5;
+  const t = g.append('text').attr('x', x).attr('y', y).attr('fill', o.fill || T['ink-2']).attr('font-size', size)
+    .attr('font-family', FONT).attr('text-anchor', o.anchor || 'middle');
+  if (o.rotate) t.attr('transform', `rotate(${o.rotate})`);
+  for (const p of parts) {
+    const q = typeof p === 'string' ? { t: p } : p;
+    const ts = t.append('tspan').text(q.t);
+    if (q.it) ts.attr('font-family', MATH).attr('font-style', 'italic').attr('font-size', size * 1.14);
+    if (q.sub) ts.attr('baseline-shift', 'sub').attr('font-size', size * 0.72);
+    if (q.sup) ts.attr('baseline-shift', 'super').attr('font-size', size * 0.72);
+  }
+  return t;
+}
+function pow10Label(g, x, y, e, o = {}) {
+  const t = g.append('text').attr('x', x).attr('y', y).attr('fill', o.fill || T.muted).attr('font-size', o.size || 11)
+    .attr('font-family', FONT).attr('text-anchor', o.anchor || 'middle');
+  t.append('tspan').text('10');
+  t.append('tspan').text(e).attr('baseline-shift', 'super').attr('font-size', (o.size || 11) * 0.75);
+  return t;
+}
+const symArea = (kind, area) => d3.symbol(kind === 'dmo' ? d3.symbolCircle : d3.symbolSquare, area)();
+const rotOf = kind => kind === 'hydro' ? ' rotate(45)' : '';
+const collR = n => n.kind === 'dmo' ? Math.sqrt(n.area / Math.PI) : Math.sqrt(n.area) * (n.kind === 'hydro' ? 0.66 : 0.6);
+
+// ------------------------------------------------------------------ aggregation
+function aggregate(rows, keyf, extra) {
+  const m = new Map();
+  for (const r of rows) {
+    const k = keyf(r);
+    let n = m.get(k);
+    if (!n) { n = { key: k, rows: [], n: 0, nlow: 0, Ms: [] }; m.set(k, n); }
+    n.rows.push(r); n.n += r.n; n.nlow += r.low ? r.n : 0; if (r.M != null && r.kind !== 'box') n.Ms.push(r.M);
+  }
+  return [...m.values()].map(n => {
+    const r = n.rows[0];
+    Object.assign(n, { s: r.s, w: r.w, mk: r.mk, kind: r.kind, approx: r.approx, code: r.code, y: r.y, low: n.nlow > 0.5 * n.n,
+      M: n.Ms.length ? d3.mean(n.Ms) : null });
+    if (extra) extra(n);
+    return n;
+  });
+}
+
+// ------------------------------------------------------------------ focus: hover wins over pin
+function focusRows() { const f = S.hover || S.pin; return f ? new Set(f.rows.map(r => r.i)) : null; }
+const pinRows = () => S.pin ? new Set(S.pin.rows.map(r => r.i)) : null;
+const related = (obj, fr) => !fr || obj.rows.some(r => fr.has(r.i));
+const markOp = (n, fr) => (n.low ? 0.5 : 1) * (related(n, fr) ? 1 : 0.14);
+const glowOp = (n, fr) => related(n, fr) ? P.glow * (n.approx ? 0.45 : 1) * (n.low ? 0.5 : 1) * (fr ? 1.4 : 1) : 0;
+
+// ------------------------------------------------------------------ tooltip
+const tip = $('#tip');
+function showTip(content, ev) { tip.replaceChildren(...content); tip.classList.add('on'); moveTip(ev); }
+function moveTip(ev) {
+  if (!ev) return;
+  const pad = 14, w = tip.offsetWidth, h = tip.offsetHeight;
+  let x = ev.clientX + pad, y = ev.clientY + pad;
+  if (x + w > innerWidth - 8) x = ev.clientX - w - pad;
+  if (y + h > innerHeight - 8) y = ev.clientY - h - pad;
+  tip.style.left = Math.max(8, x) + 'px'; tip.style.top = Math.max(8, y) + 'px';
+}
+function hideTip() { tip.classList.remove('on'); }
+function modelLine(o, cls = 'v') {
+  const unit = ' cm² g⁻¹';
+  if (o.w == null) return el('div', { class: cls }, mi('σ'), '/', mi('m'), ' = ' + f4(o.s) + unit, el('span', { class: 's', style: 'font-weight:400' }, '  · constant'));
+  return el('div', { class: cls }, mi('σ'), sub('0'), '/', mi('m'), ' = ' + f4(o.s) + unit + '  ·  ', mi('w'), ' = ' + f4(o.w) + ' km s⁻¹');
+}
+function paperLines(rows, max = 5) {
+  const ids = [...new Set(rows.map(r => r.id))];
+  const out = el('div', { class: 'p' });
+  ids.slice(0, max).forEach(id => {
+    const rr = rows.filter(r => r.id === id), r = rr[0], p = PAP[id] || {};
+    out.append(el('div', null, el('span', { class: 'key', style: 'background:' + colorOf(aggregate(rr, () => 0)[0]) }),
+      el('span', null, el('b', null, r.tag + (r.suite ? ' · ' + r.suite : '')), ' ', el('span', { class: 's' }, p.title ? p.title : ''))));
+  });
+  if (ids.length > max) out.append(el('div', { class: 's' }, '+ ' + plural(ids.length - max, 'more paper')));
+  return out;
+}
+function nodeTip(n) {
+  const kinds = [...new Set(n.rows.map(r => r.kind))].map(k => KIND_LABEL[k]).join(', ');
+  const parts = [plural(n.n, 'simulation'), kinds];
+  if (n.M != null) parts.push('host ' + fmtM(n.M) + ' M⊙');
+  if (S.colorBy === 'code') parts.push(n.code || 'code not stated');
+  const c = [modelLine(n), el('div', { class: 's' }, parts.join(' · '))];
+  if (n.rows[0].model) c.push(el('div', { class: 's' }, 'Model: ' + n.rows[0].model));
+  if (n.approx) c.push(el('div', { class: 's' }, 'Approximate (σ₀, w) mapping of the paper\'s parametrisation'));
+  if (n.low) c.push(el('div', { class: 's' }, 'Mostly low-confidence table entries'));
+  c.push(paperLines(n.rows));
+  c.push(el('div', { class: 'h' }, S.pin && S.pin.key === n.key ? 'Click again to unpin' : 'Click to pin'));
+  return c;
+}
+
+// ------------------------------------------------------------------ hit testing: nearest mark within reach (Delaunay)
+function hitLayer(svg, items, opts) {
+  const over = svg.select('g.over'); over.selectAll('*').remove();
+  const pts = [];
+  items.forEach((it, j) => (it.hit || [[it.px, it.py]]).forEach(p => pts.push([p[0], p[1], j])));
+  const del = pts.length ? d3.Delaunay.from(pts, p => p[0], p => p[1]) : null;
+  const rect = over.append('rect').attr('x', opts.x0).attr('y', opts.y0).attr('width', opts.x1 - opts.x0).attr('height', opts.y1 - opts.y0).attr('fill', 'transparent');
+  const find = ev => {
+    if (!del) return null;
+    const [mx, my] = d3.pointer(ev, rect.node());
+    const p = pts[del.find(mx, my)], it = items[p[2]];
+    return Math.hypot(p[0] - mx, p[1] - my) <= Math.max(opts.reach || 18, (it.r || 0) + 6) ? it : null;
+  };
+  rect.on('pointermove', ev => {
+    const it = find(ev);
+    rect.style('cursor', it ? 'pointer' : 'default');
+    if (it) { if (!S.hover || S.hover.key !== it.key) { S.hover = { key: it.key, rows: it.rows }; highlight(); } showTip(opts.tip(it), ev); }
+    else { if (S.hover) { S.hover = null; highlight(); } hideTip(); }
+  }).on('pointerleave', () => { if (S.hover) { S.hover = null; highlight(); } hideTip(); })
+    .on('click', ev => {
+      const it = find(ev);
+      if (!it) { if (S.pin) { S.pin = null; highlight(); renderDetail(); } return; }
+      S.pin = (S.pin && S.pin.key === it.key) ? null : { key: it.key, obj: it, rows: it.rows, kind: 'mark' };
+      highlight(); renderDetail();
+      if (ev.pointerType !== 'mouse') hideTip(); else showTip(opts.tip(it), ev);
+    });
+}
+
+// ------------------------------------------------------------------ shared axis pieces
+const YD = [0.006, 1000];
+const yTicks = [0.01, 0.1, 1, 10, 100, 1000];
+function hGrid(g, ys, x0, x1) { for (const t of yTicks) g.append('line').attr('x1', x0).attr('x2', x1).attr('y1', ys(t)).attr('y2', ys(t)).attr('stroke', T.grid); }
+function minorTicks(lo, hi) { const out = []; for (let e = Math.floor(Math.log10(lo)); e <= Math.ceil(Math.log10(hi)); e++) for (let k = 2; k < 10; k++) { const v = k * 10 ** e; if (v > lo && v < hi) out.push(v); } return out; }
+function yAxis(g, ys, h, off, label) {
+  g.append('line').attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', h).attr('stroke', T.faint);
+  for (const t of yTicks) {
+    g.append('line').attr('x1', -4).attr('x2', 0).attr('y1', ys(t)).attr('y2', ys(t)).attr('stroke', T.faint);
+    txt(g, -7, ys(t), t, { anchor: 'end', base: 'middle', font: MONO, size: 10.5 });
+  }
+  for (const v of minorTicks(YD[0], YD[1])) g.append('line').attr('x1', -2).attr('x2', 0).attr('y1', ys(v)).attr('y2', ys(v)).attr('stroke', T.faint);
+  richText(g, -h / 2, -off, label, { rotate: -90 });
+}
+function xAxis(g, xs, w, h, ticks, lo, hi, skip) {
+  g.append('line').attr('x1', 0).attr('x2', w).attr('y1', h).attr('y2', h).attr('stroke', T.faint);
+  for (const t of ticks) {
+    g.append('line').attr('x1', xs(t)).attr('x2', xs(t)).attr('y1', h).attr('y2', h + 4).attr('stroke', T.faint);
+    if (!(skip && skip(t))) txt(g, xs(t), h + 17, t, { anchor: 'middle', font: MONO, size: 10.5 });
+  }
+  for (const v of minorTicks(lo, hi)) g.append('line').attr('x1', xs(v)).attr('x2', xs(v)).attr('y1', h).attr('y2', h + 2).attr('stroke', T.faint);
+}
+function massRuler(g, xs, x0, x1, label, showBand, idp) {
+  // top axis: host mass whose V_max equals the velocity on the x axis; band = host-mass colour of that host
+  const yb = -11, bh = 6;
+  if (showBand) {
+    const gid = idp + '-band';
+    const lg = g.append('defs').append('linearGradient').attr('id', gid).attr('x1', 0).attr('x2', 1);
+    for (let k = 0; k <= 40; k++) lg.append('stop').attr('offset', k / 40).attr('stop-color', massC(logMofV(xs.invert(x0 + (x1 - x0) * k / 40))));
+    g.append('rect').attr('x', x0).attr('y', yb).attr('width', x1 - x0).attr('height', bh).attr('rx', 3).attr('fill', `url(#${gid})`);
+  } else {
+    g.append('line').attr('x1', x0).attr('x2', x1).attr('y1', yb + bh / 2).attr('y2', yb + bh / 2).attr('stroke', T.faint);
+  }
+  const thin = x1 - x0 < 440;
+  for (let e = 8; e <= 16; e++) {
+    if (thin && e % 2) continue;
+    const px = xs(vmax(e));
+    if (px < x0 + 6 || px > x1 - 6) continue;
+    g.append('line').attr('x1', px).attr('x2', px).attr('y1', yb - 3).attr('y2', yb).attr('stroke', T.faint);
+    pow10Label(g, px, yb - 6, e, { size: 10 });
+  }
+  richText(g, x0, yb - 26, label, { anchor: 'start', size: 11, fill: T.muted });
+}
+
+// ================================================================== panel a: the (w, sigma0) plane
+const panels = {};
+let prevA = new Map();
+function renderA() {
+  const host = $('#pA'), W = host.clientWidth; if (!W) return;
+  const narrow = W < 560, H = narrow ? 440 : 560;
+  const m = { l: narrow ? 50 : 62, r: 8, t: 64, b: 52 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b, gap = 12;
+  const ys = d3.scaleLog().domain(YD).range([ih, 0]);
+
+  // nodes first: the strip width adapts to its widest sigma row
+  const r1 = narrow ? 3.8 : W > 700 ? 5.6 : 4.8;
+  const nodes = aggregate(FR, r => [r.mk, colorKey(r), r.kind, r.approx].join('~'), n => { n.key = 'A' + n.key; n.color = colorOf(n); n.fy = ys(n.s); });
+  const size = k => nodes.forEach(n => { n.area = Math.PI * (r1 * k) ** 2 * Math.sqrt(Math.max(n.n, 1)); n.cr = collR(n); });
+  size(1);
+  const inf = nodes.filter(n => n.w == null), fin = nodes.filter(n => n.w != null);
+  const rowW = () => d3.max(d3.groups(inf, n => n.s), ([, g]) => d3.sum(g, n => 2 * n.cr + 2)) || 0;
+  const maxStrip = iw * (narrow ? 0.4 : 0.36);
+  let need = rowW() + 14;
+  if (need > maxStrip) { size(Math.max(0.6, (maxStrip - 14) / (need - 14))); need = rowW() + 14; }
+  const stw = Math.max(iw * (narrow ? 0.28 : 0.26), Math.min(maxStrip, need));
+  const fw = iw - gap - stw, sx0 = fw + gap;
+  const xs = d3.scaleLog().domain([8, 2800]).range([0, fw]);
+
+  const svg = ensureSvg(host).attr('viewBox', `0 0 ${W} ${H}`).attr('height', H)
+    .attr('role', 'img').attr('aria-label', 'Simulated SIDM models: velocity scale w versus low-velocity cross section');
+  svg.selectAll('svg > g').attr('transform', `translate(${m.l},${m.t})`);
+
+  const ax = svg.select('g.axes'); ax.selectAll('*').remove();
+  ax.append('rect').attr('x', sx0).attr('y', 0).attr('width', stw).attr('height', ih).attr('fill', T['surface-2']).attr('rx', 6);
+  hGrid(ax, ys, 0, fw); hGrid(ax, ys, sx0, sx0 + stw);
+  const xt = [10, 20, 50, 100, 200, 500, 1000, 2000];
+  for (const t of xt) ax.append('line').attr('x1', xs(t)).attr('x2', xs(t)).attr('y1', 0).attr('y2', ih).attr('stroke', T.grid);
+  xAxis(ax, xs, fw, ih, xt, 8, 2800, t => narrow && ![10, 100, 1000].includes(t));
+  for (const dx of [-3, 3]) ax.append('line').attr('x1', fw + gap / 2 + dx - 3).attr('x2', fw + gap / 2 + dx + 3).attr('y1', ih + 5).attr('y2', ih - 5).attr('stroke', T.muted);
+  yAxis(ax, ys, ih, m.l - 16, [narrow ? '' : 'low-velocity cross section  ', { t: 'σ', it: 1 }, { t: '0', sub: 1 }, '/', { t: 'm', it: 1 }, '  [cm', { t: '2', sup: 1 }, ' g', { t: '−1', sup: 1 }, ']']);
+  richText(ax, fw / 2, ih + 42, [narrow ? '' : 'mediator velocity scale  ', { t: 'w', it: 1 }, '  [km s', { t: '−1', sup: 1 }, ']']);
+  richText(ax, sx0 + stw / 2, ih + 22, [{ t: 'w', it: 1 }, ' → ∞'], { size: 12 });
+  txt(ax, sx0 + stw / 2, ih + 40, 'constant σ', { anchor: 'middle', size: 11.5 });
+  massRuler(ax, xs, 0, fw, ['host mass with ', { t: 'V', it: 1 }, { t: 'max', sub: 1 }, ' = ', { t: 'w', it: 1 }, '  [M', { t: '⊙', sub: 1 }, ']'], S.colorBy === 'mass', 'pA');
+
+  const ord = (a, b) => (a.kind === 'box') - (b.kind === 'box') || (a.M ?? 99) - (b.M ?? 99) || (a.kind === 'hydro') - (b.kind === 'hydro') || a.approx - b.approx || String(a.key).localeCompare(String(b.key));
+  // finite w: sigma is exact, coincident markers spread sideways around their true w
+  d3.groups(fin, n => n.mk).forEach(([, g]) => {
+    g.sort(ord); let off = 0; const pos = g.map((n, k) => { if (k) off += 0.62 * (g[k - 1].cr + n.cr); return off; });
+    g.forEach((n, k) => { n.tx = xs(n.w); n.x = n.tx + pos[k] - off / 2; n.y = n.fy; });
+  });
+  relax(fin, 0.22, 0, fw);
+  // strip: each sigma row packed by host mass (boxes last)
+  d3.groups(inf, n => n.s).forEach(([, g]) => {
+    g.sort(ord); let x = sx0 + stw / 2 - d3.sum(g, n => 2 * n.cr + 2) / 2;
+    g.forEach(n => { n.x = x + n.cr; x += 2 * n.cr + 2; n.tx = n.x; n.y = n.fy; });
+  });
+  relax(inf, 0.05, sx0 + 3, sx0 + stw - 3);
+  nodes.forEach(n => { n.px = n.x; n.py = n.fy; n.r = n.cr; });
+  drawMarks(svg, nodes, prevA, 'pA');
+  prevA = new Map(nodes.map(n => [n.key, [n.px, n.py]]));
+
+  const lg = svg.select('g.labels'); lg.selectAll('*').remove();
+  if (S.labels) placeLabels(lg, fin, fw, ih, narrow);
+  hitLayer(svg, nodes, { x0: 0, y0: -2, x1: iw, y1: ih + 2, reach: 14, tip: nodeTip });
+  panels.A = { svg, nodes };
+}
+function relax(nodes, sx, lo, hi) {
+  if (!nodes.length) return;
+  nodes.forEach(n => { n.fy = n.y; });
+  const sim = d3.forceSimulation(nodes).force('x', d3.forceX(n => n.tx).strength(sx))
+    .force('c', d3.forceCollide(n => n.cr + 1.2).strength(0.85).iterations(3)).stop();
+  for (let i = 0; i < 260; i++) { sim.tick(); for (const n of nodes) n.x = Math.max(lo + n.cr, Math.min(hi - n.cr, n.x)); }
+}
+function drawMarks(svg, nodes, prev, idp) {
+  const fr = focusRows();
+  const sorted = nodes.slice().sort((a, b) => b.n - a.n);         // big ones underneath
+  const dur = S.playing ? 300 : 650;
+  const at = n => `translate(${n.px},${n.py})`;
+  const from = n => { const p = prev.get(n.key); return p ? `translate(${p[0]},${p[1]})` : at(n); };
+  // 'move' carries position/size, 'fade' carries opacity; highlight() only ever interrupts 'fade'
+  const glow = svg.select('g.glow').attr('filter', `url(#${idp}-glow)`).selectAll('circle').data(sorted, n => n.key).join(
+    en => en.append('circle').attr('transform', from).attr('r', 0).attr('opacity', 0),
+    up => up, ex => ex.transition('move').duration(dur).attr('r', 0).remove())
+    .attr('fill', n => n.color);
+  glow.transition('move').duration(dur).ease(d3.easeCubicOut).attr('transform', at).attr('r', n => n.cr * 1.2);
+  glow.transition('fade').duration(dur).attr('opacity', n => glowOp(n, fr));
+  const marks = svg.select('g.marks').selectAll('path').data(sorted, n => n.key).join(
+    en => en.append('path').attr('transform', n => from(n) + rotOf(n.kind) + ' scale(0.01)').attr('opacity', 0),
+    up => up, ex => ex.transition('move').duration(dur).attr('opacity', 0).remove())
+    .attr('d', n => symArea(n.kind, n.area))
+    .attr('fill', n => n.approx ? T.surface : n.color)
+    .attr('stroke', n => n.approx ? n.color : T.surface)
+    .attr('stroke-width', n => n.approx ? 2.2 : 1.2);
+  marks.transition('move').duration(dur).ease(d3.easeCubicOut).attr('transform', n => at(n) + rotOf(n.kind));
+  marks.transition('fade').duration(dur).attr('opacity', n => markOp(n, fr));
+}
+function placeLabels(g, fin, fw, ih, narrow) {
+  const ctx = placeLabels.ctx || (placeLabels.ctx = document.createElement('canvas').getContext('2d'));
+  const fs = narrow ? 9.5 : 10.5; ctx.font = `400 ${fs}px ${FONT}`;
+  const lh = fs * 1.22;
+  const groups = d3.groups(fin, n => n.mk).map(([mk, ns]) => {
+    const rows = ns.flatMap(n => n.rows), model = rows.find(r => r.model);
+    const s = model ? paperLabel(rows.map(r => Object.assign({}, r, { suite: '' }))) + ' · ' + model.model : paperLabel(rows);
+    const lines = []; let cur = '';
+    for (const wd of s.split(/(?<=,) /)) { const t = cur ? cur + ' ' + wd : wd; if (cur && ctx.measureText(t).width > (narrow ? 120 : 150)) { lines.push(cur); cur = wd; } else cur = t; }
+    if (cur) lines.push(cur);
+    const box = [d3.min(ns, n => n.px - n.cr), d3.min(ns, n => n.py - n.cr), d3.max(ns, n => n.px + n.cr), d3.max(ns, n => n.py + n.cr)];
+    return { mk, lines, tw: d3.max(lines, l => ctx.measureText(l).width) + 4, th: lines.length * lh + 2, box, cx: (box[0] + box[2]) / 2, cy: (box[1] + box[3]) / 2 };
+  });
+  const marks = fin.map(n => [n.px - n.cr - 1, n.py - n.cr - 1, n.px + n.cr + 1, n.py + n.cr + 1]);
+  const ov = (a, b) => Math.max(0, Math.min(a[2], b[2]) - Math.max(a[0], b[0])) * Math.max(0, Math.min(a[3], b[3]) - Math.max(a[1], b[1]));
+  const hits = (p0, p1, r) => { for (let k = 0; k <= 12; k++) { const x = p0[0] + (p1[0] - p0[0]) * k / 12, y = p0[1] + (p1[1] - p0[1]) * k / 12; if (x >= r[0] && x <= r[2] && y >= r[1] && y <= r[3]) return true; } return false; };
+  groups.forEach(G => { G.dens = groups.filter(o => o !== G && Math.hypot(o.cx - G.cx, o.cy - G.cy) < 110).length; });
+  groups.sort((a, b) => b.dens - a.dens);
+  const placed = [];
+  for (const G of groups) {
+    const hx = (G.box[2] - G.box[0]) / 2, hy = (G.box[3] - G.box[1]) / 2, A = G.tw * G.th;
+    let best = null;
+    for (const d of [3, 9, 18, 30, 46, 66, 90]) for (let a = 0; a < 360; a += 20) {
+      const c = Math.cos(a * Math.PI / 180), s = -Math.sin(a * Math.PI / 180);
+      const Px = G.cx + c * (hx + d), Py = G.cy + s * (hy + d);
+      const ha = c > 0.35 ? 0 : c < -0.35 ? 1 : 0.5, va = s > 0.35 ? 0 : s < -0.35 ? 1 : 0.5;
+      const r = [Px - ha * G.tw, Py - va * G.th, Px - ha * G.tw + G.tw, Py - va * G.th + G.th];
+      let sc = d / 30 + (c < -0.35 ? 0.3 : 0);
+      sc += Math.max(0, -r[0]) + Math.max(0, r[2] - fw) + Math.max(0, 2 - r[1]) + Math.max(0, r[3] - ih + 2);
+      for (const p of placed) sc += 60 * ov(r, p.r) / A;
+      for (const q of marks) sc += 120 * ov(r, q) / A;
+      if (d > 9) { const near = [Math.max(r[0], Math.min(G.cx, r[2])), Math.max(r[1], Math.min(G.cy, r[3]))]; for (const p of placed) if (hits([G.cx, G.cy], near, p.r)) sc += 4; }
+      if (!best || sc < best.sc) best = { sc, r, d };
+    }
+    placed.push({ r: best.r, G, d: best.d });
+  }
+  for (const p of placed) {
+    const { r, G } = p;
+    const gg = g.append('g').attr('data-mk', G.mk).attr('opacity', 0);
+    if (p.d > 9) {
+      const nx = Math.max(r[0], Math.min(G.cx, r[2])), ny = Math.max(r[1], Math.min(G.cy, r[3]));
+      gg.append('line').attr('x1', G.cx).attr('y1', G.cy).attr('x2', nx).attr('y2', ny).attr('stroke', T.faint).attr('stroke-width', 0.7);
+    }
+    const t = gg.append('text').attr('font-size', fs).attr('font-family', FONT).attr('fill', T.muted)
+      .attr('paint-order', 'stroke').attr('stroke', T.surface).attr('stroke-width', 3).attr('stroke-linejoin', 'round');
+    G.lines.forEach((l, k) => t.append('tspan').attr('x', r[0] + 2).attr('y', r[1] + 1 + (k + 0.82) * lh).text(l));
+    gg.transition('fade').delay(S.playing ? 0 : 300).duration(300).attr('opacity', 1);
+  }
+}
+
+// ================================================================== panel b: sigma_T(v)
+function renderB() {
+  const host = $('#pB'), W = host.clientWidth; if (!W) return;
+  const narrow = W < 480, H = narrow ? 420 : 560;
+  const m = { l: narrow ? 50 : 62, r: 12, t: 64, b: 52 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const svg = ensureSvg(host).attr('viewBox', `0 0 ${W} ${H}`).attr('height', H)
+    .attr('role', 'img').attr('aria-label', 'Momentum-transfer cross section versus relative velocity for each simulated model');
+  svg.selectAll('svg > g').attr('transform', `translate(${m.l},${m.t})`);
+  svg.select('defs clipPath rect').attr('x', 0).attr('y', 0).attr('width', iw).attr('height', ih);
+  const xs = d3.scaleLog().domain([4, 4000]).range([0, iw]);
+  const ys = d3.scaleLog().domain(YD).range([ih, 0]);
+  const ax = svg.select('g.axes'); ax.selectAll('*').remove();
+  hGrid(ax, ys, 0, iw);
+  const xt = [10, 100, 1000];
+  for (const t of xt) ax.append('line').attr('x1', xs(t)).attr('x2', xs(t)).attr('y1', 0).attr('y2', ih).attr('stroke', T.grid);
+  xAxis(ax, xs, iw, ih, xt, 4, 4000);
+  yAxis(ax, ys, ih, m.l - 16, [narrow ? '' : 'transfer cross section  ', { t: 'σ', it: 1 }, { t: 'T', sub: 1 }, '/', { t: 'm', it: 1 }, '  [cm', { t: '2', sup: 1 }, ' g', { t: '−1', sup: 1 }, ']']);
+  richText(ax, iw / 2, ih + 42, ['relative velocity  ', { t: 'v', it: 1 }, '  [km s', { t: '−1', sup: 1 }, ']']);
+  massRuler(ax, xs, 0, iw, ['host mass with ', { t: 'V', it: 1 }, { t: 'max', sub: 1 }, ' = ', { t: 'v', it: 1 }, '  [M', { t: '⊙', sub: 1 }, ']'], S.colorBy === 'mass', 'pB');
+
+  const fr = focusRows();
+  const vv = d3.range(0, 161).map(k => 4 * Math.pow(1000, k / 160));
+  const line = d3.line();
+  const clampY = y => Math.max(-4, Math.min(ih + 4, y));
+  // thin curves: every velocity-dependent model in the selection
+  const models = d3.groups(FR.filter(r => r.vd), r => r.mk).map(([mk, rows]) => {
+    const s0 = rows[0].s, w = rows[0].w, pts = vv.map(v => [xs(v), clampY(ys(sigT(v, s0, w)))]);
+    return { key: 'Bc' + mk, mk, rows, s: s0, w, pts, hit: pts.filter((_, k) => k % 5 === 0), curve: true };
+  });
+  const cg = svg.select('g.curves').attr('clip-path', 'url(#pB-clip)');
+  // Colin+02 power-law runs (velocity-dependent DM-only zoom-ins that are not in the Yukawa table)
+  const colin = S.years[0] <= 2002 && S.years[1] >= 2002 && S.xs.has('vd') && S.kinds.has('dmo') &&
+    matchesQuery({ a: 'Colin', tag: 'Colin+02', id: 'astro-ph/0205322', suite: '', model: '', code: 'ART' }, S.q);
+  cg.selectAll('path.cl').data(colin ? [0.5, 1] : []).join('path').attr('class', 'cl')
+    .attr('d', c => line(vv.map(v => [xs(v), clampY(ys(c * 100 / v))])))
+    .attr('fill', 'none').attr('stroke', T.faint).attr('stroke-width', 1).attr('stroke-dasharray', '5 3').attr('opacity', 0.8);
+  cg.selectAll('path.mc').data(models, d => d.key).join('path').attr('class', 'mc')
+    .attr('d', d => line(d.pts)).attr('fill', 'none').attr('stroke', T.faint).attr('stroke-width', 1).attr('opacity', 0.55);
+  // bold segments: each zoom-in host over 0.5-2 V_max
+  const segs = aggregate(FR.filter(r => r.kind !== 'box'), r => [r.mk, Math.round(r.M), colorKey(r)].join('~'), n => {
+    n.key = 'Bs' + n.key; n.approx = n.rows.every(r => r.approx); n.color = colorOf(n); n.V = vmax(n.M);
+    n.pts = d3.range(0, 31).map(k => { const v = 0.5 * n.V * Math.pow(4, k / 30); return [xs(v), clampY(ys(sigT(v, n.s, n.w)))]; });
+    n.hit = n.pts.filter((_, k) => k % 3 === 0); n.r = 3;
+  }).sort((a, b) => (a.M ?? 0) - (b.M ?? 0));
+  const dur = S.playing ? 250 : 500;
+  const lw = narrow ? 3 : 3.6;
+  svg.select('g.glow').attr('filter', 'url(#pB-glow)').attr('clip-path', 'url(#pB-clip)').selectAll('path').data(segs, d => d.key)
+    .join(en => en.append('path').attr('opacity', 0), up => up, ex => ex.remove())
+    .attr('d', d => line(d.pts)).attr('fill', 'none').attr('stroke', d => d.color).attr('stroke-width', lw * 2.4).attr('stroke-linecap', 'round')
+    .transition('fade').duration(dur).attr('opacity', d => glowOp(d, fr) * 0.9);
+  svg.select('g.marks').attr('clip-path', 'url(#pB-clip)').selectAll('g.seg').data(segs, d => d.key).join(en => {
+    const g = en.append('g').attr('class', 'seg').attr('opacity', 0);
+    g.append('path').attr('class', 'o'); g.append('path').attr('class', 'i'); return g;
+  }, up => up, ex => ex.remove())
+    .each(function (d) {
+      const g = d3.select(this);
+      g.select('path.o').attr('d', line(d.pts)).attr('fill', 'none').attr('stroke', d.color).attr('stroke-width', lw).attr('stroke-linecap', 'round');
+      g.select('path.i').attr('d', line(d.pts)).attr('fill', 'none').attr('stroke', T.surface).attr('stroke-width', d.approx ? lw - 2 : 0).attr('stroke-linecap', 'round');
+    })
+    .transition('fade').duration(dur).attr('opacity', d => markOp(d, fr));
+  svg.select('g.labels').selectAll('*').remove();
+  hitLayer(svg, segs.concat(models), { x0: 0, y0: 0, x1: iw, y1: ih, reach: 10, tip: segTip });
+  panels.B = { svg, segs, models };
+}
+function segTip(d) {
+  const c = [modelLine(d)];
+  if (d.curve) c.push(el('div', { class: 's' }, 'Full ', mi('σ'), sub('T'), '(', mi('v'), ') of this model'));
+  else {
+    const lo = sigT(2 * d.V, d.s, d.w), hi = sigT(0.5 * d.V, d.s, d.w);
+    c.push(el('div', { class: 's' }, plural(d.n, 'simulation') + ' · host ' + fmtM(d.M) + ' M⊙ · ', mi('V'), sub('max'), ' ≈ ' + Math.round(d.V) + ' km s⁻¹'));
+    c.push(el('div', { class: 's' }, 'Over 0.5–2 ', mi('V'), sub('max'), ': ', mi('σ'), sub('T'), '/', mi('m'), ' ≈ ' + (d.w == null ? f4(d.s) : f4(lo) + '–' + f4(hi)) + ' cm² g⁻¹'));
+  }
+  c.push(paperLines(d.rows));
+  return c;
+}
+
+// ================================================================== resolution panels
+const prevR = new Map();
+function renderR() {
+  const all = ROWS.filter(r => r.mdm != null);
+  const yd = [10 ** (Math.floor(Math.log10(d3.min(all, r => r.mdm))) - 0.3), 10 ** (Math.ceil(Math.log10(d3.max(all, r => r.mdm))) + 0.3)];
+  resPanel($('#pR1'), FR.filter(r => r.mdm != null && r.kind !== 'box'), { xd: [2e9, 4e15], xf: r => 10 ** r.M, yd, zoom: true });
+  resPanel($('#pR2'), FR.filter(r => r.mdm != null && r.kind === 'box'), { xd: [4, 1500], xf: r => r.L, yd, zoom: false });
+}
+function resPanel(host, rows, o) {
+  const W = host.clientWidth; if (!W) return;
+  const narrow = W < 480, H = narrow ? 420 : 540;
+  const m = { l: narrow ? 50 : 62, r: 14, t: 18, b: 52 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const svg = ensureSvg(host).attr('viewBox', `0 0 ${W} ${H}`).attr('height', H).attr('role', 'img')
+    .attr('aria-label', o.zoom ? 'Zoom-in resolution: host mass versus particle mass' : 'Box resolution: box size versus particle mass');
+  svg.selectAll('svg > g').attr('transform', `translate(${m.l},${m.t})`);
+  svg.select('defs clipPath rect').attr('x', 0).attr('y', 0).attr('width', iw).attr('height', ih);
+  const xs = d3.scaleLog().domain(o.xd).range([0, iw]), ys = d3.scaleLog().domain(o.yd).range([ih, 0]);
+  const ax = svg.select('g.axes'); ax.selectAll('*').remove();
+  const ey = d3.range(Math.ceil(Math.log10(o.yd[0])), Math.floor(Math.log10(o.yd[1])) + 1);
+  const ex = d3.range(Math.ceil(Math.log10(o.xd[0])), Math.floor(Math.log10(o.xd[1])) + 1);
+  for (const e of ey) if (e % 2 === 0) ax.append('line').attr('x1', 0).attr('x2', iw).attr('y1', ys(10 ** e)).attr('y2', ys(10 ** e)).attr('stroke', T.grid);
+  for (const e of ex) ax.append('line').attr('y1', 0).attr('y2', ih).attr('x1', xs(10 ** e)).attr('x2', xs(10 ** e)).attr('stroke', T.grid);
+  ax.append('line').attr('x1', 0).attr('x2', iw).attr('y1', ih).attr('y2', ih).attr('stroke', T.faint);
+  ax.append('line').attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', ih).attr('stroke', T.faint);
+  for (const e of ey) { ax.append('line').attr('x1', -4).attr('x2', 0).attr('y1', ys(10 ** e)).attr('y2', ys(10 ** e)).attr('stroke', T.faint); if (e % 2 === 0) pow10Label(ax, -7, ys(10 ** e) + 4, e, { anchor: 'end', size: 10.5 }); }
+  for (const e of ex) {
+    ax.append('line').attr('x1', xs(10 ** e)).attr('x2', xs(10 ** e)).attr('y1', ih).attr('y2', ih + 4).attr('stroke', T.faint);
+    if (narrow && o.zoom && e % 2) continue;
+    if (o.zoom) pow10Label(ax, xs(10 ** e), ih + 18, e, { size: 10.5 }); else txt(ax, xs(10 ** e), ih + 17, 10 ** e, { anchor: 'middle', font: MONO, size: 10.5 });
+  }
+  richText(ax, -ih / 2, -(m.l - 16), ['DM particle mass  ', { t: 'm', it: 1 }, { t: 'DM', sub: 1 }, '  [M', { t: '⊙', sub: 1 }, ']'], { rotate: -90 });
+  if (o.zoom) richText(ax, iw / 2, ih + 42, ['host halo mass  ', { t: 'M', it: 1 }, { t: 'host', sub: 1 }, '  [M', { t: '⊙', sub: 1 }, ']']);
+  else richText(ax, iw / 2, ih + 42, ['comoving box side  ', { t: 'L', it: 1 }, '  [Mpc]']);
+  const gd = svg.select('g.guides').attr('clip-path', `url(#${host.id}-clip)`); gd.selectAll('*').remove();
+  const gl = svg.select('g.labels'); gl.selectAll('*').remove();
+  if (o.zoom) {
+    for (let e = 3; e <= 9; e++) {
+      const N = 10 ** e;
+      gd.append('line').attr('x1', xs(o.xd[0])).attr('y1', ys(o.xd[0] / N)).attr('x2', xs(o.xd[1])).attr('y2', ys(o.xd[1] / N)).attr('stroke', T.faint).attr('stroke-dasharray', '2 4');
+      const xl = Math.min(o.xd[1] / 1.6, o.yd[1] / 1.8 * N), yl = xl / N;
+      if (yl > o.yd[0] * 3 && xs(xl) > 30) pow10Label(gl, xs(xl) - 4, ys(yl) - 5, e, { anchor: 'end', size: 10, fill: T.faint });
+    }
+    for (const [M, lab] of [[1e10, 'dwarf'], [1e12, 'Milky Way'], [1e13, 'group'], [1e15, 'cluster']]) txt(gl, xs(M), ih - 8, lab, { anchor: 'middle', size: 10.5 });
+  } else {
+    for (const n1 of [128, 256, 512, 1024, 2048, 4096]) {
+      const f = L => RHO_M * L ** 3 / n1 ** 3;
+      gd.append('line').attr('x1', xs(o.xd[0])).attr('y1', ys(f(o.xd[0]))).attr('x2', xs(o.xd[1])).attr('y2', ys(f(o.xd[1]))).attr('stroke', T.faint).attr('stroke-dasharray', '2 4');
+      let L = o.xd[1] / 1.3; if (f(L) > o.yd[1] / 2) L = Math.cbrt(o.yd[1] / 2.5 * n1 ** 3 / RHO_M);
+      if (L > o.xd[0] * 1.5 && f(L) > o.yd[0]) { const t = gl.append('text').attr('x', xs(L) - 4).attr('y', ys(f(L)) - 5).attr('text-anchor', 'end').attr('font-size', 10).attr('font-family', FONT).attr('fill', T.faint); t.append('tspan').text(n1); t.append('tspan').text('3').attr('baseline-shift', 'super').attr('font-size', 7.5); }
+    }
+  }
+  const r1 = narrow ? 3.8 : 4.8;
+  const nodes = aggregate(rows, r => [r.id, r.kind, Math.log10(o.xf(r)).toFixed(1), Math.log10(r.mdm).toFixed(2), colorKey(r)].join('~'), n => {
+    n.key = host.id + n.key; n.area = Math.PI * r1 * r1 * Math.sqrt(Math.max(n.n, 1)); n.cr = collR(n); n.color = colorOf(n);
+    n.X = Math.exp(d3.mean(n.rows, r => Math.log(o.xf(r)))); n.mdm = n.rows[0].mdm;
+    n.tx = xs(n.X); n.ty = ys(n.mdm); n.x = n.tx; n.y = n.ty;
+  });
+  if (nodes.length) {
+    const sim = d3.forceSimulation(nodes).force('x', d3.forceX(n => n.tx).strength(0.5)).force('y', d3.forceY(n => n.ty).strength(0.5))
+      .force('c', d3.forceCollide(n => n.cr + 0.8).strength(0.7)).stop();
+    for (let i = 0; i < 200; i++) sim.tick();
+  }
+  nodes.forEach(n => { n.px = n.x; n.py = n.y; n.r = n.cr; });
+  drawMarks(svg, nodes, prevR, host.id);
+  nodes.forEach(n => prevR.set(n.key, [n.px, n.py]));
+  hitLayer(svg, nodes, { x0: 0, y0: 0, x1: iw, y1: ih, reach: 14, tip: resTip });
+  panels[host.id] = { svg, nodes };
+}
+function resTip(n) {
+  const r = n.rows[0];
+  const c = [el('div', { class: 'v' }, mi('m'), sub('DM'), ' = ' + sci(n.mdm) + ' M⊙')];
+  const bits = [plural(n.n, 'simulation'), KIND_LABEL[n.kind] + (r.b === 'hydro' && n.kind === 'box' ? ' (hydro)' : '')];
+  if (n.kind === 'box') { bits.push('L = ' + f4(r.L) + ' Mpc'); if (r.np) bits.push(r.np + '³ particles'); }
+  else { bits.push('host ' + fmtM(n.M) + ' M⊙'); bits.push('≈ ' + sci(10 ** n.M / n.mdm) + ' particles in the host'); }
+  c.push(el('div', { class: 's' }, bits.join(' · ')));
+  c.push(el('div', { class: 's' }, [...new Set(n.rows.map(r => r.w == null ? 'σ/m = ' + f4(r.s) : 'σ₀/m = ' + f4(r.s) + ', w = ' + f4(r.w)))].join('; ')));
+  c.push(paperLines(n.rows));
+  c.push(el('div', { class: 'h' }, S.pin && S.pin.key === n.key ? 'Click again to unpin' : 'Click to pin'));
+  return c;
+}
+
+// ================================================================== highlight (hover/pin) across every view
+function highlight() {
+  const fr = focusRows(), pr = pinRows();
+  for (const key of ['A', 'pR1', 'pR2']) {
+    const p = panels[key]; if (!p) continue;
+    p.svg.select('g.marks').selectAll('path').interrupt('fade').attr('opacity', n => markOp(n, fr))
+      .attr('stroke', n => n.approx ? n.color : (pr && related(n, pr) ? T.ink : T.surface))
+      .attr('stroke-width', n => n.approx ? 2.2 : (pr && related(n, pr) ? 1.8 : 1.2));
+    p.svg.select('g.glow').selectAll('circle').interrupt('fade').attr('opacity', n => glowOp(n, fr));
+    if (fr) p.svg.select('g.labels').selectAll('g[data-mk]').interrupt('fade').attr('opacity', function () {
+      const mk = this.getAttribute('data-mk'); return p.nodes.some(n => n.mk === mk && related(n, fr)) ? 1 : 0.15;
+    });
+    else p.svg.select('g.labels').selectAll('g[data-mk]').filter(function () { return +this.getAttribute('opacity') > 0; }).interrupt('fade').attr('opacity', 1);
+  }
+  const B = panels.B;
+  if (B) {
+    B.svg.select('g.marks').selectAll('g.seg').interrupt('fade').attr('opacity', d => markOp(d, fr));
+    B.svg.select('g.glow').selectAll('path').interrupt('fade').attr('opacity', d => glowOp(d, fr) * 0.9);
+    const frMk = fr ? new Set(ROWS.filter(r => fr.has(r.i)).map(r => r.mk)) : null;
+    const on = d => frMk && frMk.has(d.mk);
+    B.svg.select('g.curves').selectAll('path.mc').attr('stroke', d => on(d) ? T.ink : T.faint).attr('stroke-width', d => on(d) ? 1.6 : 1)
+      .attr('opacity', d => !frMk ? 0.55 : on(d) ? 0.95 : 0.18).filter(on).raise();
+  }
+  const ids = fr ? new Set(ROWS.filter(r => fr.has(r.i)).map(r => r.id)) : null;
+  document.querySelectorAll('#tbl tbody tr').forEach(tr => tr.classList.toggle('on', !!ids && ids.has(tr.dataset.id)));
+  d3.select('#tl').selectAll('rect.pap').attr('stroke', d => ids && ids.has(d.id) ? T.ink : (d.live ? 'none' : T.faint)).attr('stroke-width', d => ids && ids.has(d.id) ? 1.8 : 1);
+}
+
+// ================================================================== timeline: one square per paper
+let brushG, tlX, brush;
+const TLP = d3.groups(ROWS, r => r.id).map(([id, rows]) => {
+  const zoomM = rows.filter(r => r.kind !== 'box').map(r => r.M);
+  const top = d3.greatest(d3.rollups(rows, v => d3.sum(v, r => r.n), r => r.code), d => d[1]);
+  return { id, rows, y: rows[0].y, tag: rows[0].tag, suite: rows[0].suite, n: d3.sum(rows, r => r.n),
+    M: zoomM.length ? d3.mean(zoomM) : null, kind: zoomM.length ? 'dmo' : 'box', code: top ? top[0] : '' };
+});
+const brushSel = () => [tlX(S.years[0]) - 3, tlX(S.years[1]) + tlX.bandwidth() + 3];
+const rangeText = () => { $('#rangeRead').textContent = S.years[0] === Y0 && S.years[1] === Y1 ? '' : (S.years[0] === S.years[1] ? S.years[0] : S.years[0] + '–' + S.years[1]); };
+function tlStyle() {
+  const live = new Set(ROWS.filter(baseFilter).map(r => r.id));
+  TLP.forEach(p => { p.live = live.has(p.id); });
+  d3.select('#tl').selectAll('rect.pap').attr('fill', p => p.live ? colorOf(p) : 'none').attr('stroke', p => p.live ? 'none' : T.faint)
+    .attr('opacity', p => (p.y >= S.years[0] && p.y <= S.years[1]) ? 1 : 0.25);
+}
+function renderTL() {
+  const host = $('#tl'), W = host.clientWidth; if (!W) return;
+  const byY = d3.group(TLP, p => p.y), maxN = d3.max([...byY.values()], v => v.length);
+  const narrow = W < 560, m = { l: 4, r: 4, t: 8, b: 24 }, iw = W - m.l - m.r;
+  tlX = d3.scaleBand().domain(d3.range(Y0, Y1 + 1)).range([0, iw]).paddingInner(0.2);
+  const sq = Math.min(tlX.bandwidth(), 14), gy = 2.5, ih = maxN * (sq + gy), H = ih + m.t + m.b;
+  const svg = d3.select(host).selectAll('svg').data([0]).join('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H).attr('width', '100%')
+    .attr('role', 'img').attr('aria-label', 'SIDM simulation papers per year, 2000 to 2026');
+  svg.selectAll('*').remove();
+  const g = svg.append('g').attr('transform', `translate(${m.l},${m.t})`);
+  g.append('line').attr('x1', 0).attr('x2', iw).attr('y1', ih + 1.5).attr('y2', ih + 1.5).attr('stroke', T.line);
+  for (let y = Y0; y <= Y1; y++) if (narrow ? y % 5 === 0 : (y % 5 === 0 || y === Y1)) txt(g, y === Y0 ? tlX(y) : tlX(y) + tlX.bandwidth() / 2, ih + 17, y, { anchor: y === Y0 ? 'start' : 'middle', font: MONO, size: 10.5 });
+  for (const [y, ps] of byY) {
+    ps.sort((a, b) => (a.M ?? 99) - (b.M ?? 99) || a.tag.localeCompare(b.tag));
+    ps.forEach((p, k) => { p.px = tlX(y) + (tlX.bandwidth() - sq) / 2; p.py = ih - (k + 1) * (sq + gy) + gy; });
+  }
+  g.append('g').selectAll('rect').data(TLP).join('rect').attr('class', 'pap')
+    .attr('x', p => p.px).attr('y', p => p.py).attr('width', sq).attr('height', sq).attr('rx', 2.5).attr('stroke-width', 1);
+  tlStyle();
+  brush = d3.brushX().extent([[0, -5], [iw, ih + 5]]).on('brush end', brushed);
+  brushG = g.append('g').attr('class', 'brush').call(brush);
+  brushG.select('.selection').attr('fill', T.accent).attr('fill-opacity', 0.06).attr('stroke', T.accent).attr('stroke-opacity', 0.45).attr('rx', 4);
+  brushG.call(brush.move, brushSel());
+  const del = d3.Delaunay.from(TLP, p => p.px + sq / 2, p => p.py + sq / 2);
+  const pick = ev => {
+    const [mx, my] = d3.pointer(ev, g.node()), p = TLP[del.find(mx, my)];
+    return p && mx >= p.px - 2 && mx <= p.px + sq + 2 && my >= p.py - 2 && my <= p.py + sq + 2 ? p : null;
+  };
+  const leave = () => { if (S.hover) { S.hover = null; highlight(); } hideTip(); };
+  const hover = ev => {
+    const p = pick(ev); if (!p) { leave(); return; }
+    if (!S.hover || S.hover.key !== 'P' + p.id) { S.hover = { key: 'P' + p.id, rows: p.rows }; highlight(); }
+    const pp = PAP[p.id] || {};
+    showTip([el('div', { class: 'v' }, p.tag + (p.suite ? ' · ' + p.suite : '')), el('div', { class: 's' }, pp.title || ''),
+      el('div', { class: 'h' }, plural(p.n, 'simulation') + ' · arXiv:' + p.id + ' · click to pin')], ev);
+  };
+  brushG.selectAll('.overlay, .selection').on('pointermove.tip', hover).on('pointerleave.tip', leave);
+  let down = null;
+  brushG.on('pointerdown.tip', ev => { down = [ev.clientX, ev.clientY]; })
+    .on('pointerup.tip', ev => {
+      if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
+      const p = pick(ev); if (!p) return;
+      pinPaper(p.id, p.rows);
+    });
+  rangeText();
+}
+function brushed(ev) {
+  if (!ev.sourceEvent) return;                       // ignore programmatic moves
+  stopPlay();
+  let yrs = [Y0, Y1];
+  if (ev.selection) {
+    const near = x => d3.least(tlX.domain(), y => Math.abs(tlX(y) + tlX.bandwidth() / 2 - x));
+    yrs = [near(ev.selection[0] + 4), near(ev.selection[1] - 4)];
+    if (yrs[1] < yrs[0]) yrs = [yrs[0], yrs[0]];
+  }
+  if (yrs[0] !== S.years[0] || yrs[1] !== S.years[1]) { S.years = yrs; update({ tl: false }); }
+  if (ev.type === 'end') brushG.transition().duration(150).call(brush.move, brushSel());
+}
+let playTimer = null;
+const ICO_PLAY = '<path d="M3 1.8v10.4L12 7z" fill="currentColor"/>', ICO_PAUSE = '<rect x="3" y="2" width="3" height="10" rx="1" fill="currentColor"/><rect x="8" y="2" width="3" height="10" rx="1" fill="currentColor"/>';
+function stopPlay() { if (!playTimer) return; clearInterval(playTimer); playTimer = null; S.playing = false; $('#playIco').innerHTML = ICO_PLAY; $('#playBtn').setAttribute('aria-label', 'Play the history of SIDM simulations'); }
+$('#playBtn').addEventListener('click', () => {
+  if (playTimer) { stopPlay(); return; }
+  S.playing = true; S.years = [Y0, Y0];
+  $('#playIco').innerHTML = ICO_PAUSE; $('#playBtn').setAttribute('aria-label', 'Pause');
+  const step = () => {
+    update({ tl: false });
+    brushG.transition().duration(250).call(brush.move, brushSel());
+    if (S.years[1] >= Y1) { stopPlay(); return; }
+    let y = S.years[1] + 1; while (y < Y1 && !ROWS.some(r => r.y === y)) y++;   // skip empty years
+    S.years = [Y0, y];
+  };
+  step(); playTimer = setInterval(step, 520);
+});
+
+// ================================================================== legend
+function sw(kind, color, size = 12, hollow = false, op = 1) {
+  const s = document.createElementNS(svgNS, 'svg'); s.setAttribute('width', size + 4); s.setAttribute('height', size + 4); s.setAttribute('aria-hidden', 'true');
+  const p = document.createElementNS(svgNS, 'path');
+  p.setAttribute('d', symArea(kind, Math.PI * (size / 2) ** 2 * (kind === 'dmo' ? 1 : 0.8))); p.setAttribute('transform', `translate(${size / 2 + 2},${size / 2 + 2})${rotOf(kind)}`);
+  p.setAttribute('fill', hollow ? T.surface : color); p.setAttribute('stroke', hollow ? color : T.surface); p.setAttribute('stroke-width', hollow ? 2 : 1); p.setAttribute('opacity', op);
+  s.append(p); return s;
+}
+function lineSw(color, w, dash, hollow) {
+  const s = document.createElementNS(svgNS, 'svg'); s.setAttribute('width', 30); s.setAttribute('height', 10); s.setAttribute('aria-hidden', 'true');
+  const mk = (c, ww) => { const l = document.createElementNS(svgNS, 'line'); for (const [k, v] of Object.entries({ x1: 4, x2: 26, y1: 5, y2: 5, stroke: c, 'stroke-width': ww, 'stroke-linecap': 'round' })) l.setAttribute(k, v); if (dash) l.setAttribute('stroke-dasharray', dash); s.append(l); };
+  mk(color, w); if (hollow) mk(T.surface, w - 2); return s;
+}
+function colorbar(scale, d0, d1, ticks, under) {
+  const W = 260, s = document.createElementNS(svgNS, 'svg'); s.setAttribute('viewBox', `0 0 ${W} ${under ? 46 : 32}`); s.setAttribute('class', 'cbar'); s.setAttribute('aria-hidden', 'true');
+  const g = d3.select(s), id = 'cb' + Math.random().toString(36).slice(2, 7);
+  const lg = g.append('defs').append('linearGradient').attr('id', id);
+  for (let k = 0; k <= 20; k++) lg.append('stop').attr('offset', k / 20).attr('stop-color', scale(d0 + (d1 - d0) * k / 20));
+  const y0 = under ? 15 : 2, xp = v => 5 + (W - 10) * (v - d0) / (d1 - d0);
+  g.append('rect').attr('x', 5).attr('y', y0).attr('width', W - 10).attr('height', 9).attr('rx', 4.5).attr('fill', `url(#${id})`);
+  for (const t of ticks) g.append('text').attr('x', xp(t)).attr('y', y0 + 23).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', MONO).attr('fill', T.muted).text(t);
+  if (under) for (const [v, l] of under) g.append('text').attr('x', xp(v)).attr('y', 10).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', FONT).attr('fill', T['ink-2']).text(l);
+  return s;
+}
+function renderLegend() {
+  const L = $('#legend'); L.replaceChildren();
+  const box = (title, ...kids) => el('div', { class: 'lg' }, el('h3', null, title), ...kids);
+  const li = (glyph, ...txt) => el('li', null, glyph, el('span', null, ...txt));
+  const mid = S.colorBy === 'mass' ? massC(12) : S.colorBy === 'code' ? codeC('GADGET-1/2') : yearC(2015);
+  if (S.colorBy === 'mass') L.append(box('Host halo mass (zoom-ins)',
+    colorbar(massC, 9, 15.5, [9, 10, 11, 12, 13, 14, 15], [[10, 'dwarf'], [12, 'MW'], [13.2, 'group'], [14.8, 'cluster']]),
+    el('div', { class: 'note' }, 'log₁₀ M', sub('host'), '/M⊙; boxes in gray.', S.view === 'models' ? [' The ruler above each plot marks the host with ', mi('V'), sub('max'), ' = ', mi('w'), ' or ', mi('v'), '.'] : null)));
+  else if (S.colorBy === 'year') L.append(box('Publication year', colorbar(yearC, 2000, 2026, [2000, 2005, 2010, 2015, 2020, 2025])));
+  else {
+    const used = new Set(FR.map(r => r.code)), ul = el('ul', { class: 'chips' });
+    for (const c of CODES.concat([''])) if (used.has(c)) ul.append(li(sw('dmo', codeC(c), 11), c || 'not stated'));
+    L.append(box('Simulation code', ul));
+  }
+  L.append(box('Run type', el('ul', null,
+    li(sw('dmo', mid), 'DM-only zoom-in'), li(sw('hydro', mid), 'hydrodynamic zoom-in'),
+    li(sw('box', S.colorBy === 'mass' ? P.box : mid), 'cosmological box'))));
+  const sizes = el('ul', { class: 'chips', style: 'align-items:flex-end' });
+  for (const n of [1, 4, 16, 100]) sizes.append(el('li', { style: 'flex-direction:column;gap:2px' }, sw('dmo', T.faint, 2 * 4.8 * Math.pow(n, 0.25)), el('span', { class: 'mono', style: 'font-size:11px' }, n)));
+  L.append(box('Simulations per marker', sizes, el('div', { class: 'note' }, 'area ∝ √N')));
+  L.append(box('Cross-section mapping', el('ul', null,
+    li(sw('dmo', mid), 'exact (σ₀, w) mapping'), li(sw('dmo', mid, 12, true), 'approximate (fit or Rutherford-like)'),
+    li(sw('dmo', mid, 12, false, 0.5), 'mostly low-confidence entries'))));
+  if (S.view === 'models') L.append(box('Panel b curves', el('ul', null,
+    li(lineSw(mid, 3.6), 'host probes 0.5–2 ', mi('V'), sub('max')),
+    li(lineSw(mid, 3.6, null, true), 'same, approximate mapping'),
+    li(lineSw(T.faint, 1), 'full ', mi('σ'), sub('T'), '(', mi('v'), ') of each model'),
+    li(lineSw(T.faint, 1, '5 3'), 'Colin+02 power laws (not in panel a)'))));
+}
+
+// ================================================================== detail card for the pinned selection
+function pinPaper(id, rows) {
+  S.pin = (S.pin && S.pin.key === 'P' + id) ? null : { key: 'P' + id, paper: id, rows, kind: 'paper' };
+  highlight(); renderDetail();
+}
+function renderDetail() {
+  const box = $('#detail');
+  if (!S.pin) { box.hidden = true; box.replaceChildren(); return; }
+  const rows = S.pin.rows.slice().sort((a, b) => a.y - b.y || a.a.localeCompare(b.a) || (a.M ?? 99) - (b.M ?? 99));
+  let head, subl;
+  if (S.pin.kind === 'paper') {
+    const p = PAP[S.pin.paper] || {}, r = rows[0];
+    head = el('h3', null, p.title || r.tag);
+    subl = el('div', { class: 'sub' }, r.tag + (r.suite ? ' · ' + r.suite : '') + ' · ' + (p.authors || []).join(', ') + (p.journal ? ' · ' + p.journal : ''));
+  } else {
+    const o = S.pin.obj;
+    head = o.mdm != null ? el('h3', null, 'DM particle mass ' + sci(o.mdm) + ' M⊙') : el('h3', null, [...modelLine(o, 'x').childNodes]);
+    subl = el('div', { class: 'sub' }, plural(d3.sum(rows, r => r.n), 'simulation') + ' from ' + plural(new Set(rows.map(r => r.id)).size, 'paper'));
+  }
+  const close = el('button', { class: 'x', type: 'button', 'aria-label': 'Clear selection' }, '×');
+  close.addEventListener('click', () => { S.pin = null; highlight(); renderDetail(); });
+  const list = el('div', { class: 'dl' });
+  for (const [id, rr] of d3.groups(rows, r => r.id)) {
+    const p = PAP[id] || {}, r0 = rr[0];
+    for (const r of rr) {
+      const meta = el('div', { class: 'meta' },
+        el('span', null, el('b', null, plural(r.n, 'sim')), ' · ' + KIND_LABEL[r.kind] + (r.b === 'hydro' && r.kind === 'box' ? ' (hydro)' : '')),
+        el('span', null, r.w == null ? ['σ/m ', el('b', null, f4(r.s))] : ['σ₀/m ', el('b', null, f4(r.s)), ' · w ', el('b', null, f4(r.w) + ' km s⁻¹')], r.approx ? ' (approx.)' : ''),
+        r.kind !== 'box' ? el('span', null, 'host ', el('b', null, fmtM(r.M) + ' M⊙')) : (r.L ? el('span', null, 'box ', el('b', null, f4(r.L) + ' Mpc')) : null),
+        r.mdm ? el('span', null, 'm', sub('DM'), ' ', el('b', null, sci(r.mdm) + ' M⊙')) : null,
+        el('span', null, 'code ', el('b', null, r.code || 'not stated')));
+      list.append(el('div', { class: 'dr' },
+        el('div', null, el('div', { class: 't' }, r0.tag + (r0.suite ? ' · ' + r0.suite : '') + (r.model ? ' · ' + r.model : '')), el('div', { class: 'tt' }, p.title || '')),
+        el('a', { class: 'mono', href: 'https://arxiv.org/abs/' + id, target: '_blank', rel: 'noopener', style: 'font-size:12px' }, 'arXiv:' + id + ' ↗'),
+        meta));
+    }
+  }
+  box.replaceChildren(el('div', { class: 'dh' }, el('div', null, head, subl), close), list);
+  box.hidden = false;
+}
+
+// ================================================================== papers table (the accessible twin of the plots)
+const COLS = [
+  { k: 'tag', t: 'Paper', sort: p => p.a + p.y },
+  { k: 'y', t: 'Year', sort: p => p.y },
+  { k: 'setup', t: 'Runs' },
+  { k: 'code', t: 'Code', sort: p => p.code },
+  { k: 'mods', t: 'σ₀/m · w' },
+  { k: 'M', t: 'Host log M', sort: p => p.Mlo ?? 99 },
+  { k: 'n', t: 'Sims', sort: p => p.n, num: true }
+];
+function renderTable() {
+  const papers = d3.groups(FR, r => r.id).map(([id, rows]) => {
+    const Ms = rows.filter(r => r.kind !== 'box').map(r => r.M);
+    return { id, rows, a: rows[0].a, y: rows[0].y, tag: rows[0].tag, suite: rows[0].suite, n: d3.sum(rows, r => r.n),
+      code: [...new Set(rows.map(r => r.code || 'not stated'))].join(', '), kinds: new Set(rows.map(r => r.kind)),
+      Mlo: Ms.length ? d3.min(Ms) : null, Mhi: Ms.length ? d3.max(Ms) : null,
+      mods: [...new Map(rows.map(r => [r.mk, r])).values()].sort((a, b) => (a.w == null) - (b.w == null) || a.s - b.s) };
+  });
+  const c = COLS.find(c => c.k === S.sort.key);
+  papers.sort((a, b) => { const x = c.sort(a), y = c.sort(b); return (x < y ? -1 : x > y ? 1 : 0) * S.sort.dir || b.y - a.y || a.tag.localeCompare(b.tag); });
+  $('#tbl thead').replaceChildren(el('tr', null, COLS.map(col => {
+    const th = el('th', col.num ? { style: 'text-align:right' } : null);
+    if (!col.sort) { th.append(col.t); return th; }
+    th.setAttribute('aria-sort', S.sort.key === col.k ? (S.sort.dir > 0 ? 'ascending' : 'descending') : 'none');
+    const b = el('button', { type: 'button' }, col.t, el('span', { class: 'arr' }, S.sort.key === col.k ? (S.sort.dir > 0 ? '▲' : '▼') : '▲▼'));
+    b.addEventListener('click', () => { S.sort = { key: col.k, dir: S.sort.key === col.k ? -S.sort.dir : (col.k === 'tag' || col.k === 'code' || col.k === 'M' ? 1 : -1) }; renderTable(); highlight(); });
+    th.append(b); return th;
+  })));
+  const tb = $('#tbl tbody'); tb.replaceChildren();
+  for (const p of papers) {
+    const pp = PAP[p.id] || {}, ks = ['dmo', 'hydro', 'box'].filter(k => p.kinds.has(k));
+    const tr = el('tr', { 'data-id': p.id, tabindex: '0' },
+      el('td', null, el('span', { class: 'tag' }, p.tag), p.suite ? el('span', { class: 'suite' }, p.suite) : null,
+        el('span', { class: 'ttl' }, pp.title || ''),
+        el('span', { class: 'ids' }, el('a', { href: 'https://arxiv.org/abs/' + p.id, target: '_blank', rel: 'noopener' }, 'arXiv:' + p.id), pp.journal ? ' · ' + pp.journal : '')),
+      el('td', { class: 'mono' }, p.y),
+      el('td', null, el('span', { class: 'kinds' }, ks.map(k => sw(k, k === 'box' ? P.box : T['ink-2'], 10))),
+        el('div', { style: 'font-size:12px;color:var(--muted)' }, ks.map(k => ({ dmo: 'DM-only', hydro: 'hydro', box: 'box' })[k]).join(' · '))),
+      el('td', { style: 'font-size:12.5px' }, p.code),
+      el('td', null, el('div', { class: 'mods' }, p.mods.map(r => el('span', { class: 'mod', title: r.approx ? 'approximate mapping' : '' }, r.w == null ? f4(r.s) : f4(r.s) + ' · ' + f4(r.w) + (r.approx ? '*' : ''))))),
+      el('td', { class: 'mono', style: 'font-size:12.5px' }, p.Mlo == null ? '—' : p.Mlo === p.Mhi ? p.Mlo.toFixed(1) : p.Mlo.toFixed(1) + '–' + p.Mhi.toFixed(1)),
+      el('td', { class: 'num mono' }, Math.round(p.n)));
+    tr.addEventListener('click', ev => { if (!ev.target.closest('a')) pinPaper(p.id, p.rows); });
+    tr.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); pinPaper(p.id, p.rows); } });
+    tr.addEventListener('mouseenter', () => { S.hover = { key: 'P' + p.id, rows: p.rows }; highlight(); });
+    tr.addEventListener('mouseleave', () => { S.hover = null; highlight(); });
+    tb.append(tr);
+  }
+  $('#tblCount').textContent = papers.length === TOT.pap ? `${TOT.pap} papers` : `${papers.length} of ${TOT.pap} papers`;
+  const noRes = [...new Set(FR.filter(r => r.mdm == null).map(r => r.tag))];
+  $('#tblNote').textContent = 'σ₀/m in cm² g⁻¹, w in km s⁻¹; a lone number is a constant σ/m; * marks an approximate mapping.' + (S.view === 'resolution' && noRes.length ? '  Resolution view omits rows without a stated particle mass (' + noRes.join(', ') + ').' : '');
+}
+
+// ================================================================== stats & update
+function renderStats() {
+  const pap = new Set(FR.map(r => r.id)).size, sim = Math.round(d3.sum(FR, r => r.n)), mod = new Set(FR.map(r => r.mk)).size;
+  $('#nPap').textContent = pap; $('#nSim').textContent = sim; $('#nMod').textContent = mod;
+  $('#nPapT').textContent = pap === TOT.pap ? '' : 'of ' + TOT.pap;
+  $('#nSimT').textContent = sim === Math.round(TOT.sim) ? '' : 'of ' + Math.round(TOT.sim);
+  $('#nModT').textContent = mod === TOT.mod ? '' : 'of ' + TOT.mod;
+}
+function update(o = {}) {
+  FR = ROWS.filter(r => baseFilter(r) && inYears(r));
+  if (S.pin) { const live = new Set(FR.map(r => r.i)); if (!S.pin.rows.some(r => live.has(r.i))) S.pin = null; }
+  S.hover = null; hideTip();
+  renderStats();
+  if (S.view === 'models') { renderA(); renderB(); } else renderR();
+  if (o.tl !== false) renderTL(); else { tlStyle(); rangeText(); }
+  renderLegend(); renderTable(); highlight(); renderDetail();
+}
+
+// ================================================================== controls
+function segToggle(id, key) {
+  $(id).addEventListener('click', ev => {
+    const b = ev.target.closest('button'); if (!b) return;
+    const set = S[key], k = b.dataset.k, btns = [...$(id).querySelectorAll('button')];
+    if (set.has(k) && set.size === 1) btns.forEach(bb => set.add(bb.dataset.k));   // turning off the last one shows everything again
+    else if (set.has(k)) set.delete(k); else set.add(k);
+    btns.forEach(bb => bb.setAttribute('aria-pressed', set.has(bb.dataset.k)));
+    update();
+  });
+}
+segToggle('#kindSeg', 'kinds'); segToggle('#xsSeg', 'xs');
+$('#colSeg').addEventListener('click', ev => {
+  const b = ev.target.closest('button'); if (!b || b.dataset.k === S.colorBy) return;
+  S.colorBy = b.dataset.k; $('#colSeg').querySelectorAll('button').forEach(bb => bb.setAttribute('aria-pressed', bb === b));
+  update();
+});
+let qT; $('#q').addEventListener('input', ev => { clearTimeout(qT); qT = setTimeout(() => { S.q = ev.target.value.trim().toLowerCase(); update(); }, 140); });
+$('#lblBtn').addEventListener('click', ev => { S.labels = !S.labels; ev.currentTarget.setAttribute('aria-pressed', S.labels); if (S.view === 'models') { renderA(); highlight(); } });
+$('#resetBtn').addEventListener('click', () => {
+  stopPlay(); S.kinds = new Set(['dmo', 'hydro', 'box']); S.xs = new Set(['const', 'vd']); S.years = [Y0, Y1]; S.q = ''; S.pin = null; $('#q').value = '';
+  document.querySelectorAll('#kindSeg button, #xsSeg button').forEach(b => b.setAttribute('aria-pressed', 'true'));
+  update();
+});
+document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && S.pin) { S.pin = null; highlight(); renderDetail(); } });
+function setView(v) {
+  S.view = v;
+  document.querySelectorAll('.tabs button').forEach(b => { b.setAttribute('aria-selected', b.dataset.v === v); b.tabIndex = b.dataset.v === v ? 0 : -1; });
+  $('#view-models').hidden = v !== 'models'; $('#view-resolution').hidden = v !== 'resolution'; $('#lblBtn').hidden = v !== 'models';
+  update({ tl: false });
+}
+document.querySelector('.tabs').addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; setView(b.dataset.v); try { history.replaceState(null, '', '#' + b.dataset.v); } catch (e) {} });
+document.querySelector('.tabs').addEventListener('keydown', ev => { if (ev.key !== 'ArrowRight' && ev.key !== 'ArrowLeft') return; const v = S.view === 'models' ? 'resolution' : 'models'; setView(v); $('#tab-' + v).focus(); });
+
+function themeLabel() { $('#themeLbl').textContent = isDark() ? 'Light' : 'Dark'; }
+$('#themeBtn').addEventListener('click', () => {
+  const next = isDark() ? 'light' : 'dark';
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem('sidm-theme', next); } catch (e) {}
+  setPalette(); themeLabel(); update();
+});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if (!document.documentElement.dataset.theme) { setPalette(); themeLabel(); update(); } });
+
+function download(name, type, text) {
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name;
+  document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+}
+$('#csvBtn')?.addEventListener('click', () => {
+  const cols = [['first_author', 'a'], ['year', 'y'], ['arxiv_id', 'id'], ['suite', 'suite'], ['sim_type', 't'], ['baryons', 'b'], ['xsec_model', 'xm'], ['sigma0', 's'], ['w', 'w'], ['mapping', 'map'], ['logM', 'M'], ['n_sims', 'n'], ['code', 'code'], ['m_dm_msun', 'mdm'], ['box_cmpc', 'L'], ['n_part_1d', 'np']];
+  const q = v => v == null ? '' : /[",\n]/.test(String(v)) ? '"' + String(v).replace(/"/g, '""') + '"' : String(v);
+  const lines = [cols.map(c => c[0]).join(',')].concat(FR.map(r => cols.map(([, k]) => k === 'w' && r.w == null ? 'inf' : q(r[k])).join(',')));
+  download('sidm_simulations' + (FR.length === ROWS.length ? '' : '_filtered') + '.csv', 'text/csv', lines.join('\n') + '\n');
+});
+$('#svgBtn')?.addEventListener('click', () => {
+  const svgs = (S.view === 'models' ? ['#pA', '#pB'] : ['#pR1', '#pR2']).map(i => $(i + ' svg'));
+  const ws = svgs.map(s => s.viewBox.baseVal.width), W = d3.sum(ws) + 24, H = d3.max(svgs, s => s.viewBox.baseVal.height);
+  let out = `<svg xmlns="${svgNS}" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><rect width="100%" height="100%" fill="${T.surface}"/>`, x = 0;
+  svgs.forEach((s, k) => { const c = s.cloneNode(true); c.querySelectorAll('g.over').forEach(n => n.remove()); out += `<g transform="translate(${x},0)">${c.innerHTML}</g>`; x += ws[k] + 24; });
+  download('sidm_' + S.view + '.svg', 'image/svg+xml', out + '</svg>');
+});
+
+// ================================================================== boot
+try { const t = localStorage.getItem('sidm-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+setPalette(); themeLabel();
+$('#builtNote').textContent = `Table ${D.source}, built ${D.built}: ${ROWS.length} plotted rows from ${TOT.pap} papers.`;
+$('#footL').textContent = `${TOT.pap} papers · ${Math.round(TOT.sim)} simulations · ${TOT.mod} distinct models`;
+if (innerWidth < 560) { S.labels = false; $('#lblBtn').setAttribute('aria-pressed', 'false'); }
+if ((location.hash || '').slice(1) === 'resolution') setView('resolution'); else update();
+let lastW = $('.wrap').clientWidth, rzT;
+new ResizeObserver(es => { const w = es[0].contentRect.width; if (Math.abs(w - lastW) < 1) return; lastW = w; clearTimeout(rzT); rzT = setTimeout(update, 120); }).observe($('.wrap'));
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => update());
+})();
+</script>
+</body>
+</html>

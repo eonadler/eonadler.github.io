@@ -1,56 +1,48 @@
----
-# Copyright (c) 2018 Florian Klampfer <https://qwtel.com/>
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-layout: base
----
-
-{% assign strings = site.data.strings %}
-
-<article class="page" role="article">
-  <header>
-    <h1 class="page-title">{{ page.title | default:strings.home | default:"Home" }}</h1>
-    {% include components/message.html text=page.description hide=page.hide_description %}
-  </header>
-
-  {{ content }}
-
-  <hr class="dingbat related"/>
-
-  {% if site.posts.size > 0 %}
-    <h2 class="hr-bottom">{{ strings.posts | default:"Posts" }}</h2>
-    <ul class="related-posts">
-      {% for post in site.posts limit:5 %}
-        {% include_cached components/post-list-item.html post=post %}
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-  {% assign pages = site.html_pages | where:"layout","page" | where_exp:"page","page.sitemap != false" %}
-  {% if pages.size < 0 %}
-    <h2 class="hr-bottom">{{ strings.pages | default:"Pages" }}</h2>
-    <ul class="related-posts">
-      {% for page in pages limit:5 %}
-        {% if page.layout == 'page' %}
-          <li class="h4">
-            <a href="{{ page.url | relative_url }}" class="flip-title">
-              <span>{{ page.title }}</span>
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  {% endif %}
-</article>
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  {%- if page.title and page.url != "/" -%}
+    {%- assign full_title = page.title | append: " · " | append: site.title -%}
+  {%- else -%}
+    {%- assign full_title = site.title | append: " · " | append: site.tagline -%}
+  {%- endif %}
+  <title>{{ full_title }}</title>
+  {%- assign desc = page.description | default: page.lede | default: site.description | strip_html | normalize_whitespace | truncate: 200 %}
+  <meta name="description" content="{{ desc }}">
+  <meta property="og:title" content="{{ full_title }}">
+  <meta property="og:description" content="{{ desc }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ page.og_image | default: '/assets/img/web/zoom-2mpc.jpg' | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="{{ '/assets/img/web/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <script>
+    (function () {
+      var d = document.documentElement, t = null;
+      d.className = d.className.replace('no-js', 'js');
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      d.setAttribute('data-theme', t);
+    })();
+  </script>
+  {%- if page.preload %}{% for p in page.preload %}
+  <link rel="preload" as="image" href="{{ p | relative_url }}">{% endfor %}{% endif %}
+</head>
+<body class="{{ page.body_class }}">
+  <a class="skip" href="#main">Skip to content</a>
+  {% include nav.html %}
+  <main id="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <dialog class="lightbox" id="lightbox" aria-label="Enlarged figure"><figure><img alt=""><p></p></figure></dialog>
+  <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+</body>
+</html>

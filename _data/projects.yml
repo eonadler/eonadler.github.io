@@ -1,0 +1,144 @@
+# Research pop-ups (research.html); research.html#<id> opens one directly.
+# group: sims (simulation suites, shown as images) | models | constraints. Written in the third person.
+# meta: short facts under the title; figure_paper: true for figures on a white background.
+
+- id: symphony
+  group: sims
+  name: Symphony
+  thumb: host-cluster.jpg
+  meta: ["2023", "Stanford / KIPAC"]
+  body: >-
+    <p><a href="https://iopscience.iop.org/article/10.3847/1538-4357/acb68c">Symphony</a> is a compilation of 262
+    cosmological dark matter-only zoom-in simulations spanning four decades of host halo mass, including hosts similar
+    to the LMC, the Milky Way, group-mass systems (e.g., strong gravitational lenses), low-mass galaxy clusters, and
+    massive galaxy clusters.</p>
+  figure: symphony-grid.jpg
+  figure_paper: true
+  caption: "Symphony hosts at five mass scales (rows), ordered by concentration (columns). Adapted from Nadler et al. 2023."
+  links:
+    - { label: Data, url: "https://web.stanford.edu/group/gfc/gfcsims/build/html/symphony_overview.html" }
+    - { label: Nadler et al. 2023, url: "https://arxiv.org/abs/2209.02675" }
+
+- id: mwest
+  group: sims
+  name: Milky Way-est
+  thumb: mwest-222.jpg
+  meta: ["2024", "Led by Deveshi Buch (Stanford / KIPAC)"]
+  body: >-
+    <p><a href="https://arxiv.org/abs/2404.08043">Milky Way-est</a> is a suite of 20 cosmological dark matter-only
+    zoom-in simulations of systems that specifically resemble the Milky Way, including analogs of the LMC and
+    Gaia–Sausage–Enceladus. It provides a realistic template for modeling our galaxy's substructure in CDM, including
+    its satellite galaxy and stellar stream populations.</p>
+  frames: ["004", "113", "222", "659"]
+  caption: "Dark matter in four Milky Way-est simulations, each centered on a Milky Way-mass host; LMC analogs are visible near the center of each system. Adapted from Buch & Nadler et al. 2024."
+  links:
+    - { label: Data, url: "https://web.stanford.edu/group/gfc/gfcsims/build/html/mwest_overview.html" }
+    - { label: Buch & Nadler et al. 2024, url: "https://arxiv.org/abs/2404.08043" }
+
+- id: cozmic
+  group: sims
+  name: COZMIC
+  thumb: dm/wdm-3.jpg
+  meta: ["2024–25", "COZMIC Collaboration: UC San Diego, USC, and Carnegie Observatories"]
+  body: >-
+    <p>COZMIC (<b>CO</b>smological <b>Z</b>oo<b>M</b>-in simulations with <b>I</b>nitial <b>C</b>onditions beyond CDM)
+    includes hundreds of Milky Way simulations with initial conditions for warm, fuzzy, interacting, and mixed dark
+    matter and for enhanced small-scale power, as well as simulations with dark matter self-interactions. COZMIC
+    accurately captures how dark matter physics impacts Milky Way substructure.</p>
+  video: cozmic-cdm-vs-idm
+  video_caption: "The same Milky Way host forming in CDM (left) and with dark matter–proton scattering (right)."
+  links:
+    - { label: Data, url: "https://zenodo.org/records/14649137" }
+    - { label: COZMIC I, url: "https://arxiv.org/abs/2410.03635" }
+    - { label: COZMIC II, url: "https://arxiv.org/abs/2411.03431" }
+    - { label: COZMIC III, url: "https://arxiv.org/abs/2412.13065" }
+    - { label: COZMIC IV, url: "https://iopscience.iop.org/article/10.3847/1538-4357/ae073b" }
+
+- id: concerto
+  group: sims
+  name: SIDM Concerto
+  thumb: concerto-cluster.jpg
+  meta: ["2025", "With UC Riverside (D. Kong, D. Yang, H.-B. Yu)"]
+  body: >-
+    <p>SIDM Concerto is a compilation of cosmological zoom-in simulations of strong, velocity-dependent self-interacting
+    dark matter (SIDM) spanning seven decades of subhalo mass, from LMC-mass hosts to galaxy clusters. These
+    simulations provide a benchmark for testing SIDM predictions with dwarf galaxies, strong lenses, and stellar
+    streams.</p>
+  figure: concerto-hosts.jpg
+  figure_paper: true
+  caption: "SIDM Concerto simulations of an LMC-mass, Milky Way-mass, group-mass, and low-mass-cluster host. Adapted from Nadler et al. 2025."
+  links:
+    - { label: Data, url: "https://zenodo.org/records/14933624" }
+    - { label: Nadler et al. 2025, url: "https://arxiv.org/abs/2503.10748" }
+
+- id: threshold
+  group: models
+  name: Galaxy formation threshold
+  tagline: Which dark matter halos form stars?
+  body: >-
+    <p>Predictions for the mass spectrum of dark matter halos that form stars. By including molecular hydrogen cooling
+    and relative streaming motion between dark matter and baryons, this model predicts a galaxy formation threshold
+    significantly smaller than previous predictions based only on atomic hydrogen cooling and reionization.</p>
+  figure: fgal.jpg
+  figure_paper: true
+  caption: "The fraction of dark matter halos that form galaxies (left) and a sample of halo growth histories (right). Blue lines include molecular hydrogen cooling and dark matter–baryon streaming; orange lines only include atomic hydrogen cooling and reionization. Halos that pass above the thick lines in the right panel form stars. Adapted from Nadler 2025."
+  links:
+    - { label: Nadler 2025, url: "https://iopscience.iop.org/article/10.3847/2041-8213/adbc6e" }
+
+- id: galhalo
+  group: models
+  name: Faint-end galaxy–halo connection
+  tagline: Fit to Milky Way satellites in DES and Pan-STARRS1
+  sketch: "The inference framework of Nadler et al. (2020), from a notebook sketch to its Figure 1."
+  body: >-
+    <p>An empirical model and inference framework for the galaxy–halo connection that extends to the faintest dwarf
+    galaxies. This framework includes a <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aac266">machine-learning
+    model for satellite disruption due to central galaxies</a>, an <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab040e">empirical
+    model for the subhalo–satellite galaxy connection</a>, and <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad3bb1">forecasts
+    for future surveys</a>.</p>
+    <p><a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab846a">Nadler et al. (2020)</a> applied this
+    framework to Milky Way satellites observed by the Dark Energy Survey and Pan-STARRS1 to reveal the impact of LMC
+    satellites and constrain the faint-end galaxy–halo connection.</p>
+  figure: galhalo.jpg
+  figure_paper: true
+  caption: "The fraction of low-mass halos that host galaxies (left) and the corresponding stellar mass–halo mass relation (right), derived by combining a galaxy–halo connection model with observations of the Milky Way satellite population. Blue regions are allowed by the data. Adapted from Nadler et al. 2020."
+
+- id: mergertrees
+  group: models
+  name: Constrained merger trees
+  tagline: Fast models of Milky Way subhalos and satellites
+  body: >-
+    <p>An extension of the open-source structure and galaxy formation model
+    <a href="https://github.com/galacticusorg/galacticus/wiki">Galacticus</a> that efficiently and accurately generates
+    constrained realizations of the Milky Way's subhalo and satellite galaxy population.
+    <a href="https://academic.oup.com/mnras/article/521/3/3201/7068109">Nadler et al. (2023)</a> introduced the
+    constrained merger tree technique to model high-redshift JWST galaxies; it produces Milky Way-like accretion
+    histories about a thousand times faster than existing methods. The Milky Way model is being calibrated on COZMIC
+    simulations.</p>
+  figure: galacticus.jpg
+  figure_paper: true
+  caption: "Example of a Milky Way system's merger tree (left) and dark matter substructure (right) generated using Galacticus. The constrained merger tree technique guarantees that the Milky Way host (black) accretes an LMC analog (red)."
+
+- id: limits
+  group: constraints
+  name: Small-scale structure limits
+  tagline: From Milky Way satellites and strong lens flux ratios
+  body: >-
+    <p><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.091101">Nadler et al. (2021a)</a> used the
+    population of Milky Way satellites observed by the Dark Energy Survey and Pan-STARRS1 to constrain dark matter's
+    production mechanism, particle mass, and Standard Model interactions.
+    <a href="https://iopscience.iop.org/article/10.3847/1538-4357/abf9a3">Nadler et al. (2021b)</a> combined these
+    constraints with strong lensing flux ratio statistics to set the most stringent warm dark matter limit at the time.</p>
+  figure: dm-constraints.jpg
+  figure_paper: true
+  caption: "Constraints on sterile neutrino warm dark matter (left) and dark matter–Standard Model interactions (right) derived using the population of ultra-faint dwarf galaxies near the Milky Way. Red and blue regions are excluded. Adapted from Nadler et al. 2021a."
+
+- id: sidm
+  group: constraints
+  name: Self-interacting dark matter predictions
+  tagline: For the strong lens SDSS J0946+1006 and ultra-diffuse galaxies
+  body: >-
+    <p><a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad0e09">Nadler, Yang, &amp; Yu (2023)</a> ran the
+    first cosmological simulation with strong, velocity-dependent dark matter self-interactions in a strong lens analog.
+    The predicted halo and subhalo populations explain the extremely dense substructure in the strong lens
+    SDSS J0946+1006 and the rotation curves of isolated ultra-diffuse galaxies.</p>

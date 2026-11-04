@@ -1,0 +1,75 @@
+---
+layout: page
+title: Interdisciplinary
+hero: /assets/img/web/zoom-200mpc.jpg
+---
+{%- assign inter = site.data.publications | where: "kind", "interdisciplinary" -%}
+{%- assign num = inter.size -%}
+{%- assign img = '/assets/img/web/' | relative_url -%}
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid-2" style="gap:clamp(24px,4vw,56px);align-items:start">
+      <div>
+        <h2>Philosophy</h2>
+        <p>I am currently a Lattimer Research Fellow for Cross-disciplinary Explorations at UC San Diego. In this role, I am studying the philosophy of dark matter, with a focus on how recent observations of small-scale cosmic structure inform discussions of dark matter underdetermination, falsifiability, and realism.</p>
+        <figure class="scales">
+          <svg viewBox="0 0 440 446" role="img" aria-label="Dark matter across scales. Micro: distinct particle models (WIMP, sterile neutrino, axion). Meso: overlapping phenomenological types in small-scale structure (interacting, warm, wave-like). Macro: a single CDM limit on large scales. An arrow labeled coarse-graining runs from micro to macro.">
+            <defs>
+              <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" class="arrowhead"/></marker>
+            </defs>
+            <g class="axis">
+              <line x1="22" x2="22" y1="40" y2="424" marker-end="url(#arrowhead)"/>
+              <circle cx="22" cy="62" r="3"/><circle cx="22" cy="222" r="3"/><circle cx="22" cy="382" r="3"/>
+              <text transform="translate(6 232) rotate(90)" text-anchor="middle">coarse-graining</text>
+            </g>
+            <g class="head">
+              <text x="38" y="58">MICRO</text><text class="sub" x="38" y="76">Microscopic</text><text class="sub" x="38" y="92">structure</text>
+              <text x="38" y="218">MESO</text><text class="sub" x="38" y="236">Small-scale</text><text class="sub" x="38" y="252">structure</text>
+              <text x="38" y="378">MACRO</text><text class="sub" x="38" y="396">Large-scale</text><text class="sub" x="38" y="412">structure</text>
+            </g>
+            <g class="dots">
+              <circle cx="212" cy="62" r="29" class="c-blue"/><circle cx="297" cy="62" r="29" class="c-red"/><circle cx="382" cy="62" r="29" class="c-purple"/>
+              <circle cx="237" cy="222" r="36" class="c-blue"/><circle cx="297" cy="222" r="36" class="c-red"/><circle cx="357" cy="222" r="36" class="c-purple"/>
+              <circle cx="297" cy="382" r="34" class="c-gray"/>
+            </g>
+            <g class="labels" text-anchor="middle">
+              <text x="212" y="110">WIMP</text><text x="297" y="110">Sterile neutrino</text><text x="382" y="110">Axion</text>
+              <text x="237" y="277">Interacting</text><text x="297" y="277">Warm</text><text x="357" y="277">Wave-like</text>
+              <text x="297" y="435">CDM limit</text>
+            </g>
+          </svg>
+          <figcaption>Large-scale structure washes out differences between dark matter models; small-scale structure partially, but not fully, probes the nature of dark matter. From my <a href="https://cloud-1de12d.becdn.net/customfile/fee2031a86aa0a76f41d8a1aea2ddbe743323a8051472e37d9e3c402851327c2/Book-of-Abstracts.pdf#page=85">Foundations of Physics 2026</a> talk.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h2>Cognition</h2>
+        <p>I collaborate on and lead interdisciplinary research at the intersection of cognition, linguistics, data science, and machine learning, often with the <a href="https://comp-syn.com/">comp-syn</a> team. My interdisciplinary publications are listed below:</p>
+        <ul class="pub-mini">
+          {%- for p in inter %}{% include pub.html p=p compact=true num=num %}{% assign num = num | minus: 1 %}{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <h2>Art</h2>
+    <p class="narrow">I am involved in several artistic pursuits related to my research, often with <a href="https://comp-syn.com/">comp-syn</a>. Examples include:</p>
+    <div class="art">
+      <img class="a1 zoomable" src="{{ img }}art-144-red-words.jpg" alt="144 Red Words: a grid of colorgrams" data-caption="144 Red Words (iSCC Color Impact 2023)." loading="lazy">
+      <img class="a2 zoomable" src="{{ img }}art-144-dickinson.jpg" alt="144 Poems by Emily Dickinson" data-caption="144 Poems by Emily Dickinson." loading="lazy">
+      <img class="a3 zoomable" src="{{ img }}art-144-shakespeare.jpg" alt="144 Poems by Shakespeare" data-caption="144 Poems by Shakespeare." loading="lazy">
+      <img class="a4 zoomable" src="{{ img }}art-data-science.jpg" alt="Changing Views in Data Science over Fifty Years" data-caption="Changing Views in Data Science over Fifty Years (Stanford Art of Science 2020)." loading="lazy">
+      <p class="caption c1"><a href="https://drive.google.com/file/d/1c8hJhjVgDO-iKjykKesnd00C7UfwXvoz/view?usp=sharing"><i>144 Red Words</i></a>, <a href="https://iscc.org/CI2023">iSCC Color Impact 2023</a>. Professional honorable mention; proceeds donated to <a href="https://createnow.org/">Create Now</a>.</p>
+      <p class="caption c2"><a href="https://comp-syn.com/#/gallery/dickinsonthenshakespeare"><i>144 Poems by Emily Dickinson and 144 Poems by Shakespeare</i></a>, <a href="https://www.charitybuzz.com/catalog_items/auction-144-poems-by-emily-dickinson-144-poems-by-2068100">CharityBuzz</a>. Proceeds donated to the <a href="https://www.badguild.info/">Black Artists + Designers Guild</a>.</p>
+      <p class="caption c3"><a href="https://comp-syn.com/#/gallery/changingviewsindatascienceoverfiftyyears"><i>Changing Views in Data Science over Fifty Years</i></a>, <a href="https://stanforddaily.com/2020/06/11/creative-reencounters-with-research-in-art-of-science-2020-exhibition/">Stanford Art of Science 2020</a>. 2nd place prize; proceeds donated to Black Futures Lab.</p>
+    </div>
+    <h3 style="margin-top:36px">Selected media</h3>
+    <ul class="press narrow">
+      <li><a class="outlet" href="https://cognitivesciencesociety.org/color-metaphors-language-models-and-embodied-minds/">Cogsci Unpacked</a><span class="date">7/7/2025</span><span class="ttl">Color Metaphors, Language Models, and Embodied Minds</span></li>
+      <li><a class="outlet" href="https://newsroom.haas.berkeley.edu/research/internet-images-may-be-turning-back-the-clock-on-gender-bias-research-finds/">UC Berkeley Haas News</a><span class="date">2/14/2024</span><span class="ttl">Online images may be turning back the clock on gender bias, research finds</span></li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,119 @@
+# Students and postdocs mentored outside the GalaxyHalo Group (co-advised or supervised),
+# as listed on the CV. `mentee` matches the `mentee:` field in publications.yml so
+# their papers can be linked automatically. `path` is "from → to" where known.
+
+graduate:
+  - name: Niusha Ahvazi
+    where: UC Riverside / Carnegie
+    path: UVA
+    link: https://astronomy.as.virginia.edu/niusha-ahvazi
+    project: Semi-analytic modeling of dwarf galaxy formation and evolution
+    mentee: Ahvazi
+  - name: Wendy Crumrine
+    where: USC
+    link: https://wcrumrine.github.io/
+    project: Constraining dark matter–radiation interactions with small-scale structure
+    mentee: Crumrine
+  - name: Tara Dacunha
+    where: Stanford
+    project: Satellite galaxy disruption and stellar stream modeling
+  - name: Elise Darragh-Ford
+    where: Stanford
+    link: https://kipac.stanford.edu/people/elise-darragh-ford
+    project: Dwarf galaxy searches using Gaia; Milky Way structure
+    mentee: Darragh-Ford
+  - name: Trey Driskell
+    where: USC
+    path: Anduril
+    link: https://www.linkedin.com/in/trey-driskell-4a9286332/
+    project: Semi-analytic modeling of structure and galaxy formation
+    mentee: Driskell
+  - name: Noah Glennon
+    where: UNH
+    link: https://www.linkedin.com/in/njglennon/
+    project: Soliton orbital evolution in self-interacting ultralight dark matter
+    mentee: Glennon
+  - name: Demao Kong
+    where: UC Riverside
+    link: https://inspirehep.net/authors/1901590
+    project: SIDM subhalo populations in Milky Way and strong lens analogs
+    mentee: Kong
+  - name: Sidney Mau
+    where: Stanford
+    link: https://sidneymau.com/
+    project: Constraining the dark matter particle lifetime with ultra-faint dwarfs
+    mentee: Mau
+  - name: Siddhesh Raut
+    where: USC / Carnegie
+    link: https://www.linkedin.com/in/siddheshraut
+    project: Self-interacting dark matter halo gravothermal evolution
+    mentee: Raut
+  - name: Yunchong (Richie) Wang
+    where: Stanford
+    path: Jump Trading
+    link: https://www.linkedin.com/in/yunchong-wang-6b8830170/
+    project: Empirically modeling dwarf galaxy star formation histories
+    mentee: Wang
+  - name: James Wen
+    where: USC
+    project: Hydrodynamic simulations of dark matter–baryon interactions
+  - name: Xingyu Zhang
+    where: Tsinghua
+    path: UC Riverside
+    link: https://inspirehep.net/authors/2894598
+    project: Stellar stream perturbers as SIDM subhalos
+    mentee: Zhang
+
+undergrad:
+  - name: Deveshi Buch
+    where: Stanford
+    project: Constrained cosmological simulations of Milky Way analogs (Milky Way-est)
+    mentee: Buch
+  - name: Shuxing Fang
+    where: USC
+    link: https://www.linkedin.com/in/shuxing-fang-aa7747113/
+    project: Large Magellanic Cloud infall in SIDM cosmologies
+  - name: Abigail Lee
+    where: UPenn
+    path: UChicago → Berkeley
+    link: https://abiglee7.github.io/
+    project: Universality of subhalo disruption from Milky Way to cluster scales
+  - name: Nyal McCrea
+    where: CWU (Simons–NSBP Scholar)
+    link: https://www.simonsfoundation.org/people/nyal-mccrea/
+    project: Visualizing subhalo evolution in hydrodynamic simulations
+  - name: Ellen Min
+    where: Caltech
+    link: https://www.linkedin.com/in/ellenmin1/
+    project: Python tools for Galacticus
+  - name: Nicel Mohamed-Hinds
+    where: Stanford
+    path: University of Washington
+    project: Modeling subhalo disruption in hydrodynamic simulations
+  - name: Ezra Msolla
+    where: UToronto (Simons–NSBP Scholar)
+    link: https://ca.linkedin.com/in/ezra-msolla-4629522aa
+    project: Neutrino self-interactions and cosmic structure
+  - name: Veronica Pratt
+    where: Stanford
+    path: Tufts
+    link: https://www.linkedin.com/in/veronica-pratt
+    project: LMC analogs in the SAGA Survey
+  - name: Juan Quiroz
+    where: Caltech
+    link: https://www.linkedin.com/in/juan-quiroz-jaraba-71a666111/
+    project: Subhalo evolution in decaying dark matter cosmologies
+  - name: Derek Rodriguez
+    where: USC Hybrid High School
+    path: UCLA
+    link: https://www.linkedin.com/in/derek-rodriguez-02356a232
+    project: Subhalos and host halo structure in Symphony
+  - name: Resherle Verna
+    where: USC
+    path: UT Austin
+    link: https://www.linkedin.com/in/resherle-verna-m-s-96945898/
+    project: Subhalo and splashback mass functions in SIDM hydro simulations
+  - name: Logan White
+    where: NCSU (Simons–NSBP Scholar)
+    link: https://www.linkedin.com/in/logalexw/
+    project: Growth of structure in warm, interacting, and fuzzy dark matter

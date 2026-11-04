@@ -1,0 +1,89 @@
+---
+layout: page
+title: GalaxyHalo Group @ UCSD
+hero: /assets/img/web/host-mw.jpg
+---
+{%- assign g = site.data.group -%}
+{%- assign core = g.postdocs | concat: g.grads -%}
+{%- assign group_papers = site.data.publications | where: "context", "ucsd" -%}
+
+<section class="section" style="padding-bottom:0">
+  <div class="wrap">
+    <p class="narrow">Our group's research spans the evolution of the faintest galaxies in the nearby universe, the formation of cosmic structure, and the fundamental nature of dark matter. We tackle these problems using advanced cosmological simulations, computational and theoretical techniques, and the latest galaxy survey and gravitational lensing data.</p>
+    <figure class="group-photo" style="margin-top:24px;max-width:900px">
+      <img src="{{ '/assets/img/web/' | append: g.photo.src | relative_url }}" alt="The GalaxyHalo Group at UC San Diego" loading="lazy">
+      <figcaption>{{ g.photo.caption }}</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" style="padding-top:clamp(48px,6vw,80px)">
+  <div class="wrap">
+    <h2>Graduate students and postdocs</h2>
+    <div class="people">
+      {%- for m in core %}
+      <article class="person">
+        <div class="person-photo"><img src="{{ '/assets/img/web/' | append: m.photo | relative_url }}" alt="{{ m.name }}" loading="lazy"></div>
+        <div class="person-body">
+          <a class="person-name" href="{{ m.link }}">{{ m.name }}</a>
+          <div class="person-role">{{ m.role }}{% if m.since %}, from {{ m.since }}{% endif %}</div>
+          {%- if m.honors %}<div class="person-role">{{ m.honors | join: ' · ' }}</div>{% endif %}
+          <p>{{ m.project }}</p>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="two-lists">
+      <div>
+        <h3>Undergraduate students</h3>
+        <ul class="plain">
+          {%- for m in g.undergrads %}
+          <li><a class="who" href="{{ m.link }}">{{ m.name }}</a> <span class="muted">— {{ m.project }}</span></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3>Co-advised graduate students</h3>
+        <ul class="plain">
+          {%- for m in g.coadvised %}
+          <li><a class="who" href="{{ m.link }}">{{ m.name }}</a> <span class="muted">— {{ m.role }}. {{ m.project }}</span></li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="two-lists">
+      <div>
+        <h3>Alumni</h3>
+        <ul class="plain">
+          {%- for m in g.alumni %}
+          {%- assign mp = site.data.publications | where: "mentee", m.mentee -%}
+          <li>{% if m.link %}<a class="who" href="{{ m.link }}">{{ m.name }}</a>{% else %}<span class="who">{{ m.name }}</span>{% endif %} <span class="muted">— {{ m.role }} ({{ m.years }}){% if m.next %}; now {{ m.next }}{% endif %}</span>{% if m.mentee and mp.size > 0 %}; {% assign nm = m.name | split: ' ' %}<a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22{{ nm | last | downcase }}%2C%20{{ nm | first | downcase }}%22%20and%20author%3A%22nadler%2C%20ethan%22&sort=date%20desc">our papers</a>{% endif %}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3>Papers led by group members</h3>
+        <ul class="pub-list pub-list--compact">
+          {%- for p in group_papers %}{% include pub.html p=p compact=true %}{% endfor %}
+        </ul>
+        <p class="muted" style="margin-top:18px">Students and postdocs I have mentored at other institutions are listed on the <a href="{{ '/mentoring.html' | relative_url }}">mentoring page</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p style="max-width:68ch">I am recruiting undergraduate, graduate, and postdoctoral researchers to join my group at UC San Diego. If you're interested, please email me at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+  </div>
+</section>

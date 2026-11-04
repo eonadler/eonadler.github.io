@@ -1,0 +1,16 @@
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <p class="brand-name" style="margin-bottom:6px">{{ site.title }}</p>
+        <p class="muted" style="margin:0;max-width:56ch">Department of Astronomy &amp; Astrophysics, UC San Diego · 9500 Gilman Dr., La Jolla, CA 92093</p>
+      </div>
+      {% include links.html %}
+    </div>
+    <p class="footer-support">Our research is supported by the <a href="https://dmdynamics.org/">Simons Foundation</a> and the <a href="{{ '/research.html#collaborations' | relative_url }}">National Science Foundation</a>.</p>
+    <div class="footer-note">
+      <span>Images from the <a href="{{ '/research.html#symphony' | relative_url }}">Symphony</a>, <a href="{{ '/research.html#mwest' | relative_url }}">Milky Way-est</a>, <a href="{{ '/research.html#cozmic' | relative_url }}">COZMIC</a>, and <a href="{{ '/research.html#concerto' | relative_url }}">SIDM Concerto</a> simulations.</span>
+      <span>Updated {{ site.time | date: "%B %Y" }}</span>
+    </div>
+  </div>
+</footer>

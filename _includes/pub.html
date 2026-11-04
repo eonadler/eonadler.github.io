@@ -1,0 +1,11 @@
+{%- comment -%}
+One publication, in the style of the original site: (n) Authors. Title. Year, Venue.
+include.num numbers refereed papers. Group members (cite: in _data/group.yml) are bold, like my own name.
+{%- endcomment -%}
+{%- assign p = include.p -%}
+{%- assign g = site.data.group -%}
+{%- assign people = g.postdocs | concat: g.grads | concat: g.coadvised | concat: g.undergrads | concat: g.alumni -%}
+{%- assign authors = p.authors | replace: '**E. O. Nadler**', '<b>E. O. Nadler</b>' -%}
+{%- for m in people %}{% if m.cite %}{% capture bold %}<b>{{ m.cite }}</b>{% endcapture %}{% assign authors = authors | replace: m.cite, bold %}{% endif %}{% endfor -%}
+{%- assign last = p.title | slice: -1 -%}
+<li class="pub" data-year="{{ p.year }}" data-role="{{ p.role }}" data-status="{{ p.status }}" data-topics="{{ p.topics | join: ' ' }}"{% if p.context == 'ucsd' %} data-group{% endif %}>{% if include.num %}<span class="pub-num">({{ include.num }})</span>{% elsif include.indent %}<span class="pub-num"></span>{% endif %}{{ authors }}. <span class="pub-title">{{ p.title }}</span>{% unless last == '?' or last == '.' %}.{% endunless %} {% unless p.status == "submitted" %}{{ p.year }}, {% endunless %}<a href="{{ p.url }}">{{ p.venue }}</a>.</li>

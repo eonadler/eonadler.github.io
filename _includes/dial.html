@@ -1,0 +1,30 @@
+{%- comment -%} CDM vs. beyond-CDM, same halo. Data: _data/dial.yml; behavior: site.js. The slider runs from CDM (left) to the model (right). {%- endcomment -%}
+{%- assign dial = site.data.dial -%}
+{%- assign fam = dial.families | first -%}
+{%- assign dmdir = '/assets/img/web/dm/' | relative_url -%}
+<div class="dial-lead">
+  <h2>Dark matter physics on small scales</h2>
+  <p>On large scales, dark matter behaves like a cold, collisionless fluid (CDM). However, dark matter physics beyond gravity can drastically alter the abundance and internal structure of low-mass halos. Our <a href="{{ '/research.html' | relative_url }}">simulations</a> predict these signatures for observations of dwarf galaxies, strong gravitational lenses, and stellar streams. Each image below shows the same simulated Milky Way; drag the slider to transition from CDM to other dark matter models.</p>
+</div>
+<div class="dial" data-dial data-dir="{{ dmdir }}">
+  <div>
+    <div class="dial-stage" data-dial-stage>
+      <img class="dial-base" src="{{ dmdir }}{{ dial.cdm }}" alt="A simulated Milky Way-mass dark matter halo in cold dark matter" loading="lazy">
+      <img class="dial-alt" src="{{ dmdir }}{{ fam.img }}" alt="The same halo in {{ fam.title }}" loading="lazy">
+      <div class="dial-handle"><div class="dial-knob">{% include icon.html name="drag" %}</div></div>
+      <input type="range" min="0" max="100" value="50" step="0.5" aria-label="Slide from cold dark matter (left) to the selected model (right)">
+    </div>
+    <div class="dial-labels"><span>← CDM</span><span data-right>{{ fam.tab }} →</span></div>
+  </div>
+  <div class="dial-info">
+    <div class="tabs" role="tablist" aria-label="Dark matter model">
+      {%- for f in dial.families %}
+      <button type="button" role="tab" data-family="{{ f.id }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">{{ f.tab }}</button>
+      {%- endfor %}
+    </div>
+    <h3 data-title>{{ fam.title }}</h3>
+    <p data-what>{{ fam.what }}</p>
+    <p class="dial-source">Simulations from <a data-paper href="{{ fam.url }}">{{ fam.suite }}</a>; see <a href="{{ '/research.html#simulations' | relative_url }}">all of our simulations</a>.</p>
+  </div>
+  <script type="application/json" data-dial-json>{{ dial | jsonify }}</script>
+</div>

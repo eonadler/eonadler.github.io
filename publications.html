@@ -1,0 +1,46 @@
+---
+layout: page
+title: Publications
+hero: /assets/img/web/host-cluster.jpg
+---
+{%- assign astro = site.data.publications | where: "kind", "astro" -%}
+{%- assign refereed = astro | where_exp: "p", "p.status != 'submitted'" -%}
+{%- assign num = refereed.size -%}
+
+<section class="section" style="padding-bottom:0">
+  <div class="wrap">
+    <p class="narrow">Refereed journal publications are listed by year below. For a list including white papers, please see my <a href="{{ site.links.cv | relative_url }}">CV</a>, <a href="{{ site.links.scholar }}">Google Scholar</a>, <a href="{{ site.links.ads }}">ADS</a>, or <a href="{{ site.links.arxiv }}">arXiv</a>. Members of my group are in bold. Interdisciplinary papers are on the <a href="{{ '/interdisciplinary.html' | relative_url }}">interdisciplinary page</a>.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0" id="pub-app">
+  <div class="pub-tools">
+    <div class="wrap">
+      <div class="tabs" role="group" aria-label="Show">
+        <button type="button" data-show="all" aria-pressed="true">All</button>
+        <button type="button" data-show="group" aria-pressed="false">GalaxyHalo Group</button>
+        <button type="button" data-show="first" aria-pressed="false">First author</button>
+      </div>
+      <label class="check"><input type="checkbox" id="pub-review"> Papers under review</label>
+    </div>
+  </div>
+  <div class="wrap">
+    <p id="pub-empty" hidden class="muted" style="padding:30px 0">No papers match.</p>
+    {%- assign review = astro | where: "status", "submitted" -%}
+    <div class="pub-group" id="under-review">
+      <h2>Under review</h2>
+      <ul class="pub-list">
+        {%- for p in review %}{% include pub.html p=p indent=true %}{% endfor %}
+      </ul>
+    </div>
+    {%- assign by_year = refereed | group_by: "year" -%}
+    {%- for yr in by_year %}
+    <div class="pub-group">
+      <h2>{{ yr.name }}</h2>
+      <ul class="pub-list">
+        {%- for p in yr.items %}{% include pub.html p=p num=num %}{% assign num = num | minus: 1 %}{% endfor %}
+      </ul>
+    </div>
+    {%- endfor %}
+  </div>
+</section>

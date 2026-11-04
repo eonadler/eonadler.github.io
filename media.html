@@ -1,0 +1,54 @@
+---
+layout: page
+title: Media & Talks
+hero: /assets/img/web/host-lcluster.jpg
+---
+{%- assign img = '/assets/img/web/' | relative_url -%}
+
+<section class="section">
+  <div class="wrap">
+    <h2>Selected press</h2>
+    <p class="narrow">My work has been highlighted in a number of press releases and articles, including:</p>
+    <ul class="press press--thumbs narrow">
+      {%- for p in site.data.media.press %}
+      <li>
+        <a class="thumb" href="{{ p.url }}" tabindex="-1" aria-hidden="true"><img src="{{ img }}{{ p.thumb }}" alt="" loading="lazy"></a>
+        <a class="outlet" href="{{ p.url }}">{{ p.outlet }}</a><span class="date">{{ p.date | date: "%-m/%-d/%Y" }}</span>
+        <span class="ttl">{{ p.title }}</span>
+        {%- if p.related %}<span class="rel">On <a href="{% if p.related.url contains '://' %}{{ p.related.url }}{% else %}{{ p.related.url | relative_url }}{% endif %}">{{ p.related.label }}</a></span>{% endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+    <p class="credit narrow" style="margin-top:10px">Thumbnails are the lead images of each article; image credits are given there.</p>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <h2>Selected talks</h2>
+    <p class="narrow">I have given over fifty contributed and invited talks, summarized on my <a href="{{ site.links.cv | relative_url }}">CV</a>, several of which are highlighted below:</p>
+    <div class="videos">
+      {%- for v in site.data.media.videos %}
+      <div>
+        {%- if v.youtube %}
+        <button class="yt" type="button" data-yt="{{ v.youtube }}" {% if v.start %}data-start="{{ v.start }}"{% endif %} aria-label="Play: {{ v.title }}">
+          <img src="https://i.ytimg.com/vi/{{ v.youtube }}/hqdefault.jpg" alt="" loading="lazy">
+          <span class="yt-play">{% include icon.html name="play" %}</span>
+        </button>
+        {%- else %}
+        <a class="yt" href="{{ v.link }}" aria-label="Watch: {{ v.title }}">
+          <img src="{{ v.poster | relative_url }}" alt="" loading="lazy">
+          <span class="yt-play">{% include icon.html name="play" %}</span>
+        </a>
+        {%- endif %}
+        <div class="video-meta"><h4>{{ v.title }}</h4><p>{{ v.venue }}, {{ v.date | date: "%B %Y" }}</p></div>
+      </div>
+      {%- endfor %}
+    </div>
+    <ul class="talks">
+      {%- for t in site.data.media.talks %}
+      <li><span class="date">{% if t.when %}{{ t.when }}{% else %}{{ t.date | date: "%-m/%-d/%Y" }}{% endif %}</span><span>{% if t.url %}<a class="t" href="{{ t.url }}">{{ t.venue }}</a>{% else %}<span class="t">{{ t.venue }}</span>{% endif %}<br><span class="v"><i>{{ t.title }}</i>{% if t.video %} · <a href="{{ t.video }}">video</a>{% endif %}{% if t.slides %} · <a href="{{ t.slides }}">slides</a>{% endif %}</span></span></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

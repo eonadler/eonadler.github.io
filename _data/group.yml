@@ -1,0 +1,108 @@
+# GalaxyHalo Group @ UCSD. Edit here; group.html and the home page read this file.
+# photo: path under /assets/img/web/ (omit for an initials avatar)
+# thesis: true marks students I advise as main/thesis advisor.
+# cite: the name as it appears in author lists (shown in bold on publication lists).
+
+postdocs:
+  - name: Sandip Roy
+    cite: "S. Roy"
+    role: Postdoctoral scholar
+    honors: [Astronomy & Astrophysics and Schmidt AI in Sciences Postdoctoral Fellow]
+    photo: member-sandip.jpg
+    link: https://www.linkedin.com/in/sandip-roy-377815132/
+    project: Sandip is developing simulations of galaxy and dark matter structure and using machine learning techniques to reveal observable signatures of new dark matter physics.
+    tags: [simulations, machine learning, beyond-CDM]
+
+grads:
+  - name: Ollie Jackson
+    cite: "O. Jackson"
+    role: Astronomy & Astrophysics Ph.D. student
+    honors: [Katzin Prize Fellow, ARCS Foundation Fellow]
+    photo: member-ollie.jpg
+    link: https://www.linkedin.com/in/ollie-jackson-astro/
+    thesis: true
+    project: Ollie is a graduate student using cosmological simulations to model strong gravitational lensing data and probe the nature of dark matter.
+    tags: [strong lensing, simulations]
+  - name: Mia Mansfield
+    cite: "M. Mansfield"
+    role: Astronomy & Astrophysics Ph.D. student
+    honors: [NSF GRFP Fellow]
+    photo: member-mia.jpg
+    link: https://www.linkedin.com/in/mia-mansfield-42b783275
+    thesis: true
+    project: Mia is studying galaxy evolution in the local universe using simulations and survey data.
+    tags: [satellites, surveys]
+  - name: Wisha Wanichwecharungruang
+    cite: "W. Wanichwecharungruang"
+    role: Physics Ph.D. student
+    honors: [Cambridge Part III MASt]
+    photo: member-wisha.jpg
+    link: https://wisha.page/
+    thesis: true
+    project: Wisha is developing semi-analytic models of subhalo and satellite galaxy populations to test fundamental physics.
+    tags: [semi-analytics, near-field cosmology]
+  - name: Zewei Wu
+    cite: "Z. Wu"
+    role: Astronomy & Astrophysics Ph.D. student
+    honors: [LSST Data Science Fellow]
+    photo: member-zewei.jpg
+    link: https://www.linkedin.com/in/jason-wu-astro/
+    thesis: true
+    project: Zewei is a graduate student using hydrodynamic simulations of dwarf galaxies to advance galaxy formation theory and near-field cosmology.
+    tags: [hydro simulations, ultra-faint dwarfs]
+
+coadvised:
+  - name: Omar Kotrach
+    cite: "O. Kotrach"
+    role: Physics Ph.D. student
+    link: https://physics.ucsd.edu/people/profile?id=okotrach
+    project: Omar is studying sterile neutrino dark matter production mechanisms and astrophysical constraints.
+  - name: Shahed Shayan Arani
+    cite: "S. Shayan Arani"
+    role: Physics Ph.D. student
+    link: https://physics.ucsd.edu/people/profile?id=sshayanarani
+    project: Shasha is modeling halo evolution in mixed dark sector models with self-interactions.
+
+undergrads:
+  - name: Stephen Canino
+    cite: "S. Canino"
+    role: Undergraduate researcher
+    link: https://www.linkedin.com/in/stephen-canino-156ba1314/
+    project: Stephen is modeling the evolution of cosmic structure using high-resolution zoom-in simulations.
+  - name: Kaushal Jagdish
+    cite: "K. Jagdish"
+    role: Undergraduate researcher
+    link: https://www.linkedin.com/in/kaushal-jagdish-66a9483b4/
+    project: Kaushal is studying the density profiles of dark matter halos in warm, fuzzy, and interacting dark matter models.
+  - name: Roxanne Lai
+    cite: "R. Lai"
+    role: Undergraduate researcher
+    link: https://www.linkedin.com/in/roxanne-lai-a83b8a27b/
+    project: Roxanne is analyzing dark matter substructure in self-interacting dark matter cosmologies.
+
+alumni:
+  - name: Devontae Baxter
+    cite: "D. C. Baxter"
+    role: Affiliated postdoc (Coil group), NSF AAPF & UC Chancellor's Postdoctoral Fellow
+    years: 2024–2026
+    next: Princeton, Future Faculty in the Physical Sciences Fellow
+    link: https://sentientstarstuff.github.io/
+    mentee: Baxter
+  - name: Sophia Um
+    cite: "S. Um"
+    role: Astronomy & Astrophysics thesis student
+    years: 2024–2026
+    next: San Diego State University, M.S. program
+    link: https://www.linkedin.com/in/sophia-um-8559a0159/
+    mentee: Um
+  - name: Bocheng Feng
+    cite: "B. Feng"
+    role: Undergraduate researcher
+    years: 2025
+    next: UT Austin, Ph.D. program
+    link: https://scholar.google.com/citations?user=Tk_3Ub0AAAAJ&hl=en
+    mentee: Feng
+
+photo:
+  src: group-2025-26.jpg
+  caption: "2025–26. From left: Sandip Roy, Devontae Baxter, Stephen Canino, Ethan Nadler, Roxanne Lai, Sophia Um, Zewei Wu, Ollie Jackson."

@@ -1,0 +1,178 @@
+---
+layout: page
+title: Research
+hero: /assets/img/web/zoom-2mpc.jpg
+---
+{%- assign img = '/assets/img/web/' | relative_url -%}
+{%- assign sims = site.data.projects | where: "group", "sims" -%}
+{%- assign models = site.data.projects | where: "group", "models" -%}
+{%- assign constraints = site.data.projects | where: "group", "constraints" -%}
+
+<section class="section">
+  <div class="wrap">
+    <div class="questions">
+      <div>
+        <figure class="area"><img src="{{ img }}area-galaxies.jpg" alt="A simulated Milky Way-mass system: dark matter (blue) and the stars that formed in it (orange)" loading="lazy"><figcaption class="credit">Credit: <a href="https://www.linkedin.com/in/jason-wu-astro/">Zewei Wu</a></figcaption></figure>
+        <h2>Galaxy formation</h2>
+        <p class="q">How did the smallest galaxies form?</p>
+        <ul>
+          <li>What is the halo mass threshold for galaxy formation?</li>
+          <li>When and how does gas cool to form stars in ultra-faint dwarf galaxies?</li>
+          <li>How does our local reionization history impact dwarf galaxy evolution?</li>
+        </ul>
+      </div>
+      <div>
+        <figure class="area"><svg class="area-svg" viewBox="0 0 400 244" role="img" aria-label="Dark matter candidates span from 10^-22 eV ultralight fields to primordial black holes: they share the same large-scale structure but produce different small-scale structure, shown by the same simulated Milky Way in cold, warm, fuzzy, and self-interacting dark matter.">
+            <defs><clipPath id="halo-clip-0"><circle cx="47" cy="178" r="41"/></clipPath><clipPath id="halo-clip-1"><circle cx="149" cy="178" r="41"/></clipPath><clipPath id="halo-clip-2"><circle cx="251" cy="178" r="41"/></clipPath><clipPath id="halo-clip-3"><circle cx="353" cy="178" r="41"/></clipPath></defs>
+            <rect width="400" height="244" fill="#0b0a12"/>
+            <g class="mr-brace"><text x="200" y="15">Same large-scale structure</text><path d="M24 30 V22 H376 V30"/></g>
+            <g class="mr-ticks">
+              <text x="24" y="50">10<tspan dy="-6" font-size="9">−22</tspan><tspan dy="6"> eV</tspan></text>
+              <text x="150" y="50" text-anchor="middle">keV</text>
+              <text x="205" y="50" text-anchor="middle">GeV</text>
+              <text x="262" y="50" text-anchor="middle">100 TeV</text>
+              <text x="318" y="50" text-anchor="middle">M<tspan dy="3" font-size="9">Pl</tspan></text>
+              <text x="380" y="50" text-anchor="end">10 M<tspan dy="3" font-size="9">☉</tspan></text>
+            </g>
+            <g class="mr-axis"><line x1="14" x2="388" y1="66" y2="66"/><path d="M388 66 l-7 -4 v8 z M12 66 l7 -4 v8 z"/></g>
+            <g class="mr-bands">
+              <rect x="24" y="58" width="124" height="16" rx="8" fill="#d9603f"/>
+              <rect x="152" y="58" width="51" height="16" rx="8" fill="#9b6bd1"/>
+              <rect x="207" y="58" width="53" height="16" rx="8" fill="#4f86c6"/>
+              <rect x="264" y="58" width="78" height="16" rx="8" fill="#5aa469"/>
+              <rect x="330" y="58" width="50" height="16" rx="8" fill="#e0a03a"/>
+            </g>
+            <g class="mr-labels" text-anchor="middle">
+              <text x="86" y="92">Ultralight</text><text x="177" y="92">Light</text><text x="233" y="92">WIMPs</text><text x="296" y="92">Composite</text><text x="362" y="92">PBHs</text>
+            </g>
+            <g class="mr-brace mr-brace--low"><path d="M24 102 V110 H376 V102"/><text x="200" y="128">Different small-scale structure</text></g>
+            <g class="mr-halos" text-anchor="middle"><image href="{{ img }}dm/cdm.jpg" x="5" y="136" width="84" height="84" preserveAspectRatio="xMidYMid slice" clip-path="url(#halo-clip-0)"/><image href="{{ img }}dm/wdm-3.jpg" x="107" y="136" width="84" height="84" preserveAspectRatio="xMidYMid slice" clip-path="url(#halo-clip-1)"/><image href="{{ img }}dm/fdm-25p9.jpg" x="209" y="136" width="84" height="84" preserveAspectRatio="xMidYMid slice" clip-path="url(#halo-clip-2)"/><image href="{{ img }}dm/sidm.jpg" x="311" y="136" width="84" height="84" preserveAspectRatio="xMidYMid slice" clip-path="url(#halo-clip-3)"/><text x="47" y="236">Cold</text><text x="149" y="236">Warm</text><text x="251" y="236">Fuzzy</text><text x="353" y="236">Self-interacting</text></g>
+          </svg><figcaption class="credit">Credit: <a href="https://arxiv.org/abs/1904.07915">T. Lin (2019)</a></figcaption></figure>
+        <h2>Dark matter</h2>
+        <p class="q">What is the nature of dark matter?</p>
+        <ul>
+          <li>Do completely dark (galaxy-free) halos exist?</li>
+          <li>What are the astrophysical signatures of dark matter physics beyond gravity?</li>
+          <li>Can we combine small-scale structure observables to detect a deviation from CDM?</li>
+        </ul>
+      </div>
+      <div>
+        <figure class="area"><img src="{{ img }}area-cosmology.jpg" alt="Telescopes at Cerro Tololo under the Magellanic Clouds, with illustrated dark matter halos around the Milky Way's satellites" loading="lazy"><figcaption class="credit">Credit: <a href="https://www.flickr.com/photos/anjavdl/20779627456/">Anja von der Linden</a></figcaption></figure>
+        <h2>Near-field cosmology</h2>
+        <p class="q">How can observations of the local universe inform cosmology?</p>
+        <ul>
+          <li>Are there features in the small-scale linear power spectrum?</li>
+          <li>How can we efficiently and accurately model structure in the local universe?</li>
+          <li>What can near-field cosmology reveal about early universe dynamics and inflation?</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="collaborations">
+  <div class="wrap">
+    <h2>Collaborations and funding</h2>
+    <div class="collabs">
+      <div class="collab">
+        <h3><a href="https://dmdynamics.org/">Targeted Simons Research Group on Dark Matter Dynamics</a></h3>
+        <p class="funder">Simons Foundation · PI (UC San Diego node) · from January 2027</p>
+        <p>Connecting particle physics models of dark matter with new forces to predictions for galaxies, using simulations and semi-analytic models. UC San Diego is one of the group's nodes.</p>
+      </div>
+      <div class="collab" id="support">
+        <h3><a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2509561">Collaborative Research: Reconstructing Primordial Density Fluctuations using Near-Field Cosmology</a></h3>
+        <p class="funder">National Science Foundation · PI (NSF AAG) · 2024–</p>
+        <p>Reconstructing the primordial power spectrum with near-field cosmology by combining simulations, including <a href="#cozmic" data-open="cozmic">COZMIC</a>, and semi-analytic models with dwarf galaxy data. A collaboration between UC San Diego, USC, and Carnegie Observatories.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="simulations">
+  <div class="wrap">
+    <h2>Simulations</h2>
+    <p class="muted narrow">Cosmological zoom-in simulations of small-scale structure. Click a suite for details and data.</p>
+    <div class="suites">
+      {%- for p in sims %}
+      <a class="suite" href="#{{ p.id }}" data-open="{{ p.id }}"><img src="{{ img }}{{ p.thumb }}" alt="" loading="lazy"><span>{{ p.name }}</span><small>{{ p.meta[0] }}</small></a>
+      {%- endfor %}
+    </div>
+    <p class="research-viz">Interactive compilations of self-interacting and beyond-CDM simulations from the literature are on the <a href="{{ '/visualizations.html' | relative_url }}">Visualizations</a> page.</p>
+  </div>
+</section>
+
+<section class="section section--tint" id="models">
+  <div class="wrap">
+    <h2>Dark matter constraints and predictions</h2>
+    <p class="narrow">Our simulations and models make predictions for small-scale structure; observations of dwarf galaxies and strong gravitational lenses turn them into constraints.</p>
+    <h3 class="kicker">Predictions</h3>
+    <div class="preds">
+      <a class="pred" href="#threshold" data-open="threshold"><b>Galaxy formation threshold</b><span>Which dark matter halos form stars, and which remain completely dark?</span><small>Nadler 2025</small></a>
+      <a class="pred" href="#concerto" data-open="concerto"><b>Self-interacting dark matter</b><span>Halo and subhalo populations from dwarf galaxies to galaxy clusters.</span><small>Nadler et al. 2025</small></a>
+      <a class="pred" href="#mergertrees" data-open="mergertrees"><b>Constrained merger trees</b><span>Fast models of the Milky Way's subhalos and satellites.</span><small>Nadler et al. 2023</small></a>
+    </div>
+    <h3 class="kicker">Observational Constraints</h3>
+    <div class="probes">
+      <article class="probe">
+        <h3>Dwarf galaxies</h3>
+        <figure class="probe-img"><img src="{{ img }}data-dwarfs.jpg" alt="Milky Way satellites from bright to faint: the Large Magellanic Cloud, the classical dwarf Fornax, and the ultra-faint dwarf Segue 1, with its spectroscopic member stars (Simon et al. 2011) circled" loading="lazy"><figcaption class="credit">Credit: <a href="https://www.eso.org/public/images/magellan-ch17-bardon-cc/">Zdeněk Bardon/ESO</a>; <a href="https://www.eso.org/public/images/eso1007a/">ESO/Digitized Sky Survey 2</a>; <a href="https://www.legacysurvey.org/viewer?ra=151.7667&amp;dec=16.0819&amp;layer=ls-dr10&amp;zoom=13">Legacy Surveys / D. Lang (Perimeter Institute)</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)</figcaption></figure>
+        <ul>
+          <li><a href="https://iopscience.iop.org/article/10.3847/2041-8213/ae8b9f">The first Milky Way satellite limits on ultralight dark matter produced after inflation</a><span>Nadler et al. 2026</span></li>
+          <li><a href="#limits" data-open="limits">Limits on dark matter–Standard Model interactions and warm dark matter</a><span>Nadler et al. 2021a</span></li>
+          <li><a href="#galhalo" data-open="galhalo">The faint-end galaxy–halo connection and the smallest halos that host galaxies</a><span>Nadler et al. 2020</span></li>
+        </ul>
+        <p class="probe-next"><b>In progress:</b> hydrodynamic simulations of ultra-faint galaxies orbiting Milky Way analogs, to measure the galaxy formation threshold with Rubin.</p>
+      </article>
+      <article class="probe">
+        <h3>Strong gravitational lenses</h3>
+        <figure class="probe-img"><img src="{{ img }}data-lens.jpg" alt="Hubble image of the double Einstein ring in the strong lens SDSS J0946+1006" loading="lazy"><figcaption class="credit">Credit: <a href="https://esahubble.org/images/heic0803a/">NASA, ESA, R. Gavazzi &amp; T. Treu</a></figcaption></figure>
+        <ul>
+          <li><a href="#sidm" data-open="sidm">A self-interacting dark matter explanation for the dense perturber in SDSS J0946+1006</a><span>Nadler, Yang &amp; Yu 2023</span></li>
+          <li><a href="#limits" data-open="limits">Flux ratios combined with dwarf galaxies: the most stringent warm dark matter limit at the time</a><span>Nadler et al. 2021b</span></li>
+        </ul>
+        <p class="probe-next"><b>In progress:</b> Symphony-Lens, simulations that place quadruply imaged quasar lenses in realistic cosmic environments.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+{%- for p in site.data.projects %}
+<dialog class="pop" id="{{ p.id }}" aria-labelledby="{{ p.id }}-title">
+  <div class="pop-inner">
+    <button class="pop-close icon-btn" type="button" data-close aria-label="Close">✕</button>
+    <h2 id="{{ p.id }}-title">{{ p.name }}</h2>
+    {%- if p.meta %}<p class="pop-meta">{{ p.meta | join: " · " }}</p>{% endif %}
+    <div class="pop-body">{{ p.body }}</div>
+    {%- if p.sketch %}
+    <figure class="pop-sketch">
+      <div class="sketch" data-sketch style="aspect-ratio: 1600 / 1357" role="img" aria-label="Figure 1 of Nadler et al. (2020), the Milky Way satellite modeling framework, and the notebook sketch it started from">
+        <img src="{{ img }}framework-sketch.jpg" alt="" loading="lazy">
+        <img class="sketch-row" src="{{ img }}framework-fig1.jpg" alt="" loading="lazy" style="--t:0%;--b:74.65%">
+        <img class="sketch-row" src="{{ img }}framework-fig1.jpg" alt="" loading="lazy" style="--t:25.35%;--b:50.04%">
+        <img class="sketch-row" src="{{ img }}framework-fig1.jpg" alt="" loading="lazy" style="--t:49.96%;--b:25.46%">
+        <img class="sketch-row" src="{{ img }}framework-fig1.jpg" alt="" loading="lazy" style="--t:74.54%;--b:0%">
+      </div>
+    </figure>
+    <p class="caption">{{ p.sketch }}</p>
+    {%- endif %}
+    {%- if p.frames %}
+    <div class="strip" style="grid-template-columns:repeat({{ p.frames.size }},minmax(0,1fr))">
+      {%- for h in p.frames %}<img class="zoomable" src="{{ img }}mwest-{{ h }}.jpg" alt="Milky Way-est host {{ h }}" data-caption="Milky Way-est Halo {{ h }}. Adapted from Buch & Nadler et al. 2024." loading="lazy">{% endfor %}
+    </div>
+    <p class="caption">{{ p.caption }}</p>
+    {%- elsif p.figure %}
+    <figure class="{% if p.figure_paper %}figure-card{% endif %}"><img class="zoomable" src="{{ img }}{{ p.figure }}" alt="{{ p.caption | escape }}" data-caption="{{ p.caption | escape }}" loading="lazy"></figure>
+    <p class="caption">{{ p.caption }}</p>
+    {%- endif %}
+    {%- if p.video %}
+    <figure class="pop-video">
+      <video muted loop playsinline preload="none" controls poster="{{ '/assets/video/' | append: p.video | append: '-poster.jpg' | relative_url }}"><source src="{{ '/assets/video/' | append: p.video | append: '.mp4' | relative_url }}" type="video/mp4"></video>
+    </figure>
+    <p class="caption">{{ p.video_caption }}</p>
+    {%- endif %}
+    {%- if p.links %}
+    <p class="pop-links">{% for l in p.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>
+    {%- endif %}
+  </div>
+</dialog>
+{%- endfor %}

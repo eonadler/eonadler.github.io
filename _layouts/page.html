@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<header class="page-hero" style="--hero-img: url('{{ page.hero | default: '/assets/img/web/zoom-20mpc.jpg' | relative_url }}'); {% if page.hero_pos %}--hero-pos: {{ page.hero_pos }};{% endif %}">
+  <div class="wrap">
+    {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+    {%- if page.toc %}
+    <nav class="toc" aria-label="On this page">
+      {%- for t in page.toc %}<a class="chip" href="#{{ t.id }}">{{ t.label }}</a>{% endfor %}
+    </nav>
+    {%- endif %}
+  </div>
+</header>
+{{ content }}

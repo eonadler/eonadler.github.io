@@ -1,0 +1,64 @@
+---
+layout: page
+title: Teaching & Mentoring
+hero: /assets/img/web/mwest-222.jpg
+---
+
+<section class="section" id="teaching">
+  <div class="wrap">
+    <h2>Teaching</h2>
+    <p class="narrow">I teach undergraduate courses in the Astronomy &amp; Astrophysics department at UC San Diego. I have also lectured and authored course materials for several courses at other institutions; selected courses are listed below.</p>
+    <div class="cols2 teach">
+      <div>
+        <h3>UC San Diego</h3>
+        <ul class="plain">
+          <li><a href="https://catalog.ucsd.edu/courses/ASTR.html"><i>ASTR 2: Galaxies and the Universe</i></a> (Spring 2025, Spring 2026; upcoming Winter 2027)</li>
+          <li><a href="https://catalog.ucsd.edu/courses/ASTR.html"><i>ASTR 122: Physical Cosmology</i></a> (Winter 2026, Fall 2026)</li>
+        </ul>
+        <h3>University of Southern California</h3>
+        <ul class="plain">
+          <li><a href="https://catalogue.usc.edu/preview_course_nopop.php?catoid=8&coid=114328"><i>Advanced Cosmology</i></a> (lecturer for <i>Structure Formation &amp; Galaxies</i>)</li>
+        </ul>
+        <h3>UC Davis</h3>
+        <ul class="plain">
+          <li><a href="https://phys.libretexts.org/Courses/University_of_California_Davis/UCD%3A_Physics_156_-_A_Cosmology_Workbook/Workbook"><i>A Cosmology Workbook</i></a> (authored <a href="https://phys.libretexts.org/Courses/University_of_California_Davis/UCD%3A_Physics_156_-_A_Cosmology_Workbook/Workbook/31%3A_Structure_Formation">Structure Formation</a> and <a href="https://phys.libretexts.org/Courses/University_of_California_Davis/UCD%3A_Physics_156_-_A_Cosmology_Workbook/Workbook/32%3A_Galaxy_Formation">Galaxy Formation</a>)</li>
+        </ul>
+        <h3>UC Santa Barbara</h3>
+        <ul class="plain">
+          <li><a href="https://ccs.ucsb.edu/sites/default/files/2017-08/2015-2016-courses-all.pdf#page=112"><i>Relativistic Quantum Mechanics</i></a> (teaching assistant, authored solution manual)</li>
+          <li><a href="https://www.math.ucsb.edu/sites/default/files/sitefiles/undergraduate/Outlines/MATH%204A%20Outline.pdf"><i>Linear Algebra with Applications</i></a> (held bi-weekly tutorials, authored <a href="{{ '/Math_4A.pdf' | relative_url }}">supplementary lecture notes</a>)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Stanford University</h3>
+        <ul class="plain">
+          <li><a href="https://github.com/KIPAC/Physics-367"><i>Structure and Galaxy Formation</i></a> (teaching assistant, lecturer for <i>Halo Substructure</i>, authored notebooks on <a href="https://github.com/KIPAC/Physics-367/blob/main/Weekly_Notebooks/Phys367-week3.ipynb">spherical collapse</a>, <a href="https://github.com/KIPAC/Physics-367/blob/main/Weekly_Notebooks/Phys367-week4.ipynb">halo profiles</a>, <a href="https://github.com/KIPAC/Physics-367/blob/main/Final_Projects/Phys367-P04-SIDM.ipynb">self-interacting dark matter</a>, and the <a href="https://github.com/KIPAC/Physics-367/blob/main/Final_Projects/Phys367-P05-MW-Halo.ipynb">Milky Way halo</a>)</li>
+          <li><i>Modern Astrophysics</i> (teaching assistant, authored solution manual)</li>
+          <li><i>Cosmology &amp; Extragalactic Astrophysics</i> (teaching assistant, lecturer for <i>Galaxy Formation &amp; Evolution</i>)</li>
+          <li><i>Origin &amp; Development of the Cosmos</i> (teaching assistant, authored homework and exam problems)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="mentoring">
+  <div class="wrap">
+    <h2>Mentoring</h2>
+    <p class="narrow">Mentoring a diverse group of students on research in astrophysics and cosmology is an important part of my scientific practice. My graduate and undergraduate mentees at other institutions are listed below; for students who have worked in my UC San Diego group, see my <a href="{{ '/group.html' | relative_url }}">group page</a>.</p>
+    <div class="cols2 teach">
+      {%- assign sets = "graduate,undergrad" | split: "," -%}
+      {%- for set in sets %}
+      <div>
+        <h3>{% if set == 'graduate' %}Graduate students{% else %}Undergraduate, post-baccalaureate &amp; high school students{% endif %}</h3>
+        <ul class="plain mentee-list">
+          {%- for m in site.data.mentees[set] %}
+          {%- assign mp = site.data.publications | where: "mentee", m.mentee -%}
+          <li>{% if m.link %}<a class="who" href="{{ m.link }}">{{ m.name }}</a>{% else %}<span class="who">{{ m.name }}</span>{% endif %}<span class="muted">, {{ m.where }}{% if m.path %} → {{ m.path }}{% endif %}:</span> {{ m.project }}{% if m.mentee and mp.size > 0 %} ({% for p in mp reversed %}<a href="{{ p.url }}">{{ p.authors | split: ',' | first | split: ' and ' | first }} et al. {{ p.year }}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}){% endif %}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

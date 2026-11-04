@@ -1,25 +1,18 @@
 ---
-permalink: /404.html
 layout: default
+permalink: /404.html
+title: Page not found
+body_class: notfound
+hero_nav: true
 ---
-
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<section class="page-hero" style="--hero-img:url('{{ '/assets/img/web/zoom-200mpc.jpg' | relative_url }}');min-height:100vh;display:grid;align-items:center">
+  <div class="wrap">
+    <h1>Page not found</h1>
+    <p class="lede">This page doesn't exist; try one of these instead.</p>
+    <div class="btn-row" style="margin-top:24px">
+      <a class="btn btn--primary" href="{{ '/' | relative_url }}">Home</a>
+      <a class="btn" href="{{ '/research.html' | relative_url }}">Research</a>
+      <a class="btn" href="{{ '/publications.html' | relative_url }}">Publications</a>
+    </div>
+  </div>
+</section>

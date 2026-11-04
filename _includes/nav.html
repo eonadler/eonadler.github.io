@@ -1,0 +1,18 @@
+<header class="nav" id="nav" {% if page.hero_nav %}data-over-hero="true"{% endif %}>
+  <div class="wrap nav-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-name">{{ site.title }}</span>
+      <span class="brand-sub">{{ site.group_name }} · UC San Diego</span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav-links" id="nav-links">
+        {%- for item in site.data.nav %}
+        <li><a href="{{ item.url | relative_url }}" title="{{ item.title }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.label | default: item.title }}</a></li>
+        {%- endfor %}
+        <li><a class="nav-cv" href="{{ site.links.cv | relative_url }}">CV</a></li>
+      </ul>
+    </nav>
+    <button class="icon-btn theme-toggle" type="button" id="theme-toggle" aria-label="Switch light or dark theme" title="Switch light / dark theme">{% include icon.html name="moon" %}{% include icon.html name="sun" %}</button>
+    <button class="icon-btn menu-btn" type="button" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">{% include icon.html name="menu" %}</button>
+  </div>
+</header>

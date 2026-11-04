@@ -1,0 +1,20 @@
+# Top navigation, in order. `label` is the short text shown in the bar.
+- title: Research
+  url: /research.html
+- title: Group
+  url: /group.html
+- title: Publications
+  url: /publications.html
+- title: Teaching & Mentoring
+  label: Teaching
+  url: /mentoring.html
+- title: Outreach & Service
+  label: Outreach
+  url: /outreach.html
+- title: Media & Talks
+  label: Media
+  url: /media.html
+- title: Interdisciplinary
+  url: /interdisciplinary.html
+- title: Visualizations
+  url: /visualizations.html

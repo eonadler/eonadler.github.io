@@ -1,0 +1,24 @@
+---
+layout: page
+title: Visualizations
+hero: /assets/img/web/zoom-20mpc.jpg
+---
+{%- assign img = '/assets/img/web/' | relative_url -%}
+
+<section class="section">
+  <div class="wrap">
+    <p class="narrow">Interactive compilations of dark matter simulations from the literature, with links to each paper. Click a figure to explore it.</p>
+    <div class="grid grid-2 viz">
+      <div>
+        <a class="viz-fig" href="{{ '/explorers/sidm.html' | relative_url }}"><img src="{{ img }}viz-sidm.jpg" alt="Compilation of self-interacting dark matter simulations in the Yukawa (w, σ0) plane, and their velocity-dependent cross sections" loading="lazy"></a>
+        <h2><a href="{{ '/explorers/sidm.html' | relative_url }}">SIDM simulation compilation</a></h2>
+        <p>Simulated SIDM models in the Yukawa parameter plane, and their velocity-dependent cross sections on the scales each host halo probes.</p>
+      </div>
+      <div>
+        <a class="viz-fig" href="{{ '/explorers/beyondcdm.html' | relative_url }}"><img src="{{ img }}viz-beyondcdm.jpg" alt="Compilation of warm, fuzzy, interacting, and mixed dark matter simulations by resolution, and their transfer functions" loading="lazy"></a>
+        <h2><a href="{{ '/explorers/beyondcdm.html' | relative_url }}">Beyond-CDM simulation compilation</a></h2>
+        <p>Warm, fuzzy, interacting, and mixed dark matter simulations by resolution, and the range of each model's transfer function that they resolve.</p>
+      </div>
+    </div>
+  </div>
+</section>

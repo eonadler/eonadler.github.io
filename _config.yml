@@ -1,84 +1,32 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Site settings for eonadler.github.io (redesign).
+# Restart `bundle exec jekyll serve` after editing this file.
 
 title: Ethan O. Nadler
+tagline: Galaxy formation, dark matter, and near-field cosmology
+group_name: GalaxyHalo Group
 email: enadler@ucsd.edu
-description: >- # this means to ignore newlines until "baseurl:"
-  galaxy formation, dark matter,<br>
-  near-field cosmology
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
-github_username:  eonadler
+description: >-
+  Ethan O. Nadler and the GalaxyHalo Group at UC San Diego study the faintest
+  galaxies, the smallest dark matter halos, and what they reveal about the nature
+  of dark matter and the early universe.
+baseurl: ""
+url: "https://eonadler.github.io"
+github_username: eonadler
 
-author:
-  social:
-    googlescholar:  RCUihAIAAAAJ
-    github:  eonadler
-    email:  mailto:enadler@ucsd.edu
-    
+links:
+  scholar: https://scholar.google.com/citations?user=RCUihAIAAAAJ
+  github: https://github.com/eonadler
+  ads: https://ui.adsabs.harvard.edu/search/q=author%3A%22Nadler%2C%20Ethan%22&sort=date%20desc%2C%20bibcode%20desc
+  arxiv: https://arxiv.org/search/?searchtype=author&query=Nadler%2C+E+O
+  cv: /CV.pdf
+  department: https://astro.ucsd.edu/
 
-# Build settings
-#theme: jekyll-theme-cayman
-
-remote_theme: hydecorp/hydejack
+markdown: kramdown
 plugins:
   - jekyll-feed
-#  - jekyll-include-cache
 
-accent_color: rgb(0,0,0) 
-
-menu:
-  - title: Research
-    url:   /research.html
-  - title: CV
-    url:   ./CV.pdf
-  - title: Group
-    url:   /group.html
-  - title: Publications
-    url:   /publications.html
-  - title: Mentoring & Teaching
-    url:   /mentoring.html
-  - title: Outreach & Service
-    url:   /outreach.html
-  - title: Media
-    url:   /media.html
-  - title: Interdisciplinary
-    url:   /interdisciplinary.html
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .jekyll-cache

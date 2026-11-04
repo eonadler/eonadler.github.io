@@ -1,0 +1,113 @@
+---
+layout: default
+body_class: home
+hero_nav: true
+description: Ethan O. Nadler is an assistant professor of astronomy & astrophysics at UC San Diego studying galaxy formation, dark matter, and near-field cosmology.
+preload:
+  - /assets/img/web/zoom-200mpc.jpg
+---
+{%- assign g = site.data.group -%}
+
+<!-- ============================================================ zoom hero: scrolling zooms in; the arrow skips ahead -->
+<section class="zoom" id="top" aria-label="Zoom from the cosmic web into a simulated Milky Way halo">
+  <div class="zoom-sticky">
+    <div class="zoom-stage" aria-hidden="true">
+      <img class="zoom-layer" data-level="0" src="{{ '/assets/img/web/zoom-200mpc.jpg' | relative_url }}" alt="" decoding="async">
+      <img class="zoom-layer" data-level="1" src="{{ '/assets/img/web/zoom-20mpc.jpg' | relative_url }}" alt="" decoding="async">
+      <img class="zoom-layer" data-level="2" src="{{ '/assets/img/web/zoom-2mpc.jpg' | relative_url }}" alt="" decoding="async">
+      <img class="zoom-layer" data-level="3" src="{{ '/assets/img/web/zoom-0p2mpc.jpg' | relative_url }}" alt="" decoding="async">
+    </div>
+    <div class="zoom-vignette"></div>
+
+    <div class="hero-copy" id="hero-copy">
+      <div class="wrap">
+        <h1>Ethan O. Nadler</h1>
+        <p class="hero-tag">Galaxy formation, dark matter, and near-field cosmology<br><span>Department of Astronomy &amp; Astrophysics, UC San Diego</span></p>
+        {% include links.html %}
+      </div>
+    </div>
+
+    <div class="zoom-hud">
+      <div class="wrap">
+        <span></span>
+        <a class="scroll-cue" href="#about" aria-label="Skip to the next section">{% include icon.html name="down" %}</a>
+        <div class="hud-scale"><span class="hud-credit">Symphony Milky Way simulation</span><span id="hud-mpc">200 Mpc</span><span class="hud-bar"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ welcome -->
+<section class="section intro" id="about">
+  <div class="wrap intro-grid">
+    <figure class="portrait-wrap">
+      <div class="portrait"><img src="{{ '/assets/img/web/portrait.jpg' | relative_url }}" alt="Ethan Nadler" loading="lazy"></div>
+      <figcaption class="credit">Credit: Kristina Mallari, <a href="https://qi.ucsd.edu/">Qualcomm Institute</a></figcaption>
+    </figure>
+    <div>
+      <h2>Welcome!</h2>
+      <p>I am an Assistant Professor at the <a href="https://www.ucsd.edu/">University of California, San Diego</a> in the <a href="{{ site.links.department }}">Department of Astronomy &amp; Astrophysics</a>.</p>
+      <p>My <a href="{{ '/research.html' | relative_url }}">research</a> focuses on galaxy formation, dark matter, and near-field cosmology. A central question my <a href="{{ '/group.html' | relative_url }}">group</a> has been pursuing is whether completely dark (galaxy-free) dark matter halos exist; the answer would reveal how small-scale cosmic structure forms and provide new insight into the nature of dark matter. We tackle these problems using cosmological simulations, models of the galaxy–halo connection, dark matter theory, and observations of dwarf galaxies and strong gravitational lenses.</p>
+      <p>Building an inclusive scientific community through <a href="{{ '/mentoring.html#mentoring' | relative_url }}">mentoring</a>, <a href="{{ '/outreach.html' | relative_url }}">outreach and community service</a>, and <a href="{{ '/mentoring.html#teaching' | relative_url }}">teaching</a> is important to me; my efforts in these contexts are described on the corresponding pages.</p>
+      <p>I am a co-convener of the <a href="https://lsstdesc.org/">Dark Energy Science Collaboration (DESC)</a> Dark Matter Working Group and a member of the <a href="https://sagasurvey.org/">Satellites Around Galactic Analogs Survey (SAGA)</a> and <a href="https://delve-survey.github.io/">DECam Local Volume Exploration Survey (DELVE)</a>.</p>
+      <p>Please see my <a href="{{ site.links.cv | relative_url }}">CV</a>, <a href="{{ '/publications.html' | relative_url }}">publications</a>, and <a href="{{ '/media.html' | relative_url }}">media</a> for more information!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ dark matter comparison -->
+<section class="section section--tint" id="dial">
+  <div class="wrap">
+    {% include dial.html %}
+  </div>
+</section>
+
+<!-- ============================================================ group + news -->
+<section class="section" id="group">
+  <div class="wrap">
+    <div class="grid grid-2" style="gap:clamp(28px,5vw,64px);align-items:start">
+      <div>
+        <h2><a class="h-link" href="{{ '/group.html' | relative_url }}">GalaxyHalo Group @ UCSD</a></h2>
+        <figure class="group-photo">
+          <img src="{{ '/assets/img/web/' | append: g.photo.src | relative_url }}" alt="The GalaxyHalo Group at UC San Diego, 2025–26" loading="lazy">
+          <figcaption>{{ g.photo.caption }}</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h2>News</h2>
+        <ul class="news">
+          {%- for n in site.data.news limit: 6 %}
+          <li><span class="when">{{ n.date }}</span><span>{{ n.text }}</span></li>
+          {%- endfor %}
+        </ul>
+        {%- if site.data.news.size > 6 %}
+        <details class="news-more">
+          <summary>More news</summary>
+          <ul class="news">
+            {%- for n in site.data.news offset: 6 %}
+            <li><span class="when">{{ n.date }}</span><span>{{ n.text }}</span></li>
+            {%- endfor %}
+          </ul>
+        </details>
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ opportunities + about -->
+<section class="section section--tint" id="join">
+  <div class="wrap">
+    <div class="grid grid-2" style="gap:clamp(28px,5vw,64px);align-items:start">
+      <div>
+        <h2>Research opportunities</h2>
+        <p>I am recruiting undergraduate, graduate, and postdoctoral researchers to join my group at UC San Diego. If you're interested, please email me at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+      </div>
+      <div>
+        <h2>About me</h2>
+        <p>From 2021 through 2024, I was a joint postdoctoral research fellow at <a href="https://carnegiescience.edu/obs">Carnegie Observatories</a> and the <a href="https://dornsife.usc.edu/physics/">University of Southern California</a>. In 2021, I received my Ph.D. in Physics from <a href="https://physics.stanford.edu/">Stanford University</a>, where I was an NSF Graduate Research Fellow at <a href="https://kipac.stanford.edu/">KIPAC</a>. In 2016, I received my B.S. in Physics from the <a href="https://www.ccs.ucsb.edu/">College of Creative Studies at UC Santa Barbara</a>.</p>
+        <p>I am passionate about interdisciplinary research. I am currently a Lattimer Research Fellow for Cross-disciplinary Explorations at UC San Diego. Earlier, I co-founded the research collective <a href="https://comp-syn.com/#/">comp-syn</a>. My interdisciplinary work is described <a href="{{ '/interdisciplinary.html' | relative_url }}">here</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>

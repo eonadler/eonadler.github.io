@@ -1,0 +1,41 @@
+# Dark matter comparison (home page). Every frame is the same simulated Milky Way-mass host.
+# The slider runs from CDM (far left) to the selected model (far right); one model per tab, the most extreme run shown.
+# Images live in /assets/img/web/dm/.
+cdm: cdm.jpg
+families:
+  - id: wdm
+    tab: Warm
+    title: Warm dark matter (3 keV)
+    img: wdm-3.jpg
+    what: "Thermal-relic warm dark matter streams freely on small scales, suppressing structure formation."
+    suite: COZMIC I
+    url: "https://arxiv.org/abs/2410.03635"
+  - id: fdm
+    tab: Fuzzy
+    title: "Fuzzy dark matter (25.9×10⁻²² eV)"
+    img: fdm-25p9.jpg
+    what: "Ultralight fuzzy dark matter exhibits wave interference on small scales, suppressing structure formation."
+    suite: COZMIC I
+    url: "https://arxiv.org/abs/2410.03635"
+  - id: idm
+    tab: Interacting
+    title: "Dark matter–proton scattering (10⁻² GeV, σ ∝ v²)"
+    img: idm2-env.jpg
+    what: "Dark matter that scatters with protons in the early universe undergoes collisional damping, suppressing structure formation."
+    suite: COZMIC I
+    url: "https://arxiv.org/abs/2410.03635"
+  - id: sidm
+    tab: Self-interacting
+    title: Self-interacting dark matter
+    img: sidm.jpg
+    what: "Self-interacting dark matter scatters within halos, altering their internal structure."
+    suite: COZMIC III
+    url: "https://arxiv.org/abs/2412.13065"
+  - id: pk
+    tab: Primordial features
+    title: Enhanced small-scale power
+    cdm: enh-cdm.jpg
+    img: enh-bump.jpg
+    what: "Features in the primordial power spectrum enhance small-scale density fluctuations, boosting structure formation."
+    suite: COZMIC IV
+    url: "https://iopscience.iop.org/article/10.3847/1538-4357/ae073b"

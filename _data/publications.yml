@@ -1,0 +1,998 @@
+# Publications database for the website.
+# Each entry renders on publications.html (and on the group and interdisciplinary pages where relevant).
+#   role:     first (Nadler first author) | mentee (first author is a student or postdoc I advised or co-advised) | coauthor
+#   mentee:   surname of the mentee first author (role: mentee only)
+#   group:    true if the first author is (or was) a member of the GalaxyHalo Group
+#   context:  for role: mentee, which line of work it belongs to:
+#             ucsd (GalaxyHalo Group) | affiliated (affiliated postdoc from another group; not in the GalaxyHalo Group view)
+#             | grant (COZMIC Collaboration) | coadvised (co-advised students and earlier mentees)
+#   topics:   any of sidm, beyondcdm, satellites, lensing, simulations, galform, lss
+#   status:   published | submitted (under review; listed first, unnumbered)
+#   line:     cozmic for COZMIC papers
+#   kind:     astro | interdisciplinary
+#   cited100: true for papers with >=100 Google Scholar citations (per CV)
+# Authors use **E. O. Nadler** for bold. Newest first; order within a year is preserved.
+
+- title: "Dark Matter Constraints from Small-Scale Cosmic Structure"
+  authors: "**E. O. Nadler**, K. K. Rogers, and A. Drlica-Wagner"
+  year: 2026
+  venue: "Rev. Mod. Phys., submitted"
+  url: "https://arxiv.org/abs/2607.28564"
+  arxiv: "2607.28564"
+  status: submitted
+  kind: astro
+  role: first
+  topics: [beyondcdm, satellites, lensing]
+  featured: true
+
+- title: "Searching for Dense Perturbers in Cold Dark Matter Simulations"
+  authors: "X. Zhang, H.-B. Yu, D. Kong, and **E. O. Nadler**"
+  year: 2026
+  venue: "PRD, submitted"
+  url: "https://arxiv.org/abs/2610.27236"
+  arxiv: "2610.27236"
+  status: submitted
+  kind: astro
+  role: mentee
+  mentee: Zhang
+  context: coadvised
+  topics: [lensing, simulations]
+
+- title: "Linking orbital history to the quenching of isolated dwarf galaxies"
+  authors: "S. Um, D. C. Baxter, and **E. O. Nadler**"
+  year: 2026
+  venue: "OJAp, submitted"
+  url: "https://arxiv.org/abs/2609.04385"
+  arxiv: "2609.04385"
+  status: submitted
+  kind: astro
+  role: mentee
+  mentee: Um
+  context: ucsd
+  group: true
+  topics: [satellites, galform]
+
+- title: "Detectable subhalo impacts in Milky Way streams"
+  authors: "J. Lu, E. Bernreuther, T. Lin, V. S. H. Lee, A. Bonaca, and **E. O. Nadler**"
+  year: 2026
+  venue: "ApJ, submitted"
+  url: "https://arxiv.org/abs/2608.19321"
+  arxiv: "2608.19321"
+  status: submitted
+  kind: astro
+  role: coauthor
+  topics: [lensing]
+
+- title: "Mixed Dark Matter: Limits from the Milky Way Satellite Galaxies"
+  authors: "W. Crumrine, D. Pang, **E. O. Nadler**, A. Benson, and V. Gluscevic"
+  year: 2026
+  venue: "PRD, submitted"
+  url: "https://arxiv.org/abs/2606.10006"
+  arxiv: "2606.10006"
+  status: submitted
+  kind: astro
+  line: cozmic
+  role: mentee
+  mentee: Crumrine
+  context: grant
+  topics: [beyondcdm, satellites]
+
+- title: "An Extended Parametric Model for Self-interacting Dark Matter Halos"
+  authors: "S. Raut, **E. O. Nadler**, and A. Benson"
+  year: 2026
+  venue: "ApJ, submitted"
+  url: "https://arxiv.org/abs/2604.22013"
+  arxiv: "2604.22013"
+  status: submitted
+  kind: astro
+  role: mentee
+  mentee: Raut
+  context: coadvised
+  topics: [sidm, simulations]
+
+- title: "What Becomes of JWST/NIRCam-selected High-redshift Massive Galaxies?"
+  authors: "D. C. Baxter, A. L. Coil, **E. O. Nadler**, X. Shen, and M. Vogelsberger"
+  year: 2026
+  venue: "ApJ, 1011, 83"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/aeace0/meta"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Baxter
+  context: affiliated
+  topics: [galform]
+
+- title: "A Unified Halo Mass Function Across Dark Matter Models from High-Resolution Multi-Scale Simulations"
+  authors: "A. Benson, **E. O. Nadler**, X. Du, and V. Gluscevic"
+  year: 2026
+  venue: "OJAp, 9, 177087"
+  url: "https://astro.theoj.org/article/170877-a-unified-halo-mass-function-across-dark-matter-models-from-high-resolution-multi-scale-simulations"
+  status: published
+  kind: astro
+  line: cozmic
+  role: coauthor
+  topics: [beyondcdm, simulations]
+
+- title: "MARVELously Dark: the density profile evolution of dwarf halos in velocity-dependent SIDM"
+  authors: "A. Engelhardt, F. Munshi, A. H. G. Peter, **E. O. Nadler**, A. Cruz, A. M. Brooks, Z. Carton Zeng, T. R. Quinn, and B. Keith"
+  year: 2026
+  venue: "JCAP, 8, 059"
+  url: "https://iopscience.iop.org/article/10.1088/1475-7516/2026/08/059"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [sidm, satellites, simulations]
+
+- title: "Strong-lensing perturber signatures in self-interacting dark matter simulations"
+  authors: "D. Kong, **E. O. Nadler**, and H.-B. Yu"
+  year: 2026
+  venue: "PRD, 114, 043011"
+  url: "https://journals.aps.org/prd/abstract/10.1103/xrqk-1w95"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Kong
+  context: coadvised
+  topics: [sidm, lensing, simulations]
+
+- title: "Warm, Not Fuzzy: Generalized Ultralight Dark Matter Limits from Milky Way Satellites"
+  authors: "**E. O. Nadler**, M. A. Amin, R. H. Wechsler, M. Sten Delos, A. Benson, and V. Gluscevic"
+  year: 2026
+  venue: "ApJL, 1006, L65"
+  url: "https://iopscience.iop.org/article/10.3847/2041-8213/ae8b9f"
+  status: published
+  kind: astro
+  line: cozmic
+  role: first
+  topics: [beyondcdm, satellites]
+  featured: true
+
+- title: "A dynamical attractor in the evolution of dwarf spheroidal galaxies"
+  authors: "J. Peñarrubia & **E. O. Nadler**"
+  year: 2026
+  venue: "MNRAS, 548, stag803"
+  url: "https://academic.oup.com/mnras/article/548/4/stag803/8666387"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [satellites]
+
+- title: "DELVE Milky Way Satellite Galaxy Census. I. Satellite Population and Survey Selection Function in DES, DELVE, and Pan-STARRS"
+  authors: "C. Y. Tan, A. Drlica-Wagner, A. B. Pace, W. Cerny, **E. O. Nadler** et al. (DELVE Collaboration)"
+  year: 2026
+  venue: "ApJ, 1000, 87"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ae4479/meta"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites]
+
+- title: "The non-universal pseudo-phase-space density profiles of symphony host haloes"
+  authors: "B. Feng, **E. O. Nadler**, S. P. Oh, and S. Ji"
+  year: 2026
+  venue: "MNRAS, 546, stag215"
+  url: "https://academic.oup.com/mnras/article/546/4/stag215/8450193"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Feng
+  context: ucsd
+  group: true
+  topics: [simulations, lss]
+
+- title: "Shaping the Milky Way. II. The dark matter halo's response to the LMC's passage in a cosmological context"
+  authors: "E. Darragh-Ford & N. Garavito-Camargo et al. (incl. **E. O. Nadler**)"
+  year: 2025
+  venue: "ApJ, submitted"
+  url: "https://arxiv.org/abs/2511.02031"
+  arxiv: "2511.02031"
+  status: submitted
+  kind: astro
+  role: coauthor
+  topics: [satellites]
+
+- title: "The SAGA Survey. VI. The Size–Mass Relation for Low-mass Galaxies Across Environments"
+  authors: "Y. Asali et al. (SAGA Survey, incl. **E. O. Nadler**)"
+  year: 2025
+  venue: "ApJ, 995, 79"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ae147d/meta"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites, galform]
+
+- title: "SAGAbg. III. Environmental Stellar Mass Functions, Self-quenching, and the Stellar-to-halo Mass Relation in the Dwarf Galaxy Regime"
+  authors: "E. Kado-Fong et al. (SAGA Survey, incl. **E. O. Nadler**)"
+  year: 2025
+  venue: "ApJ, 994, 231"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ae102d"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites, galform]
+
+- title: "The Effects of Linear Matter Power Spectrum Enhancement on Dark Matter Substructure"
+  authors: "**E. O. Nadler**, V. Gluscevic, and A. Benson"
+  year: 2025
+  venue: "ApJ, 993, 17"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ae073b"
+  status: published
+  kind: astro
+  line: cozmic
+  role: first
+  topics: [beyondcdm, simulations]
+
+- title: "Novel challenges in tracking self-interacting dark matter subhalos"
+  authors: "D. Kong, H.-B. Yu, **E. O. Nadler**, P. Mansfield, and A. Benson"
+  year: 2025
+  venue: "JCAP, 10, 074"
+  url: "https://iopscience.iop.org/article/10.1088/1475-7516/2025/10/074"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Kong
+  context: coadvised
+  topics: [sidm, simulations]
+
+- title: "SIDM Concerto: Compilation and Data Release of Self-interacting Dark Matter Zoom-in Simulations"
+  authors: "**E. O. Nadler**, D. Kong, D. Yang, and H.-B. Yu"
+  year: 2025
+  venue: "ApJ, 991, 69"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/adf553"
+  arxiv: "2503.10748"
+  status: published
+  kind: astro
+  role: first
+  topics: [sidm, simulations]
+  featured: true
+
+- title: "Quantifying the Impact of Incompleteness on Identifying and Interpreting Galaxy Protocluster Populations with the TNG-Cluster Simulation"
+  authors: "D. C. Baxter, A. L. Coil, **E. O. Nadler**, D. Nelson, A. Pillepich, B. Forrest, F. Giddings, E. Golden-Marx, B. C. Lemaux, and D. Sikorski"
+  year: 2025
+  venue: "ApJ, 990, 225"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/adf644"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Baxter
+  context: affiliated
+  topics: [simulations, galform]
+
+- title: "N-body simulations of dark matter–baryon interactions"
+  authors: "M. S. Fischer, K. Dolag, M. Garny, V. Gluscevic, F. Groth, and **E. O. Nadler**"
+  year: 2025
+  venue: "A&A, 700, A145"
+  url: "https://www.aanda.org/articles/aa/full_html/2025/08/aa54983-25/aa54983-25.html"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [beyondcdm, simulations]
+
+- title: "Predictions for the Detectability of Milky Way Satellite Galaxies and Outer-Halo Star Clusters with the Vera C. Rubin Observatory"
+  authors: "K. Tsiane et al. (DESC Collaboration, incl. **E. O. Nadler**)"
+  year: 2025
+  venue: "OJAp, 8, 142072"
+  url: "https://astro.theoj.org/article/142072-predictions-for-the-detectability-of-milky-way-satellite-galaxies-and-outer-halo-star-clusters-with-the-vera-c-rubin-observatory"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites]
+
+- title: "EDEN: Exploring Disks Embedded in N-body Simulations of Milky Way–mass Halos from Symphony"
+  authors: "Y. Wang, P. Mansfield, **E. O. Nadler**, E. Darragh-Ford, R. H. Wechsler, D. Yang, and H.-B. Yu"
+  year: 2025
+  venue: "ApJ, 986, 147"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/adcfa3"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Wang
+  context: coadvised
+  topics: [simulations]
+
+- title: "COZMIC. III. Cosmological Zoom-in Simulations of Self-interacting Dark Matter with Suppressed Initial Conditions"
+  authors: "**E. O. Nadler**, R. An, D. Yang, H.-B. Yu, A. Benson, and V. Gluscevic"
+  year: 2025
+  venue: "ApJ, 986, 129"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/adce82"
+  arxiv: "2412.13065"
+  status: published
+  kind: astro
+  line: cozmic
+  role: first
+  topics: [sidm, beyondcdm, simulations]
+
+- title: "COZMIC. II. Cosmological Zoom-in Simulations with Fractional non-CDM Initial Conditions"
+  authors: "R. An, **E. O. Nadler**, A. Benson, and V. Gluscevic"
+  year: 2025
+  venue: "ApJ, 986, 128"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/adce83"
+  arxiv: "2411.03431"
+  status: published
+  kind: astro
+  line: cozmic
+  role: coauthor
+  topics: [beyondcdm, simulations]
+
+- title: "COZMIC. I. Cosmological Zoom-in Simulations with Initial Conditions Beyond Cold Dark Matter"
+  authors: "**E. O. Nadler**, R. An, V. Gluscevic, A. Benson, and X. Du"
+  year: 2025
+  venue: "ApJ, 986, 127"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/adceef"
+  arxiv: "2410.03635"
+  status: published
+  kind: astro
+  line: cozmic
+  role: first
+  topics: [beyondcdm, simulations]
+  featured: true
+
+- title: "Semianalytic model for decaying dark matter halos"
+  authors: "**E. O. Nadler** & A. Benson"
+  year: 2025
+  venue: "PRD, 111, 103522"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.103522"
+  status: published
+  kind: astro
+  role: first
+  topics: [beyondcdm, simulations]
+
+- title: "The Impact of Molecular Hydrogen Cooling on the Galaxy Formation Threshold"
+  authors: "**E. O. Nadler**"
+  year: 2025
+  venue: "ApJL, 983, L23"
+  url: "https://iopscience.iop.org/article/10.3847/2041-8213/adbc6e"
+  status: published
+  kind: astro
+  role: first
+  topics: [galform, satellites]
+
+- title: "SASHIMI-SIDM: semi-analytical subhalo modelling for self-interacting dark matter at sub-galactic scales"
+  authors: "S. Ando, S. Horigome, **E. O. Nadler**, D. Yang, and H.-B. Yu"
+  year: 2025
+  venue: "JCAP, 2, 053"
+  url: "https://iopscience.iop.org/article/10.1088/1475-7516/2025/02/053"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [sidm, simulations]
+
+- title: "Dark matter coupled to radiation: Limits from the Milky Way satellites"
+  authors: "W. Crumrine, **E. O. Nadler**, R. An, and V. Gluscevic"
+  year: 2025
+  venue: "PRD, 111, 023530"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.023530"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Crumrine
+  context: grant
+  topics: [beyondcdm, satellites]
+
+- title: "Testing the parametric model for self-interacting dark matter using matched halos in cosmological simulations"
+  authors: "D. Yang, **E. O. Nadler**, and H.-B. Yu"
+  year: 2025
+  venue: "Physics of the Dark Universe, 47, 101807"
+  url: "https://www.sciencedirect.com/science/article/pii/S2212686425000020"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [sidm, simulations]
+
+- title: "The GD-1 Stellar Stream Perturber as a Core-collapsed Self-interacting Dark Matter Halo"
+  authors: "X. Zhang, H.-B. Yu, D. Yang, and **E. O. Nadler**"
+  year: 2025
+  venue: "ApJL, 978, L23"
+  url: "https://iopscience.iop.org/article/10.3847/2041-8213/ada02b"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Zhang
+  context: coadvised
+  topics: [sidm, lensing]
+
+- title: "Statistical or Embodied? Comparing Colorseeing, Colorblind, Painters, and Large Language Models in Their Processing of Color Metaphors"
+  authors: "**E. O. Nadler**, D. Guilbeault, S. M. Ringold, T. R. Williamson, A. Bellemare-Pepin, I. M. Comşa, K. Jerbi, S. Narayanan, and L. Aziz-Zadeh"
+  year: 2025
+  venue: "Cognitive Science, 49, e70083"
+  url: "https://onlinelibrary.wiley.com/doi/10.1111/cogs.70083"
+  status: published
+  kind: interdisciplinary
+  role: first
+
+- title: "The SAGA Survey. V. Modeling Satellite Systems around Milky Way–Mass Galaxies with Updated UNIVERSEMACHINE"
+  authors: "Y. Wang, **E. O. Nadler** et al. (SAGA Survey)"
+  year: 2024
+  venue: "ApJ, 976, 119"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ad7f4c"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Wang
+  context: coadvised
+  topics: [satellites, galform]
+
+- title: "The SAGA Survey. IV. The Star Formation Properties of 101 Satellite Systems around Milky Way–mass Galaxies"
+  authors: "M. Geha et al. (SAGA Survey, incl. **E. O. Nadler**)"
+  year: 2024
+  venue: "ApJ, 976, 118"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ad61e7"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites, galform]
+
+- title: "The SAGA Survey. III. A Census of 101 Satellite Systems around Milky Way–mass Galaxies"
+  authors: "Y.-Y. Mao et al. (SAGA Survey, incl. **E. O. Nadler**)"
+  year: 2024
+  venue: "ApJ, 976, 117"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ad64c4"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites]
+
+- title: "SAGAbg. II. The Low-mass Star-forming Sequence Evolves Significantly between 0.05 < z < 0.21"
+  authors: "E. Kado-Fong et al. (SAGA Survey, incl. **E. O. Nadler**)"
+  year: 2024
+  venue: "ApJ, 976, 83"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ad8137"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites, galform]
+
+- title: "Milky Way-est: Cosmological Zoom-in Simulations with Large Magellanic Cloud and Gaia–Sausage–Enceladus Analogs"
+  authors: "D. Buch, **E. O. Nadler**, R. H. Wechsler, and Y.-Y. Mao"
+  year: 2024
+  venue: "ApJ, 971, 179"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ad554c"
+  arxiv: "2404.08043"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Buch
+  context: coadvised
+  topics: [satellites, simulations]
+
+- title: "SYMFIND: Addressing the Fragility of Subhalo Finders and Revealing the Durability of Subhalos"
+  authors: "P. Mansfield, E. Darragh-Ford, Y. Wang, **E. O. Nadler**, B. Diemer, and R. H. Wechsler"
+  year: 2024
+  venue: "ApJ, 970, 178"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ad4e33"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [simulations]
+
+- title: "Tidal evolution of cored and cuspy dark matter halos"
+  authors: "X. Du et al. (incl. **E. O. Nadler**)"
+  year: 2024
+  venue: "PRD, 110, 023019"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.023019"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [sidm, simulations]
+
+- title: "Forecasts for Galaxy Formation and Dark Matter Constraints from Dwarf Galaxy Surveys"
+  authors: "**E. O. Nadler**, V. Gluscevic, T. Driskell, R. H. Wechsler, L. A. Moustakas, A. Benson, and Y.-Y. Mao"
+  year: 2024
+  venue: "ApJ, 967, 61"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ad3bb1"
+  status: published
+  kind: astro
+  role: first
+  topics: [beyondcdm, satellites, galform]
+
+- title: "SAGAbg. I. A Near-unity Mass-loading Factor in Low-mass Galaxies via Their Low-redshift Evolution in Stellar Mass, Oxygen Abundance, and Star Formation Rate"
+  authors: "E. Kado-Fong et al. (SAGA Survey, incl. **E. O. Nadler**)"
+  year: 2024
+  venue: "ApJ, 966, 129"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ad3042"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites, galform]
+
+- title: "A comprehensive model for the formation and evolution of the faintest Milky Way dwarf satellites"
+  authors: "N. Ahvazi, A. Benson, L. V. Sales, **E. O. Nadler**, S. Weerasooriya, X. Du, and M. S. Bovill"
+  year: 2024
+  venue: "MNRAS, 529, 3387"
+  url: "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stae761/7631365"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Ahvazi
+  context: coadvised
+  topics: [satellites, galform]
+
+- title: "Dynamical friction in self-interacting ultralight dark matter"
+  authors: "N. Glennon, N. Musoke, **E. O. Nadler**, C. Prescod-Weinstein, and R. H. Wechsler"
+  year: 2024
+  venue: "PRD, 109, 063501"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.063501"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Glennon
+  context: coadvised
+  topics: [beyondcdm, simulations]
+
+- title: "A parametric model for self-interacting dark matter halos"
+  authors: "D. Yang, **E. O. Nadler**, H.-B. Yu, and Y.-M. Zhong"
+  year: 2024
+  venue: "JCAP, 2, 032"
+  url: "https://iopscience.iop.org/article/10.1088/1475-7516/2024/02/032/pdf"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [sidm, simulations]
+
+- title: "A Search for Faint Resolved Galaxies Beyond the Milky Way in DES Year 6: A New Faint, Diffuse Dwarf Satellite of NGC 55"
+  authors: "M. McNanna, K. Bechtol, S. Mau, **E. O. Nadler** et al. (DES Collaboration)"
+  year: 2024
+  venue: "ApJ, 961, 126"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ad07d0"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites]
+
+- title: "Online images amplify gender bias"
+  authors: "D. Guilbeault, S. Delecourt, T. Hull, B. S. Desikan, M. Chu, and **E. O. Nadler**"
+  year: 2024
+  venue: "Nature, 626, 1049"
+  url: "https://www.nature.com/articles/s41586-024-07068-x"
+  status: published
+  kind: interdisciplinary
+  role: coauthor
+  cited100: true
+
+- title: "A Self-interacting Dark Matter Solution to the Extreme Diversity of Low-mass Halo Properties"
+  authors: "**E. O. Nadler**, D. Yang, and H.-B. Yu"
+  year: 2023
+  venue: "ApJL, 958, L39"
+  url: "https://iopscience.iop.org/article/10.3847/2041-8213/ad0e09"
+  status: published
+  kind: astro
+  role: first
+  topics: [sidm]
+  cited100: true
+  featured: true
+
+- title: "Novel conservative methods for adaptive force softening in collisionless and multispecies N-body simulations"
+  authors: "P. Hopkins, **E. O. Nadler**, M. Grudić, X. Shen, I. Sands, and F. Jiang"
+  year: 2023
+  venue: "MNRAS, 525, 5951"
+  url: "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stad2548/7251507"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [simulations]
+
+- title: "Target Selection and Sample Characterization for the DESI LOW-Z Secondary Target Program"
+  authors: "E. Darragh-Ford et al. (DESI Collaboration, incl. **E. O. Nadler**)"
+  year: 2023
+  venue: "ApJ, 954, 149"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ace902"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites]
+
+- title: "Can Neutrino Self-interactions Save Sterile Neutrino Dark Matter?"
+  authors: "R. An, V. Gluscevic, **E. O. Nadler**, and Y. Zhang"
+  year: 2023
+  venue: "ApJL, 954, L18"
+  url: "https://iopscience.iop.org/article/10.3847/2041-8213/acf049"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [beyondcdm, satellites]
+
+- title: "Nonthermal warm dark matter limits from small-scale structure"
+  authors: "A. Banerjee, S. Das, A. Maharana, **E. O. Nadler**, and R. K. Sharma"
+  year: 2023
+  venue: "PRD, 108, 043518"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.043518"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [beyondcdm, satellites]
+
+- title: "Six More Ultra-faint Milky Way Companions Discovered in the DECam Local Volume Exploration Survey"
+  authors: "W. Cerny et al. (DELVE Collaboration, incl. **E. O. Nadler**)"
+  year: 2023
+  venue: "ApJ, 953, 1"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/acdd78"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites]
+
+- title: "Strong Dark Matter Self-interactions Diversify Halo Populations within and surrounding the Milky Way"
+  authors: "D. Yang, **E. O. Nadler**, and H.-B. Yu"
+  year: 2023
+  venue: "ApJ, 949, 67"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/acc73e"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [sidm, satellites, simulations]
+
+- title: "Gravothermal Solutions of SIDM Halos: Mapping from Constant to Velocity-dependent Cross Section"
+  authors: "S. Yang, X. Du, Z. C. Zeng, A. Benson, F. Jiang, **E. O. Nadler**, and A. Peter"
+  year: 2023
+  venue: "ApJ, 946, 47"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/acbd49"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [sidm]
+
+- title: "Symphony: Cosmological Zoom-in Simulation Suites over Four Decades of Host Halo Mass"
+  authors: "**E. O. Nadler**, P. Mansfield, Y. Wang, X. Du et al"
+  year: 2023
+  venue: "ApJ, 945, 159"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/acb68c"
+  arxiv: "2209.02675"
+  status: published
+  kind: astro
+  role: first
+  topics: [simulations]
+  featured: true
+
+- title: "Growing the first galaxies' merger trees"
+  authors: "**E. O. Nadler**, A. Benson, T. Driskell, V. Gluscevic, and X. Du"
+  year: 2023
+  venue: "MNRAS, 521, 3201"
+  url: "https://academic.oup.com/mnras/article-abstract/521/3/3201/7068109"
+  status: published
+  kind: astro
+  role: first
+  topics: [simulations, galform]
+
+- title: "From Images to Dark Matter: End-to-end Inference of Substructure from Hundreds of Strong Gravitational Lenses"
+  authors: "S. Wagner-Carena, J. Aalbers, S. Birrer, **E. O. Nadler**, E. Darragh-Ford, P. J. Marshall, and R. H. Wechsler"
+  year: 2023
+  venue: "ApJ, 942, 75"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/aca525"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [lensing]
+
+- title: "Divergences in Color Perception between deep neural networks and humans"
+  authors: "**E. O. Nadler**, E. Darragh-Ford, B. S. Desikan, C. Conaway, M. Chu, T. Hull, and D. Guilbeault"
+  year: 2023
+  venue: "Cognition, 241, 105621"
+  url: "https://www.sciencedirect.com/science/article/abs/pii/S001002772300255X"
+  status: published
+  kind: interdisciplinary
+  role: first
+
+- title: "Structure formation and the global 21-cm signal in the presence of Coulomb-like dark matter-baryon interactions"
+  authors: "T. Driskell, **E. O. Nadler**, J. Mirocha, A. Benson, K. K. Boddy, T. D. Morton, J. Lashner, R. An, and V. Gluscevic"
+  year: 2022
+  venue: "PRD, 106, 103525"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.103525"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Driskell
+  context: coadvised
+  topics: [beyondcdm]
+
+- title: "Tidal disruption of solitons in self-interacting ultralight axion dark matter"
+  authors: "N. Glennon, **E. O. Nadler**, N. Musoke, A. Banerjee, C. Prescod-Weinstein, and R. H. Wechsler"
+  year: 2022
+  venue: "PRD, 105, 123540"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.123540"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Glennon
+  context: coadvised
+  topics: [beyondcdm, simulations]
+
+- title: "Milky Way Satellite Census. IV. Constraints on Decaying Dark Matter from Observations of Milky Way Satellite Galaxies"
+  authors: "S. Mau, **E. O. Nadler** et al. (DES Collaboration)"
+  year: 2022
+  venue: "ApJ, 932, 128"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ac6e65"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Mau
+  context: coadvised
+  topics: [beyondcdm, satellites]
+
+- title: "The Signatures of Self-interacting Dark Matter and Subhalo Disruption on Cluster Substructure"
+  authors: "J. Bhattacharyya, S. Adhikari, A. Banerjee, S. More, A. Kumar, **E. O. Nadler**, and S. Chatterjee"
+  year: 2022
+  venue: "ApJ, 932, 30"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ac68e9"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [sidm, simulations]
+
+- title: "Extending the SAGA Survey (xSAGA). I. Satellite Radial Profiles as a Function of Host-galaxy Properties"
+  authors: "J. F. Wu, J. E. G. Peek, E. J. Tollerud, Y.-Y. Mao, **E. O. Nadler**, M. Geha, R. H. Wechsler, N. Kallivayalil, and B. J. Weiner"
+  year: 2022
+  venue: "ApJ, 927, 121"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ac4eea"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [satellites]
+
+- title: "Signal in Noise: Exploring Meaning Encoded in Random Character Sequences with Character-Aware Language Models"
+  authors: "M. Chu, B. S. Desikan, **E. O. Nadler**, R. L. Sardo, E. Darragh-Ford, and D. Guilbeault"
+  year: 2022
+  venue: "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics, 7120"
+  url: "https://aclanthology.org/2022.acl-long.492/"
+  status: published
+  kind: interdisciplinary
+  role: coauthor
+
+- title: "Observational constraints on dark matter scattering with electrons"
+  authors: "D. Nguyen, D. Sarnaaik, K. K. Boddy, **E. O. Nadler**, and V. Gluscevic"
+  year: 2021
+  venue: "PRD, 104, 103521"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.103521"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [beyondcdm]
+
+- title: "The Effects of Dark Matter and Baryonic Physics on the Milky Way Subhalo Population in the Presence of the Large Magellanic Cloud"
+  authors: "**E. O. Nadler**, A. Banerjee, S. Adhikari, Y.-Y. Mao, and R. H. Wechsler"
+  year: 2021
+  venue: "ApJL, 920, L11"
+  url: "https://iopscience.iop.org/article/10.3847/2041-8213/ac29c1"
+  status: published
+  kind: astro
+  role: first
+  topics: [sidm, satellites, simulations]
+
+- title: "The DECam Local Volume Exploration Survey: Overview and First Data Release"
+  authors: "A. Drlica-Wagner et al. (DELVE Collaboration, incl. **E. O. Nadler**)"
+  year: 2021
+  venue: "ApJS, 256, 2"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4365/ac079d"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites]
+  cited100: true
+
+- title: "Dark Matter Constraints from a Unified Analysis of Strong Gravitational Lenses and Milky Way Satellite Galaxies"
+  authors: "**E. O. Nadler**, S. Birrer, D. Gilman, R. H. Wechsler, X. Du, A. Benson, A. Nierenberg, and T. Treu"
+  year: 2021
+  venue: "ApJ, 917, 7"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/abf9a3"
+  status: published
+  kind: astro
+  role: first
+  topics: [beyondcdm, satellites, lensing]
+  cited100: true
+  featured: true
+
+- title: "UniverseMachine: Predicting Galaxy Star Formation over Seven Decades of Halo Mass with Zoom-in Simulations"
+  authors: "Y. Wang, **E. O. Nadler**, Y.-Y. Mao, S. Adhikari, R. H. Wechsler, and P. Behroozi"
+  year: 2021
+  venue: "ApJ, 915, 116"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ac024a"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Wang
+  context: coadvised
+  topics: [simulations, galform]
+
+- title: "Searching for Dwarfs in Gaia DR2 Phase-space Data using Wavelet Transforms"
+  authors: "E. Darragh-Ford, **E. O. Nadler**, S. McLaughlin, and R. H. Wechsler"
+  year: 2021
+  venue: "ApJ, 915, 48"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ac0053/meta"
+  status: published
+  kind: astro
+  role: mentee
+  mentee: Darragh-Ford
+  context: coadvised
+  topics: [satellites]
+
+- title: "Constraints on Dark Matter Properties from Observations of Milky Way Satellite Galaxies"
+  authors: "**E. O. Nadler**, A. Drlica-Wagner et al. (DES Collaboration)"
+  year: 2021
+  venue: "PRL, 126, 091101"
+  url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.091101"
+  status: published
+  kind: astro
+  role: first
+  topics: [beyondcdm, satellites]
+  cited100: true
+  featured: true
+
+- title: "Constraints on the epoch of dark matter formation from Milky Way satellites"
+  authors: "S. Das & **E. O. Nadler**"
+  year: 2021
+  venue: "PRD, 103, 043517"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.103.043517"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [beyondcdm, satellites]
+
+- title: "Bounds on velocity-dependent dark matter–proton scattering from Milky Way satellite abundance"
+  authors: "K. Maamari, V. Gluscevic, K. K. Boddy, **E. O. Nadler**, and R. H. Wechsler"
+  year: 2021
+  venue: "ApJL, 907, L46"
+  url: "https://iopscience.iop.org/article/10.3847/2041-8213/abd807"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [beyondcdm, satellites]
+
+- title: "The Saga Survey. II. Building a Statistical Sample of Satellite Systems around Milky Way-like Galaxies"
+  authors: "Y.-Y. Mao, M. Geha, R. H. Wechsler, B. J. Weiner, E. J. Tollerud, **E. O. Nadler**, and N. Kallivayalil"
+  year: 2021
+  venue: "ApJ, 907, 85"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/abce58"
+  status: published
+  kind: astro
+  role: coauthor
+  topics: [satellites]
+  cited100: true
+
+- title: "Signatures of Velocity-dependent Dark Matter Self-interactions in Milky Way-mass Halos"
+  authors: "**E. O. Nadler**, A. Banerjee, S. Adhikari, Y.-Y. Mao, and R. H. Wechsler"
+  year: 2020
+  venue: "ApJ, 896, 112"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ab94b0"
+  status: published
+  kind: astro
+  role: first
+  topics: [sidm, satellites, simulations]
+
+- title: "Milky Way Satellite Census. II. Galaxy-Halo Connection Constraints Including the Impact of the Large Magellanic Cloud"
+  authors: "**E. O. Nadler**, R. H. Wechsler et al. (DES Collaboration)"
+  year: 2020
+  venue: "ApJ, 893, 48"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ab846a"
+  status: published
+  kind: astro
+  role: first
+  topics: [satellites, galform]
+  cited100: true
+  featured: true
+
+- title: "Milky Way Satellite Census. I. The Observational Selection Function for Milky Way Satellites in DES Y3 and PanSTARRS DR1"
+  authors: "A. Drlica-Wagner, K. Bechtol, S. Mau, M. McNanna, **E. O. Nadler** et al. (DES Collaboration)"
+  year: 2020
+  venue: "ApJ, 893, 47"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ab7eb9"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites]
+  cited100: true
+
+- title: "Two Ultra-Faint Milky Way Stellar Systems Discovered in Early Data from the DECam Local Volume Exploration Survey"
+  authors: "S. Mau et al. (DELVE Collaboration, incl. **E. O. Nadler**)"
+  year: 2020
+  venue: "ApJ, 890, 136"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ab6c67"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites]
+  cited100: true
+
+- title: "Color associations in abstract semantic domains"
+  authors: "D. Guilbeault, **E. O. Nadler**, M. Chu, R. L. Sardo, A. A. Kar, and B. S. Desikan"
+  year: 2020
+  venue: "Cognition, 201, 104306"
+  url: "https://www.sciencedirect.com/science/article/abs/pii/S0010027720301256?dgcid=author"
+  status: published
+  kind: interdisciplinary
+  role: coauthor
+
+- title: "comp-syn: Perceptually Grounded Word Embeddings with Color"
+  authors: "B. S. Desikan, T. Hull, **E. O. Nadler**, D. Guilbeault, A. A. Kar, M. Chu, and R. L. Sardo"
+  year: 2020
+  venue: "Proceedings of the 28th International Conference on Computational Linguistics, 1744"
+  url: "https://aclanthology.org/2020.coling-main.154/"
+  status: published
+  kind: interdisciplinary
+  role: coauthor
+
+- title: "Search for RR Lyrae stars in DES ultrafaint systems: Grus I, Kim 2, Phoenix II, and Grus II"
+  authors: "C. E. Martínez-Vázquez et al. (DES Collaboration, incl. **E. O. Nadler**)"
+  year: 2019
+  venue: "MNRAS, 490, 2183"
+  url: "https://academic.oup.com/mnras/article/490/2/2183/5573280"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites]
+
+- title: "Constraints on Dark Matter Microphysics from the Milky Way Satellite Population"
+  authors: "**E. O. Nadler**, V. Gluscevic, K. K. Boddy, and R. H. Wechsler"
+  year: 2019
+  venue: "ApJL, 878, L32"
+  url: "https://iopscience.iop.org/article/10.3847/2041-8213/ab1eb2"
+  status: published
+  kind: astro
+  role: first
+  topics: [beyondcdm, satellites]
+  cited100: true
+
+- title: "Identification of RR Lyrae stars in multiband, sparsely-sampled data from the Dark Energy Survey using template fitting and Random Forest classification"
+  authors: "K. M. Stringer et al. (DES Collaboration, incl. **E. O. Nadler**)"
+  year: 2019
+  venue: "AJ, 158, 16"
+  url: "https://iopscience.iop.org/article/10.3847/1538-3881/ab1f46"
+  status: published
+  kind: astro
+  role: coauthor
+  collab: true
+  topics: [satellites]
+
+- title: "Modeling the Connection between Subhalos and Satellites in Milky Way-like Systems"
+  authors: "**E. O. Nadler**, Y.-Y. Mao, G. M. Green, and R. H. Wechsler"
+  year: 2019
+  venue: "ApJ, 873, 34"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/ab040e/meta"
+  status: published
+  kind: astro
+  role: first
+  topics: [satellites, galform]
+  cited100: true
+
+- title: "Modeling the Impact of Baryons on Subhalo Populations with Machine Learning"
+  authors: "**E. O. Nadler**, Y.-Y. Mao, R. H. Wechsler, S. Garrison-Kimmel, and A. Wetzel"
+  year: 2018
+  venue: "ApJ, 859, 129"
+  url: "https://iopscience.iop.org/article/10.3847/1538-4357/aac266/meta"
+  status: published
+  kind: astro
+  role: first
+  topics: [simulations, satellites]
+
+- title: "On the bispectra of very massive tracers in the Effective Field Theory of Large-Scale Structure"
+  authors: "**E. O. Nadler**, A. Perko, and L. Senatore"
+  year: 2018
+  venue: "JCAP, 1, 058"
+  url: "https://iopscience.iop.org/article/10.1088/1475-7516/2018/02/058/meta"
+  status: published
+  kind: astro
+  role: first
+  topics: [lss]
+
+- title: "On the apparent power law in CDM halo pseudo-phase space density profiles"
+  authors: "**E. O. Nadler**, S. P. Oh, and S. Ji"
+  year: 2017
+  venue: "MNRAS, 470, 500"
+  url: "https://academic.oup.com/mnras/article/470/1/500/3837819"
+  status: published
+  kind: astro
+  role: first
+  topics: [lss]

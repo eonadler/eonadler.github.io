@@ -1,0 +1,101 @@
+# Press coverage of my group's work (media.html), newest first.
+# thumb: the article's own lead image (assets/img/web); related: the paper or research page each story covers.
+press:
+  - outlet: Space.com
+    title: "'Dark subhaloes' may explain why galaxies seem to form pre-determined shapes"
+    date: 2026-04-20
+    url: https://www.space.com/astronomy/galaxies/dark-subhaloes-may-explain-why-galaxies-seem-to-form-pre-determined-shapes
+    thumb: press-space.jpg
+    related: { label: "Peñarrubia & Nadler 2026", url: "https://academic.oup.com/mnras/article/548/4/stag803/8666387" }
+  - outlet: USC Today
+    title: Scientists code Milky Way twin galaxies to better understand dark matter
+    date: 2025-06-16
+    url: https://today.usc.edu/scientists-code-milky-way-twin-galaxies-to-better-understand-dark-matter/
+    thumb: press-usc.jpg
+    related: { label: "COZMIC", url: "/research.html#cozmic" }
+  - outlet: UC San Diego Today
+    title: Do "Completely Dark" Dark Matter Halos Exist?
+    date: 2025-04-08
+    url: https://today.ucsd.edu/story/dark-dark-matter-halos
+    thumb: press-ucsd.jpg
+    related: { label: "Galaxy formation threshold", url: "/research.html#threshold" }
+  - outlet: UC Riverside News
+    title: New dark matter theory explains two puzzles in astrophysics
+    date: 2023-12-06
+    url: https://news.ucr.edu/articles/2023/12/06/new-dark-matter-theory-explains-two-puzzles-astrophysics
+    thumb: press-ucr.jpg
+    related: { label: "Nadler, Yang & Yu 2023", url: "https://iopscience.iop.org/article/10.3847/2041-8213/ad0e09" }
+  - outlet: Fermilab Press Release
+    title: Dark Energy Survey census of the smallest galaxies hones the search for dark matter
+    date: 2020-08-04
+    url: https://news.fnal.gov/2020/08/dark-energy-survey-census-of-the-smallest-galaxies-hones-the-search-for-dark-matter/
+    thumb: press-fnal.jpg
+    related: { label: "Nadler et al. 2021", url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.091101" }
+  - outlet: SLAC Press Release
+    title: The Milky Way's satellites help reveal link between dark matter halos and galaxy formation
+    date: 2020-03-31
+    url: https://www6.slac.stanford.edu/news/2020-03-31-milky-way%E2%80%99s-satellites-help-reveal-link-between-dark-matter-halos-and-galaxy
+    thumb: press-slac.jpg
+    related: { label: "Nadler et al. 2020", url: "https://iopscience.iop.org/article/10.3847/1538-4357/ab846a" }
+
+# Featured talk videos. youtube: video id (plays in place), start: seconds; otherwise link + poster.
+videos:
+  - title: "Review: Probing Dark Matter with Near Field Cosmology"
+    venue: Fields Institute, Near Field Cosmology in the Era of Big Data
+    date: 2026-07-23
+    youtube: 99l4w-r8xQA
+  - title: Small Galaxies Packed with Dark Matter
+    venue: UC San Diego Stellar Beginnings, Astronomy & Astrophysics Department Launch
+    date: 2025-05-02
+    youtube: cJj191cJSPg
+    start: 1831
+  - title: Dark Matter Physics in the Sky
+    venue: "KITP: Blackboard Talk"
+    date: 2024-06-17
+    youtube: jCvokzaoOeg
+
+# Selected talks (media.html), newest first. when: shown instead of date when only the year is known.
+talks:
+  - title: "Review: Probing Dark Matter with Near Field Cosmology"
+    venue: "Fields Institute: Near Field Cosmology in the Era of Big Data"
+    url: https://www.youtube.com/watch?v=99l4w-r8xQA
+    date: 2026-07-23
+    video: https://www.youtube.com/watch?v=99l4w-r8xQA
+  - title: "Review: Unlocking Exotic Dark Matter with the Low Surface Brightness Universe"
+    venue: "European Astronomical Society Annual Meeting, EPFL"
+    date: 2026-07-02
+  - title: Revealing Dark Matter and Galaxy Formation with Small-Scale Structure
+    venue: "UCLA Astronomy Colloquium"
+    url: https://www.youtube.com/watch?v=rpGuW0DfDZY
+    date: 2026-04-01
+    video: https://www.youtube.com/watch?v=rpGuW0DfDZY
+  - title: "Review: Satellite Galaxies and Stellar Streams as Probes of SIDM"
+    venue: "Valencia IFIC: Small-scale Structure of the Universe and SIDM"
+    url: https://indico.ific.uv.es/event/7815/
+    date: 2025-06-16
+    slides: https://indico.ific.uv.es/event/7815/contributions/26820/attachments/13575/19553/Nadler_Valencia_2025.pdf
+  - title: Small Galaxies Packed with Dark Matter
+    venue: "UC San Diego Stellar Beginnings: Department Launch"
+    url: https://youtu.be/cJj191cJSPg?t=1831
+    date: 2025-05-02
+    video: https://youtu.be/cJj191cJSPg?t=1831
+  - title: "Review: What can Dwarf Galaxies Reveal about the Nature of Dark Matter?"
+    venue: "Durham University: Small Galaxies, Cosmic Questions II"
+    url: https://durhamdwarfsconference.github.io/
+    date: 2024-07-30
+    slides: https://drive.google.com/file/d/10NTI48ms2aPJ7Qrp5aCSX_RFwonR-due/view
+  - title: Dark Matter Physics in the Sky
+    venue: "KITP: Blackboard Talk"
+    url: https://online.kitp.ucsb.edu/online/bblunch/
+    date: 2024-06-17
+    video: https://online.kitp.ucsb.edu/online/bblunch/nadler/
+  - title: The Faint End of the Galaxy–Halo Connection
+    venue: "KITP: Building a Physical Understanding of Galaxy Evolution"
+    url: https://www.kitp.ucsb.edu/activities/galevo23
+    date: 2023-01-27
+    video: https://online.kitp.ucsb.edu/online/galevo23/nadler/rm/jwvideo.html
+  - title: Dark Matter Constraints from Small-scale Structure
+    venue: "CERN: New Physics from Galaxy Clustering"
+    url: https://indico.cern.ch/event/1192722/
+    date: 2022-11-25
+    video: https://cds.cern.ch/record/2842124
