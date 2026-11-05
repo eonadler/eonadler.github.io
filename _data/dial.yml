@@ -8,7 +8,7 @@ families:
     left: Cold
     right: Warm
     tab: Warm
-    title: Warm dark matter
+    title: Warm dark matter (3 keV)
     img: wdm-3.jpg
     what: "Thermal-relic warm dark matter streams freely on small scales, suppressing structure formation."
     suite: COZMIC I
@@ -17,7 +17,7 @@ families:
     left: Particle-like
     right: Wave-like
     tab: Fuzzy
-    title: "Fuzzy dark matter"
+    title: "Fuzzy dark matter (25.9×10⁻²² eV)"
     img: fdm-25p9.jpg
     what: "Ultralight fuzzy dark matter exhibits wave interference on small scales, suppressing structure formation."
     suite: COZMIC I
@@ -26,7 +26,7 @@ families:
     left: Non-interacting
     right: Interacting
     tab: Interacting
-    title: "Dark matter–proton scattering"
+    title: "Dark matter–proton scattering (10⁻² GeV, σ ∝ v²)"
     img: idm2-env.jpg
     what: "Dark matter that scatters with protons in the early universe undergoes collisional damping, suppressing structure formation."
     suite: COZMIC I
