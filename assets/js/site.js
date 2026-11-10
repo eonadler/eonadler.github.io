@@ -217,7 +217,7 @@
     });
   });
 
-  /* ---------------------------------------------------------- publications: show (all / group / first author), papers under review */
+  /* ---------------------------------------------------------- publications: show (all / first author), papers under review */
   var app = $('#pub-app');
   if (app) initPubs(app);
 
@@ -225,12 +225,11 @@
     var items = $$('.pub', app), groups = $$('.pub-group', app);
     var review = $('#pub-review');
     var params = new URLSearchParams(location.search);
-    var state = { show: ['all', 'group', 'first'].indexOf(params.get('show')) >= 0 ? params.get('show') : 'all', review: params.get('review') === '1' };
+    var state = { show: ['all', 'first'].indexOf(params.get('show')) >= 0 ? params.get('show') : 'all', review: params.get('review') === '1' };
     review.checked = state.review;
 
     function matches(li) {
       if (!state.review && li.getAttribute('data-status') === 'submitted') return false;
-      if (state.show === 'group' && !li.hasAttribute('data-group')) return false;
       if (state.show === 'first' && li.getAttribute('data-role') !== 'first') return false;
       return true;
     }
