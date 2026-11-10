@@ -408,6 +408,7 @@ a.person-name:hover { color: var(--accent); }
 .pub-num { display: inline-block; width: 3.1em; text-indent: 0; color: var(--faint); font-variant-numeric: tabular-nums; }
 .pub .pub-title { font-style: italic; color: var(--ink); }
 .pub b { color: var(--ink); font-weight: 600; }
+.pub b.grp { color: var(--accent); }
 .pub a { text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); }
 .pub-mini .pub, .pub-list--compact .pub { padding-left: 0; text-indent: 0; }
 
